@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - monitors/argocd.yaml
+- monitors/external-secrets.yaml
 
 helmCharts:
 - name: prometheus-operator-crds
