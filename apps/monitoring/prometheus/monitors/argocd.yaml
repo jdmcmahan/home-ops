@@ -9,6 +9,9 @@ spec:
   endpoints:
   - port: "9001"
     scheme: http
+  namespaceSelector:
+    matchNames:
+    - argocd
   selector:
     matchLabels:
       app.kubernetes.io/name: argocd-notifications-controller-metrics
