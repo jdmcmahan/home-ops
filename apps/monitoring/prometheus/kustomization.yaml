@@ -5,6 +5,7 @@ resources:
 - namespace.yaml
 - monitors/argocd.yaml
 - monitors/external-secrets.yaml
+- monitors/rook-ceph.yaml
 
 helmCharts:
 - name: prometheus-operator-crds
