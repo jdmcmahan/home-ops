@@ -8,6 +8,7 @@ resources:
 - https://github.com/argoproj/argo-cd/manifests/ha/base?ref=v2.7.7
 - ingress.yaml
 - applications.yaml
+- monitor.yaml
 
 patches:
 - patch: |-
