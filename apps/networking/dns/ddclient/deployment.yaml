@@ -28,7 +28,8 @@ spec:
         image: linuxserver/ddclient:3.10.0
         imagePullPolicy: IfNotPresent
         volumeMounts:
-        - mountPath: /config
+        - mountPath: /config/ddclient.conf
+          subPath: ddclient.conf
           name: ddclient-config
         resources:
           requests:
