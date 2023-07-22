@@ -47,7 +47,7 @@ patches:
     metadata:
       name: argocd-server
       annotations:
-        external-dns.alpha.kubernetes.io/hostname: argocd.local
+        external-dns.alpha.kubernetes.io/hostname: argocd.localdomain
     spec:
       type: LoadBalancer
   target:

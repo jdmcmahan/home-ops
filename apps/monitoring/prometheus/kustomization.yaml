@@ -26,7 +26,7 @@ patches:
     metadata:
       name: kube-prometheus-stack-grafana
       annotations:
-        external-dns.alpha.kubernetes.io/hostname: grafana.local
+        external-dns.alpha.kubernetes.io/hostname: grafana.localdomain
     spec:
       type: LoadBalancer
   target:
@@ -38,7 +38,7 @@ patches:
     metadata:
       name: kube-prometheus-stack-prometheus
       annotations:
-        external-dns.alpha.kubernetes.io/hostname: prometheus.local
+        external-dns.alpha.kubernetes.io/hostname: prometheus.localdomain
     spec:
       type: LoadBalancer
   target:
