@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ddclient-deployment
+  name: ddclient
   labels:
     app: ddclient
 spec:
@@ -28,7 +28,7 @@ spec:
         image: linuxserver/ddclient:3.10.0
         imagePullPolicy: IfNotPresent
         volumeMounts:
-        - mountPath: /config
+        - mountPath: /config/ddclient.conf
           name: ddclient-config
         resources:
           requests:
