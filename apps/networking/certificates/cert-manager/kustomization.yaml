@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
 - cloudflare-certmanager-token.yaml
+- issuer.yaml
 
 helmCharts:
 - name: cert-manager
