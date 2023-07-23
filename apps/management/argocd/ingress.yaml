@@ -8,13 +8,13 @@ spec:
   - websecure
   routes:
   - kind: Rule
-    match: Host(`argocd.mcmahan.duckdns.org`)
+    match: Host(`argocd.mcmahan.io`)
     priority: 10
     services:
     - name: argocd-server
       port: 80
   - kind: Rule
-    match: Host(`argocd.mcmahan.duckdns.org`) && Headers(`Content-Type`, `application/grpc`)
+    match: Host(`argocd.mcmahan.io`) && Headers(`Content-Type`, `application/grpc`)
     priority: 11
     services:
     - name: argocd-server
