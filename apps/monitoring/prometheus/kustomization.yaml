@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - monitors/argocd.yaml
+- monitors/cert-manager.yaml
 - monitors/external-secrets.yaml
 - monitors/rook-ceph.yaml
 
