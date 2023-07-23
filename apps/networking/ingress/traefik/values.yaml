@@ -11,6 +11,12 @@ ingressClass:
   enabled: true
   isDefaultClass: true
 
+# https://github.com/argoproj/argo-cd/issues/1704#issuecomment-980531495
+providers:
+  kubernetesIngress:
+    publishedService:
+      enabled: true
+
 service:
   type: LoadBalancer
   spec:
