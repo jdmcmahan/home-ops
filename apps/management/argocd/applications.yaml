@@ -14,7 +14,7 @@ spec:
     metadata:
       name: "{{ path.basenameNormalized }}"
     spec:
-      project: default
+      project: "{{ path[1] }}"
       source:
         repoURL: https://github.com/jdmcmahan/home-ops.git
         targetRevision: HEAD
