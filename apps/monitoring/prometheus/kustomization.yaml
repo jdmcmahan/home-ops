@@ -3,6 +3,7 @@ kind: Kustomization
 
 resources:
 - namespace.yaml
+- ingress.yaml
 - monitors/argocd.yaml
 - monitors/cert-manager.yaml
 - monitors/external-secrets.yaml
