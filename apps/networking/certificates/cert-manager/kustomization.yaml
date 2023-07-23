@@ -11,6 +11,7 @@ helmCharts:
   releaseName: cert-manager
   namespace: cert-manager
   valuesInline:
+    installCRDs: true
     prometheus:
       enabled: true
       servicemonitor:
