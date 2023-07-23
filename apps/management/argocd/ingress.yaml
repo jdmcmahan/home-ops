@@ -4,8 +4,9 @@ metadata:
   name: argocd-ingress
   namespace: argocd
   annotations:
-    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+    cert-manager.io/cluster-issuer: cloudflare
 spec:
   rules:
   - host: argocd.mcmahan.io
@@ -17,8 +18,8 @@ spec:
           service:
             name: argocd-server
             port:
-              name: http
+              number: 80
   tls:
-  - secretName: argocd-secret
+  - secretName: argocd-cert
     hosts:
     - argocd.mcmahan.io
