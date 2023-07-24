@@ -5,5 +5,15 @@ namespace: kube-system
 
 resources:
 - https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/nfd?ref=v0.27.1
-- https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/nfd/overlays/node-feature-rules?ref=v0.27.1
 - https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/gpu_plugin/overlays/monitoring_shared-dev_nfd/?ref=v0.27.1
+
+patches:
+- patch: |
+    - op: replace
+      path: /spec/template/spec/nodeSelector
+      value:
+        feature.node.kubernetes.io/pci-0300_8086.present: "true"
+        kubernetes.io/arch: amd64
+  target:
+    kind: DaemonSet
+    name: "intel-gpu-plugin"
