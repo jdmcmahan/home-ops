@@ -19,7 +19,6 @@ helmCharts:
         ports:
           http:
             port: 32400
-        externalTrafficPolicy: Local
 
     # ingress:
     #   main:
