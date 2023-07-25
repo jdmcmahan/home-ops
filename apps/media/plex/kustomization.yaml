@@ -20,10 +20,6 @@ helmCharts:
           http:
             port: 32400
 
-    env:
-    - name: PLEX_CLAIM
-      value: claim--rx3ydpj1NXy8fMdzDVH
-
     # ingress:
     #   main:
     #     enabled: true
