@@ -12,6 +12,8 @@ helmCharts:
   namespace: rook-ceph
   valuesInline:
     enableDiscoveryDaemon: true
+    csi:
+      enableCephfsDriver: false
 - name: rook-ceph-cluster
   repo: https://charts.rook.io/release
   version: 1.11.9
