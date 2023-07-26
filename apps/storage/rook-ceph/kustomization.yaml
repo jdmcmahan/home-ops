@@ -7,7 +7,7 @@ resources:
 helmCharts:
 - name: rook-ceph
   repo: https://charts.rook.io/release
-  version: 1.11.9
+  version: v1.12.0
   releaseName: rook-release
   namespace: rook-ceph
   valuesInline:
@@ -16,7 +16,7 @@ helmCharts:
       enableCephfsDriver: false
 - name: rook-ceph-cluster
   repo: https://charts.rook.io/release
-  version: 1.11.9
+  version: v1.12.0
   releaseName: rook-release
   namespace: rook-ceph
   valuesInline:
