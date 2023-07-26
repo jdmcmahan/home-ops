@@ -5,7 +5,7 @@
   ],
   "packageRules": [
     {
-      "matchSourceUrls": ["https://charts.rook.io/release"],
+      "matchSourceUrls": ["https://github.com/rook/rook"],
       "groupName": "rook-ceph"
     }
   ]
