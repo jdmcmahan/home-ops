@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: kube-system
 
 resources:
-- https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/nfd?ref=v0.27.1
-- https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/gpu_plugin/overlays/monitoring_shared-dev_nfd/?ref=v0.27.1
+- https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/nfd?ref=v0.28.0
+- https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/gpu_plugin/overlays/monitoring_shared-dev_nfd/?ref=v0.28.0
 
 patches:
 - patch: |
