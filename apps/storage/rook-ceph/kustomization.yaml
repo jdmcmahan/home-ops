@@ -12,13 +12,10 @@ helmCharts:
   namespace: rook-ceph
   valuesInline:
     enableDiscoveryDaemon: true
-    csi:
-      enableCephfsDriver: false
 - name: rook-ceph-cluster
   repo: https://charts.rook.io/release
   version: v1.12.7
   releaseName: rook-release
   namespace: rook-ceph
   valuesInline:
-    cephFileSystems: []
     cephObjectStores: []
