@@ -1,0 +1,43 @@
+replicaCount: 1
+clusterName: ark
+
+servers:
+  extinction:
+    updateOnStart: true
+    sessionName: "extinction"
+    message: "Welcome to Extinction"
+    map: Extinction
+    password: ""
+    maxPlayers: 10
+    ports:
+      queryudp: 27015
+      gameudp: 7770
+      rcon: 32330
+    mods: []
+
+resources:
+  requests:
+    cpu: 1
+    memory: 8Gi
+  limits:
+    cpu: 2
+    memory: 16Gi
+
+persistence:
+  enabled: true
+  game:
+    storageClass: ceph-filesystem
+    accessModes:
+      - ReadWriteOnce
+  cluster:
+    storageClass: ceph-filesystem
+  save:
+    storageClass: ceph-filesystem
+
+startupProbe:
+  # allow plenty of time for installation if necessary
+  failureThreshold: 480
+
+securityContext:
+  runAsUser: 1000
+  fsGroup: 1000
