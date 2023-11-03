@@ -120,7 +120,6 @@ servers:
         Duration=30
         Message=
 
-      
     updateOnStart: true
     sessionName: "peeps"
     message: "Welcome to peeps"
@@ -150,6 +149,7 @@ resources:
 service:
   enabled: true
   type: LoadBalancer
+  loadBalancerIP: "192.168.8.175"
   metallb_shared_ip: true
 
 persistence:
