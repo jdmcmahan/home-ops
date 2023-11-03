@@ -2,10 +2,10 @@ replicaCount: 1
 clusterName: ark
 
 servers:
-  extinction:
+  island:
     updateOnStart: true
-    sessionName: "extinction"
-    message: "Welcome to Extinction"
+    sessionName: "island"
+    message: "Welcome to The Island"
     map: Extinction
     password: ""
     maxPlayers: 10
@@ -26,6 +26,7 @@ resources:
 service:
   enabled: true
   type: LoadBalancer
+  loadBalancerIP: "192.168.8.175"
   metallb_shared_ip: true
 
 persistence:
