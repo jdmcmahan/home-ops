@@ -123,7 +123,7 @@ servers:
       
     updateOnStart: true
     sessionName: "peeps"
-    message: "Welcome to Extinction"
+    message: "Welcome to peeps"
     map: TheIsland
     password: ""
     maxPlayers: 10
