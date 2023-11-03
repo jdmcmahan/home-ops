@@ -25,6 +25,7 @@ resources:
 
 service:
   enabled: true
+  type: LoadBalancer
   metallb_shared_ip: true
 
 persistence:
