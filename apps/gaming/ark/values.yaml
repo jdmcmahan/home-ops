@@ -23,12 +23,16 @@ resources:
     cpu: 2
     memory: 16Gi
 
+service:
+  enabled: true
+  metallb_shared_ip: true
+
 persistence:
   enabled: true
   game:
     storageClass: ceph-filesystem
     accessModes:
-      - ReadWriteOnce
+    - ReadWriteOnce
   cluster:
     storageClass: ceph-filesystem
   save:
