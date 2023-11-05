@@ -22,8 +22,8 @@ servers:
         DinoDamageMultiplier=1.00000
         DinoResistanceMultiplier=1.00000
         globalVoiceChat=0
-        HarvestAmountMultiplier=4.00000
-        HarvestHealthMultiplier=4.00000
+        HarvestAmountMultiplier=6.00000
+        HarvestHealthMultiplier=6.00000
         MaxStructuresInRange=6700
         noTributeDownloads=0
         PreventDownloadSurvivors=0
