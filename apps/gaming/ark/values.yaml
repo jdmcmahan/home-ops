@@ -7,11 +7,9 @@ servers:
       GameUserSettingsIni: |
         [/Script/ShooterGame.ShooterGameUserSettings]
         Version=5
-        HarvestAmountMultiplier=500
         [ServerSettings]
-        HarvestAmountMultiplier=1000
-        HarvestHealthMultiplier=1000
-        PlayerCharacterWaterDrainMultiplier=1000
+        HarvestAmountMultiplier=5
+        HarvestHealthMultiplier=1
     updateOnStart: true
     sessionName: "peeps"
     message: "Welcome to peeps"
