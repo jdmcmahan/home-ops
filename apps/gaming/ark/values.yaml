@@ -39,6 +39,10 @@ resources:
 extraEnvVars:
   - name: am_ark_GameUserSettingsIniFile
     value: /arkconfig/GameUserSettings.ini
+  - name: am_ark_HarvestAmountMultiplier
+    value: 6
+  - name: am_ark_HarvestHealthMultiplier
+    value: 6
 
 service:
   enabled: true
