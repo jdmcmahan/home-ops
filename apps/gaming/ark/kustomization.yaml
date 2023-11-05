@@ -33,3 +33,18 @@ patches:
   target:
     kind: Service
     name: "ark-cluster-peeps-udp"
+- patch: |-
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: ark-cluster-peeps
+    spec:
+      template:
+        spec:
+          initContainers:
+            - name: clear-defaults
+              image: busybox:1.28
+              command: ['sh', '-c', 'rm /arkserver/ShooterGame/Config/DefaultGameUserSettings.ini']
+  target:
+    kind: Deployment
+    name: "ark-cluster-peeps"
