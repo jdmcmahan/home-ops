@@ -8,7 +8,7 @@ servers:
         [/Script/ShooterGame.ShooterGameUserSettings]
         Version=5
         [ServerSettings]
-        HarvestAmountMultiplier=5
+        HarvestAmountMultiplier=4
         HarvestHealthMultiplier=1
     updateOnStart: true
     sessionName: "peeps"
@@ -20,13 +20,13 @@ servers:
       queryudp: 27015
       gameudp: 7770
       rcon: 32330
-    # mods:
-    #   - "558651608"
-    #   - "719928795"
-    #   - "1428596566"
-    #   - "1999447172"
-    #   - "751991809"
-    #   - "761535755"
+    mods:
+      - "558651608"
+      - "719928795"
+      - "1428596566"
+      - "1999447172"
+      - "751991809"
+      - "761535755"
 
 resources:
   requests:
@@ -35,14 +35,6 @@ resources:
   limits:
     cpu: 2
     memory: 16Gi
-
-# extraEnvVars:
-#   - name: am_ark_GameUserSettingsIniFile
-#     value: /arkconfig/GameUserSettings.ini
-#   - name: am_ark_HarvestAmountMultiplier
-#     value: "6"
-#   - name: am_ark_HarvestHealthMultiplier
-#     value: "6"
 
 service:
   enabled: true
