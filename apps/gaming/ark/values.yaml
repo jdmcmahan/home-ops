@@ -36,6 +36,10 @@ resources:
     cpu: 2
     memory: 16Gi
 
+extraEnvVars:
+  - name: am_ark_GameUserSettingsIniFile
+    value: /arkconfig/GameUserSettings.ini
+
 service:
   enabled: true
   type: LoadBalancer
