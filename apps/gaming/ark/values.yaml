@@ -8,8 +8,8 @@ servers:
         [/Script/ShooterGame.ShooterGameUserSettings]
         Version=5
         [ServerSettings]
-        HarvestAmountMultiplier=6.00000
-        HarvestHealthMultiplier=6.00000
+        HarvestAmountMultiplier=1000
+        HarvestHealthMultiplier=1000
         PlayerCharacterWaterDrainMultiplier=1000
     updateOnStart: true
     sessionName: "peeps"
