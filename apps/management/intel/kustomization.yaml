@@ -4,7 +4,6 @@ kind: Kustomization
 resources:
   - "namespace.yaml"
   - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.28.0"
-  - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/nfd/overlays/node-feature-rules?ref=main"
 
 helmCharts:
   - name: node-feature-discovery
@@ -24,3 +23,4 @@ helmCharts:
     namespace: intel
     valuesInline:
       resourceManager: true
+      nodeFeatureRule: true
