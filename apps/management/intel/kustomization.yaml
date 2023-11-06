@@ -22,5 +22,6 @@ helmCharts:
     releaseName: intel-device-plugins-gpu
     namespace: intel
     valuesInline:
+      name: gpudeviceplugin-default
       resourceManager: true
       nodeFeatureRule: true
