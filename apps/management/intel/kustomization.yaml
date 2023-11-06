@@ -22,3 +22,15 @@ helmCharts:
     version: 0.28.0
     releaseName: intel-device-plugins-gpu
     namespace: intel
+
+patches:
+- patch: |-
+    apiVersion: v1
+    kind: GpuDevicePlugin
+    metadata:
+      name: gpudeviceplugin-sample
+    spec:
+      resourceManager: false
+  target:
+    kind: GpuDevicePlugin
+    name: "gpudeviceplugin-sample"
