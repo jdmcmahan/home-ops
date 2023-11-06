@@ -30,7 +30,7 @@ patches:
     metadata:
       name: gpudeviceplugin-sample
     spec:
-      resourceManager: false
+      resourceManager: null
   target:
     kind: GpuDevicePlugin
     name: "gpudeviceplugin-sample"
