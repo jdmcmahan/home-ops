@@ -1,0 +1,7 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: intel
+  labels:
+    pod-security.kubernetes.io/enforce: privileged
+    pod-security.kubernetes.io/enforce-version: v1.27
