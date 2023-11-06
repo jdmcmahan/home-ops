@@ -13,4 +13,5 @@ spec:
       conversionStrategy: Default
       decodingStrategy: None
       key: ddclient-cloudflare
+      metadataPolicy: None
       property: ddclient.conf
