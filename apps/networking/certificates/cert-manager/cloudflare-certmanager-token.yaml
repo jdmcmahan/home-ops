@@ -13,4 +13,5 @@ spec:
       conversionStrategy: Default
       decodingStrategy: None
       key: cloudflare
+      metadataPolicy: None
       property: token
