@@ -23,6 +23,17 @@ helmCharts:
     namespace: intel
     valuesInline:
       name: gpudeviceplugin-default
-      resourceManager: null
       sharedDevNum: 2
       nodeFeatureRule: true
+
+patches:
+- patch: |-
+    apiVersion: deviceplugin.intel.com/v1
+    kind: GpuDevicePlugin
+    metadata:
+      name: gpudeviceplugin-default
+    spec:
+      resourceManager: null
+  target:
+    kind: GpuDevicePlugin
+    name: "gpudeviceplugin-default"
