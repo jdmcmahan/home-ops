@@ -23,5 +23,5 @@ helmCharts:
     namespace: intel
     valuesInline:
       name: gpudeviceplugin-default
-      resourceManager: true
+      sharedDevNum: 2
       nodeFeatureRule: true
