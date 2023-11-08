@@ -18,4 +18,6 @@ helmCharts:
   releaseName: rook-release
   namespace: rook-ceph
   valuesInline:
+    toolbox:
+      enabled: true
     cephObjectStores: []
