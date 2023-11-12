@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
   - "namespace.yaml"
   - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.28.0"
+  - "node-feature-rule.yaml"
 
 helmCharts:
   - name: node-feature-discovery
