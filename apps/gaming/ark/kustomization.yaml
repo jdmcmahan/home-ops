@@ -33,3 +33,24 @@ patches:
   target:
     kind: Service
     name: "ark-cluster-peeps-udp"
+- patch: |-
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: ark-cluster-peeps
+    spec:
+      template:
+        spec:
+          containers:
+          - name: ark-cluster-peeps
+            volumeMounts:
+              - name: ark-cluster-backup
+                mountPath: /ark/backup
+          volumes:
+            - name: ark-cluster-backup
+              nfs:
+                server: peepums
+                path: /pool01/backup/ark
+  target:
+    kind: Deployment
+    name: "ark-cluster-peeps"
