@@ -10,6 +10,13 @@ servers:
         [ServerSettings]
         HarvestAmountMultiplier=4
         HarvestHealthMultiplier=1
+        XPMultiplier=4
+        serverPVE=True
+        DisableStructureDecayPvE=True
+        AllowFlyerCarryPvE=True
+        TamingSpeedMultiplier=True
+        ResourcesRespawnPeriodMultiplier=0.1
+        AllowCaveBuildingPvE=True
     updateOnStart: true
     sessionName: "peeps"
     message: "Welcome to peeps"
