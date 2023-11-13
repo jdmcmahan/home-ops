@@ -62,12 +62,12 @@ helmCharts:
       supplementalGroups:
       - 44 # video
 
-    resources:
-      requests:
-        gpu.intel.com/i915: 1
-        cpu: 1000m
-        memory: 2048Mi
-      limits:
-        gpu.intel.com/i915: 1
-        cpu: 2000m
-        memory: 4096Mi
+    # resources:
+    #   requests:
+    #     gpu.intel.com/i915: 1
+    #     cpu: 1000m
+    #     memory: 2048Mi
+    #   limits:
+    #     gpu.intel.com/i915: 1
+    #     cpu: 2000m
+    #     memory: 4096Mi
