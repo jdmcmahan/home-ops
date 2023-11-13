@@ -14,7 +14,7 @@ servers:
         serverPVE=True
         DisableStructureDecayPvE=True
         AllowFlyerCarryPvE=True
-        TamingSpeedMultiplier=True
+        TamingSpeedMultiplier=4
         ResourcesRespawnPeriodMultiplier=0.1
         AllowCaveBuildingPvE=True
     updateOnStart: true
