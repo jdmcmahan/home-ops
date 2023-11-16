@@ -5,7 +5,7 @@ namespace: argocd
 
 resources:
 - namespace.yaml
-- https://github.com/argoproj/argo-cd/manifests/ha/base?ref=v2.9.0
+- https://github.com/argoproj/argo-cd/manifests/ha/base?ref=v2.9.1
 - ingress.yaml
 - applications.yaml
 
