@@ -7,14 +7,14 @@ resources:
 helmCharts:
 - name: rook-ceph
   repo: https://charts.rook.io/release
-  version: v1.12.7
+  version: v1.12.8
   releaseName: rook-release
   namespace: rook-ceph
   valuesInline:
     enableDiscoveryDaemon: true
 - name: rook-ceph-cluster
   repo: https://charts.rook.io/release
-  version: v1.12.7
+  version: v1.12.8
   releaseName: rook-release
   namespace: rook-ceph
   valuesInline:
