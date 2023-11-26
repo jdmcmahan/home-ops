@@ -26,6 +26,8 @@ cp ca.crt server.crt server.key "$path/etc/matchbox/"
 
 cd $path
 
+rm -rf matchbox
+
 echo "Starting containers..."
 docker compose -f "$path/docker-compose.yml" up -d
 echo "done"
