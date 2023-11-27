@@ -4,6 +4,9 @@ kubernetes:
   version: v1.28.4
 talos:
   version: v1.5.5
+patches:
+  - file: ../patches/cilium-override.yaml
+    name: cilium-override
 ---
 kind: ControlPlane
 machines:
@@ -17,12 +20,6 @@ machines:
 # name: storage
 # machines:
 #   - <worker machine UUID>
-# patches:
-#   - name: storage-override
-#     inline:
-#       machine:
-#         install:
-#           disk: /dev/nvme0n1
 # ---
 kind: Machine
 name: 4c4c4544-004a-4310-8042-b4c04f365132
