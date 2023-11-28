@@ -4,52 +4,48 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-- namespace.yaml
-- https://github.com/argoproj/argo-cd/manifests/ha/base?ref=v2.9.2
-- ingress.yaml
-- applications.yaml
+  - namespace.yaml
+  - applications.yaml
 
-patches:
-- patch: |-
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: argocd-cmd-params-cm
-    data:
-      server.insecure: "true"
-  target:
-    kind: ConfigMap
-    name: "argocd-cmd-params-cm"
-- patch: |-
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-      name: argocd-cm
-    data:
-      kustomize.buildOptions: "--enable-helm"
-      application.instanceLabelKey: "argocd.argoproj.io/instance"
-      resource.customizations.ignoreDifferences.apiextensions.k8s.io_CustomResourceDefinition: |
-        jsonPointers:
-        - spec/conversion/webhook/clientConfig/caBundle
-      resource.exclusions: |-
-        - apiGroups:
-          - cilium.io
-          kinds:
-          - CiliumIdentity
-          clusters:
-          - "*"
-  target:
-    kind: ConfigMap
-    name: "argocd-cm"
-- patch: |-
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: argocd-server
-      annotations:
-        external-dns.alpha.kubernetes.io/hostname: argocd.localdomain
-    spec:
-      type: LoadBalancer
-  target:
-    kind: Service
-    name: "argocd-server"
+helmCharts:
+  - name: argo-cd
+    repo: https://argoproj.github.io/argo-helm
+    version: 5.51.4
+    releaseName: argocd
+    namespace: argocd
+    valuesInline:
+      redis-ha:
+        enabled: true
+      params:
+        server.insecure: true
+      configs:
+        cm:
+          kustomize.buildOptions: "--enable-helm"
+      controller:
+        replicas: 1
+      server:
+        autoscaling:
+          enabled: true
+          minReplicas: 2
+        service:
+          annotations:
+            external-dns.alpha.kubernetes.io/hostname: argocd.localdomain
+          type: LoadBalancer
+        ingress:
+          enabled: true
+          annotations:
+            traefik.ingress.kubernetes.io/router.entrypoints: websecure
+            traefik.ingress.kubernetes.io/router.tls: "true"
+            cert-manager.io/cluster-issuer: cloudflare
+          hosts:
+            - argocd.mcmahan.io
+          tls:
+            - secretName: argocd-cert
+              hosts:
+                - argocd.mcmahan.io
+      repoServer:
+        autoscaling:
+          enabled: true
+          minReplicas: 2
+      applicationSet:
+        replicas: 2

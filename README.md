@@ -10,7 +10,7 @@ My k8s cluster is running on bare-metal Talos servers. The infrastructure is som
 
 ### Installation
 
-To build the cluster, I use [Sidero Metal](https://www.sidero.dev/v0.5/getting-started) to bootstrap my bare-metal nodes over PXE. Sidero automatically provisions the nodes based on the resources defined in [/infrastructure/sidero-metal](https://github.com/jdmcmahan/home-ops/tree/main/infrastructure/sidero-metal).
+I use [Sidero Omni](https://www.siderolabs.com/platform/saas-for-kubernetes/) as the management plane for my cluster. The nodes are [automatically bootstraped and provisioned over PXE](https://omni.siderolabs.com/docs/how-to-guides/how-to-register-a-bare-metal-machine-pxe/) based on the resources defined in [/infrastructure/sidero/omni](https://github.com/jdmcmahan/home-ops/tree/main/infrastructure/sidero/omni).
 
 ### Core Components
 
@@ -26,7 +26,7 @@ To build the cluster, I use [Sidero Metal](https://www.sidero.dev/v0.5/getting-s
 This repository uses [ArgoCD](https://github.com/argoproj/argo-cd) and its [`ApplicationSet`](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set) concept to deploy and manage all resources in the cluster (including itself). Installing ArgoCD and deploying the inital `ApplicationSet` (and, in turn, everything else in the cluster) is as easy as:
 
 ```bash
-$ kubectl apply -k apps/management/argocd
+$ kustomize build --enable-helm apps/management/argocd | kubectl apply -f -
 ```
 
 This ArgoCD `ApplicationSet` is currently configured to discover all `kustomization.yaml` files at any level under the `apps/` directory. These files may reference other resources which will be applied along with the application. One advantage of this approach is that all new `kustomization.yaml` files added to this Git repository will be discovered and deployed to the cluster by ArgoCD. Conversely, removal of a resource definition in the repository will cause that resource to be uninstalled from the cluster. Such changes are automated and instantaneous thanks to GitHub's webhook capabilities.
@@ -51,6 +51,7 @@ Many of my hardware components and parts have been salvaged from a local e-waste
 |-----------------------------|-------|------------------|-------|------------------|----------------------------------------------|
 | Intel NUC8i5BEH             | 1     | Intel i5-8259U   | 16 GB | Proxmox          | General-purpose VMs & containers             |
 | Dell OptiPlex 7060 Micro    | 1     | Intel i5-8500T   | 16 GB | Talos            | Kubernetes control plane nodes               |
+| Dell OptiPlex 7060 Micro    | 2     | Intel i5-8500T   | 32 GB | Talos            | Kubernetes worker nodes                      |
 | Dell OptiPlex 7060 Micro    | 3     | Intel i5-8600T   | 32 GB | Talos            | Kubernetes worker nodes, block storage       |
 | Raspberry Pi 3B             | 1     | Broadcom BCM2837 | 1 GB  | OctoPi           | Remote 3D printer monitoring & management    |
 | Kobol Helios64              | 1     | Rockchip RK3399  | 4 GB  | Armbian          | NAS                                          |

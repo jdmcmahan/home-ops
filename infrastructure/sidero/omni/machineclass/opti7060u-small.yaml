@@ -1,0 +1,7 @@
+metadata:
+  namespace: default
+  type: MachineClasses.omni.sidero.dev
+  id: opti7060u.small
+spec:
+  matchlabels:
+    - manufacturer = dell, model = optiplex-7060u, omni.sidero.dev/mem <= 16GiB
