@@ -1,3 +1,4 @@
+---
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
@@ -9,9 +10,9 @@ spec:
   target:
     creationPolicy: Owner
   dataFrom:
-  - extract:
-      conversionStrategy: Default
-      decodingStrategy: None
-      key: cloudflare
-      metadataPolicy: None
-      property: token
+    - extract:
+        conversionStrategy: Default
+        decodingStrategy: None
+        key: cloudflare
+        metadataPolicy: None
+        property: token

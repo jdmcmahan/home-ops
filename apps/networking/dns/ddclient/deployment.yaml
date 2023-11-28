@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,21 +21,21 @@ spec:
         app: ddclient
     spec:
       volumes:
-      - name: ddclient-config
-        secret:
-          secretName: ddclient-conf-cloudflare
+        - name: ddclient-config
+          secret:
+            secretName: ddclient-conf-cloudflare
       containers:
-      - name: ddclient
-        image: linuxserver/ddclient:3.10.0
-        imagePullPolicy: IfNotPresent
-        volumeMounts:
-        - mountPath: /defaults/ddclient.conf
-          subPath: ddclient.conf
-          name: ddclient-config
-        resources:
-          requests:
-            cpu: 10m
-            memory: 64Mi
-          limits:
-            cpu: 50m
-            memory: 128Mi
+        - name: ddclient
+          image: linuxserver/ddclient:3.10.0
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - mountPath: /defaults/ddclient.conf
+              subPath: ddclient.conf
+              name: ddclient-config
+          resources:
+            requests:
+              cpu: 10m
+              memory: 64Mi
+            limits:
+              cpu: 50m
+              memory: 128Mi

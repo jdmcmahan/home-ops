@@ -1,3 +1,4 @@
+---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -7,10 +8,10 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-  - port: http-metrics
+    - port: http-metrics
   namespaceSelector:
     matchNames:
-    - rook-ceph
+      - rook-ceph
   selector:
     matchLabels:
       app: rook-ceph-mgr

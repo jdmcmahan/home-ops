@@ -1,48 +1,49 @@
+---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- namespace.yaml
-- ingress.yaml
-- monitors/argocd.yaml
-- monitors/cert-manager.yaml
-- monitors/external-secrets.yaml
-- monitors/rook-ceph.yaml
+  - namespace.yaml
+  - ingress.yaml
+  - monitors/argocd.yaml
+  - monitors/cert-manager.yaml
+  - monitors/external-secrets.yaml
+  - monitors/rook-ceph.yaml
 
 helmCharts:
-- name: prometheus-operator-crds
-  repo: https://prometheus-community.github.io/helm-charts
-  version: 7.0.0
-  releaseName: prometheus-operator-crds
-  namespace: prometheus
-- name: kube-prometheus-stack
-  repo: https://prometheus-community.github.io/helm-charts
-  version: 54.2.2
-  releaseName: kube-prometheus-stack
-  namespace: prometheus
+  - name: prometheus-operator-crds
+    repo: https://prometheus-community.github.io/helm-charts
+    version: 7.0.0
+    releaseName: prometheus-operator-crds
+    namespace: prometheus
+  - name: kube-prometheus-stack
+    repo: https://prometheus-community.github.io/helm-charts
+    version: 54.2.2
+    releaseName: kube-prometheus-stack
+    namespace: prometheus
 
 patches:
-- patch: |-
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: kube-prometheus-stack-grafana
-      annotations:
-        external-dns.alpha.kubernetes.io/hostname: grafana.localdomain
-    spec:
-      type: LoadBalancer
-  target:
-    kind: Service
-    name: "kube-prometheus-stack-grafana"
-- patch: |-
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: kube-prometheus-stack-prometheus
-      annotations:
-        external-dns.alpha.kubernetes.io/hostname: prometheus.localdomain
-    spec:
-      type: LoadBalancer
-  target:
-    kind: Service
-    name: "kube-prometheus-stack-prometheus"
+  - patch: |-
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: kube-prometheus-stack-grafana
+        annotations:
+          external-dns.alpha.kubernetes.io/hostname: grafana.localdomain
+      spec:
+        type: LoadBalancer
+    target:
+      kind: Service
+      name: "kube-prometheus-stack-grafana"
+  - patch: |-
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: kube-prometheus-stack-prometheus
+        annotations:
+          external-dns.alpha.kubernetes.io/hostname: prometheus.localdomain
+      spec:
+        type: LoadBalancer
+    target:
+      kind: Service
+      name: "kube-prometheus-stack-prometheus"

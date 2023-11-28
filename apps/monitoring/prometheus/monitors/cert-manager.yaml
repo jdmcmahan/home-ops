@@ -1,3 +1,4 @@
+---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -7,10 +8,10 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-  - port: tcp-prometheus-servicemonitor
+    - port: tcp-prometheus-servicemonitor
   namespaceSelector:
     matchNames:
-    - cert-manager
+      - cert-manager
   selector:
     matchLabels:
       app.kubernetes.io/instance: cert-manager
