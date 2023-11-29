@@ -1,3 +1,4 @@
+---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -7,10 +8,10 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-  - port: metrics
+    - port: metrics
   namespaceSelector:
     matchNames:
-    - argocd
+      - argocd
   selector:
     matchLabels:
       app.kubernetes.io/name: argocd-metrics
@@ -24,10 +25,10 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-  - port: metrics
+    - port: metrics
   namespaceSelector:
     matchNames:
-    - argocd
+      - argocd
   selector:
     matchLabels:
       app.kubernetes.io/name: argocd-server-metrics
@@ -41,10 +42,10 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-  - port: metrics
+    - port: metrics
   namespaceSelector:
     matchNames:
-    - argocd
+      - argocd
   selector:
     matchLabels:
       app.kubernetes.io/name: argocd-repo-server
@@ -58,10 +59,10 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-  - port: metrics
+    - port: metrics
   namespaceSelector:
     matchNames:
-    - argocd
+      - argocd
   selector:
     matchLabels:
       app.kubernetes.io/name: argocd-applicationset-controller
