@@ -31,6 +31,8 @@ helmCharts:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_RESOURCE
+      bpf:
+        masquerade: true
       cgroup:
         autoMount:
           enabled: true
