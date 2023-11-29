@@ -38,6 +38,8 @@ helmCharts:
           enabled: true
         hostRoot: /sys/fs/cgroup
       hubble:
+        tls:
+          enabled: false
         relay:
           enabled: true
         ui:
