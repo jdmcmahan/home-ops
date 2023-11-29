@@ -8,13 +8,13 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: "8082"
+    - port: http-metrics
   namespaceSelector:
     matchNames:
       - argocd
   selector:
     matchLabels:
-      app.kubernetes.io/name: argocd-application-controller-metrics
+      app.kubernetes.io/name: argocd-metrics
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -25,13 +25,13 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: "8083"
+    - port: http-metrics
   namespaceSelector:
     matchNames:
       - argocd
   selector:
     matchLabels:
-      app.kubernetes.io/name: argocd-server-metrics
+      app.kubernetes.io/name: argocd-server
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -42,13 +42,13 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: "8084"
+    - port: http-metrics
   namespaceSelector:
     matchNames:
       - argocd
   selector:
     matchLabels:
-      app.kubernetes.io/name: argocd-repo-server-metrics
+      app.kubernetes.io/name: argocd-repo-server
 ---
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -59,13 +59,13 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: "8080"
+    - port: http-metrics
   namespaceSelector:
     matchNames:
       - argocd
   selector:
     matchLabels:
-      app.kubernetes.io/name: argocd-applicationset-controller-metrics
+      app.kubernetes.io/name: argocd-applicationset-controller
 ---
 apiVersion: v1
 kind: ConfigMap
