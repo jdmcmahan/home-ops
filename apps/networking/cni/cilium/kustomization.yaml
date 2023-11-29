@@ -33,3 +33,8 @@ helmCharts:
         autoMount:
           enabled: true
         hostRoot: /sys/fs/cgroup
+      hubble:
+        relay:
+          enabled: true
+        ui:
+          enabled: true
