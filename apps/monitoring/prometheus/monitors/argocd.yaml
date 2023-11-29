@@ -8,7 +8,7 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: 8082
+    - port: "8082"
   namespaceSelector:
     matchNames:
       - argocd
@@ -25,7 +25,7 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: 8083
+    - port: "8083"
   namespaceSelector:
     matchNames:
       - argocd
@@ -42,7 +42,7 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: 8084
+    - port: "8084"
   namespaceSelector:
     matchNames:
       - argocd
@@ -59,7 +59,7 @@ metadata:
     release: kube-prometheus-stack
 spec:
   endpoints:
-    - port: 8080
+    - port: "8080"
   namespaceSelector:
     matchNames:
       - argocd
