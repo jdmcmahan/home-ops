@@ -1,0 +1,42 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: en_US
+  keyboard:
+    layout: us
+  apt:
+    geoip: true
+    mirror-selection:
+      primary:
+        - country-mirror
+        - arches: [i386, amd64]
+          uri: "http://archive.ubuntu.com/ubuntu"
+        - arches: [s390x, arm64, armhf, powerpc, ppc64el, riscv64]
+          uri: "http://ports.ubuntu.com/ubuntu-ports"
+    preserve_sources_list: false
+  ssh:
+    install-server: true
+    allow-pw: true
+    disable_root: true
+    ssh_quiet_keygen: true
+    allow_public_ssh_keys: true
+  updates: security
+  packages:
+    - qemu-guest-agent
+    - sudo
+  storage:
+    layout:
+      name: direct
+    swap:
+      size: 0
+  user-data:
+    package_upgrade: false
+    timezone: America/Chicago
+    users:
+      - name: donnie
+        groups: [adm, sudo]
+        lock-passwd: false
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        shell: /bin/bash
+        ssh_authorized_keys:
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHddT+QRJrdtMCL6w42DyZGEoaCADq9W8mC0gyrjecFw
