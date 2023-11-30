@@ -9,10 +9,12 @@ packer {
 
 variable "proxmox_api_url" {
     type = string
+    default = "https://proxmox.localdomain:8006/api2/json"
 }
 
 variable "proxmox_api_token_id" {
     type = string
+    default = "packer@pam!packer-token"
 }
 
 variable "proxmox_api_token_secret" {
@@ -72,8 +74,8 @@ source "proxmox-iso" "ubuntu-server-jammy-docker" {
 
     http_directory = "http"
 
-    ssh_username = "mcmahanjd"
-    ssh_private_key_file = "~/.ssh/id_rsa"
+    ssh_username = "donnie"
+    ssh_private_key_file = "~/.ssh/homelab_id_ed25519"
 
     ssh_timeout = "20m"
 }
@@ -88,9 +90,9 @@ build {
             "while [ ! -f /var/lib/cloud/instance/boot-finished ]; do echo 'Waiting for cloud-init...'; sleep 1; done",
             "sudo rm /etc/ssh/ssh_host_*",
             "sudo truncate -s 0 /etc/machine-id",
-            "sudo apt -y autoremove --purge",
-            "sudo apt -y clean",
-            "sudo apt -y autoclean",
+            "sudo apt-get -y autoremove --purge",
+            "sudo apt-get -y clean",
+            "sudo apt-get -y autoclean",
             "sudo cloud-init clean",
             "sudo rm -f /etc/cloud/cloud.cfg.d/subiquity-disable-cloudinit-networking.cfg",
             "sudo rm -f /etc/netplan/00-installer-config.yaml",
@@ -113,7 +115,9 @@ build {
             "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg",
             "echo \"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable\" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null",
             "sudo apt-get -y update",
-            "sudo apt-get install -y docker-ce docker-ce-cli containerd.io"
+            "sudo apt-get install -y docker-ce docker-ce-cli containerd.io",
+            "sudo systemctl enable docker.service",
+            "sudo systemctl enable containerd.service"
         ]
     }
 }

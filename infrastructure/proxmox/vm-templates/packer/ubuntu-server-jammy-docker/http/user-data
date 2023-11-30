@@ -39,4 +39,4 @@ autoinstall:
         sudo: ALL=(ALL) NOPASSWD:ALL
         shell: /bin/bash
         ssh_authorized_keys:
-          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDlAoL6C14TOes75KWrTvfloXZcHm95d8NW/YdjiJpyRCo5JTro14lXS08uQQwz7KGFzyeMYQikhiUJ7R0QX465AKsAySwbXTR3pKVDbPNvQmN6ZW5EYje5zoNHTlf3ddNdDu3IRgVYvMF3uOV0YKluUTWPy38VomPDkqhtv5p5xFrgyBAvMPvg3yDL6vYJM75q8qr+EKq+3tJuR2T5TnpULD5IjJr1+f3/faL6LGwen+Sl+Qf2h9ZGCiIV5N9R5hDNQC0HoZjEzdv27p9Og8vAgpfU7v94xLJ7raj3XcoIZXXcqmsc62Ei9HGiHIw6sbWA+6BUwO7qYmph1n3glPcty5k97KFNpZ1sVMLeJ2SXY2RvKxkX1WfWDsGqvjVkAHH3icDkUxFDRx4saLWGa9TeaVjT8vsZcaCyV2jqekb61Xz7BHSsanMX1z8aWKZgCJ7Kersn49HvoaK1+TUPBOmT+1gB4vBwlWW6iIN8+HwRamTlRkT2IcWY+vs6l4umBd8= mcmahanjd@Donnies-MacBook-Pro.local
+          - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHddT+QRJrdtMCL6w42DyZGEoaCADq9W8mC0gyrjecFw
