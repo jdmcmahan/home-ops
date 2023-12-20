@@ -12,7 +12,7 @@
       "groupName": "rook-ceph"
     },
     {
-      "matchSourceUrls": ["https://intel.github.io", "https://github.com/intel"],
+      "matchSourceUrls": ["https://github.com/intel/helm-charts"],
       "groupName": "intel"
     }
   ]
