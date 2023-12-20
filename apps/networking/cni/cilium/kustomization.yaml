@@ -1,3 +1,4 @@
+---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -10,7 +11,9 @@ helmCharts:
     valuesInline:
       ipam:
         mode: kubernetes
-      kubeProxyReplacement: disabled
+      kubeProxyReplacement: true
+      k8sServiceHost: localhost
+      k8sServicePort: 7445
       securityContext:
         capabilities:
           ciliumAgent:
@@ -29,7 +32,16 @@ helmCharts:
             - NET_ADMIN
             - SYS_ADMIN
             - SYS_RESOURCE
+      bpf:
+        masquerade: true
       cgroup:
         autoMount:
           enabled: true
         hostRoot: /sys/fs/cgroup
+      hubble:
+        tls:
+          enabled: false
+        relay:
+          enabled: true
+        ui:
+          enabled: true

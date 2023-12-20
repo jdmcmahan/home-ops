@@ -1,73 +1,75 @@
+---
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 helmCharts:
-- name: app-template
-  repo: https://bjw-s.github.io/helm-charts
-  version: 1.5.1
-  releaseName: plex
-  namespace: media
-  valuesInline:
-    image:
-      repository: ghcr.io/onedr0p/plex
-      tag: 1.32.5.7328-2632c9d3a
-      pullPolicy: IfNotPresent
-    service:
-      main:
-        enabled: true
-        type: LoadBalancer
-        ports:
-          http:
-            port: 32400
+  - name: app-template
+    repo: https://bjw-s.github.io/helm-charts
+    version: 1.5.1
+    releaseName: plex
+    namespace: media
+    valuesInline:
+      image:
+        repository: ghcr.io/onedr0p/plex
+        tag: 1.32.5.7328-2632c9d3a
+        pullPolicy: IfNotPresent
+      service:
+        main:
+          enabled: true
+          type: LoadBalancer
+          ports:
+            http:
+              port: 32400
 
-    # ingress:
-    #   main:
-    #     enabled: true
-    #     annotations:
-    #       cert-manager.io/cluster-issuer: cloudflare
-    #       traefik.ingress.kubernetes.io/router.entrypoints: websecure
-    #       traefik.ingress.kubernetes.io/router.tls: "true"
-    #     hosts:
-    #     - host: plex.mcmahan.io
-    #       paths:
-    #       - path: /
-    #         pathType: Prefix
-    #     tls:
-    #     - secretName: 'plex-cert'
-    #       hosts:
-    #       - plex.mcmahan.io
+      # ingress:
+      #   main:
+      #     enabled: true
+      #     annotations:
+      #       cert-manager.io/cluster-issuer: cloudflare
+      #       traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      #       traefik.ingress.kubernetes.io/router.tls: "true"
+      #     hosts:
+      #     - host: plex.mcmahan.io
+      #       paths:
+      #       - path: /
+      #         pathType: Prefix
+      #     tls:
+      #     - secretName: 'plex-cert'
+      #       hosts:
+      #       - plex.mcmahan.io
 
-    persistence:
-      config:
-        enabled: true
-        storageClass: ceph-block
-        size: 10Gi
-        accessMode: ReadWriteOnce
-      transcode:
-        enabled: true
-        type: emptyDir
-      media:
-        enabled: true
-        type: nfs
-        server: peepums
-        path: /pool01/media/plex
-        mountPath: /data
-        readOnly: true
+      persistence:
+        config:
+          enabled: true
+          storageClass: ceph-block
+          size: 10Gi
+          accessMode: ReadWriteOnce
+        transcode:
+          enabled: true
+          type: emptyDir
+        media:
+          enabled: true
+          type: nfs
+          server: peepums
+          path: /pool01/media/plex
+          mountPath: /data
+          readOnly: true
 
-    podSecurityContext:
-      runAsUser: 979
-      runAsGroup: 979
-      fsGroup: 979
-      fsGroupChangePolicy: OnRootMismatch
-      supplementalGroups:
-      - 44 # video
+      podSecurityContext:
+        runAsUser: 979
+        runAsGroup: 979
+        fsGroup: 979
+        fsGroupChangePolicy: OnRootMismatch
+        supplementalGroups:
+          - 44 # video
 
-    # resources:
-    #   requests:
-    #     gpu.intel.com/i915: 1
-    #     cpu: 1000m
-    #     memory: 2048Mi
-    #   limits:
-    #     gpu.intel.com/i915: 1
-    #     cpu: 2000m
-    #     memory: 4096Mi
+
+      # resources:
+      #   requests:
+      #     gpu.intel.com/i915: 1
+      #     cpu: 1000m
+      #     memory: 2048Mi
+      #   limits:
+      #     gpu.intel.com/i915: 1
+      #     cpu: 2000m
+      #     memory: 4096Mi

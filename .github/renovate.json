@@ -3,6 +3,9 @@
   "extends": [
     "config:recommended"
   ],
+  "kubernetes": {
+    "fileMatch": ["deployment\\.yaml$"]
+  },
   "packageRules": [
     {
       "matchSourceUrls": ["https://github.com/rook/rook"],

@@ -1,3 +1,4 @@
+---
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -5,11 +6,11 @@ metadata:
   namespace: argocd
 spec:
   generators:
-  - git:
-      repoURL: https://github.com/jdmcmahan/home-ops.git
-      revision: HEAD
-      files:
-      - path: "apps/**/kustomization.yaml"
+    - git:
+        repoURL: https://github.com/jdmcmahan/home-ops.git
+        revision: HEAD
+        files:
+          - path: "apps/**/kustomization.yaml"
   template:
     metadata:
       name: "{{ path.basenameNormalized }}"
@@ -24,29 +25,29 @@ spec:
         namespace: "{{ path.basenameNormalized }}"
       syncPolicy:
         syncOptions:
-        - RespectIgnoreDifferences=true
-        - CreateNamespace=true
-        - ServerSideApply=true
+          - RespectIgnoreDifferences=true
+          - CreateNamespace=true
+          - ServerSideApply=true
         automated:
           prune: true
           selfHeal: true
       ignoreDifferences:
-      - group: ""
-        kind: ConfigMap
-        name: hubble-ca-cert
-        jsonPointers:
-        - /data/ca.crt
-      - group: ""
-        kind: Secret
-        name: hubble-relay-client-certs
-        jsonPointers:
-        - /data/ca.crt
-        - /data/tls.crt
-        - /data/tls.key
-      - group: ""
-        kind: Secret
-        name: hubble-server-certs
-        jsonPointers:
-        - /data/ca.crt
-        - /data/tls.crt
-        - /data/tls.key
+        - group: ""
+          kind: ConfigMap
+          name: hubble-ca-cert
+          jsonPointers:
+            - /data/ca.crt
+        - group: ""
+          kind: Secret
+          name: hubble-relay-client-certs
+          jsonPointers:
+            - /data/ca.crt
+            - /data/tls.crt
+            - /data/tls.key
+        - group: ""
+          kind: Secret
+          name: hubble-server-certs
+          jsonPointers:
+            - /data/ca.crt
+            - /data/tls.crt
+            - /data/tls.key

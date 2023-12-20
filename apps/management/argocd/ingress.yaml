@@ -1,3 +1,4 @@
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -9,17 +10,17 @@ metadata:
     cert-manager.io/cluster-issuer: cloudflare
 spec:
   rules:
-  - host: argocd.mcmahan.io
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: argocd-server
-            port:
-              number: 80
+    - host: argocd.mcmahan.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: argocd-server
+                port:
+                  number: 80
   tls:
-  - secretName: argocd-cert
-    hosts:
-    - argocd.mcmahan.io
+    - secretName: argocd-cert
+      hosts:
+        - argocd.mcmahan.io

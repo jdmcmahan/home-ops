@@ -1,3 +1,4 @@
+---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -9,17 +10,17 @@ metadata:
     cert-manager.io/cluster-issuer: cloudflare
 spec:
   rules:
-  - host: grafana.mcmahan.io
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: kube-prometheus-stack-grafana
-            port:
-              number: 80
+    - host: grafana.mcmahan.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kube-prometheus-stack-grafana
+                port:
+                  number: 80
   tls:
-  - secretName: grafana-cert
-    hosts:
-    - grafana.mcmahan.io
+    - secretName: grafana-cert
+      hosts:
+        - grafana.mcmahan.io
