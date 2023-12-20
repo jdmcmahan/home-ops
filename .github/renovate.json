@@ -10,6 +10,10 @@
     {
       "matchSourceUrls": ["https://github.com/rook/rook"],
       "groupName": "rook-ceph"
+    },
+    {
+      "matchSourceUrls": ["https://intel.github.io", "https://github.com/intel"],
+      "groupName": "intel"
     }
   ]
 }
