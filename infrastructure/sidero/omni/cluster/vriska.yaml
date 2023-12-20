@@ -4,7 +4,7 @@ name: vriska
 kubernetes:
   version: v1.28.5
 talos:
-  version: v1.5.5
+  version: v1.6.0
 patches:
   - file: ../patches/cilium-override.yaml
     name: cilium-override
