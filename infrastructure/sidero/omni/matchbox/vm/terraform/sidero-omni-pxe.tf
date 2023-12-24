@@ -101,7 +101,7 @@ resource "proxmox_virtual_environment_vm" "sidero-omni-pxe-vm" {
   vm_id     = 793
 
   clone {
-    vm_id = 9050
+    vm_id = 90639
   }
 
   agent {
