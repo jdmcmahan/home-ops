@@ -78,12 +78,12 @@ resource "proxmox_virtual_environment_file" "cloud_config" {
 
   source_raw {
     data = templatefile("${path.module}/cloud-init.cloud_config.tftpl", {
-      siderolink_api       = "${var.siderolink_api}",
-      talos_events_sink    = "${var.talos_events_sink}",
-      talos_logging_kernel = "${var.talos_logging_kernel}",
-      talos_version_tag    = "${var.talos_version_tag}",
-      dnsmasq_version_tag  = "${var.dnsmasq_version_tag}",
-      matchbox_version_tag = "${var.matchbox_version_tag}"
+      siderolink_api       = var.siderolink_api,
+      talos_events_sink    = var.talos_events_sink,
+      talos_logging_kernel = var.talos_logging_kernel,
+      talos_version_tag    = var.talos_version_tag,
+      dnsmasq_version_tag  = var.dnsmasq_version_tag,
+      matchbox_version_tag = var.matchbox_version_tag
     })
 
     file_name = "cloud_init_sidero_omni_pxe.yml"
