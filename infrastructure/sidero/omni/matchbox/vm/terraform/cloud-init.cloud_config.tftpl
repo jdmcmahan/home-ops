@@ -1,0 +1,118 @@
+#cloud-config
+
+hostname: sidero-omni-pxe
+fqdn: sidero-omni-pxe.localdomain
+
+package_update: true
+package_upgrade: true
+
+packages:
+  - qemu-guest-agent
+  - podman
+  - wget
+
+users:
+  - name: donnie
+    groups: [adm, sudo]
+    lock-passwd: false
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHddT+QRJrdtMCL6w42DyZGEoaCADq9W8mC0gyrjecFw
+
+write_files:
+  - path: /etc/systemd/resolved.conf.d/dnsmasq-override.conf
+    content: |
+      [Resolve]
+      DNSStubListener=no
+  - path: /etc/containers/systemd/dnsmasq.container
+    content: |
+      [Install]
+      WantedBy=multi-user.target default.target
+
+      [Container]
+      AddCapability=NET_ADMIN NET_RAW
+      ContainerName=dnsmasq
+      Exec=-d -q "--dhcp-range=192.168.8.1,proxy,255.255.255.0" --enable-tftp "--tftp-root=/var/lib/tftpboot" "--dhcp-userclass=set:ipxe,iPXE" "--pxe-service=tag:#ipxe,x86PC,PXE chainload to iPXE,undionly.kpxe" "--pxe-service=tag:ipxe,x86PC,iPXE,http://192.168.8.254:8080/boot.ipxe" "--pxe-service=tag:#ipxe,X86-64_EFI,PXE chainload to iPXE UEFI,ipxe.efi" "--pxe-service=tag:ipxe,X86-64_EFI,iPXE UEFI,http://192.168.8.254:8080/boot.ipxe" --log-queries --log-dhcp
+      Image=quay.io/poseidon/dnsmasq:${dnsmasq_version_tag}
+      Network=host
+
+      [Service]
+      Restart=always
+  - path: /etc/containers/systemd/matchbox.container
+    content: |
+      [Install]
+      WantedBy=multi-user.target default.target
+
+      [Container]
+      ContainerName=matchbox
+      Exec="-address=0.0.0.0:8080" "-rpc-address=0.0.0.0:8081" "-log-level=debug"
+      Image=quay.io/poseidon/matchbox:${matchbox_version_tag}
+      Network=host
+      Volume=/var/lib/matchbox:/var/lib/matchbox:Z
+      Volume=/etc/matchbox:/etc/matchbox:Z,ro
+
+      [Service]
+      Restart=always
+  - path: /var/lib/tftpboot/pxelinux.cfg/default
+    content: |
+      timeout 10
+      default iPXE
+      LABEL iPXE
+      KERNEL ipxe.lkrn
+      APPEND dhcp && chain http://192.168.8.254:8080/boot.ipxe
+  - path: /var/lib/matchbox/groups/default.json
+    content: |
+      {
+          "id": "default",
+          "name": "default",
+          "profile": "default"
+      }
+  - path: /var/lib/matchbox/profiles/default.json
+    content: |
+      {
+          "id": "default",
+          "name": "default",
+          "boot": {
+              "kernel": "/assets/vmlinuz",
+              "initrd": [
+                  "/assets/initramfs.xz"
+              ],
+              "args": [
+                  "initrd=initramfs.xz",
+                  "init_on_alloc=1",
+                  "slab_nomerge",
+                  "pti=on",
+                  "console=tty0",
+                  "console=ttyS0",
+                  "printk.devkmsg=on",
+                  "talos.platform=metal",
+                  "siderolink.api=${siderolink_api}",
+                  "talos.events.sink=${talos_events_sink}",
+                  "talos.logging.kernel=${talos_logging_kernel}"
+              ]
+          }
+      }
+
+runcmd:
+  # Download Talos assets
+  - mkdir -p /var/lib/matchbox/assets
+  - wget -q -O "/var/lib/matchbox/assets/initramfs.xz" https://github.com/siderolabs/talos/releases/download/${talos_version_tag}/initramfs-amd64.xz
+  - wget -q -O "/var/lib/matchbox/assets/vmlinuz" https://github.com/siderolabs/talos/releases/download/${talos_version_tag}/vmlinuz-amd64
+
+  # Download Matchbox release
+  - wget -q https://github.com/poseidon/matchbox/releases/download/${matchbox_version_tag}/matchbox-${matchbox_version_tag}-linux-amd64.tar.gz
+  - tar xzvf matchbox-${matchbox_version_tag}-linux-amd64.tar.gz
+
+  # Install TLS certificates
+  - cd matchbox-${matchbox_version_tag}-linux-amd64/scripts/tls
+  - export SAN=DNS.1:matchbox.localdomain,IP.1:192.168.8.254
+  - ./cert-gen
+  - mkdir -p /etc/matchbox
+  - mv ca.crt server.crt server.key /etc/matchbox
+
+  # Start services
+  - systemctl daemon-reload
+  - systemctl restart systemd-resolved.service
+  - systemctl start dnsmasq.service
+  - systemctl start matchbox.service
