@@ -5,6 +5,10 @@ kubernetes:
   version: v1.29.0
 talos:
   version: v1.6.1
+features:
+  enableWorkloadProxy: true
+  backupConfiguration:
+    interval: 24h
 patches:
   - file: ../patches/cilium-override.yaml
     name: cilium-override
