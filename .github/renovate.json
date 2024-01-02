@@ -22,6 +22,14 @@
   ],
   "customManagers": [
     {
+      "description": "Kubernetes version for Sidero Omni cluster resources",
+      "customType": "regex",
+      "fileMatch": ["^.+\\.ya?ml$"],
+      "matchStrings": ["kubernetes:\\s*version:\\s*(?<currentValue>v[\\d.]+)"],
+      "depNameTemplate": "kubernetes/kubernetes",
+      "datasourceTemplate": "github-releases"
+    },
+    {
       "description": "Talos version for Sidero Omni cluster resources",
       "customType": "regex",
       "fileMatch": ["^.+\\.ya?ml$"],
