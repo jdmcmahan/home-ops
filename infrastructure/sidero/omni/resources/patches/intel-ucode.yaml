@@ -2,4 +2,4 @@
 machine:
   install:
     image: |-
-      factory.talos.dev/installer/a683c6815d2bc2730ebdede009776636f35f9b1b2f66fa8ca9e14f321bdda54d:v1.6.1
+      factory.talos.dev/installer/a683c6815d2bc2730ebdede009776636f35f9b1b2f66fa8ca9e14f321bdda54d:v1.6.2
