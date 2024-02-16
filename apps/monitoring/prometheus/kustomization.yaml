@@ -8,6 +8,7 @@ resources:
   - monitors/argocd.yaml
   - monitors/cert-manager.yaml
   - monitors/external-secrets.yaml
+  - monitors/pvr.yaml
   - monitors/rook-ceph.yaml
 
 helmCharts:
