@@ -9,6 +9,7 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          PROMETHEUS_ENABLED: "true"
 
 service:
   main:
