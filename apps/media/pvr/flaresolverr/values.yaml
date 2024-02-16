@@ -9,3 +9,18 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+
+service:
+  main:
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: jackett.localdomain
+    type: LoadBalancer
+    ports:
+      http:
+        port: 80
+        targetPort: 8191
+  metrics:
+    controller: main
+    ports:
+      metrics:
+        port: 8192
