@@ -1,0 +1,26 @@
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: lidarr-apikey
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: default
+  target:
+    creationPolicy: Owner
+  data:
+    - secretKey: LIDARR__API_KEY
+      remoteRef:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        metadataPolicy: None
+        key: lidarr
+        property: apikey
+    - secretKey: APIKEY
+      remoteRef:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        metadataPolicy: None
+        key: lidarr
+        property: apikey
