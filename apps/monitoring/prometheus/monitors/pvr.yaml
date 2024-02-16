@@ -71,6 +71,24 @@ spec:
       app.kubernetes.io/instance: readarr
       app.kubernetes.io/name: readarr
 ---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: prowlarr-metrics
+  namespace: prometheus
+  labels:
+    release: kube-prometheus-stack
+spec:
+  endpoints:
+    - port: metrics
+  namespaceSelector:
+    matchNames:
+      - prowlarr
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: prowlarr
+      app.kubernetes.io/name: prowlarr
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
