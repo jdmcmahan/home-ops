@@ -12,9 +12,6 @@ controllers:
 
 service:
   main:
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: jackett.localdomain
-    type: LoadBalancer
     ports:
       http:
         port: 80
