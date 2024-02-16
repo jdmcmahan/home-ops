@@ -52,12 +52,7 @@ helmCharts:
             traefik.ingress.kubernetes.io/router.entrypoints: websecure
             traefik.ingress.kubernetes.io/router.tls: "true"
             cert-manager.io/cluster-issuer: cloudflare
-          hosts:
-            - argocd.mcmahan.io
-          tls:
-            - secretName: argocd-cert
-              hosts:
-                - argocd.mcmahan.io
+          hostname: argocd.mcmahan.io
       repoServer:
         autoscaling:
           enabled: true
