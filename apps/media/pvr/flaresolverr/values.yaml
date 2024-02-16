@@ -1,0 +1,11 @@
+---
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: ghcr.io/flaresolverr/flaresolverr
+          tag: v3.3.6
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
