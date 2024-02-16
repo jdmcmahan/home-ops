@@ -53,6 +53,24 @@ spec:
       app.kubernetes.io/instance: lidarr
       app.kubernetes.io/name: lidarr
 ---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: readarr-metrics
+  namespace: prometheus
+  labels:
+    release: kube-prometheus-stack
+spec:
+  endpoints:
+    - port: metrics
+  namespaceSelector:
+    matchNames:
+      - readarr
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: readarr
+      app.kubernetes.io/name: readarr
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
