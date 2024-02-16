@@ -12,9 +12,15 @@ spec:
   data:
     - secretKey: SONARR__API_KEY
       remoteRef:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        metadataPolicy: None
         key: sonarr
         property: apikey
     - secretKey: APIKEY
       remoteRef:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        metadataPolicy: None
         key: sonarr
         property: apikey
