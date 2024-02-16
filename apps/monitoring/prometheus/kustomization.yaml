@@ -10,6 +10,7 @@ resources:
   - monitors/external-secrets.yaml
   - monitors/flaresolverr.yaml
   - monitors/pvr.yaml
+  - monitors/qbittorrent.yaml
   - monitors/rook-ceph.yaml
 
 helmCharts:
