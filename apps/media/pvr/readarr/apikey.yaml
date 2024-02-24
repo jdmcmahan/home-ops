@@ -1,0 +1,26 @@
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: readarr-apikey
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: default
+  target:
+    creationPolicy: Owner
+  data:
+    - secretKey: READARR__API_KEY
+      remoteRef:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        metadataPolicy: None
+        key: readarr
+        property: apikey
+    - secretKey: APIKEY
+      remoteRef:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        metadataPolicy: None
+        key: readarr
+        property: apikey

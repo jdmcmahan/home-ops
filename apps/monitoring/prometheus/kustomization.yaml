@@ -8,6 +8,9 @@ resources:
   - monitors/argocd.yaml
   - monitors/cert-manager.yaml
   - monitors/external-secrets.yaml
+  - monitors/flaresolverr.yaml
+  - monitors/pvr.yaml
+  - monitors/qbittorrent.yaml
   - monitors/rook-ceph.yaml
 
 helmCharts:
@@ -18,7 +21,7 @@ helmCharts:
     namespace: prometheus
   - name: kube-prometheus-stack
     repo: https://prometheus-community.github.io/helm-charts
-    version: 56.6.2
+    version: 56.9.0
     releaseName: kube-prometheus-stack
     namespace: prometheus
 

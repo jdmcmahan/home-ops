@@ -2,9 +2,9 @@
 kind: Cluster
 name: vriska
 kubernetes:
-  version: v1.29.1
+  version: v1.29.2
 talos:
-  version: v1.6.4
+  version: v1.6.5
 features:
   enableWorkloadProxy: true
   backupConfiguration:

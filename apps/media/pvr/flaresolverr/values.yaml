@@ -1,0 +1,24 @@
+---
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: ghcr.io/flaresolverr/flaresolverr
+          tag: v3.3.15
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          PROMETHEUS_ENABLED: "true"
+
+service:
+  main:
+    ports:
+      http:
+        port: 80
+        targetPort: 8191
+  metrics:
+    controller: main
+    ports:
+      metrics:
+        port: 8192
