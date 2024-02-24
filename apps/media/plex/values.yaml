@@ -66,10 +66,6 @@ persistence:
   transcode:
     enabled: true
     type: emptyDir
-    advancedMounts:
-      main:
-        main:
-          - path: /data
   media:
     enabled: true
     type: nfs
