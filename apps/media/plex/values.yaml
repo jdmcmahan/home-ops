@@ -77,10 +77,8 @@ persistence:
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    advancedMounts:
-      main:
-        main:
-          - path: /config
+    globalMounts:
+      - path: /config
   transcode:
     enabled: true
     type: emptyDir
