@@ -69,11 +69,9 @@ persistence:
     type: nfs
     server: peepums
     path: /pool01/backup/plex
-    advancedMounts:
-      main:
-        main:
-          - path: /backup
-            readOnly: true
+    globalMounts:
+      - path: /backup
+        readOnly: true
   config:
     enabled: true
     storageClass: ceph-block
