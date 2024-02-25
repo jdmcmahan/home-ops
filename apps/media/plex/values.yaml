@@ -36,22 +36,22 @@ service:
       http:
         port: 32400
 
-# ingress:
-#   main:
-#     enabled: true
-#     annotations:
-#       cert-manager.io/cluster-issuer: cloudflare
-#       traefik.ingress.kubernetes.io/router.entrypoints: websecure
-#       traefik.ingress.kubernetes.io/router.tls: "true"
-#     hosts:
-#     - host: plex.mcmahan.io
-#       paths:
-#       - path: /
-#         pathType: Prefix
-#     tls:
-#     - secretName: 'plex-cert'
-#       hosts:
-#       - plex.mcmahan.io
+ingress:
+  main:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: cloudflare
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      traefik.ingress.kubernetes.io/router.tls: "true"
+    hosts:
+    - host: plex.mcmahan.io
+      paths:
+      - path: /
+        pathType: Prefix
+    tls:
+    - secretName: 'plex-cert'
+      hosts:
+      - plex.mcmahan.io
 
 persistence:
   config:
