@@ -7,7 +7,7 @@ controllers:
           repository: busybox
           tag: 1.36.1
           pullPolicy: IfNotPresent
-        command: ['sh', '-c', 'tar -xf /backup/plex-*.tar -C /config && chown -R 979:979 /config']
+        command: ['sh', '-c', 'rm -rf /config/* && tar -xvf /backup/plex-*.tar -C /config && chown -R 979:979 /config']
     containers:
       main:
         image:
