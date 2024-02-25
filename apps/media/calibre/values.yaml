@@ -1,0 +1,75 @@
+---
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: lscr.io/linuxserver/calibre
+          tag: 7.5.1
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          PUID: 979
+          PGID: 979
+      web:
+        image:
+          repository: lscr.io/linuxserver/calibre-web
+          tag: 0.6.21
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          PUID: 979
+          PGID: 979
+          DOCKER_MODS: "linuxserver/mods:universal-calibre"
+          OAUTHLIB_RELAX_TOKEN_SCOPE: 1
+
+service:
+  main:
+    enabled: true
+    type: LoadBalancer
+    ports:
+      http:
+        port: 8083
+
+ingress:
+  web:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: cloudflare
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      traefik.ingress.kubernetes.io/router.tls: "true"
+    hosts:
+      - host: calibre-web.mcmahan.io
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              name: main
+              port: http
+    tls:
+      - secretName: 'calibre-web-cert'
+        hosts:
+          - calibre-web.mcmahan.io
+
+persistence:
+  web-config:
+    enabled: true
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 10Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      main:
+        web:
+          - path: /config
+  books:
+    enabled: true
+    type: nfs
+    server: peepums
+    path: /pool01/media/books
+    advancedMounts:
+      main:
+        main:
+          - path: /config
+        web:
+          - path: /books
