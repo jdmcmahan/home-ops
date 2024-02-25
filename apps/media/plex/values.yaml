@@ -1,13 +1,6 @@
 ---
 controllers:
   main:
-    initContainers:
-      restore:
-        image:
-          repository: busybox
-          tag: 1.36.1
-          pullPolicy: IfNotPresent
-        command: ['sh', '-c', 'rm -rf /config/* && tar -xvf /backup/plex-*.tar -C /config']
     containers:
       main:
         image:
@@ -64,21 +57,15 @@ ingress:
       - plex.mcmahan.io
 
 persistence:
-  backup:
-    enabled: true
-    type: nfs
-    server: peepums
-    path: /pool01/backup/plex
-    globalMounts:
-      - path: /backup
-        readOnly: true
   config:
     enabled: true
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    globalMounts:
-      - path: /config
+    advancedMounts:
+      main:
+        main:
+          - path: /config
   transcode:
     enabled: true
     type: emptyDir
