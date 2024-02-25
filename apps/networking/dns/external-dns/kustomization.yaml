@@ -23,4 +23,4 @@ helmCharts:
       registry: noop
       provider: pihole
       extraArgs:
-        - --pihole-server=http://192.168.0.53
+        - --pihole-server=http://pihole-web.pihole.svc
