@@ -24,7 +24,7 @@
     {
       "matchSourceUrls": ["https://github.com/kubernetes-sigs/node-feature-discovery"],
       "groupName": "nfd"
-    }
+    },
     {
       "matchPackageNames": ["ghcr.io/linuxserver/overseerr"],
       "allowedVersions": "!/^2021/"
