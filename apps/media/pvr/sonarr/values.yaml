@@ -64,3 +64,10 @@ persistence:
     path: /pool01/media
     globalMounts:
       - path: /data
+  backup:
+    enabled: true
+    type: nfs
+    server: peepums
+    path: /pool01/backup/pvr
+    globalMounts:
+      - path: /backup
