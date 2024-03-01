@@ -1,6 +1,13 @@
 ---
 controllers:
   main:
+    initContainers:
+      restore:
+        image:
+          repository: busybox
+          tag: 1.36.1
+          pullPolicy: IfNotPresent
+        command: ['sh', '-c', 'tar -xvf /backup/calibre-web.tar -C /config']
     containers:
       main:
         image:
@@ -52,16 +59,22 @@ ingress:
           - calibre-web.mcmahan.io
 
 persistence:
+  backup:
+    enabled: true
+    type: nfs
+    server: peepums
+    path: /pool01/backup
+    globalMounts:
+      - path: /backup
+        readOnly: true
   web-config:
     enabled: true
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    advancedMounts:
-      main:
-        web:
-          - path: /config
+    globalMounts:
+      - path: /config
   books:
     enabled: true
     type: nfs
