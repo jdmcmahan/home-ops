@@ -14,7 +14,7 @@ controllers:
       web:
         image:
           repository: lscr.io/linuxserver/calibre-web
-          tag: 0.6.21
+          tag: 5.33.2
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
