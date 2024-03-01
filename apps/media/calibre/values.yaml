@@ -73,8 +73,12 @@ persistence:
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    globalMounts:
-      - path: /config
+    advancedMounts:
+      main:
+        restore:
+          - path: /config
+        web:
+          - path: /config
   books:
     enabled: true
     type: nfs
