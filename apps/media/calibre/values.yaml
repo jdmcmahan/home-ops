@@ -25,11 +25,13 @@ controllers:
 
 service:
   main:
-    enabled: true
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: calibre-web.localdomain
     type: LoadBalancer
     ports:
       http:
-        port: 8083
+        port: 80
+        targetPort: 8083
 
 ingress:
   web:
