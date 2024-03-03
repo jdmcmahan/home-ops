@@ -15,7 +15,7 @@ controllers:
       metrics:
         image:
           repository: ghcr.io/onedr0p/exportarr
-          tag: v1.6.2
+          tag: v2.0.0
           pullPolicy: IfNotPresent
         args:
           - prowlarr
