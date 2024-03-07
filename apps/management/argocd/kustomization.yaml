@@ -15,6 +15,8 @@ helmCharts:
     releaseName: argocd
     namespace: argocd
     valuesInline:
+      global:
+        domain: argocd.mcmahan.io
       redis-ha:
         enabled: true
       params:
@@ -48,11 +50,16 @@ helmCharts:
           type: LoadBalancer
         ingress:
           enabled: true
+          ingressClassName: traefik
           annotations:
             traefik.ingress.kubernetes.io/router.entrypoints: websecure
             traefik.ingress.kubernetes.io/router.tls: "true"
             cert-manager.io/cluster-issuer: cloudflare
           hostname: argocd.mcmahan.io
+          extraTls:
+            - hosts:
+                - argocd.mcmahan.io
+              secretName: argocd-cert
       repoServer:
         autoscaling:
           enabled: true
