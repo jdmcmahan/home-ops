@@ -19,8 +19,6 @@ helmCharts:
         domain: argocd.mcmahan.io
       redis-ha:
         enabled: true
-      params:
-        server.insecure: true
       configs:
         cm:
           kustomize.buildOptions: "--enable-helm"
@@ -31,6 +29,8 @@ helmCharts:
                 - CiliumIdentity
               clusters:
                 - "*"
+        params:
+          server.insecure: true
       controller:
         replicas: 1
         metrics:
