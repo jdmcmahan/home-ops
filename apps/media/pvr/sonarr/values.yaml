@@ -22,7 +22,7 @@ controllers:
           - sonarr
         env:
           PORT: "9707"
-          URL: http://sonarr-metrics.svc
+          URL: http://sonarr-metrics
         envFrom:
           - secretRef:
               name: sonarr-apikey

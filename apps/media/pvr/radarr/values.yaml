@@ -22,7 +22,7 @@ controllers:
           - radarr
         env:
           PORT: "9707"
-          URL: http://radarr-metrics.svc
+          URL: http://radarr-metrics
         envFrom:
           - secretRef:
               name: radarr-apikey
