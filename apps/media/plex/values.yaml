@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  plex:
     containers:
-      main:
+      app:
         image:
           repository: ghcr.io/onedr0p/plex
           tag: 1.40.0.7998-c29d4c0c8
@@ -29,8 +30,9 @@ defaultPodOptions:
       - 44 # video
 
 service:
-  main:
+  plex:
     enabled: true
+    controller: plex
     type: LoadBalancer
     loadBalancerIP: "192.168.8.79"
     ports:
@@ -38,7 +40,7 @@ service:
         port: 32400
 
 ingress:
-  main:
+  plex:
     enabled: true
     annotations:
       cert-manager.io/cluster-issuer: cloudflare
@@ -50,7 +52,7 @@ ingress:
       - path: /
         pathType: Prefix
         service:
-          name: main
+          identifier: plex
           port: http
     tls:
     - secretName: 'plex-cert'
@@ -60,12 +62,13 @@ ingress:
 persistence:
   config:
     enabled: true
+    type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
     advancedMounts:
-      main:
-        main:
+      plex:
+        app:
           - path: /config
   transcode:
     enabled: true
@@ -76,7 +79,7 @@ persistence:
     server: peepums
     path: /pool01/media/plex
     advancedMounts:
-      main:
-        main:
+      plex:
+        app:
           - path: /data
             readOnly: true

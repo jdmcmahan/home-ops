@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  calibre:
     containers:
-      main:
+      app:
         image:
           repository: lscr.io/linuxserver/calibre
           tag: 7.6.0
@@ -24,7 +25,9 @@ controllers:
           OAUTHLIB_RELAX_TOKEN_SCOPE: 1
 
 service:
-  main:
+  calibre-web:
+    enabled: true
+    controller: calibre
     annotations:
       external-dns.alpha.kubernetes.io/hostname: calibre-web.localdomain
     type: LoadBalancer
@@ -34,7 +37,7 @@ service:
         targetPort: 8083
 
 ingress:
-  web:
+  calibre-web:
     enabled: true
     annotations:
       cert-manager.io/cluster-issuer: cloudflare
@@ -46,7 +49,7 @@ ingress:
           - path: /
             pathType: Prefix
             service:
-              name: main
+              identifier: calibre-web
               port: http
     tls:
       - secretName: 'calibre-web-cert'
@@ -61,7 +64,7 @@ persistence:
     size: 10Gi
     accessMode: ReadWriteOnce
     advancedMounts:
-      main:
+      calibre:
         web:
           - path: /config
   books:
@@ -70,8 +73,8 @@ persistence:
     server: peepums
     path: /pool01/media/books
     advancedMounts:
-      main:
-        main:
+      calibre:
+        app:
           - path: /config
         web:
           - path: /books

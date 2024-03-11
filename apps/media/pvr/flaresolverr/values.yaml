@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  flaresolverr:
     containers:
-      main:
+      app:
         image:
           repository: ghcr.io/flaresolverr/flaresolverr
           tag: v3.3.16
@@ -12,13 +13,15 @@ controllers:
           PROMETHEUS_ENABLED: "true"
 
 service:
-  main:
+  flaresolverr:
+    enabled: true
+    controller: flaresolverr
     ports:
       http:
         port: 80
         targetPort: 8191
   metrics:
-    controller: main
+    controller: flaresolverr
     ports:
       metrics:
         port: 8192

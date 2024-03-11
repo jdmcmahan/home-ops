@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  readarr:
     containers:
-      main:
+      app:
         image:
           repository: ghcr.io/onedr0p/readarr-develop
           tag: 0.3.19.2437
@@ -34,7 +35,9 @@ defaultPodOptions:
     fsGroupChangePolicy: "OnRootMismatch"
 
 service:
-  main:
+  readarr:
+    enabled: true
+    controller: readarr
     annotations:
       external-dns.alpha.kubernetes.io/hostname: readarr.localdomain
     type: LoadBalancer
@@ -43,7 +46,7 @@ service:
         port: 80
         targetPort: 8787
   metrics:
-    controller: main
+    controller: readarr
     ports:
       metrics:
         port: 9707
@@ -55,19 +58,25 @@ persistence:
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    globalMounts:
-      - path: /config
+    advancedMounts:
+      readarr:
+        app:
+          - path: /config
   media:
     enabled: true
     type: nfs
     server: peepums
     path: /pool01/media
-    globalMounts:
-      - path: /data
+    advancedMounts:
+      readarr:
+        app:
+          - path: /data
   backup:
     enabled: true
     type: nfs
     server: peepums
     path: /pool01/backup/pvr
-    globalMounts:
-      - path: /backup
+    advancedMounts:
+      readarr:
+        app:
+          - path: /backup
