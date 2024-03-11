@@ -13,7 +13,7 @@ controllers:
           PROMETHEUS_ENABLED: "true"
 
 service:
-  flaresolverr:
+  web:
     enabled: true
     controller: flaresolverr
     ports:

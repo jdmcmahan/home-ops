@@ -35,7 +35,7 @@ defaultPodOptions:
     fsGroupChangePolicy: "OnRootMismatch"
 
 service:
-  lidarr:
+  web:
     enabled: true
     controller: lidarr
     annotations:

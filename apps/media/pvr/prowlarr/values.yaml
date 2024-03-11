@@ -35,7 +35,7 @@ defaultPodOptions:
     fsGroupChangePolicy: "OnRootMismatch"
 
 service:
-  prowlarr:
+  web:
     enabled: true
     controller: prowlarr
     annotations:

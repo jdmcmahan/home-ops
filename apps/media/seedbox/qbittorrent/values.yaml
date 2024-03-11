@@ -56,7 +56,7 @@ controllers:
               - NET_ADMIN
 
 service:
-  qbittorrent:
+  web:
     enabled: true
     controller: qbittorrent
     annotations:

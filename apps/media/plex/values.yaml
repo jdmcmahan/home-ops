@@ -30,7 +30,7 @@ defaultPodOptions:
       - 44 # video
 
 service:
-  plex:
+  web:
     enabled: true
     controller: plex
     type: LoadBalancer
@@ -52,7 +52,7 @@ ingress:
       - path: /
         pathType: Prefix
         service:
-          identifier: plex
+          identifier: web
           port: http
     tls:
     - secretName: 'plex-cert'
