@@ -22,7 +22,7 @@ controllers:
           - readarr
         env:
           PORT: "9707"
-          URL: http://readarr
+          URL: http://readarr-metrics.svc
         envFrom:
           - secretRef:
               name: readarr-apikey

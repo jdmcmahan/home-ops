@@ -22,7 +22,7 @@ controllers:
           - prowlarr
         env:
           PORT: "9707"
-          URL: http://prowlarr
+          URL: http://prowlarr-metrics.svc
         envFrom:
           - secretRef:
               name: prowlarr-apikey
