@@ -5,7 +5,7 @@ kind: Kustomization
 helmCharts:
   - name: app-template
     repo: https://bjw-s.github.io/helm-charts
-    version: 2.6.0
+    version: 3.0.1
     releaseName: plex
     namespace: plex
     valuesFile: values.yaml

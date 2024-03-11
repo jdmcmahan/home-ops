@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  overseerr:
     containers:
-      main:
+      app:
         image:
           repository: ghcr.io/linuxserver/overseerr
           tag: 1.33.2
@@ -11,7 +12,9 @@ controllers:
           TZ: "America/Chicago"
 
 service:
-  main:
+  overseerr:
+    enabled: true
+    controller: overseerr
     annotations:
       external-dns.alpha.kubernetes.io/hostname: overseerr.localdomain
     type: LoadBalancer
@@ -21,7 +24,7 @@ service:
         targetPort: 5055
 
 ingress:
-  main:
+  overseerr:
     enabled: true
     annotations:
       cert-manager.io/cluster-issuer: cloudflare
@@ -33,7 +36,7 @@ ingress:
           - path: /
             pathType: Prefix
             service:
-              name: main
+              identifier: overseerr
               port: http
     tls:
       - secretName: 'overseerr-cert'
@@ -43,10 +46,11 @@ ingress:
 persistence:
   config:
     enabled: true
+    type: persistentVolumeClaim
     storageClass: ceph-block
     size: 1Gi
     accessMode: ReadWriteOnce
     advancedMounts:
-      main:
-        main:
+      overseerr:
+        app:
           - path: /config

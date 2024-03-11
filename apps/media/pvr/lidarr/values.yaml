@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  lidarr:
     containers:
-      main:
+      app:
         image:
           repository: ghcr.io/onedr0p/lidarr
           tag: 2.1.7.4030
@@ -34,7 +35,9 @@ defaultPodOptions:
     fsGroupChangePolicy: "OnRootMismatch"
 
 service:
-  main:
+  lidarr:
+    enabled: true
+    controller: lidarr
     annotations:
       external-dns.alpha.kubernetes.io/hostname: lidarr.localdomain
     type: LoadBalancer
@@ -43,7 +46,7 @@ service:
         port: 80
         targetPort: 8686
   metrics:
-    controller: main
+    controller: lidarr
     ports:
       metrics:
         port: 9707
@@ -55,19 +58,25 @@ persistence:
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    globalMounts:
-      - path: /config
+    advancedMounts:
+      lidarr:
+        app:
+          - path: /config
   media:
     enabled: true
     type: nfs
     server: peepums
     path: /pool01/media
-    globalMounts:
-      - path: /data
+    advancedMounts:
+      lidarr:
+        app:
+          - path: /data
   backup:
     enabled: true
     type: nfs
     server: peepums
     path: /pool01/backup/pvr
-    globalMounts:
-      - path: /backup
+    advancedMounts:
+      lidarr:
+        app:
+          - path: /backup

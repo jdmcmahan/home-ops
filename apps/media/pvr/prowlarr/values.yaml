@@ -1,8 +1,9 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
 controllers:
-  main:
+  prowlarr:
     containers:
-      main:
+      app:
         image:
           repository: ghcr.io/onedr0p/prowlarr
           tag: 1.13.3.4273
@@ -34,7 +35,9 @@ defaultPodOptions:
     fsGroupChangePolicy: "OnRootMismatch"
 
 service:
-  main:
+  prowlarr:
+    enabled: true
+    controller: prowlarr
     annotations:
       external-dns.alpha.kubernetes.io/hostname: prowlarr.localdomain
     type: LoadBalancer
@@ -43,7 +46,7 @@ service:
         port: 80
         targetPort: 9696
   metrics:
-    controller: main
+    controller: prowlarr
     ports:
       metrics:
         port: 9707
@@ -55,19 +58,25 @@ persistence:
     storageClass: ceph-block
     size: 10Gi
     accessMode: ReadWriteOnce
-    globalMounts:
-      - path: /config
+    advancedMounts:
+      prowlarr:
+        app:
+          - path: /config
   media:
     enabled: true
     type: nfs
     server: peepums
     path: /pool01/media
-    globalMounts:
-      - path: /data
+    advancedMounts:
+      prowlarr:
+        app:
+          - path: /data
   backup:
     enabled: true
     type: nfs
     server: peepums
     path: /pool01/backup/pvr
-    globalMounts:
-      - path: /backup
+    advancedMounts:
+      prowlarr:
+        app:
+          - path: /backup
