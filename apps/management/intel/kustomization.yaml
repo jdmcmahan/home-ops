@@ -4,7 +4,7 @@ kind: Kustomization
 
 resources:
   - "namespace.yaml"
-  - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.15.1"
+  - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.15.2"
   - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.29.0"
   - "node-feature-rule.yaml"
 
