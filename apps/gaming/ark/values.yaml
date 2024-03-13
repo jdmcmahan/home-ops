@@ -13,6 +13,10 @@ servers:
         HarvestHealthMultiplier=1
         XPMultiplier=4
         TamingSpeedMultiplier=4
+      crontab: |
+        */30 * * * * arkmanager update --update-mods --warn --saveworld
+        10 */8 * * * arkmanager saveworld && arkmanager backup
+        15 10 * * * arkmanager restart --warn --saveworld
     updateOnStart: true
     sessionName: "peeps"
     message: "Welcome to peeps"
@@ -58,7 +62,3 @@ persistence:
 startupProbe:
   # allow plenty of time for installation if necessary
   failureThreshold: 480
-
-securityContext:
-  runAsUser: 1000
-  fsGroup: 1000

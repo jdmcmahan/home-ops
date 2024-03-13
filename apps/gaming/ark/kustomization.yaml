@@ -8,7 +8,7 @@ resources:
 helmCharts:
   - name: ark-cluster
     repo: https://sickhub.github.io/ark-server-charts
-    version: 0.1.14
+    version: 0.2.1
     releaseName: ark-cluster
     namespace: ark
     valuesFile: values.yaml
