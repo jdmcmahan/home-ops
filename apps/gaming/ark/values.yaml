@@ -62,7 +62,3 @@ persistence:
 startupProbe:
   # allow plenty of time for installation if necessary
   failureThreshold: 480
-
-securityContext:
-  runAsUser: 1000
-  fsGroup: 1000
