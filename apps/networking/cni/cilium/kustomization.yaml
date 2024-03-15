@@ -36,7 +36,7 @@ helmCharts:
         masquerade: true
       cgroup:
         autoMount:
-          enabled: true
+          enabled: false
         hostRoot: /sys/fs/cgroup
       hubble:
         tls:
