@@ -1,0 +1,40 @@
+---
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: unpackerr-apikeys
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: default
+  target:
+    creationPolicy: Owner
+  data:
+    - secretKey: UN_SONARR_0_API_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: sonarr
+        property: apikey
+    - secretKey: UN_RADARR_0_API_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: radarr
+        property: apikey
+    - secretKey: UN_LIDARR_0_API_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: lidarr
+        property: apikey
+    - secretKey: UN_READARR_0_API_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: readarr
+        property: apikey
