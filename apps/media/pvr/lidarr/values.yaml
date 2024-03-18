@@ -22,7 +22,7 @@ controllers:
           - lidarr
         env:
           PORT: "9707"
-          URL: http://lidarr-metrics
+          URL: http://lidarr-web
         envFrom:
           - secretRef:
               name: lidarr-apikey
