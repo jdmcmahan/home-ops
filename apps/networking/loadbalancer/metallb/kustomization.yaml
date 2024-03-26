@@ -2,5 +2,5 @@
 namespace: metallb
 
 resources:
-  - https://github.com/metallb/metallb/config/native?ref=v0.14.3
+  - https://github.com/metallb/metallb/config/native?ref=v0.14.4
   - addresspool.yaml
