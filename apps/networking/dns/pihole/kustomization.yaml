@@ -10,7 +10,7 @@ resources:
 helmCharts:
   - name: pihole
     repo: https://mojo2600.github.io/pihole-kubernetes/
-    version: 2.22.0
+    version: 2.23.0
     releaseName: pihole
     namespace: pihole
     valuesInline:
