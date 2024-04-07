@@ -4,14 +4,14 @@ kind: Kustomization
 
 resources:
   - "namespace.yaml"
-  - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.15.3"
+  - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.15.4"
   - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.29.0"
   - "node-feature-rule.yaml"
 
 helmCharts:
   - name: node-feature-discovery
     repo: https://kubernetes-sigs.github.io/node-feature-discovery/charts
-    version: 0.15.3
+    version: 0.15.4
     releaseName: node-feature-discovery
     namespace: intel
   - name: intel-device-plugins-operator
