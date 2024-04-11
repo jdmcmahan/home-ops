@@ -1,0 +1,39 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/common-3.0.1/charts/library/common/values.schema.json
+controllers:
+  autobrr:
+    containers:
+      app:
+        image:
+          repository: ghcr.io/autobrr/autobrr
+          tag: v1.40.1
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          AUTOBRR__CHECK_FOR_UPDATES: "false"
+          AUTOBRR__HOST: 0.0.0.0
+          AUTOBRR__PORT: &port 80
+          AUTOBRR__LOG_LEVEL: INFO
+
+service:
+  web:
+    enabled: true
+    controller: autobrr
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: autobrr.localdomain
+    type: LoadBalancer
+    ports:
+      http:
+        port: *port
+
+persistence:
+  config:
+    enabled: true
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 10Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      autobrr:
+        app:
+          - path: /config
