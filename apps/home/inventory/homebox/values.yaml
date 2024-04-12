@@ -10,7 +10,7 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          HBOX_OPTIONS_ALLOW_REGISTRATION: "true"
+          HBOX_OPTIONS_ALLOW_REGISTRATION: "false"
 
 service:
   web:
