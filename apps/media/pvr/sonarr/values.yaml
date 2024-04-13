@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/onedr0p/sonarr
-          tag: 4.0.3.1413
+          tag: 4.0.4.1491
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
