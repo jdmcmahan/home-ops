@@ -29,6 +29,16 @@ helmCharts:
           annotations:
             external-dns.alpha.kubernetes.io/hostname: prometheus.localdomain
           type: LoadBalancer
+        prometheusSpec:
+          storageSpec:
+            volumeClaimTemplate:
+              spec:
+                storageClassName: ceph-block
+                accessModes:
+                  - ReadWriteOnce
+                resources:
+                  requests:
+                    storage: 30Gi
 
       grafana:
         service:
