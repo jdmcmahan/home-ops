@@ -2,7 +2,7 @@
 kind: Cluster
 name: vriska
 kubernetes:
-  version: v1.29.3
+  version: v1.29.4
 talos:
   version: v1.6.7
 features:
