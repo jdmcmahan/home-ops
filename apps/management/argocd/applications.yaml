@@ -63,5 +63,5 @@ spec:
             - /spec/conversion/webhook/clientConfig/caBundle
         - group: ""
           kind: Service
-          jsonPointers:
-            - /status/loadBalancer/ingress/ipMode
+          jqPathExpressions:
+            - .status.loadBalancer.ingress[] | select(.name == "ipMode")
