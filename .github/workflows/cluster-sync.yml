@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - 'infrastructure/sidero/omni/resources/**'
+  workflow_dispatch:
 
 jobs:
   sync:
