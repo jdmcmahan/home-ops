@@ -61,3 +61,7 @@ spec:
           name: addresspools.metallb.io
           jsonPointers:
             - /spec/conversion/webhook/clientConfig/caBundle
+        - group: ""
+          kind: Service
+          jqPathExpressions:
+            - .status.loadBalancer.ingress[].ipMode
