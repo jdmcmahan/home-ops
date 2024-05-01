@@ -15,4 +15,4 @@ jobs:
           working-directory: ./infrastructure/sidero/omni/resources/cluster
           omni-endpoint: ${{ secrets.OMNI_ENDPOINT }}
           omni-service-account-key: ${{ secrets.OMNI_SERVICE_ACCOUNT_KEY }}
-          command: omnictl cluster template -f vriska.yaml sync --verbose
+          command: pwd && ls -lha && omnictl cluster template -f vriska.yaml sync --verbose
