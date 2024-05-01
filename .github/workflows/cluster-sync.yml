@@ -12,7 +12,6 @@ jobs:
       - name: Run omnictl
         uses: jdmcmahan/omnictl-action@main
         with:
-          working_directory: './infrastructure/sidero/omni/resources/cluster/'
-          omni_endpoint: ${{ secrets.OMNI_ENDPOINT }}
-          omni_service_account_key: ${{ secrets.OMNI_SERVICE_ACCOUNT_KEY }}
-          command: 'omnictl cluster template -f vriska.yaml sync --verbose'
+          omni-endpoint: ${{ secrets.OMNI_ENDPOINT }}
+          omni-service-account-key: ${{ secrets.OMNI_SERVICE_ACCOUNT_KEY }}
+          command: 'omnictl'
