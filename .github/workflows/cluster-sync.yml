@@ -1,0 +1,17 @@
+on:
+  push:
+    paths:
+      - 'infrastructure/sidero/omni/resources/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: Sync cluster templates with Sidero Omni
+    steps:
+      - name: Run omnictl
+        uses: actions/omnictl-action
+        working-directory: ./infrastructure/sidero/omni/resources/cluster/
+        with:
+          omni_endpoint: ${{ secrets.OMNI_ENDPOINT }}
+          omni_service_account_key: ${{ secrets.OMNI_SERVICE_ACCOUNT_KEY }}
+          command: 'omnictl cluster template -f vriska.yaml sync --verbose'
