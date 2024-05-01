@@ -14,4 +14,4 @@ jobs:
         with:
           omni-endpoint: ${{ secrets.OMNI_ENDPOINT }}
           omni-service-account-key: ${{ secrets.OMNI_SERVICE_ACCOUNT_KEY }}
-          command: 'omnictl'
+          command: 'omnictl --version'
