@@ -9,7 +9,7 @@ jobs:
     name: Sync cluster templates with Sidero Omni
     steps:
       - name: Run omnictl
-        uses: actions/omnictl-action
+        uses: jdmcmahan/omnictl-action@v0.0.1
         working-directory: ./infrastructure/sidero/omni/resources/cluster/
         with:
           omni_endpoint: ${{ secrets.OMNI_ENDPOINT }}
