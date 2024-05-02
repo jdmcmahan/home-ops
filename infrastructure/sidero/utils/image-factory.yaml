@@ -1,8 +1,0 @@
----
-customization:
-  systemExtensions:
-    officialExtensions:
-      - siderolabs/intel-ucode
-      - siderolabs/i915-ucode
-
-# curl -X POST --data-binary @image-factory.yaml https://factory.talos.dev/schematics
