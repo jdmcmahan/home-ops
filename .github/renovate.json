@@ -14,6 +14,14 @@
       "ignoreTests": true
     },
     {
+      "matchPackageNames": "siderolabs/talos",
+      "automerge": false
+    },
+    {
+      "matchPackageNames": "kubernetes/kubernetes",
+      "automerge": false
+    },
+    {
       "matchSourceUrls": ["https://github.com/rook/rook"],
       "groupName": "rook-ceph"
     },
