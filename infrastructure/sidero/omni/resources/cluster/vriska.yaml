@@ -36,6 +36,11 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
+patches:
+  - file: ../patches/watchdog.yaml
+    name: watchdog
+  - file: ../patches/ntp.yaml
+    name: ntp
 ---
 kind: Machine
 name: 4c4c4544-0043-4210-8035-b4c04f365132
@@ -44,6 +49,11 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
+patches:
+  - file: ../patches/watchdog.yaml
+    name: watchdog
+  - file: ../patches/ntp.yaml
+    name: ntp
 ---
 kind: Machine
 name: 4c4c4544-0039-4a10-8048-b9c04f305432
@@ -52,6 +62,11 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
+patches:
+  - file: ../patches/watchdog.yaml
+    name: watchdog
+  - file: ../patches/ntp.yaml
+    name: ntp
 ---
 kind: Machine
 name: 4c4c4544-0052-4610-8054-b3c04f4e5932
@@ -60,6 +75,11 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
+patches:
+  - file: ../patches/watchdog.yaml
+    name: watchdog
+  - file: ../patches/ntp.yaml
+    name: ntp
 ---
 kind: Machine
 name: 4c4c4544-0052-4e10-8054-b3c04f4e5932
@@ -68,6 +88,11 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
+patches:
+  - file: ../patches/watchdog.yaml
+    name: watchdog
+  - file: ../patches/ntp.yaml
+    name: ntp
 ---
 kind: Machine
 name: 4c4c4544-0052-4810-8054-b3c04f4e5932
@@ -76,3 +101,8 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
+patches:
+  - file: ../patches/watchdog.yaml
+    name: watchdog
+  - file: ../patches/ntp.yaml
+    name: ntp
