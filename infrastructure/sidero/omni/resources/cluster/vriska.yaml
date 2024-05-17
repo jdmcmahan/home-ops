@@ -40,6 +40,8 @@ patches:
   - name: kernel-args
     inline:
       machine:
+        sysctls:
+          kernel.kexec_load_disabled: "1"
         install:
           extraKernelArgs:
             - reboot=k
