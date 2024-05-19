@@ -47,12 +47,11 @@ The full `ApplicationSet` configuration is defined in [`apps/management/argocd/a
 
 Many of my hardware components and parts have been salvaged from a local e-waste facility or bought second-hand from upcycling communities like [r/homelabsales](https://www.reddit.com/r/homelabsales). This has resulted in a very cost-effective but capable lab thanks to federated software like Proxmox and k8s.
 
-| Device                      | Count | CPU              | RAM   | Operating System | Purpose                                      |
-|-----------------------------|-------|------------------|-------|------------------|----------------------------------------------|
-| Intel NUC8i5BEH             | 1     | Intel i5-8259U   | 16 GB | Proxmox          | General-purpose VMs & containers             |
-| Dell OptiPlex 7060 Micro    | 1     | Intel i5-8500T   | 16 GB | Talos            | Kubernetes control plane nodes               |
-| Dell OptiPlex 7060 Micro    | 2     | Intel i5-8500T   | 32 GB | Talos            | Kubernetes worker nodes                      |
-| Dell OptiPlex 7060 Micro    | 3     | Intel i5-8600T   | 32 GB | Talos            | Kubernetes worker nodes, block storage       |
-| Raspberry Pi 3B             | 1     | Broadcom BCM2837 | 1 GB  | OctoPi           | Remote 3D printer monitoring & management    |
-| Kobol Helios64              | 1     | Rockchip RK3399  | 4 GB  | Armbian          | NAS                                          |
-| UniFi UDM-Pro               | 1     | ARM Cortex-A57   | 4 GB  | UniFi OS         | Gateway, router, NVR                         |
+| Device                      | Count | CPU              | RAM   | Operating System | Purpose                                          |
+|-----------------------------|-------|------------------|-------|------------------|--------------------------------------------------|
+| Intel NUC8i5BEH             | 1     | Intel i5-8259U   | 16 GB | Proxmox          | General-purpose VMs & containers                 |
+| Dell OptiPlex 7060 Micro    | 3     | Intel i5-8500T   | 32 GB | Talos            | Kubernetes control plane nodes (with scheduling) |
+| Dell OptiPlex 7060 Micro    | 3     | Intel i5-8600T   | 32 GB | Talos            | Kubernetes worker nodes, block storage           |
+| Raspberry Pi 3B             | 1     | Broadcom BCM2837 | 1 GB  | OctoPi           | Remote 3D printer monitoring & management        |
+| Kobol Helios64              | 1     | Rockchip RK3399  | 4 GB  | Armbian          | NAS                                              |
+| UniFi UDM-Pro               | 1     | ARM Cortex-A57   | 4 GB  | UniFi OS         | Gateway, router, NVR                             |
