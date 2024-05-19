@@ -4,7 +4,7 @@ name: vriska
 kubernetes:
   version: v1.29.5
 talos:
-  version: v1.7.0
+  version: v1.6.7
 features:
   enableWorkloadProxy: true
   backupConfiguration:
@@ -36,27 +36,11 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
-patches:
-  - name: kernel-args
-    inline:
-      machine:
-        sysctls:
-          kernel.kexec_load_disabled: "1"
-        install:
-          extraKernelArgs:
-            - reboot=k
 ---
 kind: Machine
 name: 4c4c4544-0043-4210-8035-b4c04f365132
 install:
   disk: /dev/nvme0n1
-patches:
-  - name: kernel-args
-    inline:
-      machine:
-        install:
-          extraKernelArgs:
-            - reboot=k
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
@@ -68,13 +52,6 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
-patches:
-  - name: kernel-args
-    inline:
-      machine:
-        install:
-          extraKernelArgs:
-            - reboot=k
 ---
 kind: Machine
 name: 4c4c4544-0052-4610-8054-b3c04f4e5932
@@ -83,13 +60,6 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
-patches:
-  - name: kernel-args
-    inline:
-      machine:
-        install:
-          extraKernelArgs:
-            - reboot=k
 ---
 kind: Machine
 name: 4c4c4544-0052-4e10-8054-b3c04f4e5932
@@ -98,13 +68,6 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
-patches:
-  - name: kernel-args
-    inline:
-      machine:
-        install:
-          extraKernelArgs:
-            - reboot=k
 ---
 kind: Machine
 name: 4c4c4544-0052-4810-8054-b3c04f4e5932
@@ -113,10 +76,3 @@ install:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915-ucode
-patches:
-  - name: kernel-args
-    inline:
-      machine:
-        install:
-          extraKernelArgs:
-            - reboot=k
