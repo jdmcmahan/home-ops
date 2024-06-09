@@ -52,6 +52,7 @@ Many of my hardware components and parts have been salvaged from a local e-waste
 | Intel NUC8i5BEH             | 1     | Intel i5-8259U   | 16 GB | Proxmox          | General-purpose VMs & containers                 |
 | Dell OptiPlex 7060 Micro    | 3     | Intel i5-8500T   | 32 GB | Talos            | Kubernetes control plane nodes (with scheduling) |
 | Dell OptiPlex 7060 Micro    | 3     | Intel i5-8600T   | 32 GB | Talos            | Kubernetes worker nodes, block storage           |
+| PiKVM V4 Mini               | 1     | Broadcom BCM2711 | 2 GB  | PiKVM OS         | KVM-over-IP (with TESmart 8-port KVM switch)     |
 | Raspberry Pi 3B             | 1     | Broadcom BCM2837 | 1 GB  | OctoPi           | Remote 3D printer monitoring & management        |
 | Kobol Helios64              | 1     | Rockchip RK3399  | 4 GB  | Armbian          | NAS                                              |
 | UniFi UDM-Pro               | 1     | ARM Cortex-A57   | 4 GB  | UniFi OS         | Gateway, router, NVR                             |
