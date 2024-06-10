@@ -65,3 +65,7 @@ spec:
           kind: Service
           jqPathExpressions:
             - .status.loadBalancer.ingress[].ipMode
+        - group: ""
+          kind: GpuDevicePlugin
+          jsonPointers:
+            - /spec/tolerations
