@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/onedr0p/prowlarr
-          tag: 1.18.0.4543
+          tag: 1.19.0.4568
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
