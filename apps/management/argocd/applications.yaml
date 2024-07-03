@@ -65,7 +65,3 @@ spec:
           kind: GpuDevicePlugin
           jsonPointers:
             - /spec/tolerations
-        - group: "monitoring.coreos.com"
-          kind: Prometheus
-          jsonPointers:
-            - /spec/automountServiceAccountToken
