@@ -27,7 +27,7 @@ helmCharts:
           useAllNodes: false
           useAllDevices: false
           nodes:
-            - name: "talos-mk9-ylp"
+            - name: "magic-8-balls"
               devices:
                 - name: "sda"
             - name: "talos-gkm-6hn"
