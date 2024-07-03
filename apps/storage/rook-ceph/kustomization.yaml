@@ -22,17 +22,3 @@ helmCharts:
       toolbox:
         enabled: true
       cephObjectStores: []
-      cephClusterSpec:
-        storage:
-          useAllNodes: false
-          useAllDevices: false
-          nodes:
-            - name: "magic-8-balls"
-              devices:
-                - name: "sda"
-            - name: "talos-gkm-6hn"
-              devices:
-                - name: "sda"
-            - name: "flourite-octet"
-              devices:
-                - name: "sda"
