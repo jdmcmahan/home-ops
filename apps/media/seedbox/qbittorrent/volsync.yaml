@@ -19,7 +19,10 @@ spec:
         AWS_SECRET_ACCESS_KEY: "{{ .applicationKey }}"
   dataFrom:
     - extract:
+        conversionStrategy: Default	
+        decodingStrategy: None
         key: volsync-backblaze
+        metadataPolicy: None
 ---
 # yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/volsync.backube/replicationsource_v1alpha1.json
 apiVersion: volsync.backube/v1alpha1
