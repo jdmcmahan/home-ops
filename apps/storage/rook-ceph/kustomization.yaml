@@ -21,4 +21,8 @@ helmCharts:
     valuesInline:
       toolbox:
         enabled: true
+      cephFileSystemVolumeSnapshotClass:
+        enabled: true
+      cephBlockPoolsVolumeSnapshotClass:
+        enabled: true
       cephObjectStores: []
