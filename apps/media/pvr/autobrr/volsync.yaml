@@ -1,0 +1,46 @@
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1beta1.json
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: autobrr-volsync-backblaze
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: default
+  target:
+    name: autobrr-volsync-backblaze
+    template:
+      engineVersion: v2
+      data:
+        RESTIC_REPOSITORY: "s3:https://{{ .endpoint }}/vriska-pvc-autobrr"
+        RESTIC_PASSWORD: "{{ .resticPassword }}"
+        AWS_ACCESS_KEY_ID: "{{ .keyID }}"
+        AWS_SECRET_ACCESS_KEY: "{{ .applicationKey }}"
+  dataFrom:
+    - extract:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        key: volsync-backblaze
+        metadataPolicy: None
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/volsync.backube/replicationsource_v1alpha1.json
+apiVersion: volsync.backube/v1alpha1
+kind: ReplicationSource
+metadata:
+  name: autobrr-backblaze
+spec:
+  sourcePVC: autobrr-config
+  trigger:
+    schedule: "0 0 * * *"
+  restic:
+    copyMethod: Snapshot
+    pruneIntervalDays: 7
+    repository: autobrr-volsync-backblaze
+    volumeSnapshotClassName: ceph-block
+    moverSecurityContext:
+      runAsUser: 568
+      runAsGroup: 568
+      fsGroup: 568
+    retain:
+      daily: 7
