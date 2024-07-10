@@ -6,6 +6,7 @@ namespace: pihole
 
 resources:
   - pihole-credentials.yaml
+  - volsync.yaml
 
 helmCharts:
   - name: pihole
