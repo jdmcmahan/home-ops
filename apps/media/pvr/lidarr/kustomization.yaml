@@ -4,6 +4,7 @@ kind: Kustomization
 
 resources:
   - apikey.yaml
+  - volsync.yaml
 
 helmCharts:
   - name: app-template
