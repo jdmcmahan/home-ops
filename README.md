@@ -10,7 +10,7 @@ My k8s cluster is running on bare-metal Talos servers. The infrastructure is som
 
 ### Installation
 
-I use [Sidero Omni](https://www.siderolabs.com/platform/saas-for-kubernetes/) as the management plane for my cluster. The nodes are [automatically bootstraped and provisioned over PXE](https://omni.siderolabs.com/docs/how-to-guides/how-to-register-a-bare-metal-machine-pxe/) based on the resources defined in [/infrastructure/sidero/omni](https://github.com/jdmcmahan/home-ops/tree/main/infrastructure/sidero/omni).
+I use [Sidero Omni](https://www.siderolabs.com/platform/saas-for-kubernetes/) as the management plane for my cluster. The nodes are [automatically bootstrapped and provisioned over PXE](https://omni.siderolabs.com/docs/how-to-guides/how-to-register-a-bare-metal-machine-pxe/) based on the resources defined in [/infrastructure/sidero/omni](https://github.com/jdmcmahan/home-ops/tree/main/infrastructure/sidero/omni).
 
 ### Core Components
 
@@ -18,12 +18,12 @@ I use [Sidero Omni](https://www.siderolabs.com/platform/saas-for-kubernetes/) as
 - [external-dns](https://github.com/kubernetes-sigs/external-dns) - automatically syncs DNS records from services to my local DNS provider.
 - [external-secrets](https://github.com/external-secrets/external-secrets/) - creates Kubernetes secrets from 1Password via [1Password Connect](https://github.com/1Password/connect).
 - [metallb](https://github.com/metallb/metallb) - provides external IP addresses and load balancing functionality for services.
-- [rook-ceph](https://github.com/rook/rook) - provides distributed block storage for peristent volumes.
+- [rook-ceph](https://github.com/rook/rook) - provides distributed block storage for persistent volumes.
 - [traefik](https://github.com/traefik/traefik) - exposes HTTP traffic to external clients over DNS.
 
 ## :octocat: GitOps
 
-This repository uses [ArgoCD](https://github.com/argoproj/argo-cd) and its [`ApplicationSet`](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set) concept to deploy and manage all resources in the cluster (including itself). Installing ArgoCD and deploying the inital `ApplicationSet` (and, in turn, everything else in the cluster) is as easy as:
+This repository uses [ArgoCD](https://github.com/argoproj/argo-cd) and its [`ApplicationSet`](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set) concept to deploy and manage all resources in the cluster (including itself). Installing ArgoCD and deploying the initial `ApplicationSet` (and, in turn, everything else in the cluster) is as easy as:
 
 ```bash
 $ kustomize build --enable-helm apps/management/argocd | kubectl apply -f -
