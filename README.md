@@ -20,6 +20,7 @@ I use [Sidero Omni](https://www.siderolabs.com/platform/saas-for-kubernetes/) as
 - [metallb](https://github.com/metallb/metallb) - provides external IP addresses and load balancing functionality for services.
 - [rook-ceph](https://github.com/rook/rook) - provides distributed block storage for persistent volumes.
 - [traefik](https://github.com/traefik/traefik) - exposes HTTP traffic to external clients over DNS.
+- [volsync](https://github.com/backube/volsync) - backup and recovery of persistent volumes.
 
 ## :octocat: GitOps
 
