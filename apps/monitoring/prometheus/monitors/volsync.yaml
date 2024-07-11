@@ -9,6 +9,10 @@ metadata:
 spec:
   endpoints:
     - port: https
+      scheme: https
+      path: /metrics
+      tlsConfig:
+        insecureSkipVerify: true
   namespaceSelector:
     matchNames:
       - volsync
