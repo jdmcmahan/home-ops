@@ -7,9 +7,9 @@ helmCharts:
     repo: https://piraeus.io/helm-charts/
     version: 3.0.5
     releaseName: snapshot-controller
-    namespace: volsync-system
+    namespace: volsync
   - name: volsync
     repo: https://backube.github.io/helm-charts/
     version: 0.9.1
     releaseName: volsync
-    namespace: volsync-system
+    namespace: volsync
