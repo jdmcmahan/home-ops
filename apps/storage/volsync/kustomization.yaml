@@ -13,3 +13,6 @@ helmCharts:
     version: 0.9.1
     releaseName: volsync
     namespace: volsync
+    valuesInline:
+      metrics:
+        disableAuth: true
