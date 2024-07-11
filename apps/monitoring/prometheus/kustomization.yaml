@@ -13,6 +13,7 @@ resources:
   - monitors/qbittorrent.yaml
   - monitors/rook-ceph.yaml
   - monitors/unpackerr.yaml
+  - monitors/volsync.yaml
 
 helmCharts:
   - name: kube-prometheus-stack
