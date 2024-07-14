@@ -33,7 +33,7 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           QBITTORRENT_HOST: qbittorrent
-          QBITTORRENT_PORT: 8080
+          QBITTORRENT_PORT: 80
           EXPORTER_PORT: 9000
       gluetun:
         dependsOn: app
