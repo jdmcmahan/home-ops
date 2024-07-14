@@ -5,6 +5,7 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - mullvad.yaml
+  - metrics-credentials.yaml
   - volsync.yaml
 
 helmCharts:
