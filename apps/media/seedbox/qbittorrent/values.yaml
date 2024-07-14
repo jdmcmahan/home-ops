@@ -32,8 +32,8 @@ controllers:
           tag: v1.5.1
           pullPolicy: IfNotPresent
         env:
-          QBITTORRENT_HOST: qbittorrent
-          QBITTORRENT_PORT: 80
+          QBITTORRENT_HOST: localhost
+          QBITTORRENT_PORT: 8080
           EXPORTER_PORT: 9000
         envFrom:
           - secretRef:
