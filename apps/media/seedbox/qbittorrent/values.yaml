@@ -32,7 +32,7 @@ controllers:
           tag: v1.5.1
           pullPolicy: IfNotPresent
         env:
-          QBITTORRENT_HOST: qbittorrent-web.svc
+          QBITTORRENT_HOST: qbittorrent-web.qbittorrent.svc
           QBITTORRENT_PORT: 80
           EXPORTER_PORT: 9000
         envFrom:
