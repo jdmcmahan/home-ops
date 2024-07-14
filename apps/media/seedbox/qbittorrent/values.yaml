@@ -35,6 +35,9 @@ controllers:
           QBITTORRENT_HOST: qbittorrent
           QBITTORRENT_PORT: 80
           EXPORTER_PORT: 9000
+        envFrom:
+          - secretRef:
+              name: qbittorrent-metrics-credentials
       gluetun:
         dependsOn: app
         image:
