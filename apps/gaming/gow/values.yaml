@@ -9,33 +9,3 @@ service:
 
 graphic_resources:
   gpu.intel.com/i915: 1
-
-sunshine:
-  image:
-    repository: ghcr.io/games-on-whales/sunshine
-    tag: sha-7e378b2
-
-xorg:
-  image:
-    repository: ghcr.io/games-on-whales/xorg
-    tag: sha-7e378b2
-
-pulseaudio:
-  image:
-    repository: ghcr.io/games-on-whales/pulseaudio
-    tag: sha-7e378b2
-
-retroarch:
-  image:
-    repository: ghcr.io/games-on-whales/retroarch
-    tag: sha-7e378b2
-
-steam:
-  image:
-    repository: ghcr.io/games-on-whales/steam
-    tag: sha-7e378b2
-
-firefox:
-  image:
-    repository: andrewmackrodt/firefox-x11
-    tag: 128.0-r2
