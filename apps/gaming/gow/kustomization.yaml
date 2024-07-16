@@ -1,0 +1,11 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: games-on-whales
+    repo: https://angelnu.github.io/helm-charts
+    version: 2.0.0
+    releaseName: games-on-whales
+    namespace: gow
+    valuesFile: values.yaml
