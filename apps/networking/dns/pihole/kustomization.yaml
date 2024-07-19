@@ -45,6 +45,9 @@ helmCharts:
       extraEnvVars:
         TZ: "America/Chicago"
 
+      ftl:
+        MAXDBDAYS: 14
+
       resources:
         requests:
           cpu: 100m
