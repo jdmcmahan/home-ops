@@ -161,7 +161,7 @@ sonarr:
           - 58790d4e2fdcd9733aa7ae68ba2bb503 # WEB Tier 02
           - d84935abd3f8556dcd51d4f27e22d0a6 # WEB Tier 03
           - d0c516558625b04b363fa6c5c2c7cfd4 # WEB Scene
-        quality_profiles:
+        assign_scores_to:
           - name: HD 1080p
           - name: UHD 2160p
 
@@ -191,7 +191,7 @@ sonarr:
           # Streaming Services
           - 43b3cf48cb385cd3eac608ee6bca7f09 # UHD Streaming Boost
           - d2d299244a92b8a52d4921ce3897a256 # UHD Streaming Cut
-        quality_profiles:
+        assign_scores_to:
           - name: UHD 2160p
 
       - trash_ids:
@@ -239,12 +239,12 @@ sonarr:
           - 7dd31f3dee6d2ef8eeaa156e23c3857e # B-Global
           - 4c67ff059210182b59cdd41697b8cb08 # Bilibili
           - 570b03b3145a25011bf073274a407259 # HIDIVE
-        quality_profiles:
+        assign_scores_to:
           - name: HD 1080p - Anime
 
       - trash_ids:
           - 418f50b10f1907201b6cfdf881f467b7 # Anime Dual Audio
-        quality_profiles:
+        assign_scores_to:
           - name: HD 1080p - Anime
             score: 10
 
@@ -411,7 +411,7 @@ radarr:
           - c2863d2a50c9acad1fb50e53ece60817 # STAN
           - f1b0bae9bc222dab32c1b38b5a7a1088 # TVer
           - 279bda7434fd9075786de274e6c3c202 # U-NEXT
-        quality_profiles:
+        assign_scores_to:
           - name: HD 1080p
           - name: UHD 2160p
 
@@ -457,7 +457,7 @@ radarr:
 
           # Optional UHD
           - 9c38ebb7384dada637be8899efa68e6f # SDR
-        quality_profiles:
+        assign_scores_to:
           - name: UHD 2160p
 
       - trash_ids:
@@ -493,11 +493,11 @@ radarr:
           - b2550eb333d27b75833e25b8c2557b38 # 10bit
           - 9c14d194486c4014d422adc64092d794 # Dubs Only
           - 07a32f77690263bb9fda1842db7e273f # VOSTFR
-        quality_profiles:
+        assign_scores_to:
           - name: HD 1080p - Anime
 
       - trash_ids:
           - 4a3b087eea2ce012fcc1ce319259a3be # Anime Dual Audio
-        quality_profiles:
+        assign_scores_to:
           - name: HD 1080p - Anime
             score: 10
