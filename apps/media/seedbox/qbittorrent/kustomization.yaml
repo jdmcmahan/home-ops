@@ -7,7 +7,6 @@ resources:
   - namespace.yaml
   - mullvad.yaml
   - metrics-credentials.yaml
-  - monitor.yaml
   - volsync.yaml
 
 helmCharts:
