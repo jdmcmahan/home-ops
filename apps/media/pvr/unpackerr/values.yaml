@@ -13,7 +13,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/unpackerr/unpackerr
-          tag: 0.14.0
+          tag: 0.14.2
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
