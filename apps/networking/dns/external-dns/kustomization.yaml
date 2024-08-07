@@ -22,6 +22,7 @@ helmCharts:
               name: pihole-credentials
               key: password
       registry: noop
-      provider: pihole
+      provider:
+        name: pihole
       extraArgs:
         - --pihole-server=http://pihole-web.pihole.svc
