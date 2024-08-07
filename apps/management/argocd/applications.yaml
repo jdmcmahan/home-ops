@@ -73,7 +73,3 @@ spec:
           kind: Prometheus
           jsonPointers:
             - /spec/automountServiceAccountToken
-        - group: ""
-          kind: DaemonSet
-          jsonPointers:
-            - /spec/template/spec/securityContext/appArmorProfile
