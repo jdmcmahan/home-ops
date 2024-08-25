@@ -74,8 +74,8 @@ persistence:
   backup:
     enabled: true
     type: nfs
-    server: peepums
-    path: /pool01/backup/pvr
+    server: new-peepums
+    path: /volume1/backup/pvr
     advancedMounts:
       readarr:
         app:
