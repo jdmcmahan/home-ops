@@ -51,8 +51,8 @@ persistence:
   media:
     enabled: true
     type: nfs
-    server: peepums
-    path: /pool01/media
+    server: new-peepums
+    path: /volume1/media
     advancedMounts:
       unpackerr:
         app:
