@@ -76,8 +76,8 @@ persistence:
   media:
     enabled: true
     type: nfs
-    server: peepums
-    path: /pool01/media/plex
+    server: new-peepums
+    path: /volume1/media/plex
     advancedMounts:
       plex:
         app:

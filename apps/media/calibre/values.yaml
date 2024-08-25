@@ -70,8 +70,8 @@ persistence:
   books:
     enabled: true
     type: nfs
-    server: peepums
-    path: /pool01/media/books
+    server: new-peepums
+    path: /volume1/media/books
     advancedMounts:
       calibre:
         app:

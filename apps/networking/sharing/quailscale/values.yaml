@@ -42,7 +42,7 @@ persistence:
     enabled: true
     type: nfs
     server: peepums
-    path: '/pool01/media/books/Calibre Library'
+    path: '/volume1/media/books/Calibre Library'
     advancedMounts:
       taildrop:
         tailscale:

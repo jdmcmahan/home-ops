@@ -85,8 +85,8 @@ persistence:
   media:
     enabled: true
     type: nfs
-    server: peepums
-    path: /pool01/media/staging/torrents
+    server: new-peepums
+    path: /volume1/media/staging/torrents
     advancedMounts:
       qbittorrent:
         app:
