@@ -41,7 +41,7 @@ persistence:
   books:
     enabled: true
     type: nfs
-    server: peepums
+    server: new-peepums
     path: '/volume1/media/books/Calibre Library'
     advancedMounts:
       taildrop:
