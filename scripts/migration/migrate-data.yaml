@@ -1,0 +1,31 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: rsync
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+      - name: rsync
+        image: alpine:3.20.2
+        command: ["/bin/sh", "-c"]
+        args:
+        - |
+          apk add --no-cache rsync && \
+          rsync -av -P -H --delete --numeric-ids /mnt/source/ /mnt/target
+        volumeMounts:
+        - name: source
+          mountPath: /mnt/source
+        - name: target
+          mountPath: /mnt/target
+      restartPolicy: OnFailure
+      volumes:
+      - name: source
+        nfs:
+          server: peepums
+          path: /pool01/backup/pvr
+      - name: target
+        nfs:
+          server: new-peepums
+          path: /volume1/backup/pvr
