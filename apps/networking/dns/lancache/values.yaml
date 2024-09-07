@@ -73,8 +73,8 @@ persistence:
   cache:
     enabled: true
     type: nfs
-    server: peepums
-    path: /pool01/lancache
+    server: new-peepums
+    path: /volume1/lancache
     advancedMounts:
       lancache:
         app:
