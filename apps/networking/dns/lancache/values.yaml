@@ -1,0 +1,101 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/main/charts/library/common/values.schema.json
+controllers:
+  lancache:
+    containers:
+      app:
+        image:
+          repository: lancachenet/monolithic
+          tag: latest@sha256:dffb2c20d9805d49e1b4ab6f4ea964dd3ceeabee883fbb4d1e0a61e38e4f1c2e
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+      dns:
+        image:
+          repository: lancachenet/lancache-dns
+          tag: latest@sha256:99c1c79f2615048e961b53f30733a4f30f93f30d26cf5698f45a172a74a82b72
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          USE_GENERIC_CACHE: "true"
+          LANCACHE_IP: &ip "192.168.8.54"
+          UPSTREAM_DNS: "192.168.0.1"
+  steam-prefill:
+    type: cronjob
+    cronjob:
+      schedule: "@daily"
+      successfulJobsHistory: 1
+      failedJobsHistory: 1
+    pod:
+      dnsPolicy: None
+      dnsConfig:
+        nameservers:
+        - *ip
+    containers:
+      app:
+        image:
+          repository: tpill90/steam-lancache-prefill
+          tag: v2.6.1
+          pullPolicy: IfNotPresent
+        args:
+          - prefill
+          - "--all"
+          - "--verbose"
+          - "--no-ansi"
+        env:
+          TZ: "America/Chicago"
+
+service:
+  main:
+    enabled: true
+    controller: lancache
+    type: LoadBalancer
+    loadBalancerIP: *ip
+    annotations:
+      metallb.universe.tf/allow-shared-ip: lancache-svc
+    ports:
+      http:
+        port: 80
+      https:
+        port: 443
+  dns:
+    enabled: true
+    controller: lancache
+    type: LoadBalancer
+    loadBalancerIP: *ip
+    annotations:
+      metallb.universe.tf/allow-shared-ip: lancache-svc
+    ports:
+      dns:
+        port: 53
+
+persistence:
+  cache:
+    enabled: true
+    type: nfs
+    server: peepums
+    path: /pool01/lancache
+    advancedMounts:
+      lancache:
+        app:
+          - path: /data/cache
+  steam-prefill-config:
+    enabled: true
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 10Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      steam-prefill:
+        app:
+          - path: /Config
+  steam-prefill-account:
+    enabled: true
+    type: secret
+    name: steam-account
+    advancedMounts:
+      steam-prefill:
+        app:
+          - path: /Config/account.config
+            subPath: account.config
+            readOnly: true

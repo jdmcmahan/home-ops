@@ -35,7 +35,7 @@ helmCharts:
       serviceDhcp:
         enabled: false
 
-      DNS1: "192.168.0.1"
+      DNS1: "192.168.8.54"
       DNS2: ""
 
       admin:
