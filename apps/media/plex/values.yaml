@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/onedr0p/plex
-          tag: 1.40.0.7998-c29d4c0c8
+          tag: 1.40.5.8921-836b34c27
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
