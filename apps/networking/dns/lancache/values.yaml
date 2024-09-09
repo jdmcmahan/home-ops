@@ -42,6 +42,9 @@ controllers:
           - "--all"
           - "--verbose"
           - "--no-ansi"
+          - "--os=windows"
+          - "--os=macos"
+          - "--os=linux"
         env:
           TZ: "America/Chicago"
 
