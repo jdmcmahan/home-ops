@@ -10,6 +10,8 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          CACHE_DISK_SIZE: 4000g
+          CACHE_INDEX_SIZE: 1000m
       dns:
         image:
           repository: lancachenet/lancache-dns
