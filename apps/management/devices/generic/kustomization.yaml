@@ -1,0 +1,32 @@
+---
+# yaml-language-server: $schema=https://json.schemastore.org/kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kube-system
+
+resources:
+  - "https://raw.githubusercontent.com/squat/generic-device-plugin/main/manifests/generic-device-plugin.yaml"
+
+patches:
+  - patch: |-
+      - op: add
+        path: /spec/template/spec/containers/0/args/-
+        value:
+          --device
+    target:
+      kind: DaemonSet
+      name: generic-device-plugin
+  - patch: |-
+      - op: add
+        path: /spec/template/spec/containers/0/args/-
+        value:
+          |
+          name: tun
+          groups:
+            - count: 1000
+              paths:
+                - path: /dev/net/tun
+    target:
+      kind: DaemonSet
+      name: generic-device-plugin
