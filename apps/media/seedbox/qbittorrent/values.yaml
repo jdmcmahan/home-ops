@@ -53,6 +53,9 @@ controllers:
           capabilities:
             add:
               - NET_ADMIN
+        resources:
+          requests:
+            squat.ai/tun: "1"
 
 service:
   web:
