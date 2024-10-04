@@ -37,7 +37,7 @@ controllers:
       app:
         image:
           repository: tpill90/steam-lancache-prefill
-          tag: v2.7.0
+          tag: v2.8.0
           pullPolicy: IfNotPresent
         args:
           - prefill
