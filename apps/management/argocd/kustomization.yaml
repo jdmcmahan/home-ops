@@ -32,6 +32,7 @@ helmCharts:
                 - "*"
         params:
           server.insecure: true
+          controller.diff.server.side: "true"
       controller:
         replicas: 1
         metrics:
