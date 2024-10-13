@@ -10,8 +10,6 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
         envFrom:
           - secretRef:
               name: radarr-apikey
@@ -28,6 +26,13 @@ controllers:
         envFrom:
           - secretRef:
               name: radarr-apikey
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 911
+    runAsGroup: 1000
+    fsGroup: 1000
+    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:
