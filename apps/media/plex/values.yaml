@@ -22,9 +22,9 @@ controllers:
 
 defaultPodOptions:
   securityContext:
-    runAsUser: 911
-    runAsGroup: 1000
-    fsGroup: 1000
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
     fsGroupChangePolicy: "OnRootMismatch"
     supplementalGroups:
       - 44 # video
