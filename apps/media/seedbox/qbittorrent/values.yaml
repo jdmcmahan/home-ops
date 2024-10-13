@@ -15,8 +15,6 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
           WEBUI_PORT: 8080
           TORRENTING_PORT: 51820
         securityContext:
