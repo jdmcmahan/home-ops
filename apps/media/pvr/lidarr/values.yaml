@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/onedr0p/lidarr
-          tag: 2.4.3.4248
+          repository: ghcr.io/linuxserver/lidarr
+          tag: 2.6.4@sha256:b8c7fef19ecfc1f88d7daae33c5a8ca485d1c5509c42cdf04452e9218b74128e
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"

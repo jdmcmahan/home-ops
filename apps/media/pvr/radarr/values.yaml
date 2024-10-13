@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/onedr0p/radarr
-          tag: 5.11.0.9244
+          repository: ghcr.io/linuxserver/radarr
+          tag: 5.12.2@sha256:0147cbfc70dd269e225de166a5ac1a14311e4e20d5f2438ae21e5b921744fc24
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
