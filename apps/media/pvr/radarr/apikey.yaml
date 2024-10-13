@@ -11,7 +11,7 @@ spec:
   target:
     creationPolicy: Owner
   data:
-    - secretKey: RADARR__AUTH__APIKEY
+    - secretKey: RADARR__API_KEY
       remoteRef:
         conversionStrategy: Default	
         decodingStrategy: None

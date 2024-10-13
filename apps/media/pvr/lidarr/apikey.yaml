@@ -11,7 +11,7 @@ spec:
   target:
     creationPolicy: Owner
   data:
-    - secretKey: LIDARR__AUTH__APIKEY
+    - secretKey: LIDARR__API_KEY
       remoteRef:
         conversionStrategy: Default	
         decodingStrategy: None

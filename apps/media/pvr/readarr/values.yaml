@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/readarr
-          tag: 0.4.0-develop@sha256:2502c4fb7824e61932bde9db79b903e083ded22d1ed0ebbb0b7ce5508347877b
+          repository: ghcr.io/onedr0p/readarr-develop
+          tag: 0.3.32.2587
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"

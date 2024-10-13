@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/sonarr
-          tag: 4.0.9@sha256:326eb144c6df5d8596dc16f5b1402d2b8e5f7fbadb988529cb89d2a86b54260e
+          repository: ghcr.io/onedr0p/sonarr
+          tag: 4.0.9.2244
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
