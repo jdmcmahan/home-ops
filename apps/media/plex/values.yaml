@@ -10,8 +10,6 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
         resources:
           requests:
             gpu.intel.com/i915: 1
