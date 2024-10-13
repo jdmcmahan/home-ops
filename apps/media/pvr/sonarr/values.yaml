@@ -10,6 +10,8 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          PUID: 979
+          PGID: 979
         envFrom:
           - secretRef:
               name: sonarr-apikey
@@ -26,13 +28,6 @@ controllers:
         envFrom:
           - secretRef:
               name: sonarr-apikey
-
-defaultPodOptions:
-  securityContext:
-    runAsUser: 979
-    runAsGroup: 979
-    fsGroup: 979
-    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:
