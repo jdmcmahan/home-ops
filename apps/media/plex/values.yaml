@@ -64,7 +64,7 @@ persistence:
     enabled: true
     type: persistentVolumeClaim
     storageClass: ceph-block
-    size: 10Gi
+    size: 30Gi
     accessMode: ReadWriteOnce
     advancedMounts:
       plex:
