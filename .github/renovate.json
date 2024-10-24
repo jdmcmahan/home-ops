@@ -38,6 +38,10 @@
       "versioning": "loose"
     },
     {
+      "matchPackageNames": ["ghcr.io/linuxserver/lidarr"],
+      "allowedVersions": "!/^8/"
+    },
+    {
       "matchPackageNames": ["ghcr.io/linuxserver/overseerr"],
       "allowedVersions": "!/^2021/"
     },
