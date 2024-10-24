@@ -20,6 +20,8 @@ controllers:
           WEBUI_PORT: 8080
           TORRENTING_PORT: 51820
         securityContext:
+          runAsUser: 979
+          runAsGroup: 979
           runAsNonRoot: true
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true
