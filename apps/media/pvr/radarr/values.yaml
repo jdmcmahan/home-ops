@@ -5,11 +5,13 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/onedr0p/radarr
-          tag: 5.12.2.9335
+          repository: ghcr.io/linuxserver/radarr
+          tag: 5.12.2@sha256:0147cbfc70dd269e225de166a5ac1a14311e4e20d5f2438ae21e5b921744fc24
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          PUID: 979
+          PGID: 979
         envFrom:
           - secretRef:
               name: radarr-apikey
@@ -26,13 +28,6 @@ controllers:
         envFrom:
           - secretRef:
               name: radarr-apikey
-
-defaultPodOptions:
-  securityContext:
-    runAsUser: 979
-    runAsGroup: 979
-    fsGroup: 979
-    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:

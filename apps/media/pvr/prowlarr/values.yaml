@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/onedr0p/prowlarr
-          tag: 1.25.4.4818
+          repository: ghcr.io/linuxserver/prowlarr
+          tag: 1.25.4@sha256:295528cb3a94c96871b1e90f690668fc267738116be6383ee14f044468f1eed3
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
@@ -26,13 +26,6 @@ controllers:
         envFrom:
           - secretRef:
               name: prowlarr-apikey
-
-defaultPodOptions:
-  securityContext:
-    runAsUser: 979
-    runAsGroup: 979
-    fsGroup: 979
-    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:
@@ -62,15 +55,6 @@ persistence:
       prowlarr:
         app:
           - path: /config
-  media:
-    enabled: true
-    type: nfs
-    server: new-peepums
-    path: /volume1/media
-    advancedMounts:
-      prowlarr:
-        app:
-          - path: /data
   backup:
     enabled: true
     type: nfs
