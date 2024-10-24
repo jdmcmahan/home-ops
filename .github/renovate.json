@@ -42,7 +42,7 @@
       "allowedVersions": "!/^2021/"
     },
     {
-      "matchPackageNames": ["lscr.io/linuxserver/calibre-web"],
+      "matchPackageNames": ["ghcr.io/linuxserver/calibre-web"],
       "allowedVersions": "!/^2021|^5/"
     }
   ],
