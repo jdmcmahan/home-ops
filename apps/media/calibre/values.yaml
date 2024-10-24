@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: lscr.io/linuxserver/calibre
-          tag: 7.20.0
+          repository: ghcr.io/linuxserver/calibre
+          tag: 7.20.0@sha256:f18a3f5cd0c6d0bf9faa7c55b79576462f2fba347550e33d39db4403ff1f8892
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
@@ -14,8 +14,8 @@ controllers:
           PGID: 979
       web:
         image:
-          repository: lscr.io/linuxserver/calibre-web
-          tag: 0.6.23
+          repository: ghcr.io/linuxserver/calibre-web
+          tag: 0.6.23@sha256:45ff84e660c884ee7d8225859da6c9972ff75f8289e8b766d5b13468d4251900
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"

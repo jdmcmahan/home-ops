@@ -34,11 +34,15 @@
       "groupName": "nfd"
     },
     {
+      "matchPackageNames": ["ghcr.io/linuxserver/lidarr"],
+      "allowedVersions": "!/^8/"
+    },
+    {
       "matchPackageNames": ["ghcr.io/linuxserver/overseerr"],
       "allowedVersions": "!/^2021/"
     },
     {
-      "matchPackageNames": ["lscr.io/linuxserver/calibre-web"],
+      "matchPackageNames": ["ghcr.io/linuxserver/calibre-web"],
       "allowedVersions": "!/^2021|^5/"
     }
   ],
