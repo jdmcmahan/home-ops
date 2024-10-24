@@ -27,13 +27,6 @@ controllers:
           - secretRef:
               name: prowlarr-apikey
 
-defaultPodOptions:
-  securityContext:
-    runAsUser: 979
-    runAsGroup: 979
-    fsGroup: 979
-    fsGroupChangePolicy: "OnRootMismatch"
-
 service:
   web:
     enabled: true
@@ -62,15 +55,6 @@ persistence:
       prowlarr:
         app:
           - path: /config
-  media:
-    enabled: true
-    type: nfs
-    server: new-peepums
-    path: /volume1/media
-    advancedMounts:
-      prowlarr:
-        app:
-          - path: /data
   backup:
     enabled: true
     type: nfs
