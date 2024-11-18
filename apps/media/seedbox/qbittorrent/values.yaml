@@ -11,7 +11,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/onedr0p/qbittorrent
-          tag: 5.0.1
+          tag: 5.0.2
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
