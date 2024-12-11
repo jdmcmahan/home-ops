@@ -9,9 +9,16 @@ provider:
     env:
       - name: UNIFI_HOST
         value: https://192.168.0.1
-    envFrom:
-      - secretRef:
-          name: unifi-credentials
+      - name: UNIFI_USER
+        valueFrom:
+          secretKeyRef:
+            name: unifi-credentials
+            key: UNIFI_USER
+      - name: UNIFI_PASS
+        valueFrom:
+          secretKeyRef:
+            name: unifi-credentials
+            key: UNIFI_PASS
     livenessProbe:
       httpGet:
         path: /healthz
