@@ -1,0 +1,33 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/main/charts/library/common/values.schema.json
+provider:
+  name: webhook
+  webhook:
+    image:
+      repository: ghcr.io/kashalls/external-dns-unifi-webhook
+      tag: v0.3.3@sha256:65f895fa0a6aaea4d70e4d3a778f71281ae734eec38b58c3dd8f0c7ce19c16e0
+    env:
+      - name: UNIFI_HOST
+        value: https://192.168.0.1
+    envFrom:
+      - secretRef:
+          name: unifi-credentials
+    livenessProbe:
+      httpGet:
+        path: /healthz
+        port: http-webhook
+      initialDelaySeconds: 10
+      timeoutSeconds: 5
+    readinessProbe:
+      httpGet:
+        path: /readyz
+        port: http-webhook
+      initialDelaySeconds: 10
+      timeoutSeconds: 5
+extraArgs:
+  - --ignore-ingress-tls-spec
+policy: sync
+sources: ["ingress", "service"]
+txtOwnerId: vriska
+txtPrefix: k8s.vriska.
+domainFilters: ["mcmahan.io", "localdomain"]
