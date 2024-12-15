@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/prowlarr
-          tag: 1.27.0@sha256:fce97e356e940fda1feda7d20b501426dff62a819bcd393d958319b1a87aed9b
+          tag: 1.27.0@sha256:3e88e94ce35d7c5f621018d4bbb2c082b486261cb5a7930210cd705f0d22b980
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
