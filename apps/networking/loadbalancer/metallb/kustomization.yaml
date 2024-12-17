@@ -5,5 +5,5 @@ kind: Kustomization
 namespace: metallb
 
 resources:
-  - https://github.com/metallb/metallb/config/native?ref=v0.14.8
+  - https://github.com/metallb/metallb/config/native?ref=v0.14.9
   - addresspool.yaml
