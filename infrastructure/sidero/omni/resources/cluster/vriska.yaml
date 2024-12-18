@@ -4,7 +4,7 @@ name: vriska
 kubernetes:
   version: v1.31.4
 talos:
-  version: v1.8.3
+  version: v1.9.0
 features:
   enableWorkloadProxy: true
   backupConfiguration:
@@ -44,7 +44,7 @@ patches:
     file: ../patches/kexec-disable.yaml
 systemExtensions:
   - siderolabs/intel-ucode
-  - siderolabs/i915-ucode
+  - siderolabs/i915
 ---
 kind: Machine
 name: 4c4c4544-0043-4210-8035-b4c04f365132
@@ -60,7 +60,7 @@ patches:
     file: ../patches/kexec-disable.yaml
 systemExtensions:
   - siderolabs/intel-ucode
-  - siderolabs/i915-ucode
+  - siderolabs/i915
 ---
 kind: Machine
 name: 4c4c4544-0039-4a10-8048-b9c04f305432
@@ -76,7 +76,7 @@ patches:
     file: ../patches/kexec-disable.yaml
 systemExtensions:
   - siderolabs/intel-ucode
-  - siderolabs/i915-ucode
+  - siderolabs/i915
 ---
 kind: Machine
 name: 4c4c4544-0052-4610-8054-b3c04f4e5932
@@ -92,7 +92,7 @@ patches:
     file: ../patches/kexec-disable.yaml
 systemExtensions:
   - siderolabs/intel-ucode
-  - siderolabs/i915-ucode
+  - siderolabs/i915
 ---
 kind: Machine
 name: 4c4c4544-0052-4e10-8054-b3c04f4e5932
@@ -108,7 +108,7 @@ patches:
           hostname: omniscient-cue-ball
 systemExtensions:
   - siderolabs/intel-ucode
-  - siderolabs/i915-ucode
+  - siderolabs/i915
 ---
 kind: Machine
 name: 4c4c4544-0052-4810-8054-b3c04f4e5932
@@ -124,4 +124,4 @@ patches:
     file: ../patches/kexec-disable.yaml
 systemExtensions:
   - siderolabs/intel-ucode
-  - siderolabs/i915-ucode
+  - siderolabs/i915
