@@ -34,7 +34,6 @@ spec:
   trigger:
     schedule: "0 0 * * *"
   restic:
-    unlock: "true"
     copyMethod: Snapshot
     cacheCapacity: 5Gi
     pruneIntervalDays: 7
