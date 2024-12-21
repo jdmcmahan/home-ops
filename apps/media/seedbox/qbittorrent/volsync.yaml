@@ -34,6 +34,7 @@ spec:
   trigger:
     schedule: "0 0 * * *"
   restic:
+    unlock: "true"
     copyMethod: Snapshot
     pruneIntervalDays: 7
     repository: qbittorrent-volsync-backblaze
