@@ -40,6 +40,8 @@ patches:
       machine:
         network:
           hostname: vision-eightfold
+  - name: cilium-workaround
+    file: ../patches/cilium-workaround.yaml
   - name: kexec-disable
     file: ../patches/kexec-disable.yaml
 systemExtensions:
@@ -56,6 +58,8 @@ patches:
       machine:
         network:
           hostname: psychic-manipulation
+  - name: cilium-workaround
+    file: ../patches/cilium-workaround.yaml
   - name: kexec-disable
     file: ../patches/kexec-disable.yaml
 systemExtensions:
@@ -72,6 +76,8 @@ patches:
       machine:
         network:
           hostname: enviable-cerulean-swill
+  - name: cilium-workaround
+    file: ../patches/cilium-workaround.yaml
   - name: kexec-disable
     file: ../patches/kexec-disable.yaml
 systemExtensions:
@@ -88,6 +94,8 @@ patches:
       machine:
         network:
           hostname: magic-8-balls
+  - name: cilium-workaround
+    file: ../patches/cilium-workaround.yaml
   - name: kexec-disable
     file: ../patches/kexec-disable.yaml
 systemExtensions:
@@ -99,13 +107,15 @@ name: 4c4c4544-0052-4e10-8054-b3c04f4e5932
 install:
   disk: /dev/nvme0n1
 patches:
-  - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
   - name: hostname
     inline:
       machine:
         network:
           hostname: omniscient-cue-ball
+  - name: cilium-workaround
+    file: ../patches/cilium-workaround.yaml
+  - name: kexec-disable
+    file: ../patches/kexec-disable.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -120,6 +130,8 @@ patches:
       machine:
         network:
           hostname: flourite-octet
+  - name: cilium-workaround
+    file: ../patches/cilium-workaround.yaml
   - name: kexec-disable
     file: ../patches/kexec-disable.yaml
 systemExtensions:
