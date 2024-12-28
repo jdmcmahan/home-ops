@@ -19,7 +19,7 @@ patches:
 ---
 kind: ControlPlane
 machines:
-  - 4c4c4544-004a-4310-8042-b4c04f365132
+#  - 4c4c4544-004a-4310-8042-b4c04f365132
   - 4c4c4544-0043-4210-8035-b4c04f365132
   - 4c4c4544-0039-4a10-8048-b9c04f305432
 ---
@@ -30,21 +30,21 @@ machines:
   - 4c4c4544-0052-4e10-8054-b3c04f4e5932
   - 4c4c4544-0052-4810-8054-b3c04f4e5932
 ---
-kind: Machine
-name: 4c4c4544-004a-4310-8042-b4c04f365132
-install:
-  disk: /dev/sda
-patches:
-  - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: vision-eightfold
-  - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
-systemExtensions:
-  - siderolabs/intel-ucode
-  - siderolabs/i915
+#kind: Machine
+#name: 4c4c4544-004a-4310-8042-b4c04f365132
+#install:
+#  disk: /dev/sda
+#patches:
+#  - name: hostname
+#    inline:
+#      machine:
+#        network:
+#          hostname: vision-eightfold
+#  - name: kexec-disable
+#    file: ../patches/kexec-disable.yaml
+#systemExtensions:
+#  - siderolabs/intel-ucode
+#  - siderolabs/i915
 ---
 kind: Machine
 name: 4c4c4544-0043-4210-8035-b4c04f365132
