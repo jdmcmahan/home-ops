@@ -7,7 +7,6 @@ resources:
   - "namespace.yaml"
   - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.17.0"
   - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.31.1"
-  - "node-feature-rule.yaml"
 
 helmCharts:
   - name: node-feature-discovery
