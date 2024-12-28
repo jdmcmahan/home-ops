@@ -1,7 +1,0 @@
----
-# https://github.com/cilium/cilium/issues/36737#issuecomment-2556218340
-machine:
-  features:
-    hostDNS:
-      enabled: true
-      forwardKubeDNSToHost: false
