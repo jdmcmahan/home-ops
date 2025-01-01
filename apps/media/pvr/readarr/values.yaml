@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/readarr
-          tag: 0.4.6-develop@sha256:bd216d9bb87dc99a0f518ba09581f11087b1edfd4807d004eff05b814513dc44
+          tag: 0.4.6-develop@sha256:846b44a8cfe2b72d52253fbe24f201975ff36c9ff9e8b5d3778c1e9aa31e3e8b
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
