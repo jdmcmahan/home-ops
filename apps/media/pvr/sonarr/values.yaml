@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/sonarr
-          tag: 4.0.11@sha256:b3a45b7f7fc2e58b876efaad24cc9acfe0e74372751d6c11ccadc2dd344e8c4e
+          tag: 4.0.12@sha256:4092d2141b796ef01f3c7b0d3390910fb71a11b2e9acdbd9427aa9a8864d6139
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
