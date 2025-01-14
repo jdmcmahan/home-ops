@@ -22,3 +22,4 @@ ports:
     redirections:
       entryPoint:
         to: websecure
+        scheme: https
