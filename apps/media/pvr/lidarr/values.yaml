@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/lidarr
-          tag: 2.8.2@sha256:e15772e07979510d40f7300c325a3e14dbe5b9b0cfaac8eefa4f93826809dc02
+          tag: 2.8.2@sha256:08e76c87c3ea638cf559f4915e986d29de732397b8efecc4b5a3886d357c10e3
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
