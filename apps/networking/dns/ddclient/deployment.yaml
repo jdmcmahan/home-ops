@@ -26,10 +26,10 @@ spec:
             secretName: ddclient-conf-cloudflare
       containers:
         - name: ddclient
-          image: linuxserver/ddclient:3.11.2
+          image: linuxserver/ddclient:4.0.0
           imagePullPolicy: IfNotPresent
           volumeMounts:
-            - mountPath: /defaults/ddclient.conf
+            - mountPath: /defaults/ddclient/ddclient.conf
               subPath: ddclient.conf
               name: ddclient-config
           resources:
