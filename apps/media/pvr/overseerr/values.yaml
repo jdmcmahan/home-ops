@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/overseerr
-          tag: 1.33.2@sha256:36557b105d774a5b2be8dd1dc352677ccd6c79ce2d8916ed2c9967b3504a3ee6
+          tag: 1.33.2@sha256:8be55e01d9b67230ec02ee6b8fc834d8b37511ea71eb939e1971b09821944659
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
