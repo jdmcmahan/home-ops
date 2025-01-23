@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/radarr
-          tag: 5.17.2@sha256:ea41d0110bcb271f543ea6dd3d04327fab8e87afd212ea1f73ca38dbb5540047
+          tag: 5.17.2@sha256:33f910df2c395d6276dbd0a7018594383751da22717920c524312cd07b48fcd5
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
