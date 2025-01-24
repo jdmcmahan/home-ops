@@ -71,6 +71,25 @@ ingress:
           - calibre-web.mcmahan.io
 
 persistence:
+  config:
+    enabled: true
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 10Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      calibre:
+        app:
+          - path: /config
+  media:
+    enabled: true
+    type: nfs
+    server: new-peepums
+    path: /volume1/media
+    advancedMounts:
+      calibre:
+        app:
+          - path: /data
   web-config:
     enabled: true
     type: persistentVolumeClaim
@@ -81,14 +100,12 @@ persistence:
       calibre:
         web:
           - path: /config
-  books:
+  web-books:
     enabled: true
     type: nfs
     server: new-peepums
     path: /volume1/media/books
     advancedMounts:
       calibre:
-        app:
-          - path: /config
         web:
           - path: /books
