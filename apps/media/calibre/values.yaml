@@ -28,6 +28,7 @@ service:
   main:
     enabled: true
     controller: calibre
+    nameOverride: calibre
     annotations:
       external-dns.alpha.kubernetes.io/hostname: calibre.localdomain
     type: LoadBalancer
