@@ -36,6 +36,7 @@ helmCharts:
             - SYS_RESOURCE
       bpf:
         masquerade: true
+        hostLegacyRouting: true
       cgroup:
         autoMount:
           enabled: false
