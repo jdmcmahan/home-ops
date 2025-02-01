@@ -16,12 +16,12 @@ helmCharts:
     namespace: intel
   - name: intel-device-plugins-operator
     repo: https://intel.github.io/helm-charts
-    version: 0.31.1
+    version: 0.32.0
     releaseName: intel-device-plugins-operator
     namespace: intel
   - name: intel-device-plugins-gpu
     repo: https://intel.github.io/helm-charts
-    version: 0.31.1
+    version: 0.32.0
     releaseName: intel-device-plugins-gpu
     namespace: intel
     valuesInline:
