@@ -28,6 +28,7 @@ helmCharts:
       name: gpudeviceplugin-default
       sharedDevNum: 2
       nodeFeatureRule: true
+      tolerations: []
 
 patches:
   - patch: |-
