@@ -31,6 +31,7 @@ controllers:
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
+          ISP: Tzulo
           FIREWALL_INPUT_PORTS: "8080,17871"
         envFrom:
           - secretRef:
