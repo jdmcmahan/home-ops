@@ -31,7 +31,7 @@ controllers:
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
-          ISP: Tzulo
+          SERVER_HOSTNAMES: "us-chi-wg-301,us-chi-wg-302,us-chi-wg-303,us-chi-wg-304,us-chi-wg-305,us-chi-wg-306,us-chi-wg-307,us-chi-wg-308"
           FIREWALL_INPUT_PORTS: "8080,17871"
         envFrom:
           - secretRef:
