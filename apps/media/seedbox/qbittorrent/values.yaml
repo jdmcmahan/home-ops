@@ -31,7 +31,7 @@ controllers:
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
-          SERVER_HOSTNAMES: "us-chi-wg-201,us-chi-wg-202,us-chi-wg-203"
+          UPDATER_PERIOD: 24h
           FIREWALL_INPUT_PORTS: "8080,17871"
         envFrom:
           - secretRef:
