@@ -44,6 +44,10 @@
     {
       "matchPackageNames": ["ghcr.io/linuxserver/calibre-web"],
       "allowedVersions": "!/^2021|^5/"
+    },
+    {
+      "matchPackageNames": ["ghcr.io/linuxserver/qbittorrent"],
+      "allowedVersions": "!/^20/"
     }
   ],
   "customManagers": [
