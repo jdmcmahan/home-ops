@@ -14,10 +14,6 @@ controllers:
           PGID: 979
           WEBUI_PORT: 8080
           TORRENTING_PORT: 51820
-        securityContext:
-          capabilities:
-            drop:
-              - ALL
       metrics:
         image:
           repository: caseyscarborough/qbittorrent-exporter
