@@ -84,7 +84,7 @@ persistence:
     advancedMounts:
       qbittorrent:
         app:
-          - path: /run
+          - path: /run:exec
   config:
     enabled: true
     type: persistentVolumeClaim
