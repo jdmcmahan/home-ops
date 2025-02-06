@@ -10,6 +10,8 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          PUID: 979
+          PGID: 979
         resources:
           requests:
             gpu.intel.com/i915: 1
@@ -22,6 +24,10 @@ controllers:
 
 defaultPodOptions:
   securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
     supplementalGroups:
       - 44 # video
 
