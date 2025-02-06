@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/calibre
-          tag: 7.20.0@sha256:f18a3f5cd0c6d0bf9faa7c55b79576462f2fba347550e33d39db4403ff1f8892
+          tag: 7.24.0@sha256:dde0dcef87f4ce30313d6a3cc31ae8995953b33a56e15ccc9ba068e85d90786a
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
@@ -15,7 +15,7 @@ controllers:
       web:
         image:
           repository: ghcr.io/linuxserver/calibre-web
-          tag: 0.6.23@sha256:45ff84e660c884ee7d8225859da6c9972ff75f8289e8b766d5b13468d4251900
+          tag: 0.6.24@sha256:092e198512213105ff9fc77d285f21ee0065b11601617d798d4c66a9400fd6b8
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
@@ -25,6 +25,20 @@ controllers:
           OAUTHLIB_RELAX_TOKEN_SCOPE: 1
 
 service:
+  main:
+    enabled: true
+    controller: calibre
+    nameOverride: calibre
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: calibre.localdomain
+    type: LoadBalancer
+    ports:
+      desktop:
+        port: 80
+        targetPort: 8080
+      webserver:
+        port: 81
+        targetPort: 8081
   web:
     enabled: true
     controller: calibre
@@ -57,6 +71,25 @@ ingress:
           - calibre-web.mcmahan.io
 
 persistence:
+  config:
+    enabled: true
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 10Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      calibre:
+        app:
+          - path: /config
+  media:
+    enabled: true
+    type: nfs
+    server: new-peepums
+    path: /volume1/media
+    advancedMounts:
+      calibre:
+        app:
+          - path: /data
   web-config:
     enabled: true
     type: persistentVolumeClaim
@@ -67,14 +100,12 @@ persistence:
       calibre:
         web:
           - path: /config
-  books:
+  web-books:
     enabled: true
     type: nfs
     server: new-peepums
     path: /volume1/media/books
     advancedMounts:
       calibre:
-        app:
-          - path: /config
         web:
           - path: /books

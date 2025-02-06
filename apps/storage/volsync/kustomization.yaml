@@ -6,12 +6,12 @@ kind: Kustomization
 helmCharts:
   - name: snapshot-controller
     repo: https://piraeus.io/helm-charts/
-    version: 3.0.6
+    version: 4.0.1
     releaseName: snapshot-controller
     namespace: volsync
   - name: volsync
     repo: https://backube.github.io/helm-charts/
-    version: 0.10.0
+    version: 0.11.0
     releaseName: volsync
     namespace: volsync
     valuesInline:

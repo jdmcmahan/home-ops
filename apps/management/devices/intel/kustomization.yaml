@@ -5,30 +5,30 @@ kind: Kustomization
 
 resources:
   - "namespace.yaml"
-  - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.16.5"
-  - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.31.1"
-  - "node-feature-rule.yaml"
+  - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.17.1"
+  - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.32.0"
 
 helmCharts:
   - name: node-feature-discovery
     repo: https://kubernetes-sigs.github.io/node-feature-discovery/charts
-    version: 0.16.5
+    version: 0.17.1
     releaseName: node-feature-discovery
     namespace: intel
   - name: intel-device-plugins-operator
     repo: https://intel.github.io/helm-charts
-    version: 0.31.1
+    version: 0.32.0
     releaseName: intel-device-plugins-operator
     namespace: intel
   - name: intel-device-plugins-gpu
     repo: https://intel.github.io/helm-charts
-    version: 0.31.1
+    version: 0.32.0
     releaseName: intel-device-plugins-gpu
     namespace: intel
     valuesInline:
       name: gpudeviceplugin-default
       sharedDevNum: 2
       nodeFeatureRule: true
+      tolerations: []
 
 patches:
   - patch: |-

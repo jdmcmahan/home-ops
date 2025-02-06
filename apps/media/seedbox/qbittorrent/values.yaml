@@ -11,7 +11,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/qbittorrent
-          tag: 5.0.0@sha256:45bdc88431019430e1e14ab4bd176889577e4fc92240e52153e4bc4779555422
+          tag: 5.0.3@sha256:1f08c56ecdf45d621f46966ec5f1d327e9f4075bdbe0e45e483a1b66f6b1d083
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
@@ -45,7 +45,6 @@ controllers:
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
-          ISP: Quadranet
           FIREWALL_INPUT_PORTS: "8080,17871"
         envFrom:
           - secretRef:

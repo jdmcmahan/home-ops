@@ -6,23 +6,12 @@ kind: Kustomization
 namespace: external-dns
 
 resources:
-  - pihole-credentials.yaml
+  - unifi-credentials.yaml
 
 helmCharts:
   - name: external-dns
     repo: https://kubernetes-sigs.github.io/external-dns/
-    version: 1.15.0
+    version: 1.15.1
     releaseName: external-dns
     namespace: external-dns
-    valuesInline:
-      env:
-        - name: EXTERNAL_DNS_PIHOLE_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: pihole-credentials
-              key: password
-      registry: noop
-      provider:
-        name: pihole
-      extraArgs:
-        - --pihole-server=http://pihole-web.pihole.svc
+    valuesFile: values.yaml

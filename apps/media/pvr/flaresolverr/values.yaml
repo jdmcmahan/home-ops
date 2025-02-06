@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/flaresolverr/flaresolverr
-          tag: v3.3.21
+          repository: 21hsmw/flaresolverr
+          tag: nodriver@sha256:3d99be35f845750adba3b9aa23844b7f585eeac6b1b45157bf14aaa8f7d16e20
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
