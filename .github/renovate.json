@@ -34,10 +34,6 @@
       "groupName": "nfd"
     },
     {
-      "matchPackageNames": ["ghcr.io/onedr0p/plex"],
-      "versioning": "loose"
-    },
-    {
       "matchPackageNames": ["ghcr.io/linuxserver/lidarr"],
       "allowedVersions": "!/^8/"
     },

@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/onedr0p/plex
-          tag: 1.41.3.9314-a0bfb8370
+          repository: ghcr.io/linuxserver/plex
+          tag: 1.41.3@sha256:4c1b8995790039d5331ddd1dea4d06b7e1d27d030a984860b8f12da752eaae8b
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
