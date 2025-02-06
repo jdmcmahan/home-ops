@@ -11,7 +11,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/qbittorrent
-          tag: 5.0.3@sha256:1f08c56ecdf45d621f46966ec5f1d327e9f4075bdbe0e45e483a1b66f6b1d083
+          tag: 20.04.1@sha256:9e812e7ec0fe6c752a845a9a41f8964a5b0a194b6f7c67a67e4171aac04d475c
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
