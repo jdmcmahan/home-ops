@@ -15,8 +15,6 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
           WEBUI_PORT: 8080
           TORRENTING_PORT: 51820
         securityContext:
@@ -78,6 +76,15 @@ service:
         port: 17871
 
 persistence:
+  # https://docs.linuxserver.io/misc/read-only/
+  run:
+    enabled: true
+    type: emptyDir
+    medium: Memory
+    advancedMounts:
+      qbittorrent:
+        app:
+          - path: /run
   config:
     enabled: true
     type: persistentVolumeClaim
