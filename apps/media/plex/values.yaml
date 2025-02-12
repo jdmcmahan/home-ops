@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/plex
-          tag: 1.41.3@sha256:6349c6524e05c455ede3ed6fd41407b7847d21b1d49754a6fbe4baa62933b435
+          tag: 1.41.4@sha256:5055e8eedc7294f39be9a6d4a3ce6d8d784173da2d574dccad76a5a775e614b6
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
