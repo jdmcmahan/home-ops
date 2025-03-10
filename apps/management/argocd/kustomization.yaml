@@ -24,6 +24,9 @@ helmCharts:
         jobAnnotations:
           argocd.argoproj.io/hook: PreSync
           argocd.argoproj.io/hook-delete-policy: HookSucceeded
+        podAnnotations:
+          argocd.argoproj.io/hook: PreSync
+          argocd.argoproj.io/hook-delete-policy: HookSucceeded
       configs:
         cm:
           kustomize.buildOptions: "--enable-helm"
