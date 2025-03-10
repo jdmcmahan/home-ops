@@ -21,12 +21,7 @@ helmCharts:
       redis-ha:
         enabled: true
       redisSecretInit:
-        jobAnnotations:
-          argocd.argoproj.io/hook: PreSync
-          argocd.argoproj.io/hook-delete-policy: HookSucceeded
-        podAnnotations:
-          argocd.argoproj.io/hook: PreSync
-          argocd.argoproj.io/hook-delete-policy: HookSucceeded
+        enabled: false
       configs:
         cm:
           kustomize.buildOptions: "--enable-helm"
