@@ -20,6 +20,10 @@ helmCharts:
         domain: argocd.mcmahan.io
       redis-ha:
         enabled: true
+      redisSecretInit:
+        jobAnnotations:
+          argocd.argoproj.io/hook: PreSync
+          argocd.argoproj.io/hook-delete-policy: HookSucceeded
       configs:
         cm:
           kustomize.buildOptions: "--enable-helm"
