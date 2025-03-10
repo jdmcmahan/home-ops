@@ -43,6 +43,22 @@ helmCharts:
                 resources:
                   requests:
                     storage: 30Gi
+        prometheusOperator:
+          admissionWebhooks:
+            enabled: true
+            annotations:
+              argocd.argoproj.io/hook: PreSync
+              argocd.argoproj.io/hook-delete-policy: HookSucceeded
+            patch:
+              annotations:
+                argocd.argoproj.io/hook: PreSync
+                argocd.argoproj.io/hook-delete-policy: HookSucceeded
+            mutatingWebhookConfiguration:
+              annotations:
+                argocd.argoproj.io/hook: PreSync
+            validatingWebhookConfiguration:
+              annotations:
+                argocd.argoproj.io/hook: PreSync
 
       grafana:
         service:
