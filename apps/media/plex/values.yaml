@@ -5,13 +5,11 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/plex
-          tag: 1.41.5@sha256:3a5d14bd98412062d7746b3c2c6570d7891ac1c277543541da4c4eb3bc60bc47
+          repository: ghcr.io/home-operations/plex
+          tag: 1.41.5@sha256:cb0310eb53e8ff6e51be2869b6de0425f649e631aa329e6ccf0c72ba580a8aa3
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
         resources:
           requests:
             gpu.intel.com/i915: 1
@@ -21,6 +19,15 @@ controllers:
             gpu.intel.com/i915: 1
             cpu: 2000m
             memory: 4096Mi
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
+    supplementalGroups:
+      - 44 # video
 
 service:
   web:

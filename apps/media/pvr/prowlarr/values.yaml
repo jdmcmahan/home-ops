@@ -5,8 +5,8 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/prowlarr
-          tag: 1.32.2@sha256:09a1d649d738bcaaeebe4c9570d6e1e87bb64b0ce8a611712d904d80c225af58
+          repository: ghcr.io/home-operations/prowlarr
+          tag: 1.33.0@sha256:b1b4da4df605bec0ba810cf18abf91bc6569f5d8144a64da699cb78a7c2ec30c
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
@@ -26,6 +26,13 @@ controllers:
         envFrom:
           - secretRef:
               name: prowlarr-apikey
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:
