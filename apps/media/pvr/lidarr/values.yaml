@@ -5,13 +5,11 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/lidarr
-          tag: 2.10.3@sha256:e2cf5268daec14852a58e4e00b20150db4fce6618cf71500e4f707cdb0769fc5
+          repository: ghcr.io/home-operations/lidarr
+          tag: 2.10.3@sha256:a73e3aa53c1e5286df06f86179dbcad671f697a0164db650fd594d59cb90e188
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
         envFrom:
           - secretRef:
               name: lidarr-apikey
@@ -28,6 +26,13 @@ controllers:
         envFrom:
           - secretRef:
               name: lidarr-apikey
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:

@@ -5,13 +5,11 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/sonarr
-          tag: 4.0.14@sha256:285c00cf361c0beb0e92d5ca2a351368e61b9b8688772b22d13109fa5ace25a8
+          repository: ghcr.io/home-operations/sonarr
+          tag: 4.0.14@sha256:acd5416ab9c36d017687820a32f09d09a4e25a5754aa5ebeae2e7c63d7609c13
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
         envFrom:
           - secretRef:
               name: sonarr-apikey
@@ -28,6 +26,13 @@ controllers:
         envFrom:
           - secretRef:
               name: sonarr-apikey
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:

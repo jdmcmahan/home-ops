@@ -5,13 +5,11 @@ controllers:
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/readarr
-          tag: 0.4.12-develop@sha256:de2f965b305b81d7b7314c787d1814a4b70c202de2f1b4729f905e9e89257da9
+          repository: ghcr.io/home-operations/readarr
+          tag: 0.4.12@sha256:126f98cd6b459d48ac0286249a4f7e499697a7bdfddfae8784afb11aa83e6b93
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
         envFrom:
           - secretRef:
               name: readarr-apikey
@@ -28,6 +26,13 @@ controllers:
         envFrom:
           - secretRef:
               name: readarr-apikey
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
 
 service:
   web:

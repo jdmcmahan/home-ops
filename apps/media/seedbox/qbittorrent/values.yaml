@@ -2,18 +2,29 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/main/charts/library/common/values.schema.json
 controllers:
   qbittorrent:
+    pod:
+      securityContext:
+        fsGroup: 979
+        fsGroupChangePolicy: "OnRootMismatch"
     containers:
       app:
         image:
-          repository: ghcr.io/linuxserver/qbittorrent
-          tag: 5.0.4@sha256:2773fe09037c2cb4be687a8b4e4898fa6ef8e9c002037184dda34bdb40db63e5
+          repository: ghcr.io/home-operations/qbittorrent
+          tag: 5.0.4@sha256:995c561247b069c10b1fa098186f35b3155c2df63912041f70637a9232755756
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          PUID: 979
-          PGID: 979
-          WEBUI_PORT: 8080
-          TORRENTING_PORT: 51820
+          QBITTORRENT__PORT: 8080
+          QBITTORRENT__BT_PORT: 51820
+        securityContext:
+          runAsUser: 979
+          runAsGroup: 979
+          runAsNonRoot: true
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+              - ALL
       metrics:
         image:
           repository: caseyscarborough/qbittorrent-exporter
