@@ -14,8 +14,8 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          QBITTORRENT__PORT: 8080
-          QBITTORRENT__BT_PORT: 51820
+          QBT_WEBUI_PORT: 8080
+          QBT_TORRENTING_PORT: 51820
         securityContext:
           runAsUser: 979
           runAsGroup: 979
