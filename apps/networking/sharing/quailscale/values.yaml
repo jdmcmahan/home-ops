@@ -11,7 +11,7 @@ controllers:
       tailscale:
         image:
           repository: tailscale/tailscale
-          tag: v1.80.3
+          tag: v1.82.0
           pullPolicy: IfNotPresent
         env:
           TS_STATE_DIR: "/var/lib/tailscale"
