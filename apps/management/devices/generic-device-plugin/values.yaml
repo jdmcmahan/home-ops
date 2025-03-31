@@ -1,0 +1,41 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/main/charts/library/common/values.schema.json
+defaultPodOptions:
+  priorityClassName: system-node-critical
+
+controllers:
+  generic-device-plugin:
+    type: daemonset
+    strategy: RollingUpdate
+    containers:
+      app:
+        image:
+          repository: ghcr.io/squat/generic-device-plugin
+          tag: latest@sha256:d7d0951df7f11479185fd9fba1c1cb4d9c8f3232d38a5468d6fe80074f2b45d5
+        args:
+        - --device
+        - |
+          name: tun
+          groups:
+            - count: 1000
+              paths:
+                - path: /dev/net/tun
+        resources:
+          requests:
+            cpu: 50m
+            memory: 10Mi
+          limits:
+            cpu: 50m
+            memory: 20Mi
+        securityContext:
+          privileged: true
+
+persistence:
+  dev:
+    type: hostPath
+    hostPath: /dev
+    globalMounts:
+      - readOnly: true
+  device-plugin:
+    type: hostPath
+    hostPath: /var/lib/kubelet/device-plugins
