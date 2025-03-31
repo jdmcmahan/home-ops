@@ -39,6 +39,7 @@ controllers:
           repository: ghcr.io/qdm12/gluetun
           tag: v3.39.1
         env:
+          TZ: "America/Chicago"
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
