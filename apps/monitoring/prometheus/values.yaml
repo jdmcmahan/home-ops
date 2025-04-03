@@ -97,3 +97,7 @@ grafana:
       pvr:
         url: https://raw.githubusercontent.com/onedr0p/exportarr/master/examples/grafana/dashboard2.json
         datasource: Prometheus
+      qbittorrent:
+        gnetId: 15116
+        revision: 4
+        datasource: Prometheus

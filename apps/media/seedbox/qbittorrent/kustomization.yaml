@@ -8,6 +8,7 @@ resources:
   - mullvad.yaml
   - metrics-credentials.yaml
   - volsync.yaml
+  - monitor.yaml
 
 helmCharts:
   - name: app-template
