@@ -14,12 +14,17 @@ helmCharts:
     namespace: rook-ceph
     valuesInline:
       enableDiscoveryDaemon: true
+      csi:
+        serviceMonitor:
+          enabled: true
   - name: rook-ceph-cluster
     repo: https://charts.rook.io/release
     version: v1.16.6
     releaseName: rook-release
     namespace: rook-ceph
     valuesInline:
+      monitoring:
+        enabled: true
       toolbox:
         enabled: true
       cephFileSystemVolumeSnapshotClass:
