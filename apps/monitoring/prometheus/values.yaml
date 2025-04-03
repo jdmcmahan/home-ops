@@ -116,6 +116,12 @@ grafana:
         gnetId: 15116
         revision: 4
         datasource: Prometheus
+      smartctl-exporter:
+        # renovate: depName="SMARTctl Exporter Dashboard"
+        gnetId: 22604
+        revision: 2
+        datasource:
+          - { name: DS_PROMETHEUS, value: Prometheus }
       unpackerr:
         # renovate: depName="Unpackerr"
         gnetId: 18817
