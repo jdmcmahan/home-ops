@@ -66,6 +66,25 @@
       "matchStrings": ["factory\\.talos\\.dev\\/installer\\/[a-f0-9]+:(?<currentValue>v[\\d.]+)"],
       "depNameTemplate": "siderolabs/talos",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "description": "Grafana dashboard revisions",
+      "customType": "regex",
+      "fileMatch": ["^.+\\.ya?ml$"],
+      "matchStrings": [
+        "#\\s+renovate:\\s+depName=\"(?<depName>.*)\"\\n\\s+gnetId:\\s+(?<packageName>.*?)\\n\\s+revision:\\s+(?<currentValue>.*)"
+      ],
+      "versioningTemplate": "regex:^(?<major>\\d+)$",
+      "datasourceTemplate": "custom.grafana-dashboards"
     }
-  ]
+  ],
+  "customDatasources": {
+    "grafana-dashboards": {
+      "defaultRegistryUrlTemplate": "https://grafana.com/api/dashboards/{{packageName}}",
+      "format": "json",
+      "transformTemplates": [
+        "{\"releases\":[{\"version\": $string(revision)}]}"
+      ]
+    }
+  }
 }
