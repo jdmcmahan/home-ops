@@ -45,6 +45,12 @@ service:
       metrics:
         port: 5656
 
+serviceMonitor:
+  app:
+    serviceName: unpackerr
+    endpoints:
+      - port: metrics
+
 persistence:
   logs:
     type: emptyDir
