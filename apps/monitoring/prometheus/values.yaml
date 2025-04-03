@@ -84,3 +84,6 @@ grafana:
         gnetId: 19363
         revision: 1
         datasource: Prometheus
+      pvr:
+        url: https://raw.githubusercontent.com/onedr0p/exportarr/master/examples/grafana/dashboard2.json
+        datasource: Prometheus
