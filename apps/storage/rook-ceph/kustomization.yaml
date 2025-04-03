@@ -14,9 +14,9 @@ helmCharts:
     namespace: rook-ceph
     valuesInline:
       enableDiscoveryDaemon: true
+      monitoring:
+        enabled: true
       csi:
-        monitoring:
-          enabled: true
         serviceMonitor:
           enabled: true
   - name: rook-ceph-cluster
