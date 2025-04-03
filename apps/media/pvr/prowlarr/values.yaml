@@ -53,7 +53,7 @@ service:
 
 serviceMonitor:
   metrics:
-    serviceName: prowlarr
+    serviceName: prowlarr-metrics
     endpoints:
       - port: metrics
 

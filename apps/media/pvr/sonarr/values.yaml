@@ -53,7 +53,7 @@ service:
 
 serviceMonitor:
   metrics:
-    serviceName: sonarr
+    serviceName: sonarr-metrics
     endpoints:
       - port: metrics
 

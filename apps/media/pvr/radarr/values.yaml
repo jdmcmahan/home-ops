@@ -53,7 +53,7 @@ service:
 
 serviceMonitor:
   metrics:
-    serviceName: radarr
+    serviceName: radarr-metrics
     endpoints:
       - port: metrics
 

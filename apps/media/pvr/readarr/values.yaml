@@ -53,7 +53,7 @@ service:
 
 serviceMonitor:
   metrics:
-    serviceName: readarr
+    serviceName: readarr-metrics
     endpoints:
       - port: metrics
 

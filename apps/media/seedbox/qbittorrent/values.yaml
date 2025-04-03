@@ -78,7 +78,7 @@ service:
 
 serviceMonitor:
   metrics:
-    serviceName: qbittorrent
+    serviceName: qbittorrent-metrics
     endpoints:
       - port: metrics
 

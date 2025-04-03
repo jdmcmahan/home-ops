@@ -28,6 +28,6 @@ service:
 
 serviceMonitor:
   app:
-    serviceName: flaresolverr
+    serviceName: flaresolverr-metrics
     endpoints:
       - port: metrics

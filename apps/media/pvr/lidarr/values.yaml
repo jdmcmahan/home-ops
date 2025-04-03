@@ -53,7 +53,7 @@ service:
 
 serviceMonitor:
   metrics:
-    serviceName: lidarr
+    serviceName: lidarr-metrics
     endpoints:
       - port: metrics
 
