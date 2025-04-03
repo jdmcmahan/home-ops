@@ -6,7 +6,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - grafana-credentials.yaml
-  - monitors/volsync.yaml
 
 helmCharts:
   - name: prometheus-operator-crds
