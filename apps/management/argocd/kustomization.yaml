@@ -37,12 +37,16 @@ helmCharts:
         replicas: 1
         metrics:
           enabled: true
+          serviceMonitor:
+            enabled: true
       server:
         autoscaling:
           enabled: true
           minReplicas: 2
         metrics:
           enabled: true
+          serviceMonitor:
+            enabled: true
         service:
           annotations:
             external-dns.alpha.kubernetes.io/hostname: argocd.localdomain
@@ -68,7 +72,11 @@ helmCharts:
           minReplicas: 2
         metrics:
           enabled: true
+          serviceMonitor:
+            enabled: true
       applicationSet:
         replicas: 2
         metrics:
           enabled: true
+          serviceMonitor:
+            enabled: true
