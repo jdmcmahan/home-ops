@@ -55,6 +55,16 @@ grafana:
       - secretName: grafana-cert
         hosts:
           - grafana.mcmahan.io
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          uid: prometheus
+          access: proxy
+          url: http://prometheus-operated.prometheus.svc.cluster.local:9090
+          isDefault: true
   dashboardProviders:
     dashboardproviders.yaml:
       apiVersion: 1
