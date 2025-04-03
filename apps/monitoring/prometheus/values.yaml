@@ -5,6 +5,11 @@ prometheus:
       external-dns.alpha.kubernetes.io/hostname: prometheus.localdomain
     type: LoadBalancer
   prometheusSpec:
+    podMonitorSelectorNilUsesHelmValues: false
+    probeSelectorNilUsesHelmValues: false
+    ruleSelectorNilUsesHelmValues: false
+    scrapeConfigSelectorNilUsesHelmValues: false
+    serviceMonitorSelectorNilUsesHelmValues: false
     storageSpec:
       volumeClaimTemplate:
         spec:
