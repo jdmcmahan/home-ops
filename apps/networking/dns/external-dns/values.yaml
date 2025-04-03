@@ -1,5 +1,4 @@
 ---
-# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/main/charts/library/common/values.schema.json
 provider:
   name: webhook
   webhook:
@@ -38,3 +37,5 @@ sources: ["ingress", "service"]
 txtOwnerId: vriska
 txtPrefix: k8s.vriska.
 domainFilters: ["mcmahan.io", "localdomain"]
+serviceMonitor:
+  enabled: true
