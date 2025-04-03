@@ -6,7 +6,6 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - grafana-credentials.yaml
-  - monitors/flaresolverr.yaml
   - monitors/pvr.yaml
   - monitors/qbittorrent.yaml
   - monitors/rook-ceph.yaml
