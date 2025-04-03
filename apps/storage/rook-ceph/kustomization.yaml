@@ -29,6 +29,11 @@ helmCharts:
         enabled: true
       toolbox:
         enabled: true
+      cephClusterSpec:
+        cephConfig:
+          global:
+            bdev_enable_discard: "true"
+            bdev_async_discard_threads: "1"
       cephFileSystemVolumeSnapshotClass:
         enabled: true
       cephBlockPoolsVolumeSnapshotClass:
