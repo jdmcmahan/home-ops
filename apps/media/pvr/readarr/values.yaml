@@ -51,6 +51,12 @@ service:
       metrics:
         port: 9707
 
+serviceMonitor:
+  metrics:
+    serviceName: readarr
+    endpoints:
+      - port: metrics
+
 persistence:
   config:
     enabled: true

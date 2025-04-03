@@ -25,3 +25,9 @@ service:
     ports:
       metrics:
         port: 8192
+
+serviceMonitor:
+  app:
+    serviceName: flaresolverr
+    endpoints:
+      - port: metrics

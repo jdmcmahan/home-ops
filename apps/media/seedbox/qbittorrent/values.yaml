@@ -76,6 +76,12 @@ service:
       metrics:
         port: 17871
 
+serviceMonitor:
+  metrics:
+    serviceName: qbittorrent
+    endpoints:
+      - port: metrics
+
 persistence:
   config:
     enabled: true
