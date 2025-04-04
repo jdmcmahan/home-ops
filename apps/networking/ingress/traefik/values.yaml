@@ -23,3 +23,8 @@ ports:
       entryPoint:
         to: websecure
         scheme: https
+
+metrics:
+  prometheus:
+    serviceMonitor:
+      enabled: true
