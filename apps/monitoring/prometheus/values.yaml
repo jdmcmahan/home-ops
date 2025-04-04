@@ -113,6 +113,11 @@ grafana:
         revision: 1
         datasource:
           - { name: DS_PROMETHEUS, value: Prometheus }
+      metallb:
+        # renovate: depName="Metallb"
+        gnetId: 20162
+        revision: 6
+        datasource: Prometheus
       pvr:
         url: https://raw.githubusercontent.com/onedr0p/exportarr/master/examples/grafana/dashboard2.json
         datasource: Prometheus
