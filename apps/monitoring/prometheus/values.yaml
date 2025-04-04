@@ -133,6 +133,11 @@ grafana:
         revision: 2
         datasource:
           - { name: DS_PROMETHEUS, value: Prometheus }
+      traefik:
+        # renovate: depName="Traefik Official Kubernetes Dashboard"
+        gnetId: 17347
+        revision: 9
+        datasource: Prometheus
       unpackerr:
         # renovate: depName="Unpackerr"
         gnetId: 18817
