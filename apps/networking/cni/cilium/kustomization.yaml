@@ -41,6 +41,11 @@ helmCharts:
         autoMount:
           enabled: false
         hostRoot: /sys/fs/cgroup
+      operator:
+        prometheus:
+          enabled: true
+          serviceMonitor:
+            enabled: true
       hubble:
         tls:
           enabled: false
@@ -50,3 +55,7 @@ helmCharts:
           enabled: true
           service:
             type: LoadBalancer
+      prometheus:
+        enabled: true
+        serviceMonitor:
+          enabled: true
