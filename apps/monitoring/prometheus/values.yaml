@@ -99,6 +99,11 @@ grafana:
         gnetId: 20842
         revision: 3
         datasource: Prometheus
+      cilium:
+        # renovate: depName="Cilium Metrics"
+        gnetId: 21431
+        revision: 6
+        datasource: Prometheus
       external-dns:
         # renovate: depName="External-dns"
         gnetId: 15038
