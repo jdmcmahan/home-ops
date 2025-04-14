@@ -9,11 +9,19 @@ controllers:
           tag: 0.52.3
           pullPolicy: IfNotPresent
         env:
-          TZ: "America/Chicago"
-          NODE_ENV: production
-          NEXTAUTH_URL: https://blinko.mcmahan.io
-          NEXT_PUBLIC_BASE_URL: https://blinko.mcmahan.io
-          # DATABASE_URL: postgresql://postgres:mysecretpassword@postgres:5432/postgres
+          - name: TZ
+            value: America/Chicago
+          - name: NODE_ENV
+            value: production
+          - name: NEXTAUTH_URL
+            value: https://blinko.mcmahan.io
+          - name: NEXT_PUBLIC_BASE_URL
+            value: https://blinko.mcmahan.io
+          - name: DATABASE_URL
+            valueFrom:
+              secretKeyRef:
+                name: blinko-cluster-app
+                key: uri
         envFrom:
           - secretRef:
               name: blinko-auth-secret
