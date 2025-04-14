@@ -124,6 +124,11 @@ grafana:
         revision: 6
         datasource:
           - { name: DS_PROMETHEUS, value: Prometheus }
+      external-dns:
+        # renovate: depName="CloudNativePG"
+        gnetId: 20417
+        revision: 4
+        datasource: Prometheus
       pvr:
         url: https://raw.githubusercontent.com/onedr0p/exportarr/master/examples/grafana/dashboard2.json
         datasource: Prometheus
