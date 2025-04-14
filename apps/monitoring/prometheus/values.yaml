@@ -124,7 +124,7 @@ grafana:
         revision: 6
         datasource:
           - { name: DS_PROMETHEUS, value: Prometheus }
-      external-dns:
+      cloudnative-pg:
         # renovate: depName="CloudNativePG"
         gnetId: 20417
         revision: 4
