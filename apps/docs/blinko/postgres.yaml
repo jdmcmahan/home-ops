@@ -1,3 +1,4 @@
+---
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:
@@ -8,3 +9,6 @@ spec:
   storage:
     storageClass: ceph-block
     size: 1Gi
+
+  monitoring:
+    enablePodMonitor: true
