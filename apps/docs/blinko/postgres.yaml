@@ -54,6 +54,7 @@ kind: ScheduledBackup
 metadata:
   name: blinko-backup
 spec:
+  immediate: true
   schedule: "0 0 0 * * *"
   backupOwnerReference: self
   cluster:
