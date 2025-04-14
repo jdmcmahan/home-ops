@@ -48,3 +48,13 @@ spec:
           name: blinko-pg-backblaze
           key: AWS_SECRET_ACCESS_KEY
     retentionPolicy: "7d"
+---
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: blinko-backup
+spec:
+  schedule: "0 0 0 * * *"
+  backupOwnerReference: self
+  cluster:
+    name: blinko-cluster
