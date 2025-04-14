@@ -38,8 +38,8 @@ spec:
   
   backup:
     barmanObjectStore:
-      endpointURL: s3:https://s3.us-west-002.backblazeb2.com/vriska-pg-blinko
-      destinationPath: "/"
+      endpointURL: https://s3.us-west-002.backblazeb2.com
+      destinationPath: "s3://vriska-pg-blinko"
       s3Credentials:
         accessKeyId:
           name: blinko-pg-backblaze
