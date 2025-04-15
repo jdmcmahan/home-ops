@@ -1,4 +1,27 @@
 ---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1beta1.json
+apiVersion: external-secrets.io/v1beta1
+kind: ExternalSecret
+metadata:
+  name: blinko-pg-backblaze
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: default
+  target:
+    name: blinko-pg-backblaze
+    template:
+      engineVersion: v2
+      data:
+        AWS_ACCESS_KEY_ID: "{{ .keyID }}"
+        AWS_SECRET_ACCESS_KEY: "{{ .applicationKey }}"
+  dataFrom:
+    - extract:
+        conversionStrategy: Default	
+        decodingStrategy: None
+        key: pg-backblaze
+        metadataPolicy: None
+---
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:
@@ -12,3 +35,27 @@ spec:
 
   monitoring:
     enablePodMonitor: true
+  
+  backup:
+    barmanObjectStore:
+      endpointURL: https://s3.us-west-002.backblazeb2.com
+      destinationPath: "s3://vriska-pg-blinko"
+      s3Credentials:
+        accessKeyId:
+          name: blinko-pg-backblaze
+          key: AWS_ACCESS_KEY_ID
+        secretAccessKey:
+          name: blinko-pg-backblaze
+          key: AWS_SECRET_ACCESS_KEY
+    retentionPolicy: "7d"
+---
+apiVersion: postgresql.cnpg.io/v1
+kind: ScheduledBackup
+metadata:
+  name: blinko-backup
+spec:
+  immediate: true
+  schedule: "0 0 0 * * *"
+  backupOwnerReference: self
+  cluster:
+    name: blinko-cluster
