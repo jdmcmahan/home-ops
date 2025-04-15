@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1beta1.json
-apiVersion: external-secrets.io/v1beta1
+apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: blinko-pg-backblaze
@@ -17,7 +17,7 @@ spec:
         AWS_SECRET_ACCESS_KEY: "{{ .applicationKey }}"
   dataFrom:
     - extract:
-        conversionStrategy: Default	
+        conversionStrategy: Default
         decodingStrategy: None
         key: pg-backblaze
         metadataPolicy: None
@@ -35,7 +35,7 @@ spec:
 
   monitoring:
     enablePodMonitor: true
-  
+
   backup:
     barmanObjectStore:
       endpointURL: https://s3.us-west-002.backblazeb2.com
