@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1beta1.json
-apiVersion: external-secrets.io/v1beta1
+apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: readarr-apikey
@@ -13,14 +13,14 @@ spec:
   data:
     - secretKey: READARR__AUTH__APIKEY
       remoteRef:
-        conversionStrategy: Default	
+        conversionStrategy: Default
         decodingStrategy: None
         metadataPolicy: None
         key: readarr
         property: apikey
     - secretKey: APIKEY
       remoteRef:
-        conversionStrategy: Default	
+        conversionStrategy: Default
         decodingStrategy: None
         metadataPolicy: None
         key: readarr
