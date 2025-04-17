@@ -1,0 +1,35 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s/helm-charts/main/charts/library/common/values.schema.json
+controllers:
+  webtop:
+    containers:
+      app:
+        image:
+          repository: lscr.io/linuxserver/webtop
+          tag: fedora-kde@sha256:302eda9caef438d9ee60b3127e2d30e4cd9f646abddd68367f065c3074b0445d
+          pullPolicy: IfNotPresent
+        env:
+          - name: TZ
+            value: "America/Chicago"
+          - name: CUSTOM_USER
+            valueFrom:
+              secretKeyRef:
+                name: webtop-user-secret
+                key: username
+          - name: PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: webtop-user-secret
+                key: password
+
+service:
+  web:
+    enabled: true
+    controller: webtop
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: webtop.localdomain
+    type: LoadBalancer
+    ports:
+      http:
+        port: 80
+        targetPort: 3000
