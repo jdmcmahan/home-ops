@@ -21,6 +21,11 @@ controllers:
               secretKeyRef:
                 name: webtop-user-secret
                 key: password
+        resources:
+          requests:
+            gpu.intel.com/i915: 1
+          limits:
+            gpu.intel.com/i915: 1
 
 service:
   web:
