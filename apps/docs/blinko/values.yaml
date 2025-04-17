@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: blinkospace/blinko
-          tag: 0.52.3
+          tag: 0.52.4
           pullPolicy: IfNotPresent
         env:
           - name: TZ
