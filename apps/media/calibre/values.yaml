@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/linuxserver/calibre
-          tag: 8.2.100@sha256:aceb6b8897df57732bd80b96c8bd5455bf5e2dc105f4661a74aba58322ac01a5
+          tag: 8.3.0@sha256:0ec2e6023d0c3963032c2c04d48c58c9c4dfaa9c0bbc29bfad703db46d7db306
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
