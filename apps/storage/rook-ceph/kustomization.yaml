@@ -9,7 +9,7 @@ resources:
 helmCharts:
   - name: rook-ceph
     repo: https://charts.rook.io/release
-    version: v1.17.0
+    version: v1.17.1
     releaseName: rook-release
     namespace: rook-ceph
     valuesInline:
@@ -21,7 +21,7 @@ helmCharts:
           enabled: true
   - name: rook-ceph-cluster
     repo: https://charts.rook.io/release
-    version: v1.17.0
+    version: v1.17.1
     releaseName: rook-release
     namespace: rook-ceph
     valuesInline:
