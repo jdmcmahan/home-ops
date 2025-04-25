@@ -6,7 +6,7 @@ kind: Kustomization
 helmCharts:
   - name: traefik
     repo: https://helm.traefik.io/traefik
-    version: 35.0.1
+    version: 35.1.0
     releaseName: traefik
     namespace: traefik
     valuesFile: values.yaml
