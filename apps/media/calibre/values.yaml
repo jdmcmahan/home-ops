@@ -15,7 +15,7 @@ controllers:
       web:
         image:
           repository: ghcr.io/linuxserver/calibre-web
-          tag: 0.6.24@sha256:aacec8606010912de8c0b563f9022777b210bc8e1a167d4e84c735e13cfe241f
+          tag: 0.6.24@sha256:a0f80e0ac06e0a09fdd5be8205e40afee8f4cc019840ecfa0e989e6d5ae25625
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
