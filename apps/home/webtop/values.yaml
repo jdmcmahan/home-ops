@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: lscr.io/linuxserver/webtop
-          tag: fedora-kde@sha256:19c9b281896ae86b8f03ac9455ba1102102711f82fad8761d50fdbd6db065555
+          tag: fedora-kde@sha256:9433f5b308600e1eb5af64ba6fff8d2abcf5f04045caffd1c32640d9609aeb0c
           pullPolicy: IfNotPresent
         env:
           - name: TZ
