@@ -15,11 +15,13 @@
     },
     {
       "matchPackageNames": "siderolabs/talos",
-      "automerge": false
+      "automerge": false,
+      "separateMultipleMinor": true
     },
     {
       "matchPackageNames": "kubernetes/kubernetes",
-      "automerge": false
+      "automerge": false,
+      "separateMultipleMinor": true
     },
     {
       "matchSourceUrls": ["https://github.com/rook/rook"],
