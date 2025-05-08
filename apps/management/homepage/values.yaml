@@ -213,6 +213,9 @@ config:
                 icon: proxmox.svg
                 href: http://pbs.localdomain:8007
         - k8s:
+            - Sidero Omni:
+                icon: talos.svg
+                href: https://mcmahan.omni.siderolabs.io/omni
             - ArgoCD:
                 icon: argo-cd.svg
                 href: https://argocd.mcmahan.io
