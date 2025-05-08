@@ -26,6 +26,20 @@ env:
 
 envFrom:
   - secretRef:
+      name: autobrr-apikey
+  - secretRef:
+      name: lidarr-apikey
+  - secretRef:
+      name: overseerr-apikey
+  - secretRef:
+      name: prowlarr-apikey
+  - secretRef:
+      name: radarr-apikey
+  - secretRef:
+      name: readarr-apikey
+  - secretRef:
+      name: sonarr-apikey
+  - secretRef:
       name: unifi-credentials
 
 persistence:
