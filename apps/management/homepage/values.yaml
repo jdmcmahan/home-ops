@@ -37,6 +37,9 @@ config:
       label: "vriska"
   docker:
   settings:
+    quicklaunch:
+      searchDescriptions: true
+      hideInternetSearch: true
 
 env:
   - name: TZ
