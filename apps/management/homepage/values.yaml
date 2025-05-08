@@ -68,6 +68,14 @@ config:
               url: https://192.168.0.1
               username: {{HOMEPAGE_VAR_UNIFI_USER}}
               password: {{HOMEPAGE_VAR_UNIFI_PASS}}
+    - k8s:
+        - ArgoCD:
+            icon: argo-cd.svg
+            href: https://argocd.mcmahan.io
+            widget:
+              type: argocd
+              url: http://argocd-server.argocd.svc
+              key: {{HOMEPAGE_VAR_ARGOCD_APIKEY}}
     - PVR:
         - Overseerr:
             icon: overseerr.svg
