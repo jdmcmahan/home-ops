@@ -65,7 +65,12 @@ controller:
     maxUnavailable: 25%
 
 config:
-  bookmarks: []
+  bookmarks:
+  bookmarksString: |
+    - GitHub
+        - abbr: GH
+          icon: github.svg
+          href: https://github.com
   services:
   servicesString: |
     - Apps:
