@@ -18,6 +18,22 @@ service:
         port: 80
         targetPort: 3000
 
+env:
+  - name: TZ
+    value: "America/Chicago"
+  - name: HOMEPAGE_ALLOWED_HOSTS
+    value: homepage.localdomain
+
+envFrom:
+  - secretRef:
+      name: unifi-credentials
+
+persistence:
+  logs:
+    enabled: true
+    type: emptyDir
+    mountPath: /app/config/logs
+
 controller:
   strategy: RollingUpdate
   rollingUpdate:
@@ -64,15 +80,3 @@ config:
     quicklaunch:
       searchDescriptions: true
       hideInternetSearch: true
-
-env:
-  - name: TZ
-    value: "America/Chicago"
-  - name: HOMEPAGE_ALLOWED_HOSTS
-    value: homepage.localdomain
-
-persistence:
-  logs:
-    enabled: true
-    type: emptyDir
-    mountPath: /app/config/logs
