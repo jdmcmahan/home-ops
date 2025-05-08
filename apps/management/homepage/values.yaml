@@ -70,7 +70,7 @@ config:
   servicesString: |
     - Apps:
         - Kasm Workspaces:
-            icon: kasm.svg
+            icon: kasm-workspaces.svg
             href: https://kasm.localdomain
         - Blinko:
             icon: https://raw.githubusercontent.com/blinkospace/blinko/refs/heads/main/app/public/logo.svg
