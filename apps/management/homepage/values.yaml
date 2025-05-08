@@ -31,7 +31,7 @@ config:
     - Home:
         - UniFi Controller:
             icon: unifi.svg
-            url: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
+            href: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
             description: UniFi Controller
             widget:
               type: unifi
