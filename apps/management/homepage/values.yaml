@@ -186,6 +186,9 @@ config:
               username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
               password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
     - Homelab:
+        - PiKVM:
+            icon: pikvm.svg
+            href: http://pikvm
         - Monitoring:
             - Prometheus:
                 icon: prometheus.svg
