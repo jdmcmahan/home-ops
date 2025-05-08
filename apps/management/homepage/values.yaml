@@ -184,7 +184,7 @@ config:
         - Monitoring:
             - Prometheus:
                 icon: prometheus.svg
-                href: http://prometheus.localdomain
+                href: http://prometheus.localdomain:9090
             - Grafana:
                 icon: grafana.svg
                 href: https://grafana.mcmahan.io
