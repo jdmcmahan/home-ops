@@ -22,6 +22,7 @@ helmCharts:
         enabled: true
       configs:
         cm:
+          accounts.readonly: apiKey
           kustomize.buildOptions: "--enable-helm"
           resource.exclusions: |
             - apiGroups:
@@ -30,6 +31,8 @@ helmCharts:
                 - CiliumIdentity
               clusters:
                 - "*"
+        rbac:
+          policy.csv: "g, readonly, role:readonly"
         params:
           server.insecure: true
           controller.diff.server.side: "true"
