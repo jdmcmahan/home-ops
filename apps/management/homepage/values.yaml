@@ -9,7 +9,7 @@ serviceAccount:
   create: true
 
 service:
-  web:
+  main:
     annotations:
       external-dns.alpha.kubernetes.io/hostname: homepage.localdomain
     type: LoadBalancer
