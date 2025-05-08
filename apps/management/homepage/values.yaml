@@ -26,6 +26,8 @@ env:
 
 envFrom:
   - secretRef:
+      name: argocd-apikey
+  - secretRef:
       name: autobrr-apikey
   - secretRef:
       name: lidarr-apikey
