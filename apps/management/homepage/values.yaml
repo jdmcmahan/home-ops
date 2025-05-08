@@ -60,36 +60,64 @@ config:
             href: https://overseerr.mcmahan.io
             namespace: overseerr
             app: overseerr
+            widget:
+              type: overseerr
+              url: http://overseerr.overseerr.svc
+              key: {{HOMEPAGE_VAR_OVERSEERR_APIKEY}}
         - Radarr:
             icon: radarr.svg
             href: http://radarr.localdomain
             namespace: radarr
             app: radarr
+            widget:
+              type: radarr
+              url: http://radarr-web.radarr.svc
+              key: {{HOMEPAGE_VAR_RADARR_APIKEY}}
         - Sonarr:
             icon: sonarr.svg
             href: http://sonarr.localdomain
             namespace: sonarr
             app: sonarr
+            widget:
+              type: sonarr
+              url: http://sonarr-web.sonarr.svc
+              key: {{HOMEPAGE_VAR_SONARR_APIKEY}}
         - Lidarr:
             icon: lidarr.svg
             href: http://lidarr.localdomain
             namespace: lidarr
             app: lidarr
+            widget:
+              type: lidarr
+              url: http://lidarr-web.lidarr.svc
+              key: {{HOMEPAGE_VAR_LIDARR_APIKEY}}
         - Readarr:
             icon: readarr.svg
             href: http://readarr.localdomain
             namespace: readarr
             app: readarr
+            widget:
+              type: readarr
+              url: http://readarr-web.readarr.svc
+              key: {{HOMEPAGE_VAR_READARR_APIKEY}}
         - Prowlarr:
             icon: prowlarr.svg
             href: http://prowlarr.localdomain
             namespace: prowlarr
             app: prowlarr
+            widget:
+              type: prowlarr
+              url: http://prowlarr-web.prowlarr.svc
+              key: {{HOMEPAGE_VAR_PROWLARR_APIKEY}}
         - Autobrr:
             icon: autobrr.svg
             href: http://autobrr.localdomain
             namespace: autobrr
             app: autobrr
+            widget:
+              type: autobrr
+              url: http://autobrr.autobrr.svc
+              key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
   widgets:
     - datetime:
         text_size: x1
