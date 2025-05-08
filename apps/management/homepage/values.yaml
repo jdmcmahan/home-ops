@@ -1,0 +1,51 @@
+---
+image:
+  repository: ghcr.io/gethomepage/homepage
+  tag: v1.2.0@sha256:5e6bcbb595c4e857540577135e0f8b3ffc2e97c23d6e0ddc7df183de5bfdd442
+
+enableRbac: true
+
+serviceAccount:
+  create: true
+
+service:
+  web:
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: homepage.localdomain
+    type: LoadBalancer
+    ports:
+      http:
+        port: 80
+        targetPort: 3000
+
+controller:
+  strategy: RollingUpdate
+  rollingUpdate:
+    maxSurge: 25%
+    maxUnavailable: 25%
+
+config:
+  bookmarks: []
+  services: []
+  widgets: []
+  kubernetes:
+    cluster:
+      show: true
+      cpu: true
+      memory: true
+      showLabel: true
+      label: "vriska"
+  docker:
+  settings:
+
+env:
+  - name: TZ
+    value: "America/Chicago"
+  - name: HOMEPAGE_ALLOWED_HOSTS
+    value: homepage.localdomain
+
+persistence:
+  logs:
+    enabled: true
+    type: emptyDir
+    mountPath: /app/config/logs
