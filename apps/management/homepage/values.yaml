@@ -30,11 +30,19 @@ envFrom:
   - secretRef:
       name: autobrr-apikey
   - secretRef:
+      name: calibre-web-credentials
+  - secretRef:
       name: lidarr-apikey
+  - secretRef:
+      name: octoprint-apikey
   - secretRef:
       name: overseerr-apikey
   - secretRef:
+      name: plex-apikey
+  - secretRef:
       name: prowlarr-apikey
+  - secretRef:
+      name: qbittorrent-credentials
   - secretRef:
       name: radarr-apikey
   - secretRef:
@@ -60,24 +68,45 @@ config:
   bookmarks: []
   services:
   servicesString: |
-    - Home:
-        - UniFi Controller:
-            icon: unifi.svg
-            href: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
-            description: Dream Machine Pro
+    - Apps:
+        - Kasm Workspaces:
+            icon: kasm.svg
+            href: https://kasm.localdomain
+        - Blinko:
+            icon: https://raw.githubusercontent.com/blinkospace/blinko/refs/heads/main/app/public/logo.svg
+            href: https://blinko.mcmahan.io
+        - Homebox:
+            icon: homebox.svg
+            href: https://homebox.mcmahan.io
+        - Mealie:
+            icon: mealie.svg
+            href: https://mealie.mcmahan.io
+        - OctoPrint:
+            icon: octoprint.svg
+            href: http://octopi.localdomain
             widget:
-              type: unifi
-              url: https://192.168.0.1
-              username: {{HOMEPAGE_VAR_UNIFI_USER}}
-              password: {{HOMEPAGE_VAR_UNIFI_PASS}}
-    - k8s:
-        - ArgoCD:
-            icon: argo-cd.svg
-            href: https://argocd.mcmahan.io
+              type: octoprint
+              url: http://octopi.localdomain
+              key: {{HOMEPAGE_VAR_OCTOPRINT_APIKEY}}
+    - Media:
+        - Plex:
+            icon: plex.svg
+            href: https://plex.mcmahan.io
             widget:
-              type: argocd
-              url: http://argocd-server.argocd.svc
-              key: {{HOMEPAGE_VAR_ARGOCD_APIKEY}}
+              type: plex
+              url: http://plex.plex.svc
+              key: {{HOMEPAGE_VAR_PLEX_APIKEY}}
+        - Calibre:
+            icon: calibre.svg
+            href: http://calibre.localdomain
+        - Calibre Web:
+            icon: calibre-web.svg
+            href: https://calibre-web.mcmahan.io
+            widget:
+              type: calibreweb
+              url: http://calibre-web.calibre.svc
+              username: {{HOMEPAGE_VAR_CALIBRE_WEB_USER}}
+              password: {{HOMEPAGE_VAR_CALIBRE_WEB_PASS}}
     - PVR:
         - Overseerr:
             icon: overseerr.svg
@@ -142,6 +171,58 @@ config:
               type: autobrr
               url: http://autobrr.autobrr.svc
               key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
+    - Seedbox:
+        - qBittorrent:
+            icon: qbittorrent.svg
+            href: http://qbittorrent.localdomain
+            widget:
+              type: qbittorrent
+              url: http://qbittorrent-web.qbittorrent.svc
+              username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
+              password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
+    - Homelab:
+        - Monitoring:
+            - Prometheus:
+                icon: prometheus.svg
+                href: http://prometheus.localdomain
+            - Grafana:
+                icon: grafana.svg
+                href: https://grafana.mcmahan.io
+        - Networking:
+            - UniFi Controller:
+                icon: unifi.svg
+                href: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
+                description: Dream Machine Pro
+                widget:
+                  type: unifi
+                  url: https://192.168.0.1
+                  username: {{HOMEPAGE_VAR_UNIFI_USER}}
+                  password: {{HOMEPAGE_VAR_UNIFI_PASS}}
+            - DDNS Updater:
+                icon: ddns-updater.svg
+                href: http://ddns.localdomain
+        - Storage:
+            - new-peepums:
+                icon: synology.svg
+                href: http://new-peepums.localdomain:5000
+        - Proxmox:
+            - Proxmox VE:
+                icon: proxmox.svg
+                href: http://tom.localdomain:8006
+            - Proxmox Backup Server:
+                icon: proxmox.svg
+                href: http://pbs.localdomain:8007
+        - k8s:
+            - ArgoCD:
+                icon: argo-cd.svg
+                href: https://argocd.mcmahan.io
+                widget:
+                  type: argocd
+                  url: http://argocd-server.argocd.svc
+                  key: {{HOMEPAGE_VAR_ARGOCD_APIKEY}}
+            - Hubble UI:
+                icon: cilium.svg
+                href: http://hubble.localdomain
   widgets:
     - datetime:
         text_size: x1
