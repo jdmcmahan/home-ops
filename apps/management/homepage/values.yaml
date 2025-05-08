@@ -31,6 +31,7 @@ config:
     - datetime:
         text_size: x1
         format:
+          dateStyle: short
           timeStyle: short
           hour12: true
     - kubernetes:
@@ -45,6 +46,8 @@ config:
           cpu: true
           memory: true
           showLabel: true
+  kubernetes:
+    mode: cluster
   docker:
   settings:
     quicklaunch:
