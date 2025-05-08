@@ -26,6 +26,7 @@ controller:
 
 config:
   bookmarks: []
+  services:
   servicesString: |
     - Home:
         - UniFi Controller:
