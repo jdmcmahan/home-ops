@@ -48,12 +48,48 @@ config:
         - UniFi Controller:
             icon: unifi.svg
             href: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
-            description: UniFi Controller
+            description: Dream Machine Pro
             widget:
               type: unifi
               url: https://192.168.0.1
               username: {{HOMEPAGE_VAR_UNIFI_USER}}
               password: {{HOMEPAGE_VAR_UNIFI_PASS}}
+    - PVR:
+        - Overseerr:
+            icon: overseerr.svg
+            href: https://overseerr.mcmahan.io
+            namespace: overseerr
+            app: overseerr
+        - Radarr:
+            icon: radarr.svg
+            href: http://radarr.localdomain
+            namespace: radarr
+            app: radarr
+        - Sonarr:
+            icon: sonarr.svg
+            href: http://sonarr.localdomain
+            namespace: sonarr
+            app: sonarr
+        - Lidarr:
+            icon: lidarr.svg
+            href: http://lidarr.localdomain
+            namespace: lidarr
+            app: lidarr
+        - Readarr:
+            icon: readarr.svg
+            href: http://readarr.localdomain
+            namespace: readarr
+            app: readarr
+        - Prowlarr:
+            icon: prowlarr.svg
+            href: http://prowlarr.localdomain
+            namespace: prowlarr
+            app: prowlarr
+        - Autobrr:
+            icon: autobrr.svg
+            href: http://autobrr.localdomain
+            namespace: autobrr
+            app: autobrr
   widgets:
     - datetime:
         text_size: x1
