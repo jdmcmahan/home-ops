@@ -266,6 +266,8 @@ config:
       hideInternetSearch: true
     layout:
       Media:
+        style: row
+        columns: 4
         Playback:
           header: false
           style: row
@@ -277,4 +279,4 @@ config:
         Seedbox:
           header: false
           style: row
-          columns: 4
+          columns: 1
