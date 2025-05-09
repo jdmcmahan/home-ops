@@ -100,7 +100,7 @@ config:
             href: https://plex.mcmahan.io
             widget:
               type: plex
-              url: http://plex.plex.svc
+              url: http://plex.plex.svc:32400
               key: {{HOMEPAGE_VAR_PLEX_APIKEY}}
         - Calibre:
             icon: calibre.svg
