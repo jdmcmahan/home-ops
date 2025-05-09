@@ -95,7 +95,7 @@ config:
               url: http://octopi.localdomain
               key: {{HOMEPAGE_VAR_OCTOPRINT_APIKEY}}
     - Media:
-        - Apps
+        - Apps:
             - Plex:
                 icon: plex.svg
                 href: https://plex.mcmahan.io
