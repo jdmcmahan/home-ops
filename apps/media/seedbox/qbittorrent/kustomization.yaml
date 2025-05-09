@@ -10,9 +10,9 @@ resources:
   - volsync.yaml
 
 configMapGenerator:
-  - name: dnsdist-configmap
+  - name: coredns-configmap
     files:
-      - ./config/dnsdist.conf
+      - ./config/Corefile
 
 generatorOptions:
   disableNameSuffixHash: true

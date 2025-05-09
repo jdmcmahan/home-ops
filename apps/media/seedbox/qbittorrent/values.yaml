@@ -6,39 +6,17 @@ controllers:
       securityContext:
         fsGroup: 979
         fsGroupChangePolicy: "OnRootMismatch"
-    containers:
-      dnsdist:
+    initContainers:
+      coredns:
         image:
-          repository: docker.io/powerdns/dnsdist-19
-          tag: 1.9.9
-      app:
-        image:
-          repository: ghcr.io/home-operations/qbittorrent
-          tag: 5.1.0@sha256:3e7c969139da1eaf8d3ccdebd473eefb4e2550d610b88f5a3c866bc34662d89a
-          pullPolicy: IfNotPresent
-        env:
-          TZ: "America/Chicago"
-          QBT_WEBUI_PORT: 8080
-          QBT_TORRENTING_PORT: 51820
-        securityContext:
-          runAsUser: 979
-          runAsGroup: 979
-          runAsNonRoot: true
-          allowPrivilegeEscalation: false
-          readOnlyRootFilesystem: true
-          capabilities:
-            drop:
-              - ALL
-      metrics:
-        image:
-          repository: caseyscarborough/qbittorrent-exporter
-          tag: v1.3.5
-          pullPolicy: IfNotPresent
-        envFrom:
-          - secretRef:
-              name: qbittorrent-metrics-credentials
+          repository: docker.io/coredns/coredns
+          tag: 1.12.1
+        args:
+          - -conf
+          - /etc/coredns/Corefile
+        restartPolicy: Always
       gluetun:
-        dependsOn: app
+        dependsOn: coredns
         image:
           repository: ghcr.io/qdm12/gluetun
           tag: v3.40.0
@@ -65,6 +43,33 @@ controllers:
             squat.ai/tun: "1"
           limits:
             squat.ai/tun: "1"
+    containers:
+      app:
+        image:
+          repository: ghcr.io/home-operations/qbittorrent
+          tag: 5.1.0@sha256:3e7c969139da1eaf8d3ccdebd473eefb4e2550d610b88f5a3c866bc34662d89a
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          QBT_WEBUI_PORT: 8080
+          QBT_TORRENTING_PORT: 51820
+        securityContext:
+          runAsUser: 979
+          runAsGroup: 979
+          runAsNonRoot: true
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+              - ALL
+      metrics:
+        image:
+          repository: caseyscarborough/qbittorrent-exporter
+          tag: v1.3.5
+          pullPolicy: IfNotPresent
+        envFrom:
+          - secretRef:
+              name: qbittorrent-metrics-credentials
 
 service:
   web:
@@ -90,15 +95,15 @@ serviceMonitor:
       - port: metrics
 
 persistence:
-  dnsdist:
+  coredns:
     enabled: true
     type: configMap
-    name: dnsdist-configmap
+    name: coredns-configmap
     advancedMounts:
       qbittorrent:
-        dnsdist:
-          - path: /etc/dnsdist/dnsdist.conf
-            subPath: dnsdist.conf
+        coredns:
+          - path: /etc/coredns/Corefile
+            subPath: Corefile
             readOnly: true
   config:
     enabled: true
