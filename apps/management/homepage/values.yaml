@@ -36,6 +36,8 @@ envFrom:
   - secretRef:
       name: octoprint-apikey
   - secretRef:
+      name: openweather-apikey
+  - secretRef:
       name: overseerr-apikey
   - secretRef:
       name: plex-apikey
@@ -247,6 +249,16 @@ config:
           dateStyle: short
           timeStyle: short
           hour12: true
+    - openweathermap:
+        label: Anamosa
+        latitude: 42.093916
+        longitude: -91.249325
+        units: imperial
+        provider: openweathermap
+        apiKey: {{HOMEPAGE_VAR_OPENWEATHER_APIKEY}}
+        cache: 5
+        format:
+          maximumFractionDigits: 1
     - kubernetes:
         cluster:
           show: true
