@@ -103,9 +103,6 @@ config:
                   type: plex
                   url: http://plex.plex.svc:32400
                   key: {{HOMEPAGE_VAR_PLEX_APIKEY}}
-            - Calibre:
-                icon: calibre.svg
-                href: http://calibre.localdomain
             - Calibre Web:
                 icon: calibre-web.svg
                 href: https://calibre-web.mcmahan.io
@@ -114,6 +111,9 @@ config:
                   url: http://calibre-web.calibre.svc
                   username: {{HOMEPAGE_VAR_CALIBRE_WEB_USER}}
                   password: {{HOMEPAGE_VAR_CALIBRE_WEB_PASS}}
+            - Calibre:
+                icon: calibre.svg
+                href: http://calibre.localdomain
         - PVR:
             - Overseerr:
                 icon: overseerr.svg
@@ -266,17 +266,9 @@ config:
       hideInternetSearch: true
     layout:
       Media:
-        style: row
-        columns: 4
         Playback:
           header: false
-          style: row
-          columns: 4
         PVR:
           header: false
-          style: column
-          rows: 2
         Seedbox:
           header: false
-          style: row
-          columns: 1
