@@ -20,6 +20,7 @@ controllers:
         image:
           repository: ghcr.io/qdm12/gluetun
           tag: v3.40.0
+        restartPolicy: Always
         env:
           TZ: "America/Chicago"
           VPN_SERVICE_PROVIDER: mullvad
