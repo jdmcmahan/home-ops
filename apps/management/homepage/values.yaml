@@ -265,6 +265,9 @@ config:
       searchDescriptions: true
       hideInternetSearch: true
     layout:
+      Apps:
+        style: row
+        columns: 3
       Media:
         style: row
         columns: 3
