@@ -37,7 +37,7 @@ controllers:
         dependsOn: app
         image:
           repository: ghcr.io/qdm12/gluetun
-          tag: v3.39.1
+          tag: v3.40.0
         env:
           TZ: "America/Chicago"
           VPN_SERVICE_PROVIDER: mullvad
