@@ -266,6 +266,8 @@ config:
       hideInternetSearch: true
     layout:
       Media:
+        style: row
+        columns: 3
         Playback:
           header: false
         PVR:
