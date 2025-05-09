@@ -274,8 +274,8 @@ config:
           columns: 4
         PVR:
           header: false
-          style: row
-          columns: 3
+          style: column
+          rows: 2
         Seedbox:
           header: false
           style: row
