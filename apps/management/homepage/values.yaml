@@ -95,26 +95,26 @@ config:
               url: http://octopi.localdomain
               key: {{HOMEPAGE_VAR_OCTOPRINT_APIKEY}}
     - Media:
-        - Plex:
-            icon: plex.svg
-            href: https://plex.mcmahan.io
-            widget:
-              type: plex
-              url: http://plex.plex.svc:32400
-              key: {{HOMEPAGE_VAR_PLEX_APIKEY}}
-        - Calibre:
-            icon: calibre.svg
-            href: http://calibre.localdomain
-        - Calibre Web:
-            icon: calibre-web.svg
-            href: https://calibre-web.mcmahan.io
-            widget:
-              type: calibreweb
-              url: http://calibre-web.calibre.svc
-              username: {{HOMEPAGE_VAR_CALIBRE_WEB_USER}}
-              password: {{HOMEPAGE_VAR_CALIBRE_WEB_PASS}}
-    - PVR:
-        - Servarr:
+        - Apps
+            - Plex:
+                icon: plex.svg
+                href: https://plex.mcmahan.io
+                widget:
+                  type: plex
+                  url: http://plex.plex.svc:32400
+                  key: {{HOMEPAGE_VAR_PLEX_APIKEY}}
+            - Calibre:
+                icon: calibre.svg
+                href: http://calibre.localdomain
+            - Calibre Web:
+                icon: calibre-web.svg
+                href: https://calibre-web.mcmahan.io
+                widget:
+                  type: calibreweb
+                  url: http://calibre-web.calibre.svc
+                  username: {{HOMEPAGE_VAR_CALIBRE_WEB_USER}}
+                  password: {{HOMEPAGE_VAR_CALIBRE_WEB_PASS}}
+        - PVR:
             - Overseerr:
                 icon: overseerr.svg
                 href: https://overseerr.mcmahan.io
@@ -265,12 +265,14 @@ config:
       searchDescriptions: true
       hideInternetSearch: true
     layout:
-      PVR:
-        style: row
-        columns: 2
+      Media:
+        Apps:
+          header: false
+          style: row
         Servarr:
           header: false
           style: row
           columns: 3
         Seedbox:
           header: false
+          style: row
