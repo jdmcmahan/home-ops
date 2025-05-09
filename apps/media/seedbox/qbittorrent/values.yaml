@@ -37,7 +37,7 @@ controllers:
         dependsOn: app
         image:
           repository: ghcr.io/qdm12/gluetun
-          tag: v3.40.0
+          tag: v3.39.1
         env:
           TZ: "America/Chicago"
           VPN_SERVICE_PROVIDER: mullvad
@@ -45,7 +45,6 @@ controllers:
           SERVER_CITIES: "Chicago IL"
           UPDATER_PERIOD: 24h
           FIREWALL_INPUT_PORTS: "8080,17871"
-          DNS_ADDRESS: "1.1.1.1"
         envFrom:
           - secretRef:
               name: gluetun-mullvad-credentials
