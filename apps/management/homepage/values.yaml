@@ -168,15 +168,6 @@ config:
               type: prowlarr
               url: http://prowlarr-web.prowlarr.svc
               key: {{HOMEPAGE_VAR_PROWLARR_APIKEY}}
-        - Autobrr:
-            icon: autobrr.svg
-            href: http://autobrr.localdomain
-            namespace: autobrr
-            app: autobrr
-            widget:
-              type: autobrr
-              url: http://autobrr.autobrr.svc
-              key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
     - Seedbox:
         - qBittorrent:
             icon: qbittorrent.svg
@@ -186,6 +177,15 @@ config:
               url: http://qbittorrent-web.qbittorrent.svc
               username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
               password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
+        - Autobrr:
+            icon: autobrr.svg
+            href: http://autobrr.localdomain
+            namespace: autobrr
+            app: autobrr
+            widget:
+              type: autobrr
+              url: http://autobrr.autobrr.svc
+              key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
     - Homelab:
         - PiKVM:
             icon: pikvm.svg
@@ -258,6 +258,11 @@ config:
     mode: cluster
   docker:
   settings:
+    headerStyle: boxed
     quicklaunch:
       searchDescriptions: true
       hideInternetSearch: true
+    layout:
+      PVR:
+        style: row
+        columns: 4
