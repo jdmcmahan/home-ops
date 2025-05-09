@@ -95,7 +95,7 @@ config:
               url: http://octopi.localdomain
               key: {{HOMEPAGE_VAR_OCTOPRINT_APIKEY}}
     - Media:
-        - Playback:
+        - Left:
             - Plex:
                 icon: plex.svg
                 href: https://plex.mcmahan.io
@@ -114,7 +114,7 @@ config:
             - Calibre:
                 icon: calibre.svg
                 href: http://calibre.localdomain
-        - PVR:
+        - Middle:
             - Overseerr:
                 icon: overseerr.svg
                 href: https://overseerr.mcmahan.io
@@ -124,6 +124,15 @@ config:
                   type: overseerr
                   url: http://overseerr.overseerr.svc
                   key: {{HOMEPAGE_VAR_OVERSEERR_APIKEY}}
+            - Prowlarr:
+                icon: prowlarr.svg
+                href: http://prowlarr.localdomain
+                namespace: prowlarr
+                app: prowlarr
+                widget:
+                  type: prowlarr
+                  url: http://prowlarr-web.prowlarr.svc
+                  key: {{HOMEPAGE_VAR_PROWLARR_APIKEY}}
             - Radarr:
                 icon: radarr.svg
                 href: http://radarr.localdomain
@@ -142,6 +151,24 @@ config:
                   type: sonarr
                   url: http://sonarr-web.sonarr.svc
                   key: {{HOMEPAGE_VAR_SONARR_APIKEY}}
+        - Right:
+            - qBittorrent:
+                icon: qbittorrent.svg
+                href: http://qbittorrent.localdomain
+                widget:
+                  type: qbittorrent
+                  url: http://qbittorrent-web.qbittorrent.svc
+                  username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
+                  password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
+            - Autobrr:
+                icon: autobrr.svg
+                href: http://autobrr.localdomain
+                namespace: autobrr
+                app: autobrr
+                widget:
+                  type: autobrr
+                  url: http://autobrr.autobrr.svc
+                  key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
             - Lidarr:
                 icon: lidarr.svg
                 href: http://lidarr.localdomain
@@ -160,33 +187,6 @@ config:
                   type: readarr
                   url: http://readarr-web.readarr.svc
                   key: {{HOMEPAGE_VAR_READARR_APIKEY}}
-            - Prowlarr:
-                icon: prowlarr.svg
-                href: http://prowlarr.localdomain
-                namespace: prowlarr
-                app: prowlarr
-                widget:
-                  type: prowlarr
-                  url: http://prowlarr-web.prowlarr.svc
-                  key: {{HOMEPAGE_VAR_PROWLARR_APIKEY}}
-        - Seedbox:
-            - qBittorrent:
-                icon: qbittorrent.svg
-                href: http://qbittorrent.localdomain
-                widget:
-                  type: qbittorrent
-                  url: http://qbittorrent-web.qbittorrent.svc
-                  username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
-                  password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
-            - Autobrr:
-                icon: autobrr.svg
-                href: http://autobrr.localdomain
-                namespace: autobrr
-                app: autobrr
-                widget:
-                  type: autobrr
-                  url: http://autobrr.autobrr.svc
-                  key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
     - Homelab:
         - PiKVM:
             icon: pikvm.svg
@@ -268,9 +268,9 @@ config:
       Media:
         style: row
         columns: 3
-        Playback:
+        Left:
           header: false
-        PVR:
+        Middle:
           header: false
-        Seedbox:
+        Right:
           header: false
