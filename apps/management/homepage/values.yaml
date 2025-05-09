@@ -269,7 +269,7 @@ config:
         Apps:
           header: false
           style: row
-        Servarr:
+        PVR:
           header: false
           style: row
           columns: 3
