@@ -259,6 +259,7 @@ config:
   docker:
   settings:
     headerStyle: boxed
+    statusStyle: "dot"
     quicklaunch:
       searchDescriptions: true
       hideInternetSearch: true
