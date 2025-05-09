@@ -67,10 +67,10 @@ controller:
 config:
   bookmarks:
   bookmarksString: |
-    - GitHub:
-        - abbr: GH
-          icon: github.svg
-          href: https://github.com/
+    - Development:
+        - GitHub:
+            - abbr: GH
+              href: https://github.com/
   services:
   servicesString: |
     - Apps:
