@@ -188,54 +188,58 @@ config:
                   url: http://readarr-web.readarr.svc
                   key: {{HOMEPAGE_VAR_READARR_APIKEY}}
     - Homelab:
-        - PiKVM:
-            icon: pikvm.svg
-            href: http://pikvm
-        - Monitoring:
-            - Prometheus:
-                icon: prometheus.svg
-                href: http://prometheus.localdomain:9090
-            - Grafana:
-                icon: grafana.svg
-                href: https://grafana.mcmahan.io
-        - Networking:
-            - UniFi Controller:
-                icon: unifi.svg
-                href: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
-                description: Dream Machine Pro
-                widget:
-                  type: unifi
-                  url: https://192.168.0.1
-                  username: {{HOMEPAGE_VAR_UNIFI_USER}}
-                  password: {{HOMEPAGE_VAR_UNIFI_PASS}}
-            - DDNS Updater:
-                icon: ddns-updater.svg
-                href: http://ddns.localdomain
-        - Storage:
-            - new-peepums:
-                icon: synology.svg
-                href: http://new-peepums.localdomain:5000
-        - Proxmox:
-            - Proxmox VE:
-                icon: proxmox.svg
-                href: http://tom.localdomain:8006
-            - Proxmox Backup Server:
-                icon: proxmox.svg
-                href: http://pbs.localdomain:8007
-        - k8s:
-            - Sidero Omni:
-                icon: talos.svg
-                href: https://mcmahan.omni.siderolabs.io/omni
-            - ArgoCD:
-                icon: argo-cd.svg
-                href: https://argocd.mcmahan.io
-                widget:
-                  type: argocd
-                  url: http://argocd-server.argocd.svc
-                  key: {{HOMEPAGE_VAR_ARGOCD_APIKEY}}
-            - Hubble UI:
-                icon: cilium.svg
-                href: http://hubble.localdomain
+        - Left:
+            - Remote Access:
+                - PiKVM:
+                    icon: pikvm.svg
+                    href: http://pikvm
+            - Monitoring:
+                - Prometheus:
+                    icon: prometheus.svg
+                    href: http://prometheus.localdomain:9090
+                - Grafana:
+                    icon: grafana.svg
+                    href: https://grafana.mcmahan.io
+        - Middle:
+            - Networking:
+                - UniFi Controller:
+                    icon: unifi.svg
+                    href: https://unifi.ui.com/consoles/bb5782ea-0cd7-4a31-b4e0-5566c6a25a07
+                    description: Dream Machine Pro
+                    widget:
+                      type: unifi
+                      url: https://192.168.0.1
+                      username: {{HOMEPAGE_VAR_UNIFI_USER}}
+                      password: {{HOMEPAGE_VAR_UNIFI_PASS}}
+                - DDNS Updater:
+                    icon: ddns-updater.svg
+                    href: http://ddns.localdomain
+            - Storage:
+                - new-peepums:
+                    icon: synology.svg
+                    href: http://new-peepums.localdomain:5000
+        - Right:
+            - k8s:
+                - Sidero Omni:
+                    icon: talos.svg
+                    href: https://mcmahan.omni.siderolabs.io/omni
+                - ArgoCD:
+                    icon: argo-cd.svg
+                    href: https://argocd.mcmahan.io
+                    widget:
+                      type: argocd
+                      url: http://argocd-server.argocd.svc
+                      key: {{HOMEPAGE_VAR_ARGOCD_APIKEY}}
+                - Hubble UI:
+                    icon: cilium.svg
+                    href: http://hubble.localdomain
+            - Proxmox:
+                - Proxmox VE:
+                    icon: proxmox.svg
+                    href: http://tom.localdomain:8006
+                - Proxmox Backup Server:
+                    icon: proxmox.svg
+                    href: http://pbs.localdomain:8007
   widgets:
     - datetime:
         text_size: x1
@@ -269,6 +273,15 @@ config:
         style: row
         columns: 3
       Media:
+        style: row
+        columns: 3
+        Left:
+          header: false
+        Middle:
+          header: false
+        Right:
+          header: false
+      Homelab:
         style: row
         columns: 3
         Left:
