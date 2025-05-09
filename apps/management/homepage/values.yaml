@@ -263,6 +263,7 @@ config:
     mode: cluster
   docker:
   settings:
+  settingsString: |
     headerStyle: boxed
     statusStyle: "dot"
     quicklaunch:
