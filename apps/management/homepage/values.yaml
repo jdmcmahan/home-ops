@@ -243,6 +243,7 @@ config:
                     icon: proxmox.svg
                     href: http://pbs.localdomain:8007
   widgets:
+  widgetsString: |
     - datetime:
         text_size: x1
         format:
@@ -255,7 +256,7 @@ config:
         longitude: -91.249325
         units: imperial
         provider: openweathermap
-        apiKey: "{{HOMEPAGE_VAR_OPENWEATHER_APIKEY}}"
+        apiKey: {{HOMEPAGE_VAR_OPENWEATHER_APIKEY}}
         cache: 5
         format:
           maximumFractionDigits: 1
