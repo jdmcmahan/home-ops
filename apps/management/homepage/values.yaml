@@ -95,7 +95,7 @@ config:
               url: http://octopi.localdomain
               key: {{HOMEPAGE_VAR_OCTOPRINT_APIKEY}}
     - Media:
-        - Apps:
+        - Playback:
             - Plex:
                 icon: plex.svg
                 href: https://plex.mcmahan.io
@@ -266,9 +266,10 @@ config:
       hideInternetSearch: true
     layout:
       Media:
-        Apps:
+        Playback:
           header: false
           style: row
+          columns: 4
         PVR:
           header: false
           style: row
@@ -276,3 +277,4 @@ config:
         Seedbox:
           header: false
           style: row
+          columns: 4
