@@ -9,6 +9,14 @@ resources:
   - metrics-credentials.yaml
   - volsync.yaml
 
+configMapGenerator:
+  - name: dnsdist-configmap
+    files:
+      - ./config/dnsdist.conf
+
+generatorOptions:
+  disableNameSuffixHash: true
+
 helmCharts:
   - name: app-template
     repo: https://bjw-s-labs.github.io/helm-charts
