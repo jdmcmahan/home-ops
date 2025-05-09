@@ -266,6 +266,8 @@ config:
       hideInternetSearch: true
     layout:
       PVR:
+        style: row
+        columns: 2
         Servarr:
           header: false
           style: row
