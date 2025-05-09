@@ -255,7 +255,7 @@ config:
         longitude: -91.249325
         units: imperial
         provider: openweathermap
-        apiKey: {{HOMEPAGE_VAR_OPENWEATHER_APIKEY}}
+        apiKey: "{{HOMEPAGE_VAR_OPENWEATHER_APIKEY}}"
         cache: 5
         format:
           maximumFractionDigits: 1
