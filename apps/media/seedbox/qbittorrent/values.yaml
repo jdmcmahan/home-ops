@@ -7,6 +7,10 @@ controllers:
         fsGroup: 979
         fsGroupChangePolicy: "OnRootMismatch"
     containers:
+      dnsdist:
+        image:
+          repository: docker.io/powerdns/dnsdist-19
+          tag: 1.9.9
       app:
         image:
           repository: ghcr.io/home-operations/qbittorrent
@@ -37,14 +41,17 @@ controllers:
         dependsOn: app
         image:
           repository: ghcr.io/qdm12/gluetun
-          tag: v3.39.1
+          tag: v3.40.0
         env:
           TZ: "America/Chicago"
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
           UPDATER_PERIOD: 24h
+          DOT: "off"
+          DNS_ADDRESS: "127.0.0.2"
           FIREWALL_INPUT_PORTS: "8080,17871"
+          FIREWALL_OUTBOUND_SUBNETS: "10.96.0.0/12,10.244.0.0/24" # Allow access to k8s subnets
         envFrom:
           - secretRef:
               name: gluetun-mullvad-credentials
@@ -83,6 +90,16 @@ serviceMonitor:
       - port: metrics
 
 persistence:
+  dnsdist:
+    enabled: true
+    type: configMap
+    name: dnsdist-configmap
+    advancedMounts:
+      qbittorrent:
+        dnsdist:
+          - path: /etc/dnsdist/dnsdist.conf
+            subPath: dnsdist.conf
+            readOnly: true
   config:
     enabled: true
     type: persistentVolumeClaim
