@@ -2,6 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
 controllers:
   qbittorrent:
+    type: statefulset
     pod:
       securityContext:
         fsGroup: 979
@@ -34,6 +35,13 @@ controllers:
         envFrom:
           - secretRef:
               name: gluetun-mullvad-credentials
+        lifecycle:
+          postStart:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - (ip rule del table 51820; ip -6 rule del table 51820) || true
         securityContext:
           allowPrivilegeEscalation: false
           capabilities:
