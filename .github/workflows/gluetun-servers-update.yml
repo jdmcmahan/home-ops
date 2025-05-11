@@ -1,0 +1,19 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  update-servers:
+    runs-on: ubuntu-latest
+    name: Update gluetun servers list
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - id: update
+        name: Generate updated servers list
+        uses: jdmcmahan/gluetun-servers-list-update-action@main
+        with:
+          providers: mullvad
+
+      - name: Print result
+        run: echo "${{ steps.update.outputs.servers }}"
