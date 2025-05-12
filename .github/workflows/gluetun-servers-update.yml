@@ -45,7 +45,19 @@ jobs:
           jq '{mullvad}' servers.json > servers.json.tmp
           mv servers.json.tmp servers.json
 
+      - name: Check for relevant changes
+        id: changes
+        run: |
+          set +e
+          git diff --exit-code --ignore-matching-lines timestamp
+          if [ $? -eq 0 ]; then
+              echo "changed=false" >> $GITHUB_OUTPUT
+          else
+              echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Create pull request
+        if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
           commit-message: 'update gluetun servers.json'
