@@ -122,7 +122,6 @@ persistence:
         gluetun:
           - path: /gluetun/servers.json
             subPath: servers.json
-            readOnly: true
   config:
     enabled: true
     type: persistentVolumeClaim
