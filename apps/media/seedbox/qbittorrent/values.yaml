@@ -16,8 +16,18 @@ controllers:
           - -conf
           - /etc/coredns/Corefile
         restartPolicy: Always
+      gluetun-config-staging:
+        image:
+          repository: docker.io/busybox
+          tag: 1.37.0
+        command:
+            - /bin/sh
+            - -c
+            - cp /staging/servers.json /gluetun/servers.json
       gluetun:
-        dependsOn: coredns
+        dependsOn:
+          - coredns
+          - gluetun-config-staging
         image:
           repository: ghcr.io/qdm12/gluetun
           tag: v3.40.0
@@ -27,7 +37,6 @@ controllers:
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
-          UPDATER_PERIOD: 24h
           DOT: "off"
           DNS_ADDRESS: "127.0.0.2"
           FIREWALL_INPUT_PORTS: "8080,17871"
@@ -114,6 +123,25 @@ persistence:
           - path: /etc/coredns/Corefile
             subPath: Corefile
             readOnly: true
+  gluetun-staging:
+    enabled: true
+    type: configMap
+    name: gluetun-configmap
+    advancedMounts:
+      qbittorrent:
+        gluetun-config-staging:
+          - path: /staging/servers.json
+            subPath: servers.json
+            readOnly: true
+  gluetun:
+    enabled: true
+    type: emptyDir
+    advancedMounts:
+      qbittorrent:
+        gluetun-config-staging:
+          - path: /gluetun
+        gluetun:
+          - path: /gluetun
   config:
     enabled: true
     type: persistentVolumeClaim

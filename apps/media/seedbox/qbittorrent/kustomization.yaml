@@ -12,7 +12,10 @@ resources:
 configMapGenerator:
   - name: coredns-configmap
     files:
-      - ./config/Corefile
+      - config/coredns/Corefile
+  - name: gluetun-configmap
+    files:
+      - config/gluetun/servers.json
 
 generatorOptions:
   disableNameSuffixHash: true
