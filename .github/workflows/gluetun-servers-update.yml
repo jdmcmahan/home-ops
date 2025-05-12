@@ -37,6 +37,12 @@ jobs:
           name: servers
           path: apps/media/seedbox/qbittorrent/config
 
+      - name: Strip out unneeded providers
+        run: |
+          cd apps/media/seedbox/qbittorrent/config
+          jq '{mullvad}' servers.json > servers.json.tmp
+          mv servers.json.tmp servers.json
+
       - name: Create pull request
         uses: peter-evans/create-pull-request@v7
         with:
