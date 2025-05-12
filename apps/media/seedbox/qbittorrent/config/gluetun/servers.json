@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1747064366,
+    "timestamp": 1747065623,
     "servers": [
       {
         "vpn": "wireguard",
