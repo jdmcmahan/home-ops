@@ -4,16 +4,18 @@ on:
 jobs:
   update-servers:
     runs-on: ubuntu-latest
-    name: Update gluetun servers list
+    container: qmcgaw/gluetun:v3.40.0
+    name: Fetch updated servers list
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - id: update
-        name: Generate updated servers list
-        uses: jdmcmahan/gluetun-servers-list-update-action@main
-        with:
-          providers: mullvad
+      - name: Run gluetun update utility
+        run: /gluetun-entrypoint update -enduser -providers mullvad
 
-      - name: Print result
-        run: echo "${{ steps.update.outputs.servers }}"
+      - name: Upload servers.json
+        uses: actions/upload-artifact@v4
+        with:
+          name: servers.json
+          path: /gluetun/servers.json
+          retention-days: 1
