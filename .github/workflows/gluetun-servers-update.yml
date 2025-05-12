@@ -31,5 +31,9 @@ jobs:
           name: servers
           path: apps/media/seedbox/qbittorrent/config
 
-      - name: Test output
-        run: ls -R apps/media/seedbox/qbittorrent/config
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: 'update gluetun servers.json'
+          branch: gluetun/servers
+          title: 'chore(gluetun): update gluetun servers list'
