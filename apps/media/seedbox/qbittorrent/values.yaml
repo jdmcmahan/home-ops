@@ -27,6 +27,7 @@ controllers:
           VPN_SERVICE_PROVIDER: mullvad
           VPN_TYPE: wireguard
           SERVER_CITIES: "Chicago IL"
+          UPDATER_PERIOD: 24h
           DOT: "off"
           DNS_ADDRESS: "127.0.0.2"
           FIREWALL_INPUT_PORTS: "8080,17871"
@@ -112,16 +113,6 @@ persistence:
         coredns:
           - path: /etc/coredns/Corefile
             subPath: Corefile
-            readOnly: true
-  gluetun:
-    enabled: true
-    type: configMap
-    name: gluetun-configmap
-    advancedMounts:
-      qbittorrent:
-        gluetun:
-          - path: /gluetun/servers.json
-            subPath: servers.json
             readOnly: true
   config:
     enabled: true
