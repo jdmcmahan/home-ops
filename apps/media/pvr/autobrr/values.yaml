@@ -2,6 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
 controllers:
   autobrr:
+    replicas: 0
     containers:
       app:
         image:
@@ -29,6 +30,7 @@ service:
 persistence:
   config:
     enabled: true
+    suffix: config
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi

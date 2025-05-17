@@ -3,6 +3,7 @@
 controllers:
   recyclarr:
     type: cronjob
+    replicas: 0
     cronjob:
       schedule: "@daily"
       successfulJobsHistory: 1
@@ -38,6 +39,7 @@ controllers:
 persistence:
   config:
     enabled: true
+    suffix: config
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 1Gi
