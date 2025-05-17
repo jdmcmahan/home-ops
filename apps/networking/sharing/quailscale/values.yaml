@@ -27,6 +27,9 @@ service:
       external-dns.alpha.kubernetes.io/hostname: qbittorrent.localdomain
     type: LoadBalancer
     loadBalancerClass: tailscale
+    ports:
+      tailscale:
+        port: 8022
 
 persistence:
   books:
