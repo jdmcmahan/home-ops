@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1747064366,
+    "timestamp": 1747373094,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2728,7 +2728,7 @@
         "wgpubkey": "uhbuY1A7g0yNu0lRhLTi020kYeAx34ED30BA5DQRHFo=",
         "ips": [
           "194.114.136.3",
-          "2400:ddc0:a00b::f001"
+          "2403:fbc0:7000::f001"
         ]
       },
       {
@@ -2740,7 +2740,7 @@
         "wgpubkey": "wzGXxsYOraTCPZuRxfXVTNmoWsRkMFLqMqDxI4PutBg=",
         "ips": [
           "194.114.136.34",
-          "2400:ddc0:a00b::f101"
+          "2403:fbc0:7000::f101"
         ]
       },
       {
@@ -2752,7 +2752,7 @@
         "wgpubkey": "Pt18GnBffElW0sqnd6IDRr5r0B/NDezy6NicoPI+fG8=",
         "ips": [
           "194.114.136.65",
-          "2400:ddc0:a00b::f201"
+          "2403:fbc0:7000::f201"
         ]
       },
       {
@@ -2764,7 +2764,7 @@
         "wgpubkey": "JpDAtRuR39GLFKoQNiKvpzuJ65jOOLD7h85ekZ3reVc=",
         "ips": [
           "194.114.136.96",
-          "2400:ddc0:a00b::f301"
+          "2403:fbc0:7000::f301"
         ]
       },
       {
@@ -5308,34 +5308,6 @@
         "vpn": "openvpn",
         "country": "UK",
         "city": "London",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "gb-lon-ovpn-005",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.195.232.85",
-          "2a03:1b20:7:f011::5f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "gb-lon-ovpn-006",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.195.232.86",
-          "2a03:1b20:7:f011::6f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
         "isp": "M247",
         "hostname": "gb-lon-ovpn-301",
         "tcp": true,
@@ -5356,6 +5328,58 @@
         "ips": [
           "146.70.119.130",
           "2001:ac8:31:f009::2f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "London",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "gb-lon-wg-001",
+        "wgpubkey": "IJJe0TQtuQOyemL4IZn6oHEsMKSPqOuLfD5HoAWEPTY=",
+        "ips": [
+          "141.98.252.130",
+          "2a03:1b20:7:f011::a01f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "London",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "gb-lon-wg-002",
+        "wgpubkey": "J57ba81Q8bigy9RXBXvl0DgABTrbl81nb37GuX50gnY=",
+        "ips": [
+          "141.98.252.222",
+          "2a03:1b20:7:f011::a02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "London",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "gb-lon-wg-003",
+        "wgpubkey": "VZwE8hrpNzg6SMwn9LtEqonXzSWd5dkFk62PrNWFW3Y=",
+        "ips": [
+          "185.195.232.66",
+          "2a03:1b20:7:f011::a11f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "London",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "gb-lon-wg-004",
+        "wgpubkey": "PLpO9ikFX1garSFaeUpo7XVSMrILrTB8D9ZwQt6Zgwk=",
+        "ips": [
+          "185.195.232.67",
+          "2a03:1b20:7:f011::a12f"
         ]
       },
       {
