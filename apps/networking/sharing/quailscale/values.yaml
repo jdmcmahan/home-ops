@@ -10,10 +10,9 @@ controllers:
     containers:
       alpine:
         image:
-          repository: alpine
-          tag: 3.21.3@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c
+          repository: ghcr.io/home-operations/it-tools
+          tag: 2024.10@sha256:7f26ae8d7a4a58b8d70b685cba5cbaa54d7df876d9f8bae702207f45b06d9b7c
           pullPolicy: IfNotPresent
-        command: ["/bin/sh", "-c", "tail -f /dev/null"]
         securityContext:
           runAsNonRoot: true
           allowPrivilegeEscalation: false
