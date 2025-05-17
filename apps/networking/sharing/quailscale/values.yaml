@@ -30,6 +30,7 @@ controllers:
 persistence:
   state:
     enabled: true
+    suffix: tailscale-state
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 1Gi

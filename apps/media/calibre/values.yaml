@@ -72,6 +72,7 @@ ingress:
 persistence:
   config:
     enabled: true
+    suffix: config
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi
@@ -91,6 +92,7 @@ persistence:
           - path: /data
   web-config:
     enabled: true
+    suffix: web-config
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi
