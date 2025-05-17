@@ -60,7 +60,6 @@ serviceMonitor:
 persistence:
   config:
     enabled: true
-    suffix: config
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi
