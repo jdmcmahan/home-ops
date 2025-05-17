@@ -48,7 +48,7 @@ ingress:
 persistence:
   data:
     enabled: true
-    suffix: config
+    suffix: data
     type: persistentVolumeClaim
     storageClass: ceph-block
     size: 10Gi
