@@ -25,10 +25,9 @@ controllers:
           OAUTHLIB_RELAX_TOKEN_SCOPE: 1
 
 service:
-  main:
+  app:
     enabled: true
     controller: calibre
-    nameOverride: calibre
     annotations:
       external-dns.alpha.kubernetes.io/hostname: calibre.localdomain
     type: LoadBalancer
