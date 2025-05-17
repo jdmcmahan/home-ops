@@ -3,7 +3,6 @@
 controllers:
   recyclarr:
     type: cronjob
-    replicas: 0
     cronjob:
       schedule: "@daily"
       successfulJobsHistory: 1
