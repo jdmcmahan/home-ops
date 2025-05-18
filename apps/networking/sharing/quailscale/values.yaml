@@ -22,8 +22,6 @@ controllers:
           - secretRef:
               name: tailscale-authkey
         securityContext:
-          runAsUser: 979
-          runAsGroup: 979
           allowPrivilegeEscalation: false
           capabilities:
             add:
