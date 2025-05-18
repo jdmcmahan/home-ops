@@ -12,14 +12,14 @@ spec:
     name: operator-oauth
     creationPolicy: Owner
   data:
-    - secretKey: client_id
+    - secretKey: clientId
       remoteRef:
         conversionStrategy: Default
         decodingStrategy: None
         metadataPolicy: None
         key: tailscale-operator-oauth
         property: clientId
-    - secretKey: client_secret
+    - secretKey: clientSecret
       remoteRef:
         conversionStrategy: Default
         decodingStrategy: None
