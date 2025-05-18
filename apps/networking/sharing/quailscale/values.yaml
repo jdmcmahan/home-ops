@@ -10,11 +10,14 @@ controllers:
     containers:
       alpine:
         image:
-          repository: alpine
-          tag: 3.21.3@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c
-          pullPolicy: IfNotPresent
-        command: ["/bin/sh", "-c", "tail -f /dev/null"]
+          repository: nixery.dev/shell/coreutils
+          tag: latest
+          pullPolicy: Always
+        command: ["/bin/bash", "-c", "sleep infinity"]
         securityContext:
+          runAsUser: 979
+          runAsGroup: 979
+          runAsNonRoot: true
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true
 
