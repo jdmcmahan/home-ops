@@ -8,32 +8,41 @@ controllers:
         fsGroupChangePolicy: "OnRootMismatch"
 
     containers:
-      alpine:
+      tailscale:
         image:
-          repository: nixery.dev/shell/coreutils
-          tag: latest
-          pullPolicy: Always
-        command: ["/bin/bash", "-c", "sleep infinity"]
+          repository: tailscale/tailscale
+          tag: v1.82.5
+          pullPolicy: IfNotPresent
+        env:
+          TS_STATE_DIR: "/var/lib/tailscale"
+          TS_KUBE_SECRET: ""
+          TS_HOSTNAME: "quailscale"
+          TS_EXTRA_ARGS: "--ssh"
+        envFrom:
+          - secretRef:
+              name: tailscale-authkey
         securityContext:
           runAsUser: 979
           runAsGroup: 979
           runAsNonRoot: true
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true
-
-service:
-  tailscale:
-    enabled: true
-    controller: quailscale
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: qbittorrent.localdomain
-    type: LoadBalancer
-    loadBalancerClass: tailscale
-    ports:
-      tailscale:
-        port: 8022
+          capabilities:
+            add:
+              - NET_ADMIN
 
 persistence:
+  state:
+    enabled: true
+    suffix: tailscale-state
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 1Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      quailscale:
+        tailscale:
+          - path: /var/lib/tailscale
   books:
     enabled: true
     type: nfs
