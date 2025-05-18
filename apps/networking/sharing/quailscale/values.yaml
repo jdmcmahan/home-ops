@@ -24,12 +24,15 @@ controllers:
         securityContext:
           runAsUser: 979
           runAsGroup: 979
-          runAsNonRoot: true
           allowPrivilegeEscalation: false
-          readOnlyRootFilesystem: true
           capabilities:
             add:
               - NET_ADMIN
+        resources:
+          requests:
+            squat.ai/tun: "1"
+          limits:
+            squat.ai/tun: "1"
 
 persistence:
   state:
@@ -43,13 +46,6 @@ persistence:
       quailscale:
         tailscale:
           - path: /var/lib/tailscale
-  tmp:
-    enabled: true
-    type: emptyDir
-    advancedMounts:
-      quailscale:
-        tailscale:
-          - path: /tmp
   books:
     enabled: true
     type: nfs
