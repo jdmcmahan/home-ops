@@ -43,6 +43,13 @@ persistence:
       quailscale:
         tailscale:
           - path: /var/lib/tailscale
+  tmp:
+    enabled: true
+    type: emptyDir
+    advancedMounts:
+      quailscale:
+        tailscale:
+          - path: /tmp
   books:
     enabled: true
     type: nfs
