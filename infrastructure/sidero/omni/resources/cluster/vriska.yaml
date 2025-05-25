@@ -110,8 +110,9 @@ patches:
     inline:
       machine:
         kubelet:
-          imageGCHighThresholdPercent: 70
-          imageGCLowThresholdPercent: 40
+          extraConfig:
+            imageGCHighThresholdPercent: 70
+            imageGCLowThresholdPercent: 40
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
