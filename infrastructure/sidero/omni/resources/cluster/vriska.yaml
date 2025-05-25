@@ -106,6 +106,12 @@ patches:
       machine:
         network:
           hostname: omniscient-cue-ball
+  - name: gc
+    inline:
+      machine:
+        kubelet:
+          imageGCHighThresholdPercent: 70
+          imageGCLowThresholdPercent: 40
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
