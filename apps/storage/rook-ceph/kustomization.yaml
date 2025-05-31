@@ -13,7 +13,6 @@ helmCharts:
     releaseName: rook-release
     namespace: rook-ceph
     valuesInline:
-      scaleDownOperator: true
       enableDiscoveryDaemon: true
       monitoring:
         enabled: true
@@ -31,6 +30,7 @@ helmCharts:
       toolbox:
         enabled: true
       cephClusterSpec:
+        cleanupPolicy: yes-really-destroy-data
         cephConfig:
           global:
             bdev_enable_discard: "true"
