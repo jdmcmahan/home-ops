@@ -30,7 +30,8 @@ helmCharts:
       toolbox:
         enabled: true
       cephClusterSpec:
-        cleanupPolicy: yes-really-destroy-data
+        cleanupPolicy:
+          confirmation: yes-really-destroy-data
         cephConfig:
           global:
             bdev_enable_discard: "true"
