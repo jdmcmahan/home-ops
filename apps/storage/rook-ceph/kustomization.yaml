@@ -40,4 +40,6 @@ helmCharts:
         enabled: true
       cephBlockPoolsVolumeSnapshotClass:
         enabled: true
+      cephBlockPools: []
+      cephFileSystems: []
       cephObjectStores: []
