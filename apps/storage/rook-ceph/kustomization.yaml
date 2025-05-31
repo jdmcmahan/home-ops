@@ -13,6 +13,7 @@ helmCharts:
     releaseName: rook-release
     namespace: rook-ceph
     valuesInline:
+      scaleDownOperator: true
       enableDiscoveryDaemon: true
       monitoring:
         enabled: true
