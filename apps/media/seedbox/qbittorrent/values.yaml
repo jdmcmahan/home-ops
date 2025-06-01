@@ -145,11 +145,7 @@ persistence:
           - path: /gluetun
   config:
     enabled: true
-    suffix: config
-    type: persistentVolumeClaim
-    storageClass: ceph-block
-    size: 10Gi
-    accessMode: ReadWriteOnce
+    existingClaim: qbittorrent-config
     advancedMounts:
       qbittorrent:
         app:
