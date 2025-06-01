@@ -56,7 +56,6 @@ spec:
     manual: restore-once
   restic:
     repository: qbittorrent-volsync-backblaze
-    destinationPVC: qbittorrent-config
     copyMethod: Snapshot
     storageClassName: ceph-block
     accessModes: [ReadWriteOnce]
