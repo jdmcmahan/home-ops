@@ -30,8 +30,6 @@ helmCharts:
       toolbox:
         enabled: true
       cephClusterSpec:
-        cleanupPolicy:
-          confirmation: yes-really-destroy-data
         cephConfig:
           global:
             bdev_enable_discard: "true"
@@ -40,6 +38,5 @@ helmCharts:
         enabled: true
       cephBlockPoolsVolumeSnapshotClass:
         enabled: true
-      cephBlockPools: []
       cephFileSystems: []
       cephObjectStores: []
