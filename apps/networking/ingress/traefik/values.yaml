@@ -1,4 +1,5 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/traefik/traefik-helm-chart/master/traefik/values.schema.json
 ingressRoute:
   dashboard:
     enabled: true
@@ -16,6 +17,19 @@ service:
   type: LoadBalancer
   spec:
     loadBalancerIP: "192.168.8.80"
+  additionalServices:
+    local:
+      type: LoadBalancer
+      spec:
+        loadBalancerIP: "192.168.8.81"
+        ports:
+          weblocal:
+            port: 9443
+            exposedPort: 443
+            redirections:
+              entryPoint:
+                to: websecure
+                scheme: https
 
 ports:
   web:
