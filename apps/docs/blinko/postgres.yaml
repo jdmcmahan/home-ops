@@ -39,7 +39,7 @@ spec:
   bootstrap:
     recovery:
       backup:
-        name: blinko-backup
+        name: blinko-backup-20250531000000
 
   backup:
     barmanObjectStore:
