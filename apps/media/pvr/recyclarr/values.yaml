@@ -38,11 +38,7 @@ controllers:
 persistence:
   config:
     enabled: true
-    suffix: config
-    type: persistentVolumeClaim
-    storageClass: ceph-block
-    size: 1Gi
-    accessMode: ReadWriteOnce
+    existingClaim: recyclarr-config
     advancedMounts:
       recyclarr:
         app:

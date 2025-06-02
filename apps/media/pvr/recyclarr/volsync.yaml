@@ -46,3 +46,41 @@ spec:
     retain:
       daily: 7
     unlock: "13c132b"
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/volsync.backube/replicationdestination_v1alpha1.json
+apiVersion: volsync.backube/v1alpha1
+kind: ReplicationDestination
+metadata:
+  namespace: recyclarr
+  name: recyclarr-config-dest
+spec:
+  trigger:
+    manual: restore-once
+  restic:
+    repository: recyclarr-volsync-backblaze
+    copyMethod: Snapshot
+    storageClassName: ceph-block
+    accessModes: [ReadWriteOnce]
+    capacity: 1Gi
+    moverSecurityContext:
+      runAsUser: 568
+      runAsGroup: 568
+      fsGroup: 568
+    enableFileDeletion: true
+    cleanupCachePVC: true
+    cleanupTempPVC: true
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: recyclarr-config
+spec:
+  accessModes: [ReadWriteOnce]
+  dataSourceRef:
+    kind: ReplicationDestination
+    apiGroup: volsync.backube
+    name: recyclarr-config-dest
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: ceph-block
