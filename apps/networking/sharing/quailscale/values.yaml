@@ -2,7 +2,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
 controllers:
   quailscale:
-    replicas: 0
     pod:
       securityContext:
         fsGroup: 979
@@ -36,11 +35,7 @@ controllers:
 persistence:
   state:
     enabled: true
-    suffix: tailscale-state
-    type: persistentVolumeClaim
-    storageClass: ceph-block
-    size: 1Gi
-    accessMode: ReadWriteOnce
+    existingClaim: quailscale-tailscale-state
     advancedMounts:
       quailscale:
         tailscale:
