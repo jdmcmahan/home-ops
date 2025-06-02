@@ -44,3 +44,41 @@ spec:
       fsGroup: 568
     retain:
       daily: 7
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/volsync.backube/replicationdestination_v1alpha1.json
+apiVersion: volsync.backube/v1alpha1
+kind: ReplicationDestination
+metadata:
+  namespace: homebox
+  name: homebox-data-dest
+spec:
+  trigger:
+    manual: restore-once
+  restic:
+    repository: homebox-volsync-backblaze
+    copyMethod: Snapshot
+    storageClassName: ceph-block
+    accessModes: [ReadWriteOnce]
+    capacity: 10Gi
+    moverSecurityContext:
+      runAsUser: 568
+      runAsGroup: 568
+      fsGroup: 568
+    enableFileDeletion: true
+    cleanupCachePVC: true
+    cleanupTempPVC: true
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: homebox-data
+spec:
+  accessModes: [ReadWriteOnce]
+  dataSourceRef:
+    kind: ReplicationDestination
+    apiGroup: volsync.backube
+    name: homebox-data-dest
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: ceph-block
