@@ -17,6 +17,8 @@ helmCharts:
       monitoring:
         enabled: true
       csi:
+        enableCephfsDriver: false
+        enableCephfsSnapshotter: false
         serviceMonitor:
           enabled: true
   - name: rook-ceph-cluster
@@ -34,6 +36,9 @@ helmCharts:
           global:
             bdev_enable_discard: "true"
             bdev_async_discard_threads: "1"
+        dashboard:
+          enabled: true
+          ssl: false
       cephBlockPoolsVolumeSnapshotClass:
         enabled: true
         isDefault: true
