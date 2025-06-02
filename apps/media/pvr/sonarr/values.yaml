@@ -38,8 +38,6 @@ service:
   web:
     enabled: true
     controller: sonarr
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: sonarr.localdomain
     type: LoadBalancer
     ports:
       http:
@@ -56,6 +54,26 @@ serviceMonitor:
     serviceName: sonarr-metrics
     endpoints:
       - port: metrics
+
+ingress:
+  sonarr:
+    enabled: true
+    annotations:
+      cert-manager.io/cluster-issuer: cloudflare
+      traefik.ingress.kubernetes.io/router.entrypoints: localsecure
+      traefik.ingress.kubernetes.io/router.tls: "true"
+    hosts:
+      - host: sonarr.mcmahan.io
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              identifier: web
+              port: http
+    tls:
+      - secretName: 'sonarr-cert'
+        hosts:
+          - sonarr.mcmahan.io
 
 persistence:
   config:
