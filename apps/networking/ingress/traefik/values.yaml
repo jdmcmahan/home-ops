@@ -32,6 +32,7 @@ ports:
       default: false
       local: true
     exposedPort: 80
+    targetPort: web
     redirections:
       entryPoint:
         to: localsecure
@@ -42,6 +43,7 @@ ports:
       default: false
       local: true
     exposedPort: 443
+    targetPort: websecure
     tls:
       enabled: true
   web:
