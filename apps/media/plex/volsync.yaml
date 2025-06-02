@@ -46,3 +46,41 @@ spec:
     retain:
       daily: 7
     unlock: "cr6gg"
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/volsync.backube/replicationdestination_v1alpha1.json
+apiVersion: volsync.backube/v1alpha1
+kind: ReplicationDestination
+metadata:
+  namespace: plex
+  name: plex-config-dest
+spec:
+  trigger:
+    manual: restore-once
+  restic:
+    repository: plex-volsync-backblaze
+    copyMethod: Snapshot
+    storageClassName: ceph-block
+    accessModes: [ReadWriteOnce]
+    capacity: 30Gi
+    moverSecurityContext:
+      runAsUser: 568
+      runAsGroup: 568
+      fsGroup: 568
+    enableFileDeletion: true
+    cleanupCachePVC: true
+    cleanupTempPVC: true
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: plex-config
+spec:
+  accessModes: [ReadWriteOnce]
+  dataSourceRef:
+    kind: ReplicationDestination
+    apiGroup: volsync.backube
+    name: plex-config-dest
+  resources:
+    requests:
+      storage: 30Gi
+  storageClassName: ceph-block

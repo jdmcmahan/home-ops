@@ -2,7 +2,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
 controllers:
   plex:
-    replicas: 0
     containers:
       app:
         image:
@@ -63,11 +62,7 @@ ingress:
 persistence:
   config:
     enabled: true
-    suffix: config
-    type: persistentVolumeClaim
-    storageClass: ceph-block
-    size: 30Gi
-    accessMode: ReadWriteOnce
+    existingClaim: plex-config
     advancedMounts:
       plex:
         app:
