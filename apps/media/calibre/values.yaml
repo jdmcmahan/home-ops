@@ -2,7 +2,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
 controllers:
   calibre:
-    replicas: 0
     containers:
       app:
         image:
@@ -93,11 +92,7 @@ persistence:
           - path: /data
   web-config:
     enabled: true
-    suffix: web-config
-    type: persistentVolumeClaim
-    storageClass: ceph-block
-    size: 10Gi
-    accessMode: ReadWriteOnce
+    existingClaim: calibre-web-config
     advancedMounts:
       calibre:
         web:
