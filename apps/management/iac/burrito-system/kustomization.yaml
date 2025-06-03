@@ -5,7 +5,7 @@ kind: Kustomization
 
 helmCharts:
   - name: burrito
-    repo: ghcr.io/padok-team/charts/burrito
+    repo: oci://ghcr.io/padok-team/charts/burrito
     version: 0.6.5
     releaseName: burrito
     namespace: burrito-system
