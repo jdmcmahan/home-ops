@@ -57,7 +57,7 @@ route:
     parentRefs:
       - name: local
         namespace: traefik
-        sectionName: https
+        sectionName: websecure
     rules:
       - backendRefs:
           - name: sonarr-web
