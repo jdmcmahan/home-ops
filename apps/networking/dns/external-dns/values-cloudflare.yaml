@@ -1,0 +1,21 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/kubernetes-sigs/external-dns/master/charts/external-dns/values.schema.json
+provider:
+  name: cloudflare
+env:
+  - name: CF_API_TOKEN
+    valueFrom:
+      secretKeyRef:
+        name: cloudflare-token
+        key: token
+extraArgs:
+  - --cloudflare-dns-records-per-page=1000
+  - --cloudflare-proxied
+triggerLoopOnEvent: true
+policy: sync
+sources: ["ingress"]
+txtOwnerId: vriska
+txtPrefix: k8s.vriska.
+domainFilters: ["mcmahan.io"]
+serviceMonitor:
+  enabled: true

@@ -1,4 +1,5 @@
 ---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/kubernetes-sigs/external-dns/master/charts/external-dns/values.schema.json
 provider:
   name: webhook
   webhook:
