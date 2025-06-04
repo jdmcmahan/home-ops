@@ -32,6 +32,7 @@ provider:
       timeoutSeconds: 5
 extraArgs:
   - --ignore-ingress-tls-spec
+triggerLoopOnEvent: false
 policy: sync
 sources: ["ingress", "gateway-httproute", "service"]
 txtOwnerId: vriska
