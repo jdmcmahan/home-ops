@@ -1,8 +1,4 @@
 ---
-providers:
-  kubernetesGateway:
-    enabled: true
-
 ingressClass:
   enabled: true
   isDefaultClass: true

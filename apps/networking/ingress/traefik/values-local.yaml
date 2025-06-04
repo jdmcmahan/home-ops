@@ -1,0 +1,50 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/traefik/traefik-helm-chart/master/traefik/values.schema.json
+providers:
+  kubernetesGateway:
+    enabled: true
+    labelselector: "gateway-class=local"
+  kubernetesIngress:
+    enabled: false
+
+gatewayClass:
+  enabled: true
+  name: local
+  labels:
+    gateway-class: local
+
+gateway:
+  enabled: true
+  name: local
+  annotations:
+    external-dns.alpha.kubernetes.io/target: local.mcmahan.io
+  infrastructure:
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: local.mcmahan.io
+  listeners:
+    web:
+      hostname: "*.mcmahan.io"
+      namespacePolicy: Same
+    websecure:
+      port: 8443
+      hostname: "*.mcmahan.io"
+      protocol: HTTPS
+      namespacePolicy: All
+      certificateRefs:
+        - name: mcmahan-io-tls
+          kind: Secret
+
+ingressClass:
+  enabled: false
+
+service:
+  type: LoadBalancer
+  spec:
+    loadBalancerIP: "192.168.8.81"
+
+ports:
+  web:
+    redirections:
+      entryPoint:
+        to: websecure
+        scheme: https
