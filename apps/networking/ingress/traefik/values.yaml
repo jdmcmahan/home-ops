@@ -1,12 +1,7 @@
 ---
-ingressRoute:
-  dashboard:
+providers:
+  kubernetesGateway:
     enabled: true
-    insecure: true
-
-api:
-  dashboard: true
-  insecure: true
 
 ingressClass:
   enabled: true
