@@ -55,7 +55,7 @@ route:
   sonarr:
     hostnames: ["sonarr.mcmahan.io"]
     parentRefs:
-      - name: internal
+      - name: local
         namespace: traefik
         sectionName: https
     rules:
