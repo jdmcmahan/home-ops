@@ -48,17 +48,17 @@ ingress:
       traefik.ingress.kubernetes.io/router.tls: "true"
       external-dns.alpha.kubernetes.io/target: remote.mcmahan.io
     hosts:
-    - host: plex.mcmahan.io
-      paths:
-      - path: /
-        pathType: Prefix
-        service:
-          identifier: web
-          port: http
+      - host: plex.mcmahan.io
+        paths:
+          - path: /
+            pathType: Prefix
+            service:
+              identifier: web
+              port: http
     tls:
-    - secretName: 'plex-cert'
-      hosts:
-      - plex.mcmahan.io
+      - secretName: "plex-cert"
+        hosts:
+          - plex.mcmahan.io
 
 persistence:
   config:
