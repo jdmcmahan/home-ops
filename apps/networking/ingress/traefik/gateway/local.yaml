@@ -22,10 +22,3 @@ spec:
       allowedRoutes:
         namespaces:
           from: Same
-    - name: https
-      protocol: HTTPS
-      port: 8443
-      hostname: "*.mcmahan.io"
-      allowedRoutes:
-        namespaces:
-          from: All
