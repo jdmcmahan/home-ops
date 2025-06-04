@@ -33,7 +33,7 @@ provider:
 extraArgs:
   - --ignore-ingress-tls-spec
 policy: sync
-sources: ["ingress", "service"]
+sources: ["ingress", "gateway-httproute", "service"]
 txtOwnerId: vriska
 txtPrefix: k8s.vriska.
 domainFilters: ["mcmahan.io", "localdomain"]
