@@ -31,8 +31,6 @@ provider:
         port: http-webhook
       initialDelaySeconds: 10
       timeoutSeconds: 5
-extraArgs:
-  - --gateway-name=local
 triggerLoopOnEvent: true
 policy: sync
 sources: ["gateway-httproute", "service"]
