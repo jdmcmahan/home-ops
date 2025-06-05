@@ -56,17 +56,6 @@ route:
       - backendRefs:
           - identifier: app
             port: 80
-        matches:
-          - path:
-              type: PathPrefix
-              value: /
-      - backendRefs:
-          - identifier: app
-            port: 81
-        matches:
-          - path:
-              type: PathPrefix
-              value: /webserver
   calibre-web:
     hostnames: ["calibre-web.mcmahan.io"]
     parentRefs:
