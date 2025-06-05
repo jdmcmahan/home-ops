@@ -5,8 +5,7 @@ providers:
     enabled: true
     labelselector: "gateway-class=remote"
   kubernetesIngress:
-    enabled: true
-    ingressClass: remote
+    enabled: false
 
 gatewayClass:
   enabled: true
@@ -33,9 +32,7 @@ gateway:
           kind: Secret
 
 ingressClass:
-  enabled: true
-  isDefaultClass: false
-  name: remote
+  enabled: false
 
 service:
   annotations:

@@ -11,11 +11,9 @@ env:
 extraArgs:
   - --cloudflare-dns-records-per-page=1000
   - --cloudflare-proxied
-  - --ignore-ingress-tls-spec
-  - --ingress-class=remote
 triggerLoopOnEvent: true
 policy: sync
-sources: ["ingress", "gateway-httproute"]
+sources: ["gateway-httproute"]
 txtOwnerId: vriska
 txtPrefix: k8s.vriska.
 domainFilters: ["mcmahan.io"]

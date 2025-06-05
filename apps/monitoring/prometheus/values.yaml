@@ -48,19 +48,6 @@ grafana:
     existingSecret: grafana-credentials
     userKey: username
     passwordKey: password
-  ingress:
-    enabled: true
-    ingressClassName: remote
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.tls: "true"
-      cert-manager.io/cluster-issuer: cloudflare
-    hosts:
-      - grafana.mcmahan.io
-    tls:
-      - secretName: grafana-cert
-        hosts:
-          - grafana.mcmahan.io
   dashboardProviders:
     dashboardproviders.yaml:
       apiVersion: 1
