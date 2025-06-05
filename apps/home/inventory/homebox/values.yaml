@@ -31,7 +31,7 @@ route:
         sectionName: websecure
     rules:
       - backendRefs:
-          - name: homebox
+          - identifier: web
             port: 80
 
 persistence:

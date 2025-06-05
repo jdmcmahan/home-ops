@@ -30,7 +30,7 @@ route:
         sectionName: websecure
     rules:
       - backendRefs:
-          - name: overseerr
+          - identifier: web
             port: 80
 
 persistence:

@@ -75,7 +75,7 @@ route:
         sectionName: websecure
     rules:
       - backendRefs:
-          - name: calibre-web
+          - identifier: web
             port: 80
 
 persistence:
