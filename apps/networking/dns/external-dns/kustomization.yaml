@@ -16,3 +16,9 @@ helmCharts:
     releaseName: external-dns-unifi
     namespace: external-dns
     valuesFile: values-unifi.yaml
+  - name: external-dns
+    repo: https://kubernetes-sigs.github.io/external-dns/
+    version: 1.16.1
+    releaseName: external-dns-cloudflare
+    namespace: external-dns
+    valuesFile: values-cloudflare.yaml

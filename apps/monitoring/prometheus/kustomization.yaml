@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
+  - route.yaml
   - grafana-credentials.yaml
 
 helmCharts:

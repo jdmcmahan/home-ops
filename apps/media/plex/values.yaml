@@ -39,25 +39,17 @@ service:
       http:
         port: 32400
 
-ingress:
+route:
   plex:
-    enabled: true
-    annotations:
-      cert-manager.io/cluster-issuer: cloudflare
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.tls: "true"
-    hosts:
-      - host: plex.mcmahan.io
-        paths:
-          - path: /
-            pathType: Prefix
-            service:
-              identifier: web
-              port: http
-    tls:
-      - secretName: "plex-cert"
-        hosts:
-          - plex.mcmahan.io
+    hostnames: ["plex.mcmahan.io"]
+    parentRefs:
+      - name: remote
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - name: plex
+            port: 32400
 
 persistence:
   config:

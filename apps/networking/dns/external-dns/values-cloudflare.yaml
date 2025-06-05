@@ -13,7 +13,7 @@ extraArgs:
   - --cloudflare-proxied
 triggerLoopOnEvent: true
 policy: sync
-sources: ["ingress"]
+sources: ["gateway-httproute"]
 txtOwnerId: vriska
 txtPrefix: k8s.vriska.
 domainFilters: ["mcmahan.io"]

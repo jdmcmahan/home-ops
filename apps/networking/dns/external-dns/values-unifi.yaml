@@ -31,11 +31,9 @@ provider:
         port: http-webhook
       initialDelaySeconds: 10
       timeoutSeconds: 5
-extraArgs:
-  - --ignore-ingress-tls-spec
 triggerLoopOnEvent: true
 policy: sync
-sources: ["ingress", "gateway-httproute", "service"]
+sources: ["gateway-httproute", "service"]
 txtOwnerId: vriska
 txtPrefix: k8s.vriska.
 domainFilters: ["mcmahan.io", "localdomain"]

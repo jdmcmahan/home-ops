@@ -24,25 +24,17 @@ service:
         port: 80
         targetPort: 7745
 
-ingress:
+route:
   homebox:
-    enabled: true
-    annotations:
-      cert-manager.io/cluster-issuer: cloudflare
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.tls: "true"
-    hosts:
-    - host: homebox.mcmahan.io
-      paths:
-      - path: /
-        pathType: Prefix
-        service:
-          identifier: web
-          port: http
-    tls:
-    - secretName: 'homebox-cert'
-      hosts:
-      - homebox.mcmahan.io
+    hostnames: ["homebox.mcmahan.io"]
+    parentRefs:
+      - name: remote
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - name: homebox
+            port: 80
 
 persistence:
   data:

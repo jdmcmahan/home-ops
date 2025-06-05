@@ -23,25 +23,17 @@ service:
         port: 80
         targetPort: 5055
 
-ingress:
+route:
   overseerr:
-    enabled: true
-    annotations:
-      cert-manager.io/cluster-issuer: cloudflare
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.tls: "true"
-    hosts:
-      - host: overseerr.mcmahan.io
-        paths:
-          - path: /
-            pathType: Prefix
-            service:
-              identifier: web
-              port: http
-    tls:
-      - secretName: 'overseerr-cert'
-        hosts:
-          - overseerr.mcmahan.io
+    hostnames: ["overseerr.mcmahan.io"]
+    parentRefs:
+      - name: remote
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - name: overseerr
+            port: 80
 
 persistence:
   config:

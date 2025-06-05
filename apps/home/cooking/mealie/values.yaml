@@ -24,25 +24,17 @@ service:
         port: 80
         targetPort: 9000
 
-ingress:
+route:
   mealie:
-    enabled: true
-    annotations:
-      cert-manager.io/cluster-issuer: cloudflare
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      traefik.ingress.kubernetes.io/router.tls: "true"
-    hosts:
-    - host: mealie.mcmahan.io
-      paths:
-      - path: /
-        pathType: Prefix
-        service:
-          identifier: web
-          port: http
-    tls:
-    - secretName: 'mealie-cert'
-      hosts:
-      - mealie.mcmahan.io
+    hostnames: ["mealie.mcmahan.io"]
+    parentRefs:
+      - name: remote
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - name: mealie
+            port: 80
 
 persistence:
   data:
