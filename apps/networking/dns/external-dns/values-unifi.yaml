@@ -36,6 +36,6 @@ policy: sync
 sources: ["gateway-httproute", "service"]
 txtOwnerId: vriska
 txtPrefix: k8s.vriska.
-domainFilters: ["mcmahan.io", "localdomain"]
+domainFilters: ["mcmahan.io"]
 serviceMonitor:
   enabled: true

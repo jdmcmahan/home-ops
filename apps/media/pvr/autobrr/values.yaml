@@ -19,12 +19,22 @@ service:
   web:
     enabled: true
     controller: autobrr
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: autobrr.localdomain
     type: LoadBalancer
     ports:
       http:
         port: *port
+
+route:
+  autobrr:
+    hostnames: ["autobrr.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: web
+            port: 80
 
 persistence:
   config:

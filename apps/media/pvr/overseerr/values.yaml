@@ -15,8 +15,6 @@ service:
   web:
     enabled: true
     controller: overseerr
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: overseerr.localdomain
     type: LoadBalancer
     ports:
       http:

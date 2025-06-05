@@ -38,8 +38,6 @@ service:
   web:
     enabled: true
     controller: lidarr
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: lidarr.localdomain
     type: LoadBalancer
     ports:
       http:
@@ -50,6 +48,18 @@ service:
     ports:
       metrics:
         port: 9707
+
+route:
+  lidarr:
+    hostnames: ["lidarr.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: web
+            port: 80
 
 serviceMonitor:
   metrics:

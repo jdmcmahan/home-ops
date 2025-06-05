@@ -43,8 +43,6 @@ hubble:
   ui:
     enabled: true
     service:
-      annotations:
-        external-dns.alpha.kubernetes.io/hostname: hubble.localdomain
       type: LoadBalancer
 prometheus:
   enabled: true
