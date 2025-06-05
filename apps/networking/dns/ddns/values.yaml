@@ -16,10 +16,20 @@ service:
   web:
     enabled: true
     controller: ddns-updater
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: ddns.localdomain
     type: LoadBalancer
     ports:
       http:
         port: 80
         targetPort: 8000
+
+route:
+  ddns-updater:
+    hostnames: ["ddns.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: web
+            port: 80

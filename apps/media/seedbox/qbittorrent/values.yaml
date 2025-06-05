@@ -93,8 +93,6 @@ service:
   web:
     enabled: true
     controller: qbittorrent
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: qbittorrent.localdomain
     type: LoadBalancer
     ports:
       http:
@@ -111,6 +109,18 @@ serviceMonitor:
     serviceName: qbittorrent-metrics
     endpoints:
       - port: metrics
+
+route:
+  qbittorrent:
+    hostnames: ["qbittorrent.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: web
+            port: 80
 
 persistence:
   coredns:

@@ -38,8 +38,6 @@ service:
   web:
     enabled: true
     controller: readarr
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: readarr.localdomain
     type: LoadBalancer
     ports:
       http:
@@ -56,6 +54,18 @@ serviceMonitor:
     serviceName: readarr-metrics
     endpoints:
       - port: metrics
+
+route:
+  readarr:
+    hostnames: ["readarr.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: web
+            port: 80
 
 persistence:
   config:

@@ -48,7 +48,7 @@ route:
         sectionName: websecure
     rules:
       - backendRefs:
-          - name: plex
+          - identifier: web
             port: 32400
 
 persistence:

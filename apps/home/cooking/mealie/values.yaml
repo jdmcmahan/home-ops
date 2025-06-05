@@ -31,7 +31,7 @@ route:
         sectionName: websecure
     rules:
       - backendRefs:
-          - name: mealie
+          - identifier: web
             port: 80
 
 persistence:

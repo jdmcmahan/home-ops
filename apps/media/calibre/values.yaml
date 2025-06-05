@@ -28,8 +28,6 @@ service:
   app:
     enabled: true
     controller: calibre
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: calibre.localdomain
     type: LoadBalancer
     ports:
       desktop:
@@ -41,8 +39,6 @@ service:
   web:
     enabled: true
     controller: calibre
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: calibre-web.localdomain
     type: LoadBalancer
     ports:
       http:
@@ -50,6 +46,27 @@ service:
         targetPort: 8083
 
 route:
+  calibre:
+    hostnames: ["calibre.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: app
+            port: 80
+        matches:
+          - path:
+              type: PathPrefix
+              value: /
+      - backendRefs:
+          - identifier: app
+            port: 81
+        matches:
+          - path:
+              type: PathPrefix
+              value: /webserver
   calibre-web:
     hostnames: ["calibre-web.mcmahan.io"]
     parentRefs:
@@ -58,7 +75,7 @@ route:
         sectionName: websecure
     rules:
       - backendRefs:
-          - name: calibre-web
+          - identifier: web
             port: 80
 
 persistence:

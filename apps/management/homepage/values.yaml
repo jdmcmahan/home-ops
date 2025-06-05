@@ -10,19 +10,29 @@ serviceAccount:
 
 service:
   main:
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: homepage.localdomain
     type: LoadBalancer
     ports:
       http:
         port: 80
         targetPort: 3000
 
+route:
+  main:
+    hostnames: ["homepage.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: main
+            port: 80
+
 env:
   - name: TZ
     value: "America/Chicago"
   - name: HOMEPAGE_ALLOWED_HOSTS
-    value: homepage.localdomain
+    value: homepage.mcmahan.io
 
 envFrom:
   - secretRef:
@@ -79,7 +89,7 @@ config:
     - Apps:
         - Kasm Workspaces:
             icon: kasm-workspaces.svg
-            href: https://kasm.localdomain
+            href: https://kasm.mcmahan.io
         - Blinko:
             icon: https://raw.githubusercontent.com/blinkospace/blinko/refs/heads/main/app/public/logo.svg
             href: https://blinko.mcmahan.io
@@ -91,10 +101,10 @@ config:
             href: https://mealie.mcmahan.io
         - OctoPrint:
             icon: octoprint.svg
-            href: http://octopi.localdomain
+            href: http://octopi.mcmahan.io
             widget:
               type: octoprint
-              url: http://octopi.localdomain
+              url: http://octopi.mcmahan.io
               key: {{HOMEPAGE_VAR_OCTOPRINT_APIKEY}}
     - Media:
         - Left:
@@ -115,7 +125,7 @@ config:
                   password: {{HOMEPAGE_VAR_CALIBRE_WEB_PASS}}
             - Calibre:
                 icon: calibre.svg
-                href: http://calibre.localdomain
+                href: https://calibre.mcmahan.io
         - Middle:
             - Overseerr:
                 icon: overseerr.svg
@@ -128,7 +138,7 @@ config:
                   key: {{HOMEPAGE_VAR_OVERSEERR_APIKEY}}
             - Prowlarr:
                 icon: prowlarr.svg
-                href: http://prowlarr.localdomain
+                href: https://prowlarr.mcmahan.io
                 namespace: prowlarr
                 app: prowlarr
                 widget:
@@ -137,7 +147,7 @@ config:
                   key: {{HOMEPAGE_VAR_PROWLARR_APIKEY}}
             - Radarr:
                 icon: radarr.svg
-                href: http://radarr.localdomain
+                href: https://radarr.mcmahan.io
                 namespace: radarr
                 app: radarr
                 widget:
@@ -146,7 +156,7 @@ config:
                   key: {{HOMEPAGE_VAR_RADARR_APIKEY}}
             - Sonarr:
                 icon: sonarr.svg
-                href: http://sonarr.localdomain
+                href: https://sonarr.mcmahan.io
                 namespace: sonarr
                 app: sonarr
                 widget:
@@ -156,7 +166,7 @@ config:
         - Right:
             - qBittorrent:
                 icon: qbittorrent.svg
-                href: http://qbittorrent.localdomain
+                href: https://qbittorrent.mcmahan.io
                 widget:
                   type: qbittorrent
                   url: http://qbittorrent-web.qbittorrent.svc
@@ -164,7 +174,7 @@ config:
                   password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
             - Autobrr:
                 icon: autobrr.svg
-                href: http://autobrr.localdomain
+                href: https://autobrr.mcmahan.io
                 namespace: autobrr
                 app: autobrr
                 widget:
@@ -173,7 +183,7 @@ config:
                   key: {{HOMEPAGE_VAR_AUTOBRR_APIKEY}}
             - Lidarr:
                 icon: lidarr.svg
-                href: http://lidarr.localdomain
+                href: https://lidarr.mcmahan.io
                 namespace: lidarr
                 app: lidarr
                 widget:
@@ -182,7 +192,7 @@ config:
                   key: {{HOMEPAGE_VAR_LIDARR_APIKEY}}
             - Readarr:
                 icon: readarr.svg
-                href: http://readarr.localdomain
+                href: https://readarr.mcmahan.io
                 namespace: readarr
                 app: readarr
                 widget:
@@ -198,7 +208,7 @@ config:
             - Monitoring:
                 - Prometheus:
                     icon: prometheus.svg
-                    href: http://prometheus.localdomain:9090
+                    href: https://prometheus.mcmahan.io
                 - Grafana:
                     icon: grafana.svg
                     href: https://grafana.mcmahan.io
@@ -215,11 +225,11 @@ config:
                       password: {{HOMEPAGE_VAR_UNIFI_PASS}}
                 - DDNS Updater:
                     icon: ddns-updater.svg
-                    href: http://ddns.localdomain
+                    href: https://ddns.mcmahan.io
             - Storage:
                 - new-peepums:
                     icon: synology.svg
-                    href: http://new-peepums.localdomain:5000
+                    href: http://new-peepums.mcmahan.io:5000
         - Right:
             - k8s:
                 - Sidero Omni:
@@ -234,14 +244,14 @@ config:
                       key: {{HOMEPAGE_VAR_ARGOCD_APIKEY}}
                 - Hubble UI:
                     icon: cilium.svg
-                    href: http://hubble.localdomain
+                    href: https://hubble.mcmahan.io
             - Proxmox:
                 - Proxmox VE:
                     icon: proxmox.svg
-                    href: http://tom.localdomain:8006
+                    href: http://tom.mcmahan.io:8006
                 - Proxmox Backup Server:
                     icon: proxmox.svg
-                    href: http://pbs.localdomain:8007
+                    href: http://pbs.mcmahan.io:8007
   widgets:
   widgetsString: |
     - datetime:
