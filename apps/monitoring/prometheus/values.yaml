@@ -50,6 +50,7 @@ grafana:
     passwordKey: password
   ingress:
     enabled: true
+    ingressClassName: remote
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       traefik.ingress.kubernetes.io/router.tls: "true"

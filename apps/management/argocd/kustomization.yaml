@@ -59,7 +59,7 @@ helmCharts:
           type: LoadBalancer
         ingress:
           enabled: true
-          ingressClassName: traefik
+          ingressClassName: remote
           annotations:
             traefik.ingress.kubernetes.io/router.entrypoints: websecure
             traefik.ingress.kubernetes.io/router.tls: "true"

@@ -17,9 +17,9 @@ helmCharts:
   - name: traefik
     repo: https://helm.traefik.io/traefik
     version: 35.4.0
-    releaseName: traefik
+    releaseName: traefik-remote
     namespace: traefik
-    valuesFile: values.yaml
+    valuesFile: values-remote.yaml
   - name: traefik
     repo: https://helm.traefik.io/traefik
     version: 35.4.0
