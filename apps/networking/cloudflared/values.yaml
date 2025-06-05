@@ -1,0 +1,71 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
+controllers:
+  cloudflared:
+    replicas: 2
+    strategy: RollingUpdate
+    containers:
+      app:
+        image:
+          repository: docker.io/cloudflare/cloudflared
+          tag: 2025.5.0@sha256:f9d5c5b94cd7337c0c939a6dbf5537db34030828c243fca6b589fd85ab25d43b
+        env:
+          NO_AUTOUPDATE: true
+          TUNNEL_METRICS: 0.0.0.0:2000
+        envFrom:
+          - secretRef:
+              name: cloudflare-tunnel-secret
+        args:
+          - "tunnel"
+          - "run"
+        probes:
+          liveness: &probes
+            enabled: true
+            custom: true
+            spec:
+              httpGet:
+                path: /ready
+                port: 2000
+              failureThreshold: 1
+              initialDelaySeconds: 10
+              periodSeconds: 10
+          readiness: *probes
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+              - ALL
+        resources:
+          requests:
+            cpu: 10m
+          limits:
+            memory: 256Mi
+
+defaultPodOptions:
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    runAsGroup: 1000
+
+service:
+  app:
+    controller: cloudflared
+    ports:
+      http:
+        port: 2000
+
+serviceMonitor:
+  app:
+    serviceName: cloudflared
+    endpoints:
+      - port: http
+
+persistence:
+  config:
+    type: configMap
+    name: cloudflared-configmap
+    globalMounts:
+      - path: /etc/cloudflared/config.yaml
+        subPath: config.yaml
+        readOnly: true
