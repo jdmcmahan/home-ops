@@ -16,8 +16,6 @@ service:
   web:
     enabled: true
     controller: mealie
-    annotations:
-      external-dns.alpha.kubernetes.io/hostname: mealie.localdomain
     type: LoadBalancer
     ports:
       http:
