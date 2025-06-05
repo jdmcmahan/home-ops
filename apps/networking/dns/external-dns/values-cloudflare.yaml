@@ -11,6 +11,7 @@ env:
 extraArgs:
   - --cloudflare-dns-records-per-page=1000
   - --cloudflare-proxied
+  - --gateway-name=remote
 triggerLoopOnEvent: true
 policy: sync
 sources: ["gateway-httproute"]
