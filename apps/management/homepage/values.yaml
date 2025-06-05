@@ -16,18 +16,6 @@ service:
         port: 80
         targetPort: 3000
 
-route:
-  main:
-    hostnames: ["homepage.mcmahan.io"]
-    parentRefs:
-      - name: local
-        namespace: traefik
-        sectionName: websecure
-    rules:
-      - backendRefs:
-          - identifier: main
-            port: 80
-
 env:
   - name: TZ
     value: "America/Chicago"
