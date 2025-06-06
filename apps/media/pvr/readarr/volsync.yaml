@@ -35,6 +35,7 @@ spec:
     schedule: "0 0 * * *"
   restic:
     copyMethod: Snapshot
+    cacheCapacity: 10Gi
     pruneIntervalDays: 7
     repository: readarr-volsync-backblaze
     volumeSnapshotClassName: ceph-block
