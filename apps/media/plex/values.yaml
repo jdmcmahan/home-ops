@@ -61,6 +61,17 @@ persistence:
       plex:
         app:
           - path: /config
+  cache:
+    enabled: true
+    suffix: cache
+    type: persistentVolumeClaim
+    storageClass: ceph-block
+    size: 10Gi
+    accessMode: ReadWriteOnce
+    advancedMounts:
+      plex:
+        app:
+          - path: /config/Library/Application Support/Plex Media Server/Cache
   transcode:
     enabled: true
     type: emptyDir
