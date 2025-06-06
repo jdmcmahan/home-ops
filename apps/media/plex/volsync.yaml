@@ -40,9 +40,9 @@ spec:
     repository: plex-volsync-backblaze
     volumeSnapshotClassName: ceph-block
     moverSecurityContext:
-      runAsUser: 568
-      runAsGroup: 568
-      fsGroup: 568
+      runAsUser: 979
+      runAsGroup: 979
+      fsGroup: 979
     retain:
       daily: 7
     unlock: "cr6gg"
@@ -63,9 +63,9 @@ spec:
     accessModes: [ReadWriteOnce]
     capacity: 30Gi
     moverSecurityContext:
-      runAsUser: 568
-      runAsGroup: 568
-      fsGroup: 568
+      runAsUser: 979
+      runAsGroup: 979
+      fsGroup: 979
     enableFileDeletion: true
     cleanupCachePVC: true
     cleanupTempPVC: true
