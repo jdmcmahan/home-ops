@@ -10,6 +10,8 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          PLEX_ADVERTISE_URL: https://plex.mcmahan.io:443,http://192.168.8.79:32400
+          PLEX_NO_AUTH_NETWORKS: 192.168.0.0/16
         resources:
           requests:
             gpu.intel.com/i915: 1
