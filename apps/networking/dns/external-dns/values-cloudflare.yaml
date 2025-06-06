@@ -10,7 +10,7 @@ env:
         key: token
 extraArgs:
   - --cloudflare-dns-records-per-page=1000
-#  - --cloudflare-proxied
+  - --cloudflare-proxied
   - --gateway-name=remote
 triggerLoopOnEvent: true
 policy: sync
