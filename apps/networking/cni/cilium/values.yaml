@@ -1,5 +1,6 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/cilium/cilium/main/install/kubernetes/cilium/values.schema.json
+MTU: 1500
 ipam:
   mode: kubernetes
 kubeProxyReplacement: true
