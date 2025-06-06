@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1748582673,
+    "timestamp": 1749187519,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2809,6 +2809,18 @@
         "vpn": "wireguard",
         "country": "Japan",
         "city": "Tokyo",
+        "isp": "DataPacket",
+        "hostname": "jp-tyo-wg-002",
+        "wgpubkey": "zdlqydCbeR7sG1y5L8sS65X1oOtRKvfVbAuFgqEGhi4=",
+        "ips": [
+          "138.199.21.226",
+          "2a02:6ea0:d31b::a14f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Japan",
+        "city": "Tokyo",
         "isp": "M247",
         "hostname": "jp-tyo-wg-201",
         "wgpubkey": "0j7u9Vd+EsqFs8XeV/T/ZM7gE+TWgEsYCsqcZUShvzc=",
@@ -2827,18 +2839,6 @@
         "ips": [
           "146.70.201.2",
           "2001:ac8:40:13::b02f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Japan",
-        "city": "Tokyo",
-        "isp": "M247",
-        "hostname": "jp-tyo-wg-203",
-        "wgpubkey": "tgTYDEfbDgr35h6hYW01MH76CJrwuBvbQFhyVsazEic=",
-        "ips": [
-          "146.70.201.66",
-          "2001:ac8:40:14::b03f"
         ]
       },
       {
@@ -3615,30 +3615,6 @@
         "ips": [
           "149.88.20.193",
           "2a02:6ea0:fb01:2::f002"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Portugal",
-        "city": "Lisbon",
-        "isp": "HostRoyale",
-        "hostname": "pt-lis-wg-301",
-        "wgpubkey": "v28I9wElvqG81kdFi9UZ08qmPDZJnr99lPGTM+HMxgQ=",
-        "ips": [
-          "185.92.210.195",
-          "2a06:3040:0:1410::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Portugal",
-        "city": "Lisbon",
-        "isp": "HostRoyale",
-        "hostname": "pt-lis-wg-302",
-        "wgpubkey": "IzFkZPCljVR/zth8r6F4ajnawxFJZhe0+nRbGFp0d0U=",
-        "ips": [
-          "185.92.210.225",
-          "2a06:3040:0:1410::f101"
         ]
       },
       {
