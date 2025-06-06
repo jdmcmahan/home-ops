@@ -44,6 +44,8 @@ patches:
     file: ../patches/kexec-disable.yaml
   - name: gc-threshold
     file: ../patches/gc-threshold.yaml
+  - name: cloudflared-quic
+    file: ../patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -62,6 +64,8 @@ patches:
     file: ../patches/kexec-disable.yaml
   - name: gc-threshold
     file: ../patches/gc-threshold.yaml
+  - name: cloudflared-quic
+    file: ../patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -80,6 +84,8 @@ patches:
     file: ../patches/kexec-disable.yaml
   - name: gc-threshold
     file: ../patches/gc-threshold.yaml
+  - name: cloudflared-quic
+    file: ../patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -98,6 +104,8 @@ patches:
     file: ../patches/kexec-disable.yaml
   - name: gc-threshold
     file: ../patches/gc-threshold.yaml
+  - name: cloudflared-quic
+    file: ../patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -116,6 +124,8 @@ patches:
     file: ../patches/kexec-disable.yaml
   - name: gc-threshold
     file: ../patches/gc-threshold.yaml
+  - name: cloudflared-quic
+    file: ../patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -134,6 +144,8 @@ patches:
     file: ../patches/kexec-disable.yaml
   - name: gc-threshold
     file: ../patches/gc-threshold.yaml
+  - name: cloudflared-quic
+    file: ../patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
