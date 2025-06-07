@@ -11,26 +11,26 @@ spec:
         revision: HEAD
         files:
           - path: "apps/**/kustomization.yaml"
-      template:
-        spec:
-          source:
-            repoURL: https://github.com/jdmcmahan/home-ops.git
-            targetRevision: HEAD
-            path: "{{ path }}"
+        template:
+          spec:
+            source:
+              repoURL: https://github.com/jdmcmahan/home-ops.git
+              targetRevision: HEAD
+              path: "{{ path }}"
     - git:
         repoURL: https://github.com/jdmcmahan/home-ops.git
         revision: HEAD
         files:
           - path: "apps/**/Chart.yaml"
-      template:
-        spec:
-          sources:
-            - repoURL: https://github.com/jdmcmahan/home-ops.git
-              targetRevision: HEAD
-              path: "{{ path }}"
-            - repoURL: https://github.com/jdmcmahan/home-ops.git
-              targetRevision: HEAD
-              path: "{{ path.path }}/resources"
+        template:
+          spec:
+            sources:
+              - repoURL: https://github.com/jdmcmahan/home-ops.git
+                targetRevision: HEAD
+                path: "{{ path }}"
+              - repoURL: https://github.com/jdmcmahan/home-ops.git
+                targetRevision: HEAD
+                path: "{{ path.path }}/resources"
   template:
     metadata:
       name: "{{ path.basenameNormalized }}"
