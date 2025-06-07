@@ -5,8 +5,6 @@ originRequest:
 ingress:
   - hostname: "mcmahan.io"
     service: https://traefik-remote.traefik.svc.cluster.local
-  - hostname: "plex.mcmahan.io"
-    service: http://plex.plex.svc.cluster.local
   - hostname: "*.mcmahan.io"
     service: https://traefik-remote.traefik.svc.cluster.local
   - service: http_status:404
