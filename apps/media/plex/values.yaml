@@ -41,17 +41,17 @@ service:
       http:
         port: 32400
 
-route:
-  plex:
-    hostnames: ["plex.mcmahan.io"]
-    parentRefs:
-      - name: remote
-        namespace: traefik
-        sectionName: websecure
-    rules:
-      - backendRefs:
-          - identifier: web
-            port: 32400
+# route:
+#   plex:
+#     hostnames: ["plex.mcmahan.io"]
+#     parentRefs:
+#       - name: remote
+#         namespace: traefik
+#         sectionName: websecure
+#     rules:
+#       - backendRefs:
+#           - identifier: web
+#             port: 32400
 
 persistence:
   config:
