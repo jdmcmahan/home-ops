@@ -211,9 +211,6 @@ config:
                       url: https://192.168.0.1
                       username: {{HOMEPAGE_VAR_UNIFI_USER}}
                       password: {{HOMEPAGE_VAR_UNIFI_PASS}}
-                - DDNS Updater:
-                    icon: ddns-updater.svg
-                    href: https://ddns.mcmahan.io
             - Storage:
                 - new-peepums:
                     icon: synology.svg
