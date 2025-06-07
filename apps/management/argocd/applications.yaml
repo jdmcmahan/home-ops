@@ -12,18 +12,23 @@ spec:
         files:
           - path: "apps/**/kustomization.yaml"
         template:
+          metadata: {}
           spec:
+            project: default
             source:
               repoURL: https://github.com/jdmcmahan/home-ops.git
               targetRevision: HEAD
               path: "{{ path }}"
+            destination: {}
     - git:
         repoURL: https://github.com/jdmcmahan/home-ops.git
         revision: HEAD
         files:
           - path: "apps/**/Chart.yaml"
         template:
+          metadata: {}
           spec:
+            project: default
             sources:
               - repoURL: https://github.com/jdmcmahan/home-ops.git
                 targetRevision: HEAD
@@ -31,6 +36,7 @@ spec:
               - repoURL: https://github.com/jdmcmahan/home-ops.git
                 targetRevision: HEAD
                 path: "{{ path.path }}/resources"
+            destination: {}
   template:
     metadata:
       name: "{{ path.basenameNormalized }}"
