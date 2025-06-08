@@ -3,7 +3,16 @@ config:
   burrito:
     datastore:
       storage:
-        mock: true
+        mock: false
+        s3:
+          bucket: vriska-tf-state
+          usePathStyle: true
+
+datastore:
+  deployment:
+    envFrom:
+      - secretRef:
+          name: datastore-backblaze
 
 tenants:
   - namespace:

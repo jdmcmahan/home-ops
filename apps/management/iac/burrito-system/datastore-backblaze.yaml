@@ -1,0 +1,34 @@
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1.json
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: datastore-backblaze
+spec:
+  secretStoreRef:
+    kind: ClusterSecretStore
+    name: default
+  target:
+    creationPolicy: Owner
+  data:
+    - secretKey: AWS_ACCESS_KEY_ID
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: burrito-backblaze
+        property: keyID
+    - secretKey: AWS_SECRET_ACCESS_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: burrito-backblaze
+        property: applicationKey
+    - secretKey: AWS_ENDPOINT_URL_S3
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: burrito-backblaze
+        property: endpoint
