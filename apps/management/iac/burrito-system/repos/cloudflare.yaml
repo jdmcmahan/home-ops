@@ -1,0 +1,23 @@
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformRepository
+metadata:
+  name: cloudflare
+  namespace: burrito-system
+spec:
+  repository:
+    url: git@github.com:jdmcmahan/cloudflare-tf.git
+    secretName: github-token
+  terraform:
+    enabled: true
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: cloudflare-root
+  namespace: burrito-system
+spec:
+  branch: "main"
+  repository:
+    name: cloudflare
+    namespace: burrito-system
