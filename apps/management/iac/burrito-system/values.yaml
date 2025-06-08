@@ -19,4 +19,4 @@ tenants:
       create: true
       name: burrito-project-default
     serviceAccounts:
-      - name: burrito-runner
+      - name: burrito-runner-default
