@@ -4,6 +4,7 @@ apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: github-token
+  namespace: burrito-project-default
 spec:
   secretStoreRef:
     kind: ClusterSecretStore
