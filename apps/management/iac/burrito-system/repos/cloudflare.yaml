@@ -6,7 +6,7 @@ metadata:
   namespace: burrito-project-default
 spec:
   repository:
-    url: git@github.com:jdmcmahan/cloudflare-tf.git
+    url: https://github.com/jdmcmahan/cloudflare-tf.git
     secretName: github-token
   terraform:
     enabled: true
