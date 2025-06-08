@@ -5,7 +5,7 @@ metadata:
   name: burrito-oci
   labels:
     argocd.argoproj.io/secret-type: repository
-stringData:
+data:
   enableOCI: "true"
   url: ghcr.io/padok-team/charts
   type: helm
