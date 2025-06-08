@@ -1,5 +1,5 @@
 ---
 chart: burrito
-repo: ghcr.io/padok-team/charts/burrito
+repo: ghcr.io/padok-team/charts
 version: 0.6.5
 releaseName: burrito
