@@ -6,7 +6,7 @@ kind: Kustomization
 helmCharts:
   - name: burrito
     repo: oci://ghcr.io/padok-team/charts
-    version: 0.6.5
+    version: 0.7.0
     releaseName: burrito
     namespace: burrito-system
     valuesFile: values.yaml
