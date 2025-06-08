@@ -1,7 +1,0 @@
-apiVersion: v2
-name: burrito
-version: 1.0.0
-dependencies:
-  - name: burrito
-    version: 0.6.5
-    repository: oci://ghcr.io/padok-team/charts/burrito

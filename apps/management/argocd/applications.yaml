@@ -24,15 +24,19 @@ spec:
         repoURL: https://github.com/jdmcmahan/home-ops.git
         revision: HEAD
         files:
-          - path: "apps/**/Chart.yaml"
+          - path: "apps/**/helmapp.yaml"
         template:
           metadata: {}
           spec:
             project: default
             sources:
-              - repoURL: https://github.com/jdmcmahan/home-ops.git
-                targetRevision: HEAD
-                path: "{{ path }}"
+              - chart: "{{ chart }}"
+                repoURL: "{{ repo }}"
+                targetRevision: "{{ version }}"
+                helm:
+                  releaseName: "{{ releaseName }}"
+                  valueFiles:
+                    - values.yaml
               - repoURL: https://github.com/jdmcmahan/home-ops.git
                 targetRevision: HEAD
                 path: "{{ path.path }}/resources"
