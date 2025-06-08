@@ -2,6 +2,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
+  name: burrito-oci
   labels:
     argocd.argoproj.io/secret-type: repository
 data:
