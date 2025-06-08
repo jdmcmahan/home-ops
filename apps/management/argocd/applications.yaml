@@ -37,9 +37,6 @@ spec:
                   releaseName: "{{ releaseName }}"
                   valueFiles:
                     - values.yaml
-              - repoURL: https://github.com/jdmcmahan/home-ops.git
-                targetRevision: HEAD
-                path: "{{ path.path }}/resources"
             destination: {}
   template:
     metadata:
