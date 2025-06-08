@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - datastore-backblaze.yaml
+  - github-token.yaml
   - route.yaml
 
 helmCharts:
