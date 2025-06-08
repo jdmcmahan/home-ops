@@ -5,7 +5,7 @@ config:
       storage:
         mock: false
         s3:
-          bucket: vriska-tf-state
+          bucket: vriska-burrito-datastore
           usePathStyle: true
 
 datastore:
