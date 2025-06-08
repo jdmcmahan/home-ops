@@ -17,6 +17,6 @@ datastore:
 tenants:
   - namespace:
       create: true
-      name: burrito-project-test
+      name: burrito-project-default
     serviceAccounts:
-      - name: runner-project-test
+      - name: burrito-runner
