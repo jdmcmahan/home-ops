@@ -13,3 +13,10 @@ datastore:
     envFrom:
       - secretRef:
           name: datastore-backblaze
+
+tenants:
+  - namespace:
+      create: true
+      name: burrito-project-test
+    serviceAccounts:
+      - name: runner-project-test
