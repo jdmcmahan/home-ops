@@ -9,3 +9,4 @@ helmCharts:
     version: 0.6.5
     releaseName: burrito
     namespace: burrito-system
+    valuesFile: values.yaml
