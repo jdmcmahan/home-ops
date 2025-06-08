@@ -32,3 +32,10 @@ spec:
         metadataPolicy: None
         key: burrito-backblaze
         property: endpoint
+    - secretKey: AWS_REGION
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: burrito-backblaze
+        property: region
