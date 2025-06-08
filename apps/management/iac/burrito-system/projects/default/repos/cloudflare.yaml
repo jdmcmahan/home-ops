@@ -44,7 +44,16 @@ spec:
         value: when_required
       - name: AWS_RESPONSE_CHECKSUM_VALIDATION
         value: when_required
+      - name: TF_VAR_onepassword_connect_url
+        value: http://onepassword-connect.onepassword.svc.cluster.local:8080
+      - name: TF_VAR_onepassword_connect_token
+        valueFrom:
+          secretKeyRef:
+            name: onepassword-connect-token-tf
+            key: token
     envFrom:
+      - secretRef:
+          name: onepassword-connect-token-tf
       - secretRef:
           name: backend-cloudflare
 ---
