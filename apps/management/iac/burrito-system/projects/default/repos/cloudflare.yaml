@@ -53,8 +53,6 @@ spec:
             key: token
     envFrom:
       - secretRef:
-          name: onepassword-connect-token-tf
-      - secretRef:
           name: backend-cloudflare
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
