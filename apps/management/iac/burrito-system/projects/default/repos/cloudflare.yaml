@@ -8,7 +8,7 @@ metadata:
 spec:
   secretStoreRef:
     kind: ClusterSecretStore
-    name: default
+    name: tf
   target:
     creationPolicy: Owner
   data:
@@ -17,14 +17,14 @@ spec:
         conversionStrategy: Default
         decodingStrategy: None
         metadataPolicy: None
-        key: burrito-backend-cloudflare
+        key: backend-cloudflare
         property: keyID
     - secretKey: AWS_SECRET_ACCESS_KEY
       remoteRef:
         conversionStrategy: Default
         decodingStrategy: None
         metadataPolicy: None
-        key: burrito-backend-cloudflare
+        key: backend-cloudflare
         property: applicationKey
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
