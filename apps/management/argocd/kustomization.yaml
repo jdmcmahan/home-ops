@@ -8,7 +8,6 @@ namespace: argocd
 resources:
   - namespace.yaml
   - route.yaml
-  - oci.yaml
   - applications.yaml
 
 helmCharts:
