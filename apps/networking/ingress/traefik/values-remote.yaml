@@ -52,3 +52,5 @@ metrics:
   prometheus:
     serviceMonitor:
       enabled: true
+    prometheusRule:
+      enabled: true
