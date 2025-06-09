@@ -55,9 +55,10 @@ kubeScheduler:
 
 alertmanager:
   alertmanagerSpec:
-    alertmanagerConfigSelector:
-      matchLabels:
-        alertmanagerConfig: pushover
+    alertmanagerConfiguration:
+      name: alertmanager-pushover
+      global:
+        resolveTimeout: 5m
     externalUrl: https://alertmanager.mcmahan.io
     storage:
       volumeClaimTemplate:

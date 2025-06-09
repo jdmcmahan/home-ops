@@ -4,8 +4,6 @@ apiVersion: monitoring.coreos.com/v1alpha1
 kind: AlertmanagerConfig
 metadata:
   name: alertmanager-pushover
-  labels:
-    alertmanagerConfig: pushover
 spec:
   route:
     groupBy: ["alertname", "job"]
