@@ -56,7 +56,7 @@ kubeScheduler:
 alertmanager:
   alertmanagerSpec:
     alertmanagerConfiguration:
-      name: alertmanager
+      name: alertmanager-pushover
       global:
         resolveTimeout: 5m
     externalUrl: https://alertmanager.mcmahan.io
