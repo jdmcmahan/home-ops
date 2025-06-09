@@ -6,31 +6,56 @@ metadata:
   name: alertmanager
 spec:
   route:
+    receiver: "null"
+    continue: false
     groupBy: ["alertname", "job"]
-    groupInterval: 10m
     groupWait: 1m
-    receiver: pushover
+    groupInterval: 10m
     repeatInterval: 12h
     routes:
       - receiver: "null"
+        continue: false
         matchers:
           - name: alertname
-            value: InfoInhibitor
+            value: Watchdog
             matchType: =
       - receiver: pushover
+        continue: false
         matchers:
           - name: severity
             value: critical
             matchType: =
   inhibitRules:
-    - equal: ["alertname", "namespace"]
+    - equal: ["namespace", "alertname"]
       sourceMatch:
         - name: severity
           value: critical
           matchType: =
       targetMatch:
         - name: severity
+          value: warning|info
+          matchType: =~
+    - equal: ["namespace", "alertname"]
+      sourceMatch:
+        - name: severity
           value: warning
+          matchType: =
+      targetMatch:
+        - name: severity
+          value: info
+          matchType: =
+    - equal: ["namespace"]
+      sourceMatch:
+        - name: alertname
+          value: InfoInhibitor
+          matchType: =
+      targetMatch:
+        - name: severity
+          value: info
+          matchType: =
+    - targetMatch:
+        - name: alertname
+          value: InfoInhibitor
           matchType: =
   receivers:
     - name: "null"
