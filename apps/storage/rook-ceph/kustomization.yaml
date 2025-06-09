@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
+  - dashboard-credentials.yaml
   - route.yaml
 
 helmCharts:
