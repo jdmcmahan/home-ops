@@ -34,6 +34,15 @@ prometheus:
         annotations:
           argocd.argoproj.io/hook: PreSync
 
+kubeControllerManager:
+  enabled: false
+
+kubeProxy:
+  enabled: false
+
+kubeScheduler:
+  enabled: false
+
 grafana:
   service:
     annotations:
