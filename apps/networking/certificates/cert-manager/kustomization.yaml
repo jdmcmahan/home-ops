@@ -6,6 +6,7 @@ kind: Kustomization
 resources:
   - cloudflare-certmanager-token.yaml
   - issuer.yaml
+  - prometheusrule.yaml
 
 helmCharts:
   - name: cert-manager
