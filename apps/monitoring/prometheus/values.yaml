@@ -54,10 +54,28 @@ kubeScheduler:
   enabled: false
 
 alertmanager:
+  config:
+    route:
+      routes:
+        - receiver: pushover
+          matchers:
+            - name: severity
+              value: critical
+              matchType: =
+    receivers:
+      - name: pushover
+        pushoverConfigs:
+          - sendResolved: true
+            urlTitle: View in Alertmanager
+            sound: gamelan
+            ttl: 86400s
+            userKey:
+              name: pushover-token
+              key: userKey
+            token:
+              name: pushover-token
+              key: token
   alertmanagerSpec:
-    alertmanagerConfigSelector:
-      matchLabels:
-        alertmanagerConfig: pushover
     externalUrl: https://alertmanager.mcmahan.io
     storage:
       volumeClaimTemplate:
