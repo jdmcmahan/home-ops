@@ -53,6 +53,21 @@ kubeProxy:
 kubeScheduler:
   enabled: false
 
+alertmanager:
+  alertmanagerSpec:
+    alertmanagerConfiguration:
+      name: alertmanager
+      global:
+        resolveTimeout: 5m
+    externalUrl: https://alertmanager.mcmahan.io
+    storage:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: ceph-block
+          resources:
+            requests:
+              storage: 1Gi
+
 grafana:
   service:
     annotations:

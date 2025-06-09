@@ -5,6 +5,8 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
+  - pushover-token.yaml
+  - alertmanagerconfig.yaml
   - route.yaml
   - grafana-credentials.yaml
 
