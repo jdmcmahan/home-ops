@@ -43,13 +43,6 @@ kubeProxy:
 kubeScheduler:
   enabled: false
 
-defaultRules:
-  rules:
-    kubeControllerManager: false
-    kubeProxy: false
-    kubeSchedulerAlerting: false
-    kubeSchedulerRecording: false
-
 grafana:
   service:
     annotations:
