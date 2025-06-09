@@ -17,3 +17,5 @@ helmCharts:
         rbacPrometheus: false
         serviceMonitor:
           enabled: true
+        prometheusRule:
+          enabled: true
