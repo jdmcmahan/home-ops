@@ -38,7 +38,8 @@ spec:
 
   bootstrap:
     recovery:
-      source: backup-cluster
+      backup:
+        name: blinko-backup-20250531000000
 
   externalClusters:
     - name: backup-cluster
