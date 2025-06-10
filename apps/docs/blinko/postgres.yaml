@@ -43,7 +43,8 @@ spec:
   externalClusters:
     - name: backup-cluster
       barmanObjectStore:
-        destinationPath: https://s3.us-west-002.backblazeb2.com/vriska-pg-blinko
+        endpointURL: https://s3.us-west-002.backblazeb2.com
+        destinationPath: "s3://vriska-pg-blinko"
         serverName: blinko-cluster
         s3Credentials:
           accessKeyId:
