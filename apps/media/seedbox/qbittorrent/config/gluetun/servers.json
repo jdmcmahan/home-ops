@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1749187519,
+    "timestamp": 1749792292,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1142,18 +1142,6 @@
         "ips": [
           "146.70.129.194",
           "2001:ac8:33:f::2f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Czech Republic",
-        "city": "Prague",
-        "isp": "M247",
-        "hostname": "cz-prg-wg-101",
-        "wgpubkey": "wLBxTaISMJ++vUht4hlAOUog9fhZxDql16TaYWaboDc=",
-        "ips": [
-          "146.70.129.98",
-          "2001:ac8:33:c::a01f"
         ]
       },
       {
@@ -5790,6 +5778,54 @@
         ]
       },
       {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "HostRoyale",
+        "hostname": "us-qas-wg-201",
+        "wgpubkey": "no0QE15NRHLECYe/B976IH9mLn22QecYBbcYl3LZhD0=",
+        "ips": [
+          "103.81.230.3",
+          "2a01:4740:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "HostRoyale",
+        "hostname": "us-qas-wg-202",
+        "wgpubkey": "eUTgjAPvpLba9wwMcC0HNcLwC2Q42QYCKZuFPy34+Ug=",
+        "ips": [
+          "103.81.230.127",
+          "2a01:4740:1::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "HostRoyale",
+        "hostname": "us-qas-wg-203",
+        "wgpubkey": "tI5F6pIZMEf0aJUTG/I2ZvYkkJDJpOxVakObTLLmBAI=",
+        "ips": [
+          "103.81.231.3",
+          "2a01:4740:1::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "HostRoyale",
+        "hostname": "us-qas-wg-204",
+        "wgpubkey": "2bvhh22EcdV3MIuIJze47gD2KmXpplYrNbCjNff2ID8=",
+        "ips": [
+          "103.81.231.127",
+          "2a01:4740:1::f301"
+        ]
+      },
+      {
         "vpn": "openvpn",
         "country": "USA",
         "city": "Atlanta GA",
@@ -6283,6 +6319,54 @@
         "ips": [
           "206.217.206.16",
           "2606:2e00:8007:a:ae1f:6bff:fef5:7b27"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "HostRoyale",
+        "hostname": "us-dal-wg-601",
+        "wgpubkey": "353XrBhmW0VisDN/ztYLb7WwnxQUTnL9Ys5FBPUHHVw=",
+        "ips": [
+          "103.102.246.3",
+          "2a01:4740:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "HostRoyale",
+        "hostname": "us-dal-wg-602",
+        "wgpubkey": "Vm9kQsUFIGgNeb+NBrY0KZpW51dC84cAQWMY9eMa8Ho=",
+        "ips": [
+          "103.102.246.127",
+          "2a01:4740:2::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "HostRoyale",
+        "hostname": "us-dal-wg-603",
+        "wgpubkey": "Y5SK28yMGjcZVByWZkMb24KdmbmY07mDnwLN6817yEE=",
+        "ips": [
+          "103.102.247.3",
+          "2a01:4740:2::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "HostRoyale",
+        "hostname": "us-dal-wg-604",
+        "wgpubkey": "7Wyh9lX1nIkKfIpwUywcSUVF8pOxP0c04EehfEeIWg4=",
+        "ips": [
+          "103.102.247.127",
+          "2a01:4740:2::f301"
         ]
       },
       {
@@ -6925,6 +7009,54 @@
         "ips": [
           "23.168.216.127",
           "2602:f99d::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Los Angeles CA",
+        "isp": "HostRoyale",
+        "hostname": "us-lax-wg-701",
+        "wgpubkey": "EM/33kdl9RiNOF5jvwtp/nfchPAD/sq7MJleg1bZikU=",
+        "ips": [
+          "103.251.26.3",
+          "2a01:4740:3::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Los Angeles CA",
+        "isp": "HostRoyale",
+        "hostname": "us-lax-wg-702",
+        "wgpubkey": "ddv7vosBlf396nOa79nWn6qXQu2LzezGXfNUDO3hAXQ=",
+        "ips": [
+          "103.251.26.127",
+          "2a01:4740:3::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Los Angeles CA",
+        "isp": "HostRoyale",
+        "hostname": "us-lax-wg-703",
+        "wgpubkey": "/FWUNK2WlEQbmwYaXuTzUmtshvIYvJnKWVnuqgzlfXw=",
+        "ips": [
+          "103.251.27.3",
+          "2a01:4740:3::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Los Angeles CA",
+        "isp": "HostRoyale",
+        "hostname": "us-lax-wg-704",
+        "wgpubkey": "KPjr8jrGP3dVI+GbMq2LNc9eREW6EhGHndoSWHqakxE=",
+        "ips": [
+          "103.251.27.127",
+          "2a01:4740:3::f301"
         ]
       },
       {
