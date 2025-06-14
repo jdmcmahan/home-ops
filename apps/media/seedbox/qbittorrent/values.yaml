@@ -85,9 +85,6 @@ controllers:
           repository: caseyscarborough/qbittorrent-exporter
           tag: v1.3.5
           pullPolicy: IfNotPresent
-        envFrom:
-          - secretRef:
-              name: qbittorrent-metrics-credentials
 
 service:
   web:
