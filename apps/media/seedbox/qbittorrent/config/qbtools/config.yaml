@@ -1,0 +1,17 @@
+---
+trackers:
+  - name: alpharatio
+    urls:
+      - alpharatio.cc
+    required_seed_ratio: 1.05
+    required_seed_days: 7.5
+  - name: animetorrents
+    urls:
+      - animetorrents.me
+    required_seed_ratio: 1.05
+  - name: torrentleech
+    urls:
+      - tleechreload.org
+      - torrentleech.org
+    required_seed_ratio: 1.05
+    required_seed_days: 10.5

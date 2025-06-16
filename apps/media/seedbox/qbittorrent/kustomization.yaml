@@ -15,6 +15,9 @@ configMapGenerator:
   - name: gluetun-configmap
     files:
       - config/gluetun/servers.json
+  - name: qbtools-configmap
+    files:
+      - config/qbtools/config.yaml
 
 generatorOptions:
   disableNameSuffixHash: true
@@ -25,4 +28,10 @@ helmCharts:
     version: 4.1.1
     releaseName: qbittorrent
     namespace: qbittorrent
-    valuesFile: values.yaml
+    valuesFile: values-qbittorrent.yaml
+  - name: app-template
+    repo: https://bjw-s-labs.github.io/helm-charts
+    version: 4.1.1
+    releaseName: qbtools
+    namespace: qbittorrent
+    valuesFile: values-qbtools.yaml
