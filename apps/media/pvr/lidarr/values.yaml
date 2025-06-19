@@ -10,9 +10,6 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-        envFrom:
-          - secretRef:
-              name: lidarr-apikey
       metrics:
         image:
           repository: ghcr.io/onedr0p/exportarr
@@ -22,10 +19,7 @@ controllers:
           - lidarr
         env:
           PORT: "9707"
-          URL: http://lidarr-web
-        envFrom:
-          - secretRef:
-              name: lidarr-apikey
+          URL: http://localhost
 
 defaultPodOptions:
   securityContext:
