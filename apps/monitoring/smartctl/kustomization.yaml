@@ -9,7 +9,7 @@ resources:
 helmCharts:
   - name: prometheus-smartctl-exporter
     repo: https://prometheus-community.github.io/helm-charts
-    version: 0.15.1
+    version: 0.15.3
     releaseName: smartctl-exporter
     namespace: smartctl
     valuesInline:
