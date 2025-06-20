@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1749792292,
+    "timestamp": 1750397130,
     "servers": [
       {
         "vpn": "wireguard",
@@ -5293,19 +5293,6 @@
         "ips": [
           "141.98.252.130",
           "2a03:1b20:7:f011::a01f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "UK",
-        "city": "London",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "gb-lon-wg-002",
-        "wgpubkey": "J57ba81Q8bigy9RXBXvl0DgABTrbl81nb37GuX50gnY=",
-        "ips": [
-          "141.98.252.222",
-          "2a03:1b20:7:f011::a02f"
         ]
       },
       {
