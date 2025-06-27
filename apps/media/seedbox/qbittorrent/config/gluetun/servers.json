@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1750397130,
+    "timestamp": 1751001938,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2712,18 +2712,6 @@
         "country": "Japan",
         "city": "Osaka",
         "isp": "xtom",
-        "hostname": "jp-osa-wg-001",
-        "wgpubkey": "uhbuY1A7g0yNu0lRhLTi020kYeAx34ED30BA5DQRHFo=",
-        "ips": [
-          "194.114.136.3",
-          "2403:fbc0:7000::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Japan",
-        "city": "Osaka",
-        "isp": "xtom",
         "hostname": "jp-osa-wg-002",
         "wgpubkey": "wzGXxsYOraTCPZuRxfXVTNmoWsRkMFLqMqDxI4PutBg=",
         "ips": [
@@ -4709,19 +4697,6 @@
         "vpn": "wireguard",
         "country": "Sweden",
         "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-sto-wg-014",
-        "wgpubkey": "DYlwUsH63DLjEfKC9yq7P+FoQx99WdKvZGGhXoUZVgk=",
-        "ips": [
-          "185.195.233.68",
-          "2a03:1b20:4:f011::fd01"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
         "isp": "DataPacket",
         "hostname": "se-sto-wg-201",
         "wgpubkey": "V5RUvv8xp3xYc9b/KoGjTL6EUEb2mTv+8egxuEvUAnc=",
@@ -5443,18 +5418,6 @@
         "ips": [
           "146.70.119.2",
           "2001:ac8:31:f005::a37f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "UK",
-        "city": "London",
-        "isp": "M247",
-        "hostname": "gb-lon-wg-303",
-        "wgpubkey": "ZcDVPTugbxo0rTvDKNnexzJ2qNrh3c/wFRtM2Pfl6jM=",
-        "ips": [
-          "146.70.119.34",
-          "2001:ac8:31:f006::a38f"
         ]
       },
       {
