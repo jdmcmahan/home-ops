@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1751001938,
+    "timestamp": 1751606858,
     "servers": [
       {
         "vpn": "wireguard",
@@ -6333,19 +6333,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Denver CO",
-        "isp": "Tzulo",
-        "hostname": "us-den-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.44.128.226",
-          "2607:9000:2000:17::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "USA",
         "city": "Denver CO",
@@ -7057,18 +7044,6 @@
         "ips": [
           "146.70.183.66",
           "2a0d:5600:6:108::2f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Miami FL",
-        "isp": "DataPacket",
-        "hostname": "us-mia-wg-001",
-        "wgpubkey": "FVEKAMJqaJU2AwWn5Mg9TK9IAfJc4XDUmSzEeC/VXGs=",
-        "ips": [
-          "45.134.142.219",
-          "2a02:6ea0:cc1f:2::b62f"
         ]
       },
       {
@@ -7836,18 +7811,6 @@
         ]
       },
       {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Raleigh NC",
-        "isp": "Tzulo",
-        "hostname": "us-rag-wg-208",
-        "wgpubkey": "lCyIXwxSGEBSpUah0kYSyuaZuDJJB0Cwia7gv4r7XTA=",
-        "ips": [
-          "23.234.79.127",
-          "2607:9000:4000:38::f001"
-        ]
-      },
-      {
         "vpn": "openvpn",
         "country": "USA",
         "city": "Salt Lake City UT",
@@ -7919,18 +7882,6 @@
         "ips": [
           "69.4.234.10",
           "2607:fc98:0:8a::f601"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Salt Lake City UT",
-        "isp": "Tzulo",
-        "hostname": "us-slc-wg-301",
-        "wgpubkey": "tA/k8ouzYiVmgCRCF7TWibVzv5xRp3cgv9TJX66poGE=",
-        "ips": [
-          "23.234.112.3",
-          "2607:9000:d00:2::f001"
         ]
       },
       {
