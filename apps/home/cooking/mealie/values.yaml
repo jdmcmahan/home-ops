@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/mealie-recipes/mealie
-          tag: v2.8.0
+          tag: v3.0.0
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
