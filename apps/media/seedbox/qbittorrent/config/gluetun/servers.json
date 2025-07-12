@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1751606858,
+    "timestamp": 1752211702,
     "servers": [
       {
         "vpn": "wireguard",
@@ -3594,6 +3594,30 @@
         ]
       },
       {
+        "vpn": "wireguard",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "isp": "HostRoyale",
+        "hostname": "pt-lis-wg-301",
+        "wgpubkey": "A2+7EIVBsq1jZlnx0AWb8xkoaTkkn8LRFwAl3Qb/xTc=",
+        "ips": [
+          "185.92.210.195",
+          "2a06:3040:0:1410::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Portugal",
+        "city": "Lisbon",
+        "isp": "HostRoyale",
+        "hostname": "pt-lis-wg-302",
+        "wgpubkey": "4V8TnXninUL+vjZqXKUIFnBPOhjFEicdVHa5ZMZhSzc=",
+        "ips": [
+          "185.92.210.225",
+          "2a06:3040:0:1410::f101"
+        ]
+      },
+      {
         "vpn": "openvpn",
         "country": "Romania",
         "city": "Bucharest",
@@ -4965,30 +4989,6 @@
         "vpn": "wireguard",
         "country": "Switzerland",
         "city": "Zurich",
-        "isp": "PrivateLayer",
-        "hostname": "ch-zrh-wg-201",
-        "wgpubkey": "66NPINP4+1AlojLP0J6O9GxdloiegNnGMV4Yit9Kzg0=",
-        "ips": [
-          "179.43.189.66",
-          "2a02:29b8:dc01:1832::a1f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "PrivateLayer",
-        "hostname": "ch-zrh-wg-202",
-        "wgpubkey": "gSLSfY2zNFRczxHndeda258z+ayMvd7DqTlKYlKWJUo=",
-        "ips": [
-          "46.19.136.226",
-          "2a02:29b8:dc01:1831::f002"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Switzerland",
-        "city": "Zurich",
         "isp": "DataPacket",
         "hostname": "ch-zrh-wg-401",
         "wgpubkey": "45ud3I5O6GmPXTrMJiqkiPMI/ubucDqzGaiq3CHJXk8=",
@@ -5469,18 +5469,6 @@
         "ips": [
           "146.70.132.66",
           "2001:ac8:8b:24::3f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "UK",
-        "city": "Manchester",
-        "isp": "M247",
-        "hostname": "gb-mnc-wg-001",
-        "wgpubkey": "Q2khJLbTSFxmppPGHgq2HdxMQx7CczPZCgVpYZMoNnM=",
-        "ips": [
-          "146.70.133.98",
-          "2001:ac8:8b:2d::a47f"
         ]
       },
       {
@@ -6987,18 +6975,6 @@
       {
         "vpn": "wireguard",
         "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "HostRoyale",
-        "hostname": "us-lax-wg-704",
-        "wgpubkey": "KPjr8jrGP3dVI+GbMq2LNc9eREW6EhGHndoSWHqakxE=",
-        "ips": [
-          "103.251.27.127",
-          "2a01:4740:3::f301"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
         "city": "McAllen TX",
         "isp": "DataPacket",
         "hostname": "us-txc-wg-001",
@@ -7044,6 +7020,18 @@
         "ips": [
           "146.70.183.66",
           "2a0d:5600:6:108::2f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Miami FL",
+        "isp": "DataPacket",
+        "hostname": "us-mia-wg-001",
+        "wgpubkey": "FVEKAMJqaJU2AwWn5Mg9TK9IAfJc4XDUmSzEeC/VXGs=",
+        "ips": [
+          "45.134.142.219",
+          "2a02:6ea0:cc1f:2::b62f"
         ]
       },
       {
@@ -8246,42 +8234,6 @@
         "ips": [
           "138.199.43.65",
           "2a02:6ea0:d80b:1::b73f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Seattle WA",
-        "isp": "Tzulo",
-        "hostname": "us-sea-wg-101",
-        "wgpubkey": "200em73iD9942d9hlHonAfNXGWwFQcicBVGHeHbdxVM=",
-        "ips": [
-          "198.54.131.130",
-          "2607:9000:5000:15::b77f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Seattle WA",
-        "isp": "Tzulo",
-        "hostname": "us-sea-wg-102",
-        "wgpubkey": "YwwaW1/1vFJKp22Je7btEhVXTzTckxMF1qesHN4T3QA=",
-        "ips": [
-          "198.54.131.162",
-          "2607:9000:5000:16::b78f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Seattle WA",
-        "isp": "Tzulo",
-        "hostname": "us-sea-wg-103",
-        "wgpubkey": "fU4oTJhFtwvmk0odRe9Jatc+DMh9gKz49WSzO0psCmU=",
-        "ips": [
-          "198.54.131.98",
-          "2607:9000:5000:14::b03f"
         ]
       },
       {
