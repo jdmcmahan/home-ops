@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1752211702,
+    "timestamp": 1752816683,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1251,19 +1251,6 @@
         "vpn": "wireguard",
         "country": "Denmark",
         "city": "Copenhagen",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "dk-cph-wg-002",
-        "wgpubkey": "R5LUBgM/1UjeAR4lt+L/yA30Gee6/VqVZ9eAB3ZTajs=",
-        "ips": [
-          "45.129.56.68",
-          "2a03:1b20:8:f011::f101"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Denmark",
-        "city": "Copenhagen",
         "isp": "M247",
         "hostname": "dk-cph-wg-401",
         "wgpubkey": "Jjml2TSqKlgzW6UzPiJszaun743QYpyl5jQk8UOQYg0=",
@@ -1318,104 +1305,6 @@
         "ips": [
           "194.127.167.107",
           "2a07:d880:2::a03f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.171",
-          "2a0c:f040:0:2790::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.172",
-          "2a0c:f040:0:2790::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.173",
-          "2a0c:f040:0:2790::3f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-004",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.174",
-          "2a0c:f040:0:2790::4f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-005",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.175",
-          "2a0c:f040:0:2790::5f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-006",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.176",
-          "2a0c:f040:0:2790::6f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-007",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.212.149.201",
-          "2a0c:f040:0:2790::7f"
         ]
       },
       {
@@ -3309,19 +3198,6 @@
         "city": "Oslo",
         "isp": "Blix",
         "owned": true,
-        "hostname": "no-osl-wg-005",
-        "wgpubkey": "ScQu/AqslSPwpXMIEyimrYZWTIdJJXLLeXrijWOF0SE=",
-        "ips": [
-          "178.255.149.140",
-          "2a02:20c8:4124::f401"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
         "hostname": "no-osl-wg-006",
         "wgpubkey": "LBlNBTuT7gNEZoAuxO0PTVPpaDuYA7nAeCyMpg9Agyo=",
         "ips": [
@@ -4989,6 +4865,30 @@
         "vpn": "wireguard",
         "country": "Switzerland",
         "city": "Zurich",
+        "isp": "PrivateLayer",
+        "hostname": "ch-zrh-wg-201",
+        "wgpubkey": "66NPINP4+1AlojLP0J6O9GxdloiegNnGMV4Yit9Kzg0=",
+        "ips": [
+          "179.43.189.66",
+          "2a02:29b8:dc01:1832::a1f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Switzerland",
+        "city": "Zurich",
+        "isp": "PrivateLayer",
+        "hostname": "ch-zrh-wg-202",
+        "wgpubkey": "gSLSfY2zNFRczxHndeda258z+ayMvd7DqTlKYlKWJUo=",
+        "ips": [
+          "46.19.136.226",
+          "2a02:29b8:dc01:1831::f002"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Switzerland",
+        "city": "Zurich",
         "isp": "DataPacket",
         "hostname": "ch-zrh-wg-401",
         "wgpubkey": "45ud3I5O6GmPXTrMJiqkiPMI/ubucDqzGaiq3CHJXk8=",
@@ -5541,18 +5441,6 @@
         "ips": [
           "146.70.133.34",
           "2001:ac8:8b:2b::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "UK",
-        "city": "Manchester",
-        "isp": "M247",
-        "hostname": "gb-mnc-wg-008",
-        "wgpubkey": "2bciRobW0TPtjrZ2teilr+7PjyiBMUGfixvAKOE52Xo=",
-        "ips": [
-          "146.70.133.66",
-          "2001:ac8:8b:2c::f001"
         ]
       },
       {
