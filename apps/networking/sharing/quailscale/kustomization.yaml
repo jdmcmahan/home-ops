@@ -11,7 +11,7 @@ resources:
 helmCharts:
   - name: app-template
     repo: https://bjw-s-labs.github.io/helm-charts
-    version: 4.1.2
+    version: 4.2.0
     releaseName: quailscale
     namespace: quailscale
     valuesFile: values.yaml
