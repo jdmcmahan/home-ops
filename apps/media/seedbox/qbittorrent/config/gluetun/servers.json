@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1753421558,
+    "timestamp": 1754026521,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1917,20 +1917,6 @@
         "vpn": "openvpn",
         "country": "Germany",
         "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-ovpn-005",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.155.70",
-          "2a03:1b20:6:f011::5f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
         "isp": "M247",
         "hostname": "de-fra-ovpn-101",
         "tcp": true,
@@ -2134,6 +2120,42 @@
         "country": "Germany",
         "city": "Frankfurt",
         "isp": "xtom",
+        "hostname": "de-fra-wg-301",
+        "wgpubkey": "dNKRyh2MkJGZdg9jyUJtf9w5GHjX3+/fYatg+xi9TUM=",
+        "ips": [
+          "194.36.25.3",
+          "2a07:fe00:1::a23f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "xtom",
+        "hostname": "de-fra-wg-302",
+        "wgpubkey": "A3DbIgPycEJhJ1fQ4zzcajLOKTZsJMeawjdPQiWav20=",
+        "ips": [
+          "194.36.25.18",
+          "2a07:fe00:1::a24f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "xtom",
+        "hostname": "de-fra-wg-303",
+        "wgpubkey": "2P+9SjwVCEnMDnBiYfZtQLq9p2S2TFhCM0xJBoevYk4=",
+        "ips": [
+          "194.36.25.33",
+          "2a07:fe00:1::a25f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "xtom",
         "hostname": "de-fra-wg-304",
         "wgpubkey": "VgNcwWy8MRhfEZY+XSisDM1ykX+uXlHQScOLqqGMLkc=",
         "ips": [
@@ -2276,18 +2298,6 @@
         "ips": [
           "103.125.233.18",
           "2403:2c81:1000::a06f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Hong Kong",
-        "city": "Hong Kong",
-        "isp": "xtom",
-        "hostname": "hk-hkg-wg-202",
-        "wgpubkey": "zmhMPHfkgo+uQxP+l919Gw7cj5NTatg9nMU37eEUWis=",
-        "ips": [
-          "103.125.233.3",
-          "2403:2c81:1000::a05f"
         ]
       },
       {
