@@ -21,12 +21,14 @@ gateway:
   listeners:
     web:
       hostname: "*.mcmahan.io"
-      namespacePolicy: Same
+      namespacePolicy:
+        from: Same
     websecure:
       port: 8443
       hostname: "*.mcmahan.io"
       protocol: HTTPS
-      namespacePolicy: All
+      namespacePolicy:
+        from: All
       certificateRefs:
         - name: mcmahan-io-tls
           kind: Secret
