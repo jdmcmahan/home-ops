@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1754026521,
+    "timestamp": 1754631250,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1341,6 +1341,104 @@
         "ips": [
           "194.127.167.107",
           "2a07:d880:2::a03f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-001",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.204.1.171",
+          "2a0c:f040:0:2790::1f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-002",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.204.1.172",
+          "2a0c:f040:0:2790::2f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-003",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.204.1.173",
+          "2a0c:f040:0:2790::3f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-004",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.204.1.174",
+          "2a0c:f040:0:2790::4f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-005",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.204.1.175",
+          "2a0c:f040:0:2790::5f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-006",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.204.1.176",
+          "2a0c:f040:0:2790::6f"
+        ]
+      },
+      {
+        "vpn": "openvpn",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "Creanova",
+        "owned": true,
+        "hostname": "fi-hel-ovpn-007",
+        "tcp": true,
+        "udp": true,
+        "ips": [
+          "185.212.149.201",
+          "2a0c:f040:0:2790::7f"
         ]
       },
       {
@@ -4836,19 +4934,6 @@
         "city": "Zurich",
         "isp": "31173",
         "owned": true,
-        "hostname": "ch-zrh-wg-003",
-        "wgpubkey": "5Ms10UxGjCSzwImTrvEjcygsWY8AfMIdYyRvgFuTqH8=",
-        "ips": [
-          "193.32.127.68",
-          "2a03:1b20:a:f011::f201"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "31173",
-        "owned": true,
         "hostname": "ch-zrh-wg-004",
         "wgpubkey": "C3jAgPirUZG6sNYe4VuAgDEYunENUyG34X42y+SBngQ=",
         "ips": [
@@ -5726,6 +5811,78 @@
         "vpn": "wireguard",
         "country": "USA",
         "city": "Atlanta GA",
+        "isp": "100TB",
+        "hostname": "us-atl-wg-301",
+        "wgpubkey": "SUO0TkKNce4tNTHB3F7PrlvkUzAQeLBSefsgbVnbTkM=",
+        "ips": [
+          "67.213.209.116",
+          "2606:2e00:8000:4::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Atlanta GA",
+        "isp": "100TB",
+        "hostname": "us-atl-wg-302",
+        "wgpubkey": "OODmjMlAuaUXGeTUzwagEiG42GF3m0ZlHh+3Ssw1Ckg=",
+        "ips": [
+          "67.213.209.117",
+          "2606:2e00:8000:4::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Atlanta GA",
+        "isp": "100TB",
+        "hostname": "us-atl-wg-303",
+        "wgpubkey": "IR4ZTWn7TBujt2nMDoB9xYISoVigWYTRyaG8mHLji1o=",
+        "ips": [
+          "67.213.209.118",
+          "2606:2e00:8000:4::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Atlanta GA",
+        "isp": "100TB",
+        "hostname": "us-atl-wg-304",
+        "wgpubkey": "1JswEeh7qEEq0oy2sQBeqg+QjNkTJRsZ/N9/CN92SCs=",
+        "ips": [
+          "67.213.209.119",
+          "2606:2e00:8000:4::f301"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Atlanta GA",
+        "isp": "100TB",
+        "hostname": "us-atl-wg-305",
+        "wgpubkey": "wGxVyRjNKWba7RidWKab0jPpdNKQAgeLFzwx/bz3CWQ=",
+        "ips": [
+          "67.213.209.120",
+          "2606:2e00:8000:4::f401"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Atlanta GA",
+        "isp": "100TB",
+        "hostname": "us-atl-wg-306",
+        "wgpubkey": "Q8oqrXk9nC9+94GLVUXJ7E8xtV10ggdzQIiQgZI3Em4=",
+        "ips": [
+          "67.213.209.121",
+          "2606:2e00:8000:4::f501"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Atlanta GA",
         "isp": "Tzulo",
         "hostname": "us-atl-wg-401",
         "wgpubkey": "49LoowbQpQfc/Yw+1DZ0A/Gien3wRnxwJzvo7Gz8Zhw=",
@@ -6214,19 +6371,6 @@
         "ips": [
           "103.102.247.127",
           "2a01:4740:2::f301"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Denver CO",
-        "isp": "Tzulo",
-        "hostname": "us-den-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.44.128.98",
-          "2607:9000:2000:13::1f"
         ]
       },
       {
