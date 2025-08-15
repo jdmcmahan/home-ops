@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1754631250,
+    "timestamp": 1755235583,
     "servers": [
       {
         "vpn": "wireguard",
@@ -397,18 +397,6 @@
         "ips": [
           "146.70.116.162",
           "2001:ac8:29:86::a03f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Austria",
-        "city": "Vienna",
-        "isp": "DataPacket",
-        "hostname": "at-vie-wg-101",
-        "wgpubkey": "dj3qNfJfA4dWXsWokPcDh4oo6xaPtOTPfbr5UzHKZ0M=",
-        "ips": [
-          "185.24.11.130",
-          "2a02:6ea0:cb1b:1::f001"
         ]
       },
       {
@@ -1341,20 +1329,6 @@
         "ips": [
           "194.127.167.107",
           "2a07:d880:2::a03f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.171",
-          "2a0c:f040:0:2790::1f"
         ]
       },
       {
@@ -2714,6 +2688,18 @@
         "ips": [
           "149.22.91.79",
           "2a02:6ea0:4f00::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Japan",
+        "city": "Osaka",
+        "isp": "xtom",
+        "hostname": "jp-osa-wg-001",
+        "wgpubkey": "uhbuY1A7g0yNu0lRhLTi020kYeAx34ED30BA5DQRHFo=",
+        "ips": [
+          "194.114.136.3",
+          "2403:fbc0:7000::f001"
         ]
       },
       {
@@ -4926,6 +4912,19 @@
         "ips": [
           "193.32.127.67",
           "2a03:1b20:a:f011::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Switzerland",
+        "city": "Zurich",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "ch-zrh-wg-003",
+        "wgpubkey": "5Ms10UxGjCSzwImTrvEjcygsWY8AfMIdYyRvgFuTqH8=",
+        "ips": [
+          "193.32.127.68",
+          "2a03:1b20:a:f011::f201"
         ]
       },
       {
