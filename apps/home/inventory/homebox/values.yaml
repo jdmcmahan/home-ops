@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/sysadminsmedia/homebox
-          tag: 0.20.2
+          tag: 0.21.0
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
