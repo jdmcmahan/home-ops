@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1755235583,
+    "timestamp": 1755840266,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1634,19 +1634,6 @@
         "ips": [
           "146.70.184.194",
           "2001:ac8:25:3d::2f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "France",
-        "city": "Paris",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "fr-par-wg-001",
-        "wgpubkey": "ov323GyDOEHLT0sNRUUPYiE3BkvFDjpmi1a4fzv49hE=",
-        "ips": [
-          "193.32.126.66",
-          "2a03:1b20:9:f011::a01f"
         ]
       },
       {
@@ -3451,18 +3438,6 @@
         "ips": [
           "129.227.118.162",
           "2602:ffe4:c06:11e::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Philippines",
-        "city": "Manila",
-        "isp": "Zenlayer",
-        "hostname": "ph-mnl-wg-002",
-        "wgpubkey": "TfNj4SJuIZzaXSxulpNzreDZXcX6GJJj+UYpqA2XMVE=",
-        "ips": [
-          "156.59.127.194",
-          "2602:ffe4:c06:11e::f101"
         ]
       },
       {
@@ -6673,6 +6648,66 @@
         ]
       },
       {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Kansas City MO",
+        "isp": "hostuniversal",
+        "hostname": "us-mkc-wg-101",
+        "wgpubkey": "Nk6dTIVRHBQzIZ6CUrJH7l4dItXEz3XOSBwmI933WUo=",
+        "ips": [
+          "155.2.191.3",
+          "2602:fed2:7e0a::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Kansas City MO",
+        "isp": "hostuniversal",
+        "hostname": "us-mkc-wg-102",
+        "wgpubkey": "ie5ag1xd2x/P3fxodzB21vPbLEmqhtfqKcUs1OR0BDs=",
+        "ips": [
+          "155.2.191.53",
+          "2602:fed2:7e0a::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Kansas City MO",
+        "isp": "hostuniversal",
+        "hostname": "us-mkc-wg-103",
+        "wgpubkey": "5dpXegNTyOFwWswBaJxViEwrXSAgC+Je9KokpT1sdjU=",
+        "ips": [
+          "155.2.191.103",
+          "2602:fed2:7e0a::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Kansas City MO",
+        "isp": "hostuniversal",
+        "hostname": "us-mkc-wg-104",
+        "wgpubkey": "wugRpkJNlfAV2lE3p1UXsTfZtO8JYWEdA9ZMLFeF3G4=",
+        "ips": [
+          "155.2.191.153",
+          "2602:fed2:7e0a::f301"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Kansas City MO",
+        "isp": "hostuniversal",
+        "hostname": "us-mkc-wg-105",
+        "wgpubkey": "9w1yXK8tpAKZ2au6JHcu+L7TytOYmmZo9q7qfCwa1U8=",
+        "ips": [
+          "155.2.191.203",
+          "2602:fed2:7e0a::f401"
+        ]
+      },
+      {
         "vpn": "openvpn",
         "country": "USA",
         "city": "Los Angeles CA",
@@ -7893,18 +7928,6 @@
         "country": "USA",
         "city": "Salt Lake City UT",
         "isp": "100TB",
-        "hostname": "us-slc-wg-202",
-        "wgpubkey": "mKD4untTerTbg+1pJh3FA9zjOAOtoTHqOJzIP0lnqH4=",
-        "ips": [
-          "69.4.234.149",
-          "2607:fc98:0:8a::f401"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Salt Lake City UT",
-        "isp": "100TB",
         "hostname": "us-slc-wg-203",
         "wgpubkey": "2yVEeOFScneJRCVTrqCjKlKHg3J2wwOwkY28iy47J1Q=",
         "ips": [
@@ -7929,35 +7952,23 @@
         "country": "USA",
         "city": "Salt Lake City UT",
         "isp": "Tzulo",
+        "hostname": "us-slc-wg-301",
+        "wgpubkey": "tA/k8ouzYiVmgCRCF7TWibVzv5xRp3cgv9TJX66poGE=",
+        "ips": [
+          "23.234.112.3",
+          "2607:9000:d00:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Salt Lake City UT",
+        "isp": "Tzulo",
         "hostname": "us-slc-wg-302",
         "wgpubkey": "6hF/LLVCkxlW+mH6wFob5ZiDZNu2DqfEj82w8wzVnHY=",
         "ips": [
           "23.234.112.127",
           "2607:9000:d00:3::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Salt Lake City UT",
-        "isp": "Tzulo",
-        "hostname": "us-slc-wg-303",
-        "wgpubkey": "Taa3TPPNUUcD3upveDHqpi9uaNHbeXzh6kX+sQUcM0s=",
-        "ips": [
-          "23.234.113.3",
-          "2607:9000:d00:4::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Salt Lake City UT",
-        "isp": "Tzulo",
-        "hostname": "us-slc-wg-304",
-        "wgpubkey": "+ru/ZmhgTYWNLyn3ZWuC57PMOU64yMfuWPZ5ow0XY3A=",
-        "ips": [
-          "23.234.113.127",
-          "2607:9000:d00:5::f001"
         ]
       },
       {
