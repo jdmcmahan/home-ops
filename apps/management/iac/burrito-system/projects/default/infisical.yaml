@@ -26,3 +26,23 @@ spec:
         metadataPolicy: None
         key: burrito-infisical
         property: clientSecret
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/secretstore_v1.json
+apiVersion: external-secrets.io/v1
+kind: SecretStore
+metadata:
+  name: infisical
+  namespace: burrito-project-default
+spec:
+  provider:
+    infisical:
+      auth:
+        universalAuthCredentials:
+          clientId:
+            name: infisical-credentials
+            namespace: burrito-project-default
+            key: clientId
+          clientSecret:
+            name: infisical-credentials
+            namespace: burrito-project-default
+            key: clientSecret

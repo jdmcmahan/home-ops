@@ -7,7 +7,7 @@ resources:
   - datastore-backblaze.yaml
   - route.yaml
   - projects/default/github-token.yaml
-  - projects/default/infisical-credentials.yaml
+  - projects/default/infisical.yaml
   - projects/default/onepassword-connect.yaml
   - projects/default/repos/cloudflare.yaml
   - projects/default/repos/pvr.yaml
