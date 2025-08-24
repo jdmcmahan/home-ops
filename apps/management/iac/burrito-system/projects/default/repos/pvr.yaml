@@ -1,4 +1,30 @@
 ---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1.json
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: backend-pvr
+  namespace: burrito-project-default
+spec:
+  secretStoreRef:
+    kind: SecretStore
+    name: infisical
+  target:
+    creationPolicy: Owner
+  data:
+    - secretKey: AWS_ACCESS_KEY_ID
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: /projects/terraform/pvr/backend/APPLICATION_KEY_ID
+    - secretKey: AWS_SECRET_ACCESS_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: /projects/terraform/pvr/backend/APPLICATION_KEY
+---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformRepository
 metadata:
@@ -26,6 +52,9 @@ spec:
           secretKeyRef:
             name: infisical-credentials
             key: clientSecret
+    envFrom:
+      - secretRef:
+          name: backend-pvr
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
