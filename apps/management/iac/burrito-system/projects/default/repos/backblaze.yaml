@@ -3,7 +3,7 @@
 apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
-  name: backend-backblaze
+  name: backblaze
   namespace: burrito-project-default
 spec:
   secretStoreRef:
@@ -12,13 +12,13 @@ spec:
   target:
     creationPolicy: Owner
   data:
-    - secretKey: AWS_ACCESS_KEY_ID
+    - secretKey: applicationKeyId
       remoteRef:
         conversionStrategy: Default
         decodingStrategy: None
         metadataPolicy: None
         key: /projects/terraform/backblaze/APPLICATION_KEY_ID
-    - secretKey: AWS_SECRET_ACCESS_KEY
+    - secretKey: applicationKey
       remoteRef:
         conversionStrategy: Default
         decodingStrategy: None
@@ -38,10 +38,30 @@ spec:
     enabled: true
   overrideRunnerSpec:
     env:
+      - name: AWS_ACCESS_KEY_ID
+        valueFrom:
+          secretKeyRef:
+            name: backblaze
+            key: applicationKeyId
+      - name: AWS_SECRET_ACCESS_KEY
+        valueFrom:
+          secretKeyRef:
+            name: backblaze
+            key: applicationKey
       - name: AWS_REQUEST_CHECKSUM_CALCULATION
         value: when_required
       - name: AWS_RESPONSE_CHECKSUM_VALIDATION
         value: when_required
+      - name: TF_VAR_b2_application_key_id
+        valueFrom:
+          secretKeyRef:
+            name: backblaze
+            key: applicationKeyId
+      - name: TF_VAR_b2_application_key
+        valueFrom:
+          secretKeyRef:
+            name: backblaze
+            key: applicationKey
       - name: TF_VAR_infisical_client_id
         valueFrom:
           secretKeyRef:
@@ -52,9 +72,6 @@ spec:
           secretKeyRef:
             name: infisical-credentials
             key: clientSecret
-    envFrom:
-      - secretRef:
-          name: backend-backblaze
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
