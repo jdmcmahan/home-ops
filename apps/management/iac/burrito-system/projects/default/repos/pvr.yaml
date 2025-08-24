@@ -1,0 +1,88 @@
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformRepository
+metadata:
+  name: pvr
+  namespace: burrito-project-default
+spec:
+  repository:
+    url: https://github.com/jdmcmahan/pvr-tf.git
+    secretName: github-token
+  terraform:
+    enabled: true
+  overrideRunnerSpec:
+    env:
+      - name: AWS_REQUEST_CHECKSUM_CALCULATION
+        value: when_required
+      - name: AWS_RESPONSE_CHECKSUM_VALIDATION
+        value: when_required
+      - name: TF_VAR_infisical_client_id
+        valueFrom:
+          secretKeyRef:
+            name: infisical-credentials
+            key: clientId
+      - name: TF_VAR_infisical_client_secret
+        valueFrom:
+          secretKeyRef:
+            name: infisical-credentials
+            key: clientSecret
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: pvr-prowlarr
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: pvr
+    namespace: burrito-project-default
+  path: "apps/prowlarr"
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: pvr-sonarr
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: pvr
+    namespace: burrito-project-default
+  path: "apps/sonarr"
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: pvr-radarr
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: pvr
+    namespace: burrito-project-default
+  path: "apps/radarr"
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: pvr-readarr
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: pvr
+    namespace: burrito-project-default
+  path: "apps/readarr"
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: pvr-lidarr
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: pvr
+    namespace: burrito-project-default
+  path: "apps/lidarr"
