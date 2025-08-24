@@ -9,6 +9,7 @@ resources:
   - projects/default/github-token.yaml
   - projects/default/infisical.yaml
   - projects/default/onepassword-connect.yaml
+  - projects/default/repos/backblaze.yaml
   - projects/default/repos/cloudflare.yaml
   - projects/default/repos/pvr.yaml
 
