@@ -46,3 +46,6 @@ spec:
             name: infisical-credentials
             namespace: burrito-project-default
             key: clientSecret
+      secretsScope:
+        projectSlug: ops
+        environmentSlug: prod
