@@ -1,0 +1,81 @@
+---
+# yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/external-secrets.io/externalsecret_v1.json
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: backend-backblaze
+  namespace: burrito-project-default
+spec:
+  secretStoreRef:
+    kind: SecretStore
+    name: infisical
+  target:
+    creationPolicy: Owner
+  data:
+    - secretKey: AWS_ACCESS_KEY_ID
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: /projects/terraform/backblaze/APPLICATION_KEY_ID
+    - secretKey: AWS_SECRET_ACCESS_KEY
+      remoteRef:
+        conversionStrategy: Default
+        decodingStrategy: None
+        metadataPolicy: None
+        key: /projects/terraform/backblaze/APPLICATION_KEY
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformRepository
+metadata:
+  name: backblaze
+  namespace: burrito-project-default
+spec:
+  repository:
+    url: https://github.com/jdmcmahan/backblaze-tf.git
+    secretName: github-token
+  terraform:
+    enabled: true
+  overrideRunnerSpec:
+    env:
+      - name: AWS_REQUEST_CHECKSUM_CALCULATION
+        value: when_required
+      - name: AWS_RESPONSE_CHECKSUM_VALIDATION
+        value: when_required
+      - name: TF_VAR_infisical_client_id
+        valueFrom:
+          secretKeyRef:
+            name: infisical-credentials
+            key: clientId
+      - name: TF_VAR_infisical_client_secret
+        valueFrom:
+          secretKeyRef:
+            name: infisical-credentials
+            key: clientSecret
+    envFrom:
+      - secretRef:
+          name: backend-backblaze
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: backblaze-omni
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: backblaze
+    namespace: burrito-project-default
+  path: "omni"
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: backblaze-pvr
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: backblaze
+    namespace: burrito-project-default
+  path: "pvr"
