@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1755840266,
+    "timestamp": 1756444983,
     "servers": [
       {
         "vpn": "wireguard",
@@ -7062,6 +7062,18 @@
       {
         "vpn": "wireguard",
         "country": "USA",
+        "city": "Los Angeles CA",
+        "isp": "HostRoyale",
+        "hostname": "us-lax-wg-704",
+        "wgpubkey": "KPjr8jrGP3dVI+GbMq2LNc9eREW6EhGHndoSWHqakxE=",
+        "ips": [
+          "103.251.27.127",
+          "2a01:4740:3::f301"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
         "city": "McAllen TX",
         "isp": "DataPacket",
         "hostname": "us-txc-wg-001",
@@ -7921,6 +7933,18 @@
         "ips": [
           "69.4.234.9",
           "2607:fc98:0:8a::f301"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Salt Lake City UT",
+        "isp": "100TB",
+        "hostname": "us-slc-wg-202",
+        "wgpubkey": "mKD4untTerTbg+1pJh3FA9zjOAOtoTHqOJzIP0lnqH4=",
+        "ips": [
+          "69.4.234.149",
+          "2607:fc98:0:8a::f401"
         ]
       },
       {
