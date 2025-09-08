@@ -12,13 +12,13 @@ resources:
 helmCharts:
   - name: external-dns
     repo: https://kubernetes-sigs.github.io/external-dns/
-    version: 1.18.0
+    version: 1.19.0
     releaseName: external-dns-unifi
     namespace: external-dns
     valuesFile: values-unifi.yaml
   - name: external-dns
     repo: https://kubernetes-sigs.github.io/external-dns/
-    version: 1.18.0
+    version: 1.19.0
     releaseName: external-dns-cloudflare
     namespace: external-dns
     valuesFile: values-cloudflare.yaml
