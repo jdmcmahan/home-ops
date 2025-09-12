@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1757049738,
+    "timestamp": 1757654519,
     "servers": [
       {
         "vpn": "wireguard",
@@ -25,30 +25,6 @@
         "ips": [
           "31.171.154.50",
           "2a04:27c0:0:4::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Albania",
-        "city": "Tirana",
-        "isp": "iRegister",
-        "hostname": "al-tia-wg-003",
-        "wgpubkey": "rWiQxq5lAWD8v/bws9ITSAvThyZW8cR2x+Ins9ZvvRo=",
-        "ips": [
-          "103.204.123.130",
-          "2a04:27c0:0:c::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Albania",
-        "city": "Tirana",
-        "isp": "iRegister",
-        "hostname": "al-tia-wg-004",
-        "wgpubkey": "x62J1c4gfHu/bF3DSjwIjC0qOE3azRG03i/YW6bOEGY=",
-        "ips": [
-          "103.204.123.191",
-          "2a04:27c0:0:d::f001"
         ]
       },
       {
@@ -874,90 +850,6 @@
         "ips": [
           "178.249.214.15",
           "2a02:6ea0:de08:2::a29f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-101",
-        "wgpubkey": "hfvZctxTQukC6lMJ4liGTg1JECT4XqEKpTNPk84k2As=",
-        "ips": [
-          "198.44.140.130",
-          "2607:9000:6000:18::a01f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-102",
-        "wgpubkey": "iGwKJTbm/aL4kJXwcJkO0JYPEEGGDcYBrRTG7CHIQx0=",
-        "ips": [
-          "198.54.132.98",
-          "2607:9000:6000:14::a02f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-103",
-        "wgpubkey": "MbusadbeACMR5bv+PPjhldb5CgwjlCbthnTJNrOJnhI=",
-        "ips": [
-          "198.54.132.226",
-          "2607:9000:6000:17::a03f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-104",
-        "wgpubkey": "y9JT2B69QiWkbEAiXGq5yhtAvg8YNXNkjhHcUiBCiko=",
-        "ips": [
-          "198.54.132.130",
-          "2607:9000:6000:15::a04f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-105",
-        "wgpubkey": "XE+hufytSkX14TjskwmYL4HL4mbPf+Vd5Jfgwf/5JHc=",
-        "ips": [
-          "198.44.140.162",
-          "2607:9000:6000:19::a05f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-106",
-        "wgpubkey": "ptnLZbreIzTZrSyPD0XhOAAmN194hcPSG5TI5TTiL08=",
-        "ips": [
-          "198.54.132.162",
-          "2607:9000:6000:16::a26f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "Tzulo",
-        "hostname": "ca-tor-wg-107",
-        "wgpubkey": "jVgDxCstCo0NRZ/dB9fpQiu+dfYK2v3HOa4B6MkLaQA=",
-        "ips": [
-          "198.44.140.194",
-          "2607:9000:6000:20::a07f"
         ]
       },
       {
