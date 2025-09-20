@@ -1,18 +1,18 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1757654519,
+    "timestamp": 1758259333,
     "servers": [
       {
         "vpn": "wireguard",
         "country": "Albania",
         "city": "Tirana",
         "isp": "iRegister",
-        "hostname": "al-tia-wg-001",
-        "wgpubkey": "bPfJDdgBXlY4w3ACs68zOMMhLUbbzktCKnLOFHqbxl4=",
+        "hostname": "al-tia-wg-003",
+        "wgpubkey": "rWiQxq5lAWD8v/bws9ITSAvThyZW8cR2x+Ins9ZvvRo=",
         "ips": [
-          "31.171.153.66",
-          "2a04:27c0:0:3::f001"
+          "103.204.123.130",
+          "2a04:27c0:0:c::f001"
         ]
       },
       {
@@ -20,11 +20,11 @@
         "country": "Albania",
         "city": "Tirana",
         "isp": "iRegister",
-        "hostname": "al-tia-wg-002",
-        "wgpubkey": "/wPQafVa/60OIp8KqhC1xTTG+nQXZF17uo8XfdUnz2E=",
+        "hostname": "al-tia-wg-004",
+        "wgpubkey": "x62J1c4gfHu/bF3DSjwIjC0qOE3azRG03i/YW6bOEGY=",
         "ips": [
-          "31.171.154.50",
-          "2a04:27c0:0:4::f001"
+          "103.204.123.191",
+          "2a04:27c0:0:d::f001"
         ]
       },
       {
@@ -2600,42 +2600,6 @@
         "vpn": "wireguard",
         "country": "Italy",
         "city": "Milan",
-        "isp": "DataPacket",
-        "hostname": "it-mil-wg-001",
-        "wgpubkey": "Sa9fFFthvihGMO4cPExJ7ZaWSHNYoXmOqZMvJsaxOVk=",
-        "ips": [
-          "178.249.211.66",
-          "2a02:6ea0:d509:1::a09f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Italy",
-        "city": "Milan",
-        "isp": "DataPacket",
-        "hostname": "it-mil-wg-002",
-        "wgpubkey": "RJ7e37UEP6hfyLQM/lJ2K5wcZOJQFhm2VhFaBniH1kg=",
-        "ips": [
-          "178.249.211.79",
-          "2a02:6ea0:d509:2::a10f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Italy",
-        "city": "Milan",
-        "isp": "DataPacket",
-        "hostname": "it-mil-wg-003",
-        "wgpubkey": "WOyki5Gzoez07X7D3jAhG68hpoiYIWAx1yypVbkQaVY=",
-        "ips": [
-          "178.249.211.92",
-          "2a02:6ea0:d509:3::a11f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Italy",
-        "city": "Milan",
         "isp": "M247",
         "hostname": "it-mil-wg-201",
         "wgpubkey": "XHwDoIVZGoVfUYbfcPiRp1LhaOCDc0A3QrS72i3ztBw=",
@@ -3466,6 +3430,18 @@
         "ips": [
           "129.227.118.162",
           "2602:ffe4:c06:11e::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Philippines",
+        "city": "Manila",
+        "isp": "Zenlayer",
+        "hostname": "ph-mnl-wg-002",
+        "wgpubkey": "TfNj4SJuIZzaXSxulpNzreDZXcX6GJJj+UYpqA2XMVE=",
+        "ips": [
+          "156.59.127.194",
+          "2602:ffe4:c06:11e::f101"
         ]
       },
       {
