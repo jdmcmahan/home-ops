@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1758259333,
+    "timestamp": 1758864183,
     "servers": [
       {
         "vpn": "wireguard",
@@ -556,18 +556,6 @@
         "ips": [
           "149.78.184.210",
           "2804:5364:7000:41::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Brazil",
-        "city": "Sao Paulo",
-        "isp": "Qnax",
-        "hostname": "br-sao-wg-001",
-        "wgpubkey": "xUDPh13sY127m+7d05SOQAzzNCyufTjaGwCXkWsIjkw=",
-        "ips": [
-          "149.78.184.194",
-          "2804:5364:7000:40::f001"
         ]
       },
       {
@@ -2752,18 +2740,6 @@
         "ips": [
           "146.70.138.194",
           "2001:ac8:40:11::b01f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Japan",
-        "city": "Tokyo",
-        "isp": "M247",
-        "hostname": "jp-tyo-wg-202",
-        "wgpubkey": "yLKGIH/eaNUnrOEPRtgvC3PSMTkyAFK/0t8lNjam02k=",
-        "ips": [
-          "146.70.201.2",
-          "2001:ac8:40:13::b02f"
         ]
       },
       {
@@ -5409,18 +5385,6 @@
         "country": "UK",
         "city": "London",
         "isp": "M247",
-        "hostname": "gb-lon-wg-302",
-        "wgpubkey": "s0i/bDeQ3xfMsLSrg6bILWunyytJNHVgIJlfflA8jFI=",
-        "ips": [
-          "146.70.119.2",
-          "2001:ac8:31:f005::a37f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "UK",
-        "city": "London",
-        "isp": "M247",
         "hostname": "gb-lon-wg-304",
         "wgpubkey": "nirHSVXCvnxR3aIW95BN0YV02vW/2I7DaeSexqgHW1I=",
         "ips": [
@@ -5465,6 +5429,18 @@
         "ips": [
           "146.70.132.66",
           "2001:ac8:8b:24::3f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "Manchester",
+        "isp": "M247",
+        "hostname": "gb-mnc-wg-001",
+        "wgpubkey": "Q2khJLbTSFxmppPGHgq2HdxMQx7CczPZCgVpYZMoNnM=",
+        "ips": [
+          "146.70.133.98",
+          "2001:ac8:8b:2d::a47f"
         ]
       },
       {
@@ -7105,7 +7081,7 @@
         "city": "Los Angeles CA",
         "isp": "HostRoyale",
         "hostname": "us-lax-wg-704",
-        "wgpubkey": "KPjr8jrGP3dVI+GbMq2LNc9eREW6EhGHndoSWHqakxE=",
+        "wgpubkey": "YdE51QUDv0hDYHFaAwyVWKL9g4nGqmI2bGy3heZVODE=",
         "ips": [
           "103.251.27.127",
           "2a01:4740:3::f301"
@@ -7693,68 +7669,6 @@
         "ips": [
           "23.234.103.127",
           "2607:9000:a000:38::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Phoenix AZ",
-        "isp": "Tzulo",
-        "hostname": "us-phx-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.133.34",
-          "2607:9000:7000:12::101f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Phoenix AZ",
-        "isp": "Tzulo",
-        "hostname": "us-phx-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.133.66",
-          "2607:9000:7000:13::102f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Phoenix AZ",
-        "isp": "Tzulo",
-        "hostname": "us-phx-wg-101",
-        "wgpubkey": "Tg5LXnudnxEjf6pp7+T0QKCU9K3jzwdA1/l0negOHBk=",
-        "ips": [
-          "198.54.133.98",
-          "2607:9000:7000:14::103f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Phoenix AZ",
-        "isp": "Tzulo",
-        "hostname": "us-phx-wg-102",
-        "wgpubkey": "1BbuYcr+WcmgcUhZTJ48GxOjQW0k4iEYBnn1Axhm1yA=",
-        "ips": [
-          "198.54.133.130",
-          "2607:9000:7000:15::b89f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Phoenix AZ",
-        "isp": "Tzulo",
-        "hostname": "us-phx-wg-103",
-        "wgpubkey": "aEJhNzQJYMH9VzB7bxhimyUFz3uo4mp1RD9VY3KAEWs=",
-        "ips": [
-          "198.54.133.162",
-          "2607:9000:7000:16::f001"
         ]
       },
       {
