@@ -44,7 +44,7 @@ spec:
       fsGroup: 568
     retain:
       daily: 7
-    unlock: "13c132b"
+    unlock: "6a306bf"
 ---
 # yaml-language-server: $schema=https://kubernetes-schemas.pages.dev/volsync.backube/replicationdestination_v1alpha1.json
 apiVersion: volsync.backube/v1alpha1
