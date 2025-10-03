@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1758864183,
+    "timestamp": 1759468961,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2588,6 +2588,42 @@
         "vpn": "wireguard",
         "country": "Italy",
         "city": "Milan",
+        "isp": "DataPacket",
+        "hostname": "it-mil-wg-001",
+        "wgpubkey": "Sa9fFFthvihGMO4cPExJ7ZaWSHNYoXmOqZMvJsaxOVk=",
+        "ips": [
+          "178.249.211.66",
+          "2a02:6ea0:d509:1::a09f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Italy",
+        "city": "Milan",
+        "isp": "DataPacket",
+        "hostname": "it-mil-wg-002",
+        "wgpubkey": "RJ7e37UEP6hfyLQM/lJ2K5wcZOJQFhm2VhFaBniH1kg=",
+        "ips": [
+          "178.249.211.79",
+          "2a02:6ea0:d509:2::a10f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Italy",
+        "city": "Milan",
+        "isp": "DataPacket",
+        "hostname": "it-mil-wg-003",
+        "wgpubkey": "WOyki5Gzoez07X7D3jAhG68hpoiYIWAx1yypVbkQaVY=",
+        "ips": [
+          "178.249.211.92",
+          "2a02:6ea0:d509:3::a11f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Italy",
+        "city": "Milan",
         "isp": "M247",
         "hostname": "it-mil-wg-201",
         "wgpubkey": "XHwDoIVZGoVfUYbfcPiRp1LhaOCDc0A3QrS72i3ztBw=",
@@ -4529,45 +4565,6 @@
         "city": "Stockholm",
         "isp": "31173",
         "owned": true,
-        "hostname": "se-sto-wg-004",
-        "wgpubkey": "94qIvXgF0OXZ4IcquoS7AO57OV6JswUFgdONgGiq+jo=",
-        "ips": [
-          "185.65.135.69",
-          "2a03:1b20:4:f011::f301"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-sto-wg-005",
-        "wgpubkey": "5rVa0M13oMNobMY7ToAMU1L/Mox7AYACvV+nfsE7zF0=",
-        "ips": [
-          "185.65.135.72",
-          "2a03:1b20:4:f011::f401"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-sto-wg-006",
-        "wgpubkey": "5WNG/KKCtgF4+49e/4iqvHVY/i+6dzUmVKXcJj7zi3I=",
-        "ips": [
-          "185.65.135.73",
-          "2a03:1b20:4:f011::f501"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
         "hostname": "se-sto-wg-007",
         "wgpubkey": "YD4k8xaiw2kcRhfLRf2UiRNcDmvvu5NV0xT4d5xOFzU=",
         "ips": [
@@ -5378,6 +5375,18 @@
         "ips": [
           "146.70.119.66",
           "2001:ac8:31:f007::a39f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "London",
+        "isp": "M247",
+        "hostname": "gb-lon-wg-302",
+        "wgpubkey": "w1EhKvpp4ZktxiXbuvhb09j4DblrYz3b/SheVywFakI=",
+        "ips": [
+          "146.70.119.2",
+          "2001:ac8:31:f005::a37f"
         ]
       },
       {
@@ -7081,7 +7090,7 @@
         "city": "Los Angeles CA",
         "isp": "HostRoyale",
         "hostname": "us-lax-wg-704",
-        "wgpubkey": "YdE51QUDv0hDYHFaAwyVWKL9g4nGqmI2bGy3heZVODE=",
+        "wgpubkey": "KPjr8jrGP3dVI+GbMq2LNc9eREW6EhGHndoSWHqakxE=",
         "ips": [
           "103.251.27.127",
           "2a01:4740:3::f301"
