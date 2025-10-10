@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1759468961,
+    "timestamp": 1760073810,
     "servers": [
       {
         "vpn": "wireguard",
@@ -4552,6 +4552,19 @@
         "city": "Stockholm",
         "isp": "31173",
         "owned": true,
+        "hostname": "se-sto-wg-002",
+        "wgpubkey": "q2ZZPfumPaRVl4DJfzNdQF/GHfe6BYAzQ2GZZHb6rmI=",
+        "ips": [
+          "185.65.135.67",
+          "2a03:1b20:4:f011::a02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Sweden",
+        "city": "Stockholm",
+        "isp": "31173",
+        "owned": true,
         "hostname": "se-sto-wg-003",
         "wgpubkey": "qZbwfoY4LHhDPzUROFbG+LqOjB0+Odwjg/Nv3kGolWc=",
         "ips": [
@@ -5984,18 +5997,6 @@
         "ips": [
           "43.225.189.131",
           "2a06:3040:12:610::a01f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Boston MA",
-        "isp": "HostRoyale",
-        "hostname": "us-bos-wg-002",
-        "wgpubkey": "LLkA2XSBvfUeXgLdMKP+OTQeKhtGB03kKskJEwlzAE8=",
-        "ips": [
-          "43.225.189.162",
-          "2a06:3040:12:610::a02f"
         ]
       },
       {
