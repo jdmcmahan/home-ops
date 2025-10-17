@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1760073810,
+    "timestamp": 1760678603,
     "servers": [
       {
         "vpn": "wireguard",
@@ -11,7 +11,7 @@
         "hostname": "al-tia-wg-003",
         "wgpubkey": "rWiQxq5lAWD8v/bws9ITSAvThyZW8cR2x+Ins9ZvvRo=",
         "ips": [
-          "103.204.123.130",
+          "103.124.165.130",
           "2a04:27c0:0:c::f001"
         ]
       },
@@ -23,7 +23,7 @@
         "hostname": "al-tia-wg-004",
         "wgpubkey": "x62J1c4gfHu/bF3DSjwIjC0qOE3azRG03i/YW6bOEGY=",
         "ips": [
-          "103.204.123.191",
+          "103.124.165.191",
           "2a04:27c0:0:d::f001"
         ]
       },
@@ -4081,32 +4081,6 @@
         "city": "Gothenburg",
         "isp": "31173",
         "owned": true,
-        "hostname": "se-got-wg-004",
-        "wgpubkey": "veGD6/aEY6sMfN3Ls7YWPmNgu3AheO7nQqsFT47YSws=",
-        "ips": [
-          "185.213.154.69",
-          "2a03:1b20:5:f011::a10f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Gothenburg",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-got-wg-005",
-        "wgpubkey": "x4h55uXoIIKUqKjjm6PzNiZlzLjxjuAIKzvgU9UjOGw=",
-        "ips": [
-          "185.209.199.2",
-          "2a03:1b20:5:f011:5::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Gothenburg",
-        "isp": "31173",
-        "owned": true,
         "hostname": "se-got-wg-006",
         "wgpubkey": "dcSpHioI+TY37dbZcviFA/sxSUqmpECXRZIapwR8pVg=",
         "ips": [
@@ -6503,30 +6477,6 @@
         "ips": [
           "23.234.71.127",
           "2607:9000:2000:48::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Detroit MI",
-        "isp": "HostRoyale",
-        "hostname": "us-det-wg-001",
-        "wgpubkey": "+USmlxhnLmlNkDnBbu+rXwjUwa383e0ilYEqPkEkNHA=",
-        "ips": [
-          "185.141.119.131",
-          "2a06:3040:11:610::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Detroit MI",
-        "isp": "HostRoyale",
-        "hostname": "us-det-wg-002",
-        "wgpubkey": "cYqP1UqhOYuaj47e4jAbgL55h52L+ALjtML26OtBvFU=",
-        "ips": [
-          "185.141.119.161",
-          "2a06:3040:11:610::f101"
         ]
       },
       {
