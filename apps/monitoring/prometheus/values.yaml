@@ -1,4 +1,7 @@
 ---
+crds:
+  enabled: false
+
 prometheus:
   service:
     type: LoadBalancer
