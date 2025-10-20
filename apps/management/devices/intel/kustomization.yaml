@@ -11,7 +11,7 @@ resources:
 helmCharts:
   - name: node-feature-discovery
     repo: https://kubernetes-sigs.github.io/node-feature-discovery/charts
-    version: 0.18.1
+    version: 0.18.2
     releaseName: node-feature-discovery
     namespace: intel
   - name: intel-device-plugins-operator
