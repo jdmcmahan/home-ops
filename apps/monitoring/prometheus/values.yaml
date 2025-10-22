@@ -152,7 +152,7 @@ grafana:
         revision: 4
         datasource: Prometheus
       pvr:
-        url: https://raw.githubusercontent.com/onedr0p/exportarr/master/examples/grafana/dashboard2.json
+        url: https://raw.githubusercontent.com/Kariton/exportarr/master/examples/grafana/dashboard2.json
         datasource: Prometheus
       qbittorrent:
         # renovate: depName="qBittorrent Dashboard"
