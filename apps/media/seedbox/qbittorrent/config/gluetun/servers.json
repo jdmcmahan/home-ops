@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1760678603,
+    "timestamp": 1761283397,
     "servers": [
       {
         "vpn": "wireguard",
@@ -51,18 +51,6 @@
         "ips": [
           "103.214.20.162",
           "2404:f780:0:def::c2f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Australia",
-        "city": "Adelaide",
-        "isp": "hostuniversal",
-        "hostname": "au-adl-wg-301",
-        "wgpubkey": "rm2hpBiN91c7reV+cYKlw7QNkYtME/+js7IMyYBB2Aw=",
-        "ips": [
-          "103.214.20.50",
-          "2404:f780:0:deb::c1f"
         ]
       },
       {
@@ -543,19 +531,6 @@
         "ips": [
           "98.98.12.182",
           "2604:980:e007:100::f101"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Brazil",
-        "city": "Sao Paulo",
-        "isp": "Qnax",
-        "hostname": "br-sao-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "149.78.184.210",
-          "2804:5364:7000:41::f001"
         ]
       },
       {
@@ -4073,6 +4048,32 @@
         "ips": [
           "185.213.154.68",
           "2a03:1b20:5:f011::a09f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Sweden",
+        "city": "Gothenburg",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "se-got-wg-004",
+        "wgpubkey": "veGD6/aEY6sMfN3Ls7YWPmNgu3AheO7nQqsFT47YSws=",
+        "ips": [
+          "185.213.154.69",
+          "2a03:1b20:5:f011::a10f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Sweden",
+        "city": "Gothenburg",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "se-got-wg-005",
+        "wgpubkey": "x4h55uXoIIKUqKjjm6PzNiZlzLjxjuAIKzvgU9UjOGw=",
+        "ips": [
+          "185.209.199.2",
+          "2a03:1b20:5:f011:5::f001"
         ]
       },
       {
