@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1761283397,
+    "timestamp": 1761888321,
     "servers": [
       {
         "vpn": "wireguard",
@@ -25,6 +25,30 @@
         "ips": [
           "103.124.165.191",
           "2a04:27c0:0:d::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Argentina",
+        "city": "Buenos Aires",
+        "isp": "DataPacket",
+        "hostname": "ar-bue-wg-001",
+        "wgpubkey": "1WN0Mqa0Azw7cYYEamHPgHXE8SuylNIG2QobZKOaclA=",
+        "ips": [
+          "149.22.83.2",
+          "2a02:6ea0:f002:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Argentina",
+        "city": "Buenos Aires",
+        "isp": "DataPacket",
+        "hostname": "ar-bue-wg-002",
+        "wgpubkey": "gGrdozNHVCnmcX5x8OPOXfnyZ+TZWqD9GlHl1kRekyA=",
+        "ips": [
+          "149.22.83.31",
+          "2a02:6ea0:f002:2::f001"
         ]
       },
       {
@@ -3984,34 +4008,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Gothenburg",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-got-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.154.132",
-          "2a03:1b20:5:f011:31::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Gothenburg",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-got-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.154.133",
-          "2a03:1b20:5:f011:31::3f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Sweden",
         "city": "Gothenburg",
@@ -7282,78 +7278,6 @@
         "ips": [
           "143.244.47.91",
           "2a02:6ea0:c43f:2::b52f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-401",
-        "wgpubkey": "4oR0oc3cyktCoQ1eygZ/EZeCNeI6eQnQJNRuBmRne2Q=",
-        "ips": [
-          "198.44.136.34",
-          "2607:9000:a000:12::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-402",
-        "wgpubkey": "/o79urfCcNSCTD4OCPNxn6qoWMchQ5Za6p6hf5cxmwE=",
-        "ips": [
-          "198.44.136.66",
-          "2607:9000:a000:13::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-403",
-        "wgpubkey": "pFM95uwAFj62uYDkJXcAPYaPmy+nl+dd92ZLV9bWbHQ=",
-        "ips": [
-          "198.44.136.98",
-          "2607:9000:a000:14::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-404",
-        "wgpubkey": "pCZ9NnIgAEwrDy4H/eGz8NvNcbAg7UGFTGYruyCfVwU=",
-        "ips": [
-          "198.44.136.194",
-          "2607:9000:a000:17::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-405",
-        "wgpubkey": "SaxtRm9bIXJRhhIKuqTb5tMjbRQ+A12Oe6OvjCD5ehk=",
-        "ips": [
-          "198.44.136.130",
-          "2607:9000:a000:15::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-406",
-        "wgpubkey": "EinCXC++sGc1FVJsyxF/7/xzERKeZy48pSPJUIxSjyw=",
-        "ips": [
-          "198.44.136.162",
-          "2607:9000:a000:16::f001"
         ]
       },
       {
