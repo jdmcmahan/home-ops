@@ -219,7 +219,7 @@ config:
             - k8s:
                 - Sidero Omni:
                     icon: talos.svg
-                    href: https://mcmahan.omni.siderolabs.io/omni
+                    href: https://mcmahan.na-west-1.omni.siderolabs.io
                 - ArgoCD:
                     icon: argo-cd.svg
                     href: https://argocd.mcmahan.io
