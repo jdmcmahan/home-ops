@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1761888321,
+    "timestamp": 1763097921,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2374,6 +2374,18 @@
         ]
       },
       {
+        "vpn": "wireguard",
+        "country": "Hong Kong",
+        "city": "Hong Kong",
+        "isp": "M247",
+        "hostname": "hk-hkg-wg-303",
+        "wgpubkey": "RtTENHB7VBUiowxtdAzopcb2Fvd+OFneN73k13oPUEo=",
+        "ips": [
+          "146.70.224.196",
+          "2001:ac8:a:1b::f001"
+        ]
+      },
+      {
         "vpn": "openvpn",
         "country": "Hungary",
         "city": "Budapest",
@@ -4130,34 +4142,6 @@
         "city": "Malmö",
         "isp": "31173",
         "owned": true,
-        "hostname": "se-mma-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.138.218.131",
-          "2a03:1b20:1:f410:40::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.138.218.132",
-          "2a03:1b20:1:f410:40::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
         "hostname": "se-mma-ovpn-013",
         "tcp": true,
         "udp": true,
@@ -5702,18 +5686,6 @@
         "ips": [
           "103.81.230.3",
           "2a01:4740:1::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Ashburn VA",
-        "isp": "HostRoyale",
-        "hostname": "us-qas-wg-202",
-        "wgpubkey": "eUTgjAPvpLba9wwMcC0HNcLwC2Q42QYCKZuFPy34+Ug=",
-        "ips": [
-          "103.81.230.127",
-          "2a01:4740:1::f101"
         ]
       },
       {
@@ -8219,7 +8191,7 @@
         "wgpubkey": "utm9eFUk8tH0j/dwKLJvlb6BRSfm3GZbomxr52ZDGn0=",
         "ips": [
           "104.36.50.3",
-          "2a06:3040:12:620::f001"
+          "2a06:3040:22:620::f001"
         ]
       },
       {
@@ -8231,7 +8203,7 @@
         "wgpubkey": "8Rh2Qc+vXTREhJb/RfCcpXS13U9xSqy4Pnw4+Wwt7iE=",
         "ips": [
           "104.36.50.33",
-          "2a06:3040:12:620::f101"
+          "2a06:3040:22:620::f101"
         ]
       },
       {
