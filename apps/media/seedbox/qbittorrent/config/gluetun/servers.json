@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1763097921,
+    "timestamp": 1763178522,
     "servers": [
       {
         "vpn": "wireguard",
@@ -3222,20 +3222,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "91.90.44.13",
-          "2a02:20c8:4124::3f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Norway",
         "city": "Oslo",
@@ -3259,19 +3245,6 @@
         "ips": [
           "176.125.235.72",
           "2a02:20c8:4124::a02f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-wg-003",
-        "wgpubkey": "zOBWmQ3BEOZKsYKbj4dC2hQjxCbr3eKa6wGWyEDYbC4=",
-        "ips": [
-          "176.125.235.73",
-          "2a02:20c8:4124::a03f"
         ]
       },
       {
@@ -3311,32 +3284,6 @@
         "ips": [
           "178.255.149.165",
           "2a02:20c8:4124::f501"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-wg-007",
-        "wgpubkey": "A0gisFM9hOZB0ezDcSIg2WwnyeprHV/dmb5JnzST0EE=",
-        "ips": [
-          "91.90.44.15",
-          "2a02:20c8:4124::f701"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-wg-008",
-        "wgpubkey": "/4+nwTRYLjT2UK0g3+S4sjE4oaIQiS6L2b/lpO2bfwI=",
-        "ips": [
-          "91.90.44.18",
-          "2a02:20c8:4124::f801"
         ]
       },
       {
@@ -5213,6 +5160,19 @@
         "city": "London",
         "isp": "31173",
         "owned": true,
+        "hostname": "gb-lon-wg-002",
+        "wgpubkey": "J57ba81Q8bigy9RXBXvl0DgABTrbl81nb37GuX50gnY=",
+        "ips": [
+          "141.98.252.222",
+          "2a03:1b20:7:f011::a02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "UK",
+        "city": "London",
+        "isp": "31173",
+        "owned": true,
         "hostname": "gb-lon-wg-003",
         "wgpubkey": "VZwE8hrpNzg6SMwn9LtEqonXzSWd5dkFk62PrNWFW3Y=",
         "ips": [
@@ -5976,18 +5936,6 @@
         "ips": [
           "87.249.134.1",
           "2a02:6ea0:c61f::b63f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Chicago IL",
-        "isp": "DataPacket",
-        "hostname": "us-chi-wg-202",
-        "wgpubkey": "rmN4IM0I0gF7V9503/xnQMOLsu9txl8GTqci9dgUO18=",
-        "ips": [
-          "87.249.134.14",
-          "2a02:6ea0:c61f:1::b64f"
         ]
       },
       {
