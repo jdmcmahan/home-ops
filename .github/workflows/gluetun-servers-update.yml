@@ -7,7 +7,7 @@ jobs:
   get-servers:
     name: Fetch updated servers list
     runs-on: ubuntu-latest
-    container: qmcgaw/gluetun:v3.40.2
+    container: qmcgaw/gluetun:v3.40.3
 
     steps:
       - name: Run gluetun update utility
