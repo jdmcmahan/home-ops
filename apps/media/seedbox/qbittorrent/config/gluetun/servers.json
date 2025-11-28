@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1763178522,
+    "timestamp": 1764307596,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2213,42 +2213,6 @@
         ]
       },
       {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "DataPacket",
-        "hostname": "de-fra-wg-401",
-        "wgpubkey": "AbM8fnQWmmX6Nv0Tz68LigPbGkamJgNjxgzPfENOdXU=",
-        "ips": [
-          "169.150.201.2",
-          "2a02:6ea0:c762:1::a35f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "DataPacket",
-        "hostname": "de-fra-wg-402",
-        "wgpubkey": "6/PBbPtoeWpJA+HZc9Iqg/PPQWD7mGVvZdwQlr1vtRk=",
-        "ips": [
-          "169.150.201.15",
-          "2a02:6ea0:c762:2::a36f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "DataPacket",
-        "hostname": "de-fra-wg-403",
-        "wgpubkey": "HWzSNMbQOQafkVp68B7aLRirhNJ6x5Wjw8/y7oUuHW0=",
-        "ips": [
-          "169.150.201.28",
-          "2a02:6ea0:c762:3::a37f"
-        ]
-      },
-      {
         "vpn": "openvpn",
         "country": "Greece",
         "city": "Athens",
@@ -2794,6 +2758,18 @@
         "country": "Japan",
         "city": "Tokyo",
         "isp": "M247",
+        "hostname": "jp-tyo-wg-202",
+        "wgpubkey": "yLKGIH/eaNUnrOEPRtgvC3PSMTkyAFK/0t8lNjam02k=",
+        "ips": [
+          "146.70.201.2",
+          "2001:ac8:40:13::b02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Japan",
+        "city": "Tokyo",
+        "isp": "M247",
         "hostname": "jp-tyo-wg-203",
         "wgpubkey": "tgTYDEfbDgr35h6hYW01MH76CJrwuBvbQFhyVsazEic=",
         "ips": [
@@ -3245,6 +3221,19 @@
         "ips": [
           "176.125.235.72",
           "2a02:20c8:4124::a02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Norway",
+        "city": "Oslo",
+        "isp": "Blix",
+        "owned": true,
+        "hostname": "no-osl-wg-003",
+        "wgpubkey": "zOBWmQ3BEOZKsYKbj4dC2hQjxCbr3eKa6wGWyEDYbC4=",
+        "ips": [
+          "176.125.235.73",
+          "2a02:20c8:4124::a03f"
         ]
       },
       {
@@ -3950,20 +3939,6 @@
         "ips": [
           "193.19.207.225",
           "2a06:3040:3:210::f101"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Gothenburg",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-got-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.154.131",
-          "2a03:1b20:5:f011:31::1f"
         ]
       },
       {
