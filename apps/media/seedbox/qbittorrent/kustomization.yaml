@@ -25,13 +25,13 @@ generatorOptions:
 helmCharts:
   - name: app-template
     repo: https://bjw-s-labs.github.io/helm-charts
-    version: 4.4.0
+    version: 4.5.0
     releaseName: qbittorrent
     namespace: qbittorrent
     valuesFile: values-qbittorrent.yaml
   - name: app-template
     repo: https://bjw-s-labs.github.io/helm-charts
-    version: 4.4.0
+    version: 4.5.0
     releaseName: qbtools
     namespace: qbittorrent
     valuesFile: values-qbtools.yaml
