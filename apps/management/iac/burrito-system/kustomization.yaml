@@ -16,7 +16,7 @@ resources:
 helmCharts:
   - name: burrito
     repo: oci://ghcr.io/padok-team/charts
-    version: 0.8.1
+    version: 0.9.0
     releaseName: burrito
     namespace: burrito-system
     valuesFile: values.yaml
