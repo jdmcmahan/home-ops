@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1764307596,
+    "timestamp": 1764912383,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2210,6 +2210,42 @@
         "ips": [
           "194.36.25.48",
           "2a07:fe00:1::a26f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "DataPacket",
+        "hostname": "de-fra-wg-401",
+        "wgpubkey": "AbM8fnQWmmX6Nv0Tz68LigPbGkamJgNjxgzPfENOdXU=",
+        "ips": [
+          "169.150.201.2",
+          "2a02:6ea0:c762:1::a35f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "DataPacket",
+        "hostname": "de-fra-wg-402",
+        "wgpubkey": "6/PBbPtoeWpJA+HZc9Iqg/PPQWD7mGVvZdwQlr1vtRk=",
+        "ips": [
+          "169.150.201.15",
+          "2a02:6ea0:c762:2::a36f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "DataPacket",
+        "hostname": "de-fra-wg-403",
+        "wgpubkey": "HWzSNMbQOQafkVp68B7aLRirhNJ6x5Wjw8/y7oUuHW0=",
+        "ips": [
+          "169.150.201.28",
+          "2a02:6ea0:c762:3::a37f"
         ]
       },
       {
