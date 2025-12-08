@@ -6,7 +6,7 @@ kind: Kustomization
 resources:
   - "namespace.yaml"
   - "https://github.com/kubernetes-sigs/node-feature-discovery/deployment/base/nfd-crds?ref=v0.18.3"
-  - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.34.0"
+  - "https://github.com/intel/intel-device-plugins-for-kubernetes/deployments/operator/crd?ref=v0.34.1"
 
 helmCharts:
   - name: node-feature-discovery
