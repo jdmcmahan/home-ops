@@ -4,9 +4,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
+  - github-token.yaml
   - datastore-backblaze.yaml
   - route.yaml
-  - projects/default/github-token.yaml
   - projects/default/infisical.yaml
   - projects/default/onepassword-connect.yaml
   - projects/default/repos/backblaze.yaml
