@@ -33,7 +33,6 @@ metadata:
 spec:
   repository:
     url: https://github.com/jdmcmahan/pvr-tf.git
-    secretName: github-token
   terraform:
     enabled: true
   overrideRunnerSpec:
