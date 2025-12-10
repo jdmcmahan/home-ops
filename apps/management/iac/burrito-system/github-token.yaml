@@ -12,7 +12,6 @@ spec:
   target:
     creationPolicy: Owner
     template:
-      mergePolicy: Merge
       type: credentials.burrito.tf/shared
       metadata:
         annotations:
@@ -20,6 +19,8 @@ spec:
       data:
         provider: github
         url: https://github.com/jdmcmahan
+        githubToken: "{{ .githubToken }}"
+        webhookSecret: "{{ .webhookSecret }}"
   data:
     - secretKey: githubToken
       remoteRef:
