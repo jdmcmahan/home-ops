@@ -33,6 +33,7 @@ metadata:
 spec:
   repository:
     url: https://github.com/jdmcmahan/backblaze-tf.git
+    secretName: github-token
   terraform:
     enabled: true
   overrideRunnerSpec:
