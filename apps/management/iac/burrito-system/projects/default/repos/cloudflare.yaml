@@ -35,7 +35,6 @@ metadata:
 spec:
   repository:
     url: https://github.com/jdmcmahan/cloudflare-tf.git
-    secretName: github-token
   terraform:
     enabled: true
   overrideRunnerSpec:
