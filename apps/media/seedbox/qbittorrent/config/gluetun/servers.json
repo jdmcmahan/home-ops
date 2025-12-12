@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1764912383,
+    "timestamp": 1765517294,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1117,6 +1117,18 @@
         "ips": [
           "146.70.129.194",
           "2001:ac8:33:f::2f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Czech Republic",
+        "city": "Prague",
+        "isp": "M247",
+        "hostname": "cz-prg-wg-101",
+        "wgpubkey": "tWVga+pS/Ztrbx/L/PBlaWPGhkI3PCPBzbQlCeXWqn8=",
+        "ips": [
+          "146.70.129.98",
+          "2001:ac8:33:c::a01f"
         ]
       },
       {
@@ -3903,30 +3915,6 @@
         "ips": [
           "146.70.74.98",
           "2001:ac8:23:87::2f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Spain",
-        "city": "Madrid",
-        "isp": "DataPacket",
-        "hostname": "es-mad-wg-101",
-        "wgpubkey": "oPpPeyiQhUYqtOxwR387dmFfII8OK5LX2RPyns1rx2U=",
-        "ips": [
-          "45.134.213.194",
-          "2a02:6ea0:c318:1::a06f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Spain",
-        "city": "Madrid",
-        "isp": "DataPacket",
-        "hostname": "es-mad-wg-102",
-        "wgpubkey": "1Wo/cQeVHX2q9k95nxN+48lgkGLsPQ+uesRb/9XdY1Y=",
-        "ips": [
-          "45.134.213.207",
-          "2a02:6ea0:c318:2::a07f"
         ]
       },
       {
