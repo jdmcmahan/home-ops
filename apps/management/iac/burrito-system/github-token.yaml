@@ -4,13 +4,22 @@ apiVersion: external-secrets.io/v1
 kind: ExternalSecret
 metadata:
   name: github-token
-  namespace: burrito-project-default
+  namespace: burrito-system
 spec:
   secretStoreRef:
     kind: ClusterSecretStore
     name: default
   target:
     creationPolicy: Owner
+    template:
+      mergePolicy: Merge
+      type: credentials.burrito.tf/shared
+      metadata:
+        annotations:
+          burrito.tf/allowed-tenants: "burrito-project-default"
+      data:
+        provider: github
+        url: https://github.com/jdmcmahan
   data:
     - secretKey: githubToken
       remoteRef:
