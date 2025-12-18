@@ -16,13 +16,13 @@ helmCharts:
       gatewayAPI: true
   - name: traefik
     repo: https://helm.traefik.io/traefik
-    version: 37.4.0
+    version: 38.0.0
     releaseName: traefik-remote
     namespace: traefik
     valuesFile: values-remote.yaml
   - name: traefik
     repo: https://helm.traefik.io/traefik
-    version: 37.4.0
+    version: 38.0.0
     releaseName: traefik-local
     namespace: traefik
     valuesFile: values-local.yaml
