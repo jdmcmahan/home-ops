@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1765517294,
+    "timestamp": 1766122118,
     "servers": [
       {
         "vpn": "wireguard",
@@ -3298,32 +3298,6 @@
         ]
       },
       {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-wg-005",
-        "wgpubkey": "ScQu/AqslSPwpXMIEyimrYZWTIdJJXLLeXrijWOF0SE=",
-        "ips": [
-          "178.255.149.140",
-          "2a02:20c8:4124::f401"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-wg-006",
-        "wgpubkey": "LBlNBTuT7gNEZoAuxO0PTVPpaDuYA7nAeCyMpg9Agyo=",
-        "ips": [
-          "178.255.149.165",
-          "2a02:20c8:4124::f501"
-        ]
-      },
-      {
         "vpn": "openvpn",
         "country": "Norway",
         "city": "Stavanger",
@@ -3915,6 +3889,30 @@
         "ips": [
           "146.70.74.98",
           "2001:ac8:23:87::2f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Spain",
+        "city": "Madrid",
+        "isp": "DataPacket",
+        "hostname": "es-mad-wg-101",
+        "wgpubkey": "oPpPeyiQhUYqtOxwR387dmFfII8OK5LX2RPyns1rx2U=",
+        "ips": [
+          "45.134.213.194",
+          "2a02:6ea0:c318:1::a06f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Spain",
+        "city": "Madrid",
+        "isp": "DataPacket",
+        "hostname": "es-mad-wg-102",
+        "wgpubkey": "1Wo/cQeVHX2q9k95nxN+48lgkGLsPQ+uesRb/9XdY1Y=",
+        "ips": [
+          "45.134.213.207",
+          "2a02:6ea0:c318:2::a07f"
         ]
       },
       {
