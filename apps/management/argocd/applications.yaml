@@ -38,20 +38,6 @@ spec:
                   valueFiles:
                     - values.yaml
             destination: {}
-    - git:
-        repoURL: https://github.com/jdmcmahan/home-ops.git
-        revision: HEAD
-        directories:
-          - path: "apps/iac/burrito-system/projects/*"
-        template:
-          metadata: {}
-          spec:
-            project: default
-            source:
-              repoURL: https://github.com/jdmcmahan/home-ops.git
-              targetRevision: HEAD
-              path: "{{ path }}"
-            destination: {}
   template:
     metadata:
       name: "{{ path.basenameNormalized }}"
