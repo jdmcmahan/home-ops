@@ -29,7 +29,7 @@ controllers:
           - coredns
           - gluetun-config-staging
         image:
-          repository: ghcr.io/qdm12/gluetun
+          repository: docker.io/qmcgaw/gluetun
           tag: v3.40.0
         restartPolicy: Always
         env:
