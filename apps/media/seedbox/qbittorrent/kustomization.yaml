@@ -9,9 +9,6 @@ resources:
   - volsync.yaml
 
 configMapGenerator:
-  - name: coredns-configmap
-    files:
-      - config/coredns/Corefile
   - name: gluetun-configmap
     files:
       - config/gluetun/servers.json
