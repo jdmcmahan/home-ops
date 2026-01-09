@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1766122118,
+    "timestamp": 1767936708,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2353,18 +2353,6 @@
         "vpn": "wireguard",
         "country": "Hong Kong",
         "city": "Hong Kong",
-        "isp": "xtom",
-        "hostname": "hk-hkg-wg-201",
-        "wgpubkey": "Oxh13dmwY6nNUa5rVHr7sLiFOj0fjzsaAUAUV87/nGs=",
-        "ips": [
-          "103.125.233.18",
-          "2403:2c81:1000::a06f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Hong Kong",
-        "city": "Hong Kong",
         "isp": "M247",
         "hostname": "hk-hkg-wg-301",
         "wgpubkey": "qbvU06SBHXnqMnpb49rnE0yC4AOWQcWl2bEScu18dh8=",
@@ -3282,19 +3270,6 @@
         "ips": [
           "176.125.235.73",
           "2a02:20c8:4124::a03f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-wg-004",
-        "wgpubkey": "veeEoYS9a2T6K8WMs/MvRCdNJG580XbhnLfbFjp3B0M=",
-        "ips": [
-          "176.125.235.74",
-          "2a02:20c8:4124::a04f"
         ]
       },
       {
