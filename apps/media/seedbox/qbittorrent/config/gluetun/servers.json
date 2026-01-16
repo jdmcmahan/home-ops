@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1767936708,
+    "timestamp": 1768541503,
     "servers": [
       {
         "vpn": "wireguard",
@@ -52,32 +52,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Adelaide",
-        "isp": "hostuniversal",
-        "hostname": "au-adl-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.214.20.146",
-          "2404:f780:0:dee::c1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Adelaide",
-        "isp": "hostuniversal",
-        "hostname": "au-adl-ovpn-302",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.214.20.162",
-          "2404:f780:0:def::c2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Australia",
         "city": "Adelaide",
@@ -87,32 +61,6 @@
         "ips": [
           "103.214.20.130",
           "2404:f780:0:dec::c2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Brisbane",
-        "isp": "hostuniversal",
-        "hostname": "au-bne-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.216.220.50",
-          "2404:f780:4:dee::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Brisbane",
-        "isp": "hostuniversal",
-        "hostname": "au-bne-ovpn-302",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.216.220.66",
-          "2404:f780:4:def::2f"
         ]
       },
       {
@@ -140,32 +88,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Melbourne",
-        "isp": "hostuniversal",
-        "hostname": "au-mel-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.108.229.82",
-          "2406:d501:f:def::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Melbourne",
-        "isp": "hostuniversal",
-        "hostname": "au-mel-ovpn-302",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.108.229.98",
-          "2406:d501:f:dee::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Australia",
         "city": "Melbourne",
@@ -175,32 +97,6 @@
         "ips": [
           "103.108.229.66",
           "2406:d501:f:dec::a02f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Perth",
-        "isp": "hostuniversal",
-        "hostname": "au-per-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.108.231.82",
-          "2404:f780:8:def::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Perth",
-        "isp": "hostuniversal",
-        "hostname": "au-per-ovpn-302",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.108.231.98",
-          "2404:f780:8:dee::2f"
         ]
       },
       {
@@ -225,32 +121,6 @@
         "ips": [
           "103.108.231.66",
           "2404:f780:8:dec::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Sydney",
-        "isp": "M247",
-        "hostname": "au-syd-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.200.130",
-          "2001:ac8:84:3::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Australia",
-        "city": "Sydney",
-        "isp": "M247",
-        "hostname": "au-syd-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.200.66",
-          "2001:ac8:84:2::2f"
         ]
       },
       {
@@ -386,32 +256,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Austria",
-        "city": "Vienna",
-        "isp": "M247",
-        "hostname": "at-vie-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.116.194",
-          "2001:ac8:29:87::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Austria",
-        "city": "Vienna",
-        "isp": "M247",
-        "hostname": "at-vie-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.116.226",
-          "2001:ac8:29:86::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Austria",
         "city": "Vienna",
@@ -469,32 +313,6 @@
         "ips": [
           "185.24.11.159",
           "2a02:6ea0:cb1b:2::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Belgium",
-        "city": "Brussels",
-        "isp": "M247",
-        "hostname": "be-bru-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "82.102.19.66",
-          "2001:ac8:27:90::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Belgium",
-        "city": "Brussels",
-        "isp": "M247",
-        "hostname": "be-bru-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "91.207.57.130",
-          "2001:ac8:27:91::2f"
         ]
       },
       {
@@ -618,32 +436,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Bulgaria",
-        "city": "Sofia",
-        "isp": "M247",
-        "hostname": "bg-sof-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.188.66",
-          "2001:ac8:30:55::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Bulgaria",
-        "city": "Sofia",
-        "isp": "M247",
-        "hostname": "bg-sof-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.188.2",
-          "2001:ac8:30:54::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Bulgaria",
         "city": "Sofia",
@@ -689,32 +481,6 @@
         "ips": [
           "38.240.225.68",
           "2606:9580:438:64::b02f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Canada",
-        "city": "Montreal",
-        "isp": "M247",
-        "hostname": "ca-mtr-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "37.120.237.66",
-          "2a0d:5600:9:17::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Canada",
-        "city": "Montreal",
-        "isp": "M247",
-        "hostname": "ca-mtr-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "45.133.182.194",
-          "2a0d:5600:9:18::2f"
         ]
       },
       {
@@ -787,32 +553,6 @@
         "ips": [
           "62.93.167.160",
           "2a02:6ea0:a03::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "DataPacket",
-        "hostname": "ca-tor-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "178.249.214.193",
-          "2a02:6ea0:de08:3::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Canada",
-        "city": "Toronto",
-        "isp": "DataPacket",
-        "hostname": "ca-tor-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "178.249.214.206",
-          "2a02:6ea0:de08:4::2f"
         ]
       },
       {
@@ -921,32 +661,6 @@
         "ips": [
           "23.234.87.2",
           "2607:9000:600:37::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Canada",
-        "city": "Vancouver",
-        "isp": "techfutures",
-        "hostname": "ca-van-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "104.193.135.132",
-          "2606:9580:103:10::c01f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Canada",
-        "city": "Vancouver",
-        "isp": "techfutures",
-        "hostname": "ca-van-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "104.193.135.164",
-          "2606:9580:103:11::c02f"
         ]
       },
       {
@@ -1094,32 +808,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Czech Republic",
-        "city": "Prague",
-        "isp": "M247",
-        "hostname": "cz-prg-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.129.162",
-          "2001:ac8:33:e::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Czech Republic",
-        "city": "Prague",
-        "isp": "M247",
-        "hostname": "cz-prg-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.129.194",
-          "2001:ac8:33:f::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Czech Republic",
         "city": "Prague",
@@ -1168,60 +856,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "dk-cph-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.254.71",
-          "2a03:1b20:8:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "dk-cph-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "45.129.56.81",
-          "2a03:1b20:8:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "isp": "M247",
-        "hostname": "dk-cph-ovpn-401",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.197.66",
-          "2001:ac8:37:95::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "isp": "M247",
-        "hostname": "dk-cph-ovpn-402",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.197.2",
-          "2001:ac8:37:94::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Denmark",
         "city": "Copenhagen",
@@ -1245,6 +879,45 @@
         "ips": [
           "45.129.56.68",
           "2a03:1b20:8:f011::f101"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Denmark",
+        "city": "Copenhagen",
+        "isp": "DataPacket",
+        "owned": true,
+        "hostname": "dk-cph-wg-101",
+        "wgpubkey": "CrS2Bd2IEVpPlg4DzHwfSCoqpNjrM35oiVdoUVKoxiY=",
+        "ips": [
+          "149.88.109.72",
+          "2a02:6ea0:470b:0:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Denmark",
+        "city": "Copenhagen",
+        "isp": "DataPacket",
+        "owned": true,
+        "hostname": "dk-cph-wg-102",
+        "wgpubkey": "oFSh/6OxGDc8LY+kCj9SNebPphDGM9UIeln0cseILxs=",
+        "ips": [
+          "149.88.109.73",
+          "2a02:6ea0:470b:0:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Denmark",
+        "city": "Copenhagen",
+        "isp": "DataPacket",
+        "owned": true,
+        "hostname": "dk-cph-wg-103",
+        "wgpubkey": "qwH+UVu3UKbsYiHsvuXmdbvDUs/5pMV6nSCV5eNk7Q8=",
+        "ips": [
+          "149.88.109.74",
+          "2a02:6ea0:470b:0:3::f001"
         ]
       },
       {
@@ -1305,118 +978,6 @@
         "ips": [
           "194.127.167.107",
           "2a07:d880:2::a03f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.172",
-          "2a0c:f040:0:2790::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.173",
-          "2a0c:f040:0:2790::3f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-004",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.174",
-          "2a0c:f040:0:2790::4f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-005",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.175",
-          "2a0c:f040:0:2790::5f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-006",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.204.1.176",
-          "2a0c:f040:0:2790::6f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Creanova",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-007",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.212.149.201",
-          "2a0c:f040:0:2790::7f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.138.7.217",
-          "2a02:ed04:3581:5::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Finland",
-        "city": "Helsinki",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "fi-hel-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.138.7.237",
-          "2a02:ed04:3581:6::2f"
         ]
       },
       {
@@ -1559,60 +1120,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "France",
-        "city": "Paris",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "fr-par-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.32.126.81",
-          "2a03:1b20:9:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "France",
-        "city": "Paris",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "fr-par-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.32.126.82",
-          "2a03:1b20:9:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "France",
-        "city": "Paris",
-        "isp": "M247",
-        "hostname": "fr-par-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.184.130",
-          "2001:ac8:25:3c::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "France",
-        "city": "Paris",
-        "isp": "M247",
-        "hostname": "fr-par-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.184.194",
-          "2001:ac8:25:3d::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "France",
         "city": "Paris",
@@ -1749,20 +1256,6 @@
         "ips": [
           "95.173.222.31",
           "2a02:6ea0:1901:3::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Berlin",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-ber-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.32.248.72",
-          "2a03:1b20:b:f011::1f"
         ]
       },
       {
@@ -1903,88 +1396,6 @@
         "ips": [
           "185.254.75.5",
           "2a03:d9c0:3000::a22f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.155.66",
-          "2a03:1b20:6:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.155.67",
-          "2a03:1b20:6:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.155.68",
-          "2a03:1b20:6:f011::3f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-ovpn-004",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.213.155.69",
-          "2a03:1b20:6:f011::4f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "M247",
-        "hostname": "de-fra-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.117.66",
-          "2001:ac8:20:271::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "M247",
-        "hostname": "de-fra-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.117.98",
-          "2001:ac8:20:272::2f"
         ]
       },
       {
@@ -2261,32 +1672,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Greece",
-        "city": "Athens",
-        "isp": "DataPacket",
-        "hostname": "gr-ath-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "149.102.246.28",
-          "2a02:6ea0:f501:4::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Greece",
-        "city": "Athens",
-        "isp": "DataPacket",
-        "hostname": "gr-ath-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "149.102.246.41",
-          "2a02:6ea0:f501:5::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Greece",
         "city": "Athens",
@@ -2311,42 +1696,15 @@
         ]
       },
       {
-        "vpn": "openvpn",
+        "vpn": "wireguard",
         "country": "Hong Kong",
         "city": "Hong Kong",
         "isp": "xtom",
-        "hostname": "hk-hkg-ovpn-201",
-        "tcp": true,
-        "udp": true,
+        "hostname": "hk-hkg-wg-201",
+        "wgpubkey": "Oxh13dmwY6nNUa5rVHr7sLiFOj0fjzsaAUAUV87/nGs=",
         "ips": [
-          "103.125.233.33",
-          "2403:2c81:1000::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Hong Kong",
-        "city": "Hong Kong",
-        "isp": "xtom",
-        "hostname": "hk-hkg-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.125.233.48",
-          "2403:2c81:1000::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Hong Kong",
-        "city": "Hong Kong",
-        "isp": "M247",
-        "hostname": "hk-hkg-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.224.130",
-          "2001:ac8:a:1a::f001"
+          "103.125.233.18",
+          "2403:2c81:1000::a06f"
         ]
       },
       {
@@ -2383,32 +1741,6 @@
         "ips": [
           "146.70.224.196",
           "2001:ac8:a:1b::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Hungary",
-        "city": "Budapest",
-        "isp": "M247",
-        "hostname": "hu-bud-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.196.66",
-          "2001:ac8:26:53::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Hungary",
-        "city": "Budapest",
-        "isp": "M247",
-        "hostname": "hu-bud-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.196.2",
-          "2001:ac8:26:52::2f"
         ]
       },
       {
@@ -2484,32 +1816,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Ireland",
-        "city": "Dublin",
-        "isp": "M247",
-        "hostname": "ie-dub-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.189.130",
-          "2001:ac8:88:86::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Ireland",
-        "city": "Dublin",
-        "isp": "M247",
-        "hostname": "ie-dub-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.189.194",
-          "2001:ac8:88:87::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Ireland",
         "city": "Dublin",
@@ -2567,32 +1873,6 @@
         "ips": [
           "169.150.227.222",
           "2a02:6ea0:3b00:3::a03f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Italy",
-        "city": "Milan",
-        "isp": "M247",
-        "hostname": "it-mil-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.225.130",
-          "2001:ac8:24:19::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Italy",
-        "city": "Milan",
-        "isp": "M247",
-        "hostname": "it-mil-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.225.194",
-          "2001:ac8:24:1a::f001"
         ]
       },
       {
@@ -2728,32 +2008,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Japan",
-        "city": "Tokyo",
-        "isp": "M247",
-        "hostname": "jp-tyo-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.201.130",
-          "2001:ac8:40:1d::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Japan",
-        "city": "Tokyo",
-        "isp": "M247",
-        "hostname": "jp-tyo-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.201.194",
-          "2001:ac8:40:1e::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Japan",
         "city": "Tokyo",
@@ -2883,76 +2137,6 @@
         "ips": [
           "149.88.22.168",
           "2a02:6ea0:f803:3::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Netherlands",
-        "city": "Amsterdam",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "nl-ams-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.134.71",
-          "2a03:1b20:3:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Netherlands",
-        "city": "Amsterdam",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "nl-ams-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.134.72",
-          "2a03:1b20:3:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Netherlands",
-        "city": "Amsterdam",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "nl-ams-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.134.73",
-          "2a03:1b20:3:f011::3f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Netherlands",
-        "city": "Amsterdam",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "nl-ams-ovpn-004",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.134.74",
-          "2a03:1b20:3:f011::4f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Netherlands",
-        "city": "Amsterdam",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "nl-ams-ovpn-005",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.134.75",
-          "2a03:1b20:3:f011::5f"
         ]
       },
       {
@@ -3132,32 +2316,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "New Zealand",
-        "city": "Auckland",
-        "isp": "hostuniversal",
-        "hostname": "nz-akl-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.75.11.82",
-          "2404:f780:5:dee::c1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "New Zealand",
-        "city": "Auckland",
-        "isp": "hostuniversal",
-        "hostname": "nz-akl-ovpn-302",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "103.75.11.98",
-          "2404:f780:5:def::c2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "New Zealand",
         "city": "Auckland",
@@ -3206,34 +2364,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "91.90.44.11",
-          "2a02:20c8:4124::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Norway",
-        "city": "Oslo",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-osl-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "91.90.44.12",
-          "2a02:20c8:4124::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Norway",
         "city": "Oslo",
@@ -3270,34 +2400,6 @@
         "ips": [
           "176.125.235.73",
           "2a02:20c8:4124::a03f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Norway",
-        "city": "Stavanger",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-svg-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "194.127.199.114",
-          "2a02:20c8:4120::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Norway",
-        "city": "Stavanger",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-svg-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "194.127.199.145",
-          "2a02:20c8:4120::2f"
         ]
       },
       {
@@ -3398,32 +2500,6 @@
         "ips": [
           "156.59.127.194",
           "2602:ffe4:c06:11e::f101"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Poland",
-        "city": "Warsaw",
-        "isp": "M247",
-        "hostname": "pl-waw-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.144.66",
-          "2a0d:5600:13:c48::a01f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Poland",
-        "city": "Warsaw",
-        "isp": "M247",
-        "hostname": "pl-waw-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.144.98",
-          "2a0d:5600:13:c49::a02f"
         ]
       },
       {
@@ -3535,32 +2611,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Romania",
-        "city": "Bucharest",
-        "isp": "M247",
-        "hostname": "ro-buh-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.124.162",
-          "2a04:9dc0:0:134::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Romania",
-        "city": "Bucharest",
-        "isp": "M247",
-        "hostname": "ro-buh-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "37.120.246.130",
-          "2a04:9dc0:0:136::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Romania",
         "city": "Bucharest",
@@ -3585,32 +2635,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Serbia",
-        "city": "Belgrade",
-        "isp": "M247",
-        "hostname": "rs-beg-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.193.194",
-          "2001:ac8:7d:40::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Serbia",
-        "city": "Belgrade",
-        "isp": "M247",
-        "hostname": "rs-beg-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.193.130",
-          "2001:ac8:7d:39::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Serbia",
         "city": "Belgrade",
@@ -3632,32 +2656,6 @@
         "ips": [
           "146.70.193.66",
           "2001:ac8:7d:38::a02f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Singapore",
-        "city": "Singapore",
-        "isp": "M247",
-        "hostname": "sg-sin-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.199.66",
-          "2a0d:5600:d:42::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Singapore",
-        "city": "Singapore",
-        "isp": "M247",
-        "hostname": "sg-sin-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.199.2",
-          "2a0d:5600:d:41::2f"
         ]
       },
       {
@@ -3838,32 +2836,6 @@
         "ips": [
           "185.253.99.98",
           "2001:ac8:17:20::f101"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Spain",
-        "city": "Madrid",
-        "isp": "M247",
-        "hostname": "es-mad-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.128.162",
-          "2001:ac8:23:84::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Spain",
-        "city": "Madrid",
-        "isp": "M247",
-        "hostname": "es-mad-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.74.98",
-          "2001:ac8:23:87::2f"
         ]
       },
       {
@@ -4056,160 +3028,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-013",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.83",
-          "2a03:1b20:1:f410::13f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-014",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.84",
-          "2a03:1b20:1:f410::14f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-015",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.85",
-          "2a03:1b20:1:f410::15f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-016",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.86",
-          "2a03:1b20:1:f410::16f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-017",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.87",
-          "2a03:1b20:1:f410::17f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-018",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.88",
-          "2a03:1b20:1:f410::18f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-019",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.89",
-          "2a03:1b20:1:f410::19f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-020",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.90",
-          "2a03:1b20:1:f410::20f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-021",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.91",
-          "2a03:1b20:1:f410::21f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-022",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.255.92",
-          "2a03:1b20:1:f410::22f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "45.83.220.92",
-          "2a03:1b20:1:e011::12f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "Sweden",
         "city": "Malmö",
@@ -4363,48 +3181,6 @@
         "ips": [
           "45.129.59.129",
           "2a03:1b20:1:e011::f601"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-sto-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.135.80",
-          "2a03:1b20:4:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-sto-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.135.81",
-          "2a03:1b20:4:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-sto-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.65.135.82",
-          "2a03:1b20:4:f011::3f"
         ]
       },
       {
@@ -4643,100 +3419,6 @@
         "ips": [
           "170.62.100.211",
           "2a02:6ea0:1508:9::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "ch-zrh-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.32.127.81",
-          "2a03:1b20:a:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "ch-zrh-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.32.127.82",
-          "2a03:1b20:a:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "ch-zrh-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "193.32.127.83",
-          "2a03:1b20:a:f011::3f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "PrivateLayer",
-        "hostname": "ch-zrh-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "46.19.140.194",
-          "2a02:29b8:dc01:1830::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "PrivateLayer",
-        "hostname": "ch-zrh-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "81.17.16.66",
-          "2a02:29b8:dc01:1829::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "M247",
-        "hostname": "ch-zrh-ovpn-501",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.134.130",
-          "2001:ac8:28:a8::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "Switzerland",
-        "city": "Zurich",
-        "isp": "M247",
-        "hostname": "ch-zrh-ovpn-502",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.134.162",
-          "2001:ac8:28:a9::2f"
         ]
       },
       {
@@ -5046,74 +3728,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "gb-lon-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.252.131",
-          "2a03:1b20:7:f011::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "gb-lon-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.252.132",
-          "2a03:1b20:7:f011::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "gb-lon-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "141.98.252.133",
-          "2a03:1b20:7:f011::3f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
-        "isp": "M247",
-        "hostname": "gb-lon-ovpn-301",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.119.98",
-          "2001:ac8:31:f008::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "London",
-        "isp": "M247",
-        "hostname": "gb-lon-ovpn-302",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.119.130",
-          "2001:ac8:31:f009::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "UK",
         "city": "London",
@@ -5302,45 +3916,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "Manchester",
-        "isp": "M247",
-        "hostname": "gb-mnc-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.132.2",
-          "2001:ac8:8b:2e::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "Manchester",
-        "isp": "M247",
-        "hostname": "gb-mnc-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.132.34",
-          "2001:ac8:8b:23::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "UK",
-        "city": "Manchester",
-        "isp": "M247",
-        "hostname": "gb-mnc-ovpn-003",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.132.66",
-          "2001:ac8:8b:24::3f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "UK",
         "city": "Manchester",
@@ -5473,58 +4048,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Ashburn VA",
-        "isp": "Tzulo",
-        "hostname": "us-qas-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.135.162",
-          "2607:9000:9000:16::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Ashburn VA",
-        "isp": "Tzulo",
-        "hostname": "us-qas-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.135.194",
-          "2607:9000:9000:17::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Ashburn VA",
-        "isp": "DataPacket",
-        "hostname": "us-qas-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.156.46.169",
-          "2a02:6ea0:e206:4::a01f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Ashburn VA",
-        "isp": "DataPacket",
-        "hostname": "us-qas-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "185.156.46.182",
-          "2a02:6ea0:e206:5::a02f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "USA",
         "city": "Ashburn VA",
@@ -5645,29 +4168,99 @@
         ]
       },
       {
-        "vpn": "openvpn",
+        "vpn": "wireguard",
         "country": "USA",
-        "city": "Atlanta GA",
-        "isp": "DataPacket",
-        "hostname": "us-atl-ovpn-001",
-        "tcp": true,
-        "udp": true,
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-301",
+        "wgpubkey": "WUF0hoTY+kiklSDjMt2Z9kuebB6L/xTm5LcdNbwnslk=",
         "ips": [
-          "45.134.140.156",
-          "2a02:6ea0:c122:3::1f"
+          "23.234.96.2",
+          "2607:9000:900:31::f001"
         ]
       },
       {
-        "vpn": "openvpn",
+        "vpn": "wireguard",
         "country": "USA",
-        "city": "Atlanta GA",
-        "isp": "DataPacket",
-        "hostname": "us-atl-ovpn-002",
-        "tcp": true,
-        "udp": true,
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-302",
+        "wgpubkey": "vwIDgSCPbEzumzi/XveunLso8yzLdOP4OdZCHFYsbkg=",
         "ips": [
-          "45.134.140.169",
-          "2a02:6ea0:c122:4::2f"
+          "23.234.96.127",
+          "2607:9000:900:32::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-303",
+        "wgpubkey": "eym7onKZRi6uTtIA7SCxON/1q6zln3o5mYeYlasMeR8=",
+        "ips": [
+          "23.234.97.2",
+          "2607:9000:900:33::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-304",
+        "wgpubkey": "D3xigYvUQnLnKBVNQ7KpaWpuIbGxHHB1mb/+nSf3QXI=",
+        "ips": [
+          "23.234.97.127",
+          "2607:9000:900:34::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-305",
+        "wgpubkey": "hOuBVCXBzSA2eDx1cuAozt1B7Cg9M9IGCS6tedZHEkE=",
+        "ips": [
+          "23.234.98.2",
+          "2607:9000:900:35::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-306",
+        "wgpubkey": "5J/CzkztJt5djDo/UiHA0jQwMOr5b7SfeY77TWmcVF0=",
+        "ips": [
+          "23.234.98.127",
+          "2607:9000:900:36::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-307",
+        "wgpubkey": "aVmjjHrEAPxxg3l/19K+WSXjH4bKBpfaKkDI+6+umkc=",
+        "ips": [
+          "23.234.99.2",
+          "2607:9000:900:37::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
+        "hostname": "us-qas-wg-308",
+        "wgpubkey": "lXSNRlfRVmeljwu0y7m4+M2OhveCbaMRewTbssgHDyY=",
+        "ips": [
+          "23.234.99.127",
+          "2607:9000:900:38::f001"
         ]
       },
       {
@@ -6019,29 +4612,99 @@
         ]
       },
       {
-        "vpn": "openvpn",
+        "vpn": "wireguard",
         "country": "USA",
-        "city": "Dallas TX",
-        "isp": "M247",
-        "hostname": "us-dal-ovpn-001",
-        "tcp": true,
-        "udp": true,
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-309",
+        "wgpubkey": "HMvcz+L7tNQc6FRMkkRDV7BUPzBH8SW74gN7yarX+hk=",
         "ips": [
-          "146.70.211.194",
-          "2001:ac8:9a:82::1f"
+          "173.249.252.2",
+          "2607:9000:100:41::f001"
         ]
       },
       {
-        "vpn": "openvpn",
+        "vpn": "wireguard",
         "country": "USA",
-        "city": "Dallas TX",
-        "isp": "M247",
-        "hostname": "us-dal-ovpn-002",
-        "tcp": true,
-        "udp": true,
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-310",
+        "wgpubkey": "bJLgTMbt7cx1lKyWzOwW3+Lqc0n6OOXu/iTerXZxawY=",
         "ips": [
-          "146.70.177.66",
-          "2001:ac8:9a:84::2f"
+          "173.249.252.127",
+          "2607:9000:100:42::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-311",
+        "wgpubkey": "9oEgVktX3TUJI5XPWnvVHszj1Q44ix6VDN0CqS0eglc=",
+        "ips": [
+          "173.249.253.2",
+          "2607:9000:100:43::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-312",
+        "wgpubkey": "XzMA3EWGePHQ6ko5XImi4m3TphQqjq9++A8XPfre/0A=",
+        "ips": [
+          "173.249.253.127",
+          "2607:9000:100:44::1"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-313",
+        "wgpubkey": "/xG21lmyVnh9eSbTP2iYWCM4SIw1QCkKyFKGBkoJlXM=",
+        "ips": [
+          "173.249.254.2",
+          "2607:9000:100:45::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-314",
+        "wgpubkey": "2UyKDI5jY9Nlys5aiOUh8piEfF0wFBZsk7WToNQ8HTk=",
+        "ips": [
+          "173.249.254.127",
+          "2607:9000:100:46::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-315",
+        "wgpubkey": "q8TC/ILZWlaydPdkJLkL/pWB8qrK0dWkKtZMGqEElh8=",
+        "ips": [
+          "173.249.255.2",
+          "2607:9000:100:47::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "Tzulo",
+        "hostname": "us-chi-wg-316",
+        "wgpubkey": "5oGrphw1JoWMIeJUHytMdOKvyxx5P4l7OyP/uTYDmyg=",
+        "ips": [
+          "173.249.255.127",
+          "2607:9000:100:48::f001"
         ]
       },
       {
@@ -6573,58 +5236,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "Tzulo",
-        "hostname": "us-lax-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.44.129.162",
-          "2607:9000:3000:17::2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "Tzulo",
-        "hostname": "us-lax-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.44.129.130",
-          "2607:9000:3000:16::a02f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "DataPacket",
-        "hostname": "us-lax-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "169.150.203.41",
-          "2a02:6ea0:c859:4::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "DataPacket",
-        "hostname": "us-lax-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "169.150.203.54",
-          "2a02:6ea0:c859:5::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "USA",
         "city": "Los Angeles CA",
@@ -6961,32 +5572,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Miami FL",
-        "isp": "M247",
-        "hostname": "us-mia-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.187.194",
-          "2a0d:5600:6:107::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Miami FL",
-        "isp": "M247",
-        "hostname": "us-mia-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.183.66",
-          "2a0d:5600:6:108::2f"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "USA",
         "city": "Miami FL",
@@ -7056,84 +5641,6 @@
         "ips": [
           "146.70.187.130",
           "2a0d:5600:6:106::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "M247",
-        "hostname": "us-nyc-ovpn-501",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.168.2",
-          "2a0d:5600:24:2c5::e01f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "M247",
-        "hostname": "us-nyc-ovpn-502",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.166.2",
-          "2a0d:5600:24:2c4::e02f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "M247",
-        "hostname": "us-nyc-ovpn-503",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.166.66",
-          "2a0d:5600:24:2c1::e03f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "M247",
-        "hostname": "us-nyc-ovpn-601",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.171.194",
-          "2a0d:5600:24:1375::f1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "M247",
-        "hostname": "us-nyc-ovpn-602",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.185.130",
-          "2a0d:5600:24:136c::f2f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "M247",
-        "hostname": "us-nyc-ovpn-603",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "146.70.185.66",
-          "2a0d:5600:24:136b::f3f"
         ]
       },
       {
@@ -7629,32 +6136,6 @@
         ]
       },
       {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Salt Lake City UT",
-        "isp": "100TB",
-        "hostname": "us-slc-ovpn-201",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "69.4.234.150",
-          "2607:fc98:0:8a::f101"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Salt Lake City UT",
-        "isp": "100TB",
-        "hostname": "us-slc-ovpn-202",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "69.4.234.151",
-          "2607:fc98:0:8a::f201"
-        ]
-      },
-      {
         "vpn": "wireguard",
         "country": "USA",
         "city": "Salt Lake City UT",
@@ -7772,32 +6253,6 @@
         "ips": [
           "23.234.115.127",
           "2607:9000:d00:9::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "San Jose CA",
-        "isp": "Tzulo",
-        "hostname": "us-sjc-ovpn-001",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.134.34",
-          "2607:9000:8000:12::1f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "San Jose CA",
-        "isp": "Tzulo",
-        "hostname": "us-sjc-ovpn-002",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.134.66",
-          "2607:9000:8000:13::2f"
         ]
       },
       {
@@ -7942,32 +6397,6 @@
         "ips": [
           "23.234.95.127",
           "2607:9000:800:38::f001"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Seattle WA",
-        "isp": "Tzulo",
-        "hostname": "us-sea-ovpn-101",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.131.34",
-          "2607:9000:5000:12::101f"
-        ]
-      },
-      {
-        "vpn": "openvpn",
-        "country": "USA",
-        "city": "Seattle WA",
-        "isp": "Tzulo",
-        "hostname": "us-sea-ovpn-102",
-        "tcp": true,
-        "udp": true,
-        "ips": [
-          "198.54.131.66",
-          "2607:9000:5000:13::102f"
         ]
       },
       {
