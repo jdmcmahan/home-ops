@@ -3,7 +3,7 @@
 providers:
   kubernetesGateway:
     enabled: true
-    labelselector: "gateway-class=remote"
+    labelSelector: "gateway-class=remote"
   kubernetesIngress:
     enabled: false
 

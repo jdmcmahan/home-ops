@@ -3,7 +3,7 @@
 providers:
   kubernetesGateway:
     enabled: true
-    labelselector: "gateway-class=local"
+    labelSelector: "gateway-class=local"
   kubernetesIngress:
     enabled: false
 
