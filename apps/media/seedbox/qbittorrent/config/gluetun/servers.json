@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1768541503,
+    "timestamp": 1769146459,
     "servers": [
       {
         "vpn": "wireguard",
@@ -553,6 +553,102 @@
         "ips": [
           "62.93.167.160",
           "2a02:6ea0:a03::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-301",
+        "wgpubkey": "iV7uZuw8vbqrW/p4YhsxkIxXaUuI4Uj2hTl8TaJZfAA=",
+        "ips": [
+          "23.234.120.2",
+          "2607:9000:f00:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-302",
+        "wgpubkey": "ihfPUEJ+SOFLzpb6ATGKX1/aAOA2MiTgm36yxmMdNUs=",
+        "ips": [
+          "23.234.120.127",
+          "2607:9000:f00:3::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-303",
+        "wgpubkey": "jS8Wn97oET0rNFD9yIoJIahbVfMc6aubJq6G7+C1PBs=",
+        "ips": [
+          "23.234.121.2",
+          "2607:9000:f00:4::f01f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-304",
+        "wgpubkey": "zY8NKWC/zDdNBBFFtH3acoZAJj2BD/AYZVOUiIRZric=",
+        "ips": [
+          "23.234.121.127",
+          "2607:9000:f00:5::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-305",
+        "wgpubkey": "vHxqoUcH2dHqphHD6Kj74gf8+SldQ/S2XP1nbasTSkQ=",
+        "ips": [
+          "23.234.122.2",
+          "2607:9000:f00:6::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-306",
+        "wgpubkey": "R4SOqKLtNuNSPg1L9/4mK56nahUN9uEFleuZorBXOjM=",
+        "ips": [
+          "23.234.122.127",
+          "2607:9000:f00:7::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-307",
+        "wgpubkey": "MRbFe1jzuvCprXrnW2H6TpQnWx5MBwjYS+iIAhtrejc=",
+        "ips": [
+          "23.234.123.2",
+          "2607:9000:f00:8::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Canada",
+        "city": "Montreal",
+        "isp": "Tzulo",
+        "hostname": "ca-mtr-wg-308",
+        "wgpubkey": "lyOeQQ2eGQgEdV+uH/S7UPOPMCsRWkDSQiZhPTUT0AI=",
+        "ips": [
+          "23.234.123.127",
+          "2607:9000:f00:9::f001"
         ]
       },
       {
@@ -4656,7 +4752,7 @@
         "wgpubkey": "XzMA3EWGePHQ6ko5XImi4m3TphQqjq9++A8XPfre/0A=",
         "ips": [
           "173.249.253.127",
-          "2607:9000:100:44::1"
+          "2607:9000:100:44::f001"
         ]
       },
       {
@@ -4897,6 +4993,102 @@
         "ips": [
           "103.102.247.127",
           "2a01:4740:2::f301"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-701",
+        "wgpubkey": "UnJqGcT6Hx/+yTenqCraq7cRSePHLYL3JmRoKAd1FmY=",
+        "ips": [
+          "23.234.104.2",
+          "2607:9000:b00:31::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-702",
+        "wgpubkey": "UNyJnd4U9T7P+v1/NZzIBPMl83+maIY+J9NWTP0bskc=",
+        "ips": [
+          "23.234.104.127",
+          "2607:9000:b00:32::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-703",
+        "wgpubkey": "A+PTuYy2zuYfHcKs9VZU7bgXSC0/PNndLuUD6xxgaRQ=",
+        "ips": [
+          "23.234.105.2",
+          "2607:9000:b00:33::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-704",
+        "wgpubkey": "DlDMRNqq5oppRQaCWz8XKAccxtjCW2jSjBWGdY77BQw=",
+        "ips": [
+          "23.234.105.127",
+          "2607:9000:b00:34::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-705",
+        "wgpubkey": "vaI2uM3xjXYxvtWMkAwRwuWMI/vlJNxsfwTAILvUNHM=",
+        "ips": [
+          "23.234.106.2",
+          "2607:9000:b00:35::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-706",
+        "wgpubkey": "vO4TIJsyvNnSH+m9iwoM1BLJokFa80YsCpMjnC8FMzc=",
+        "ips": [
+          "23.234.106.127",
+          "2607:9000:b00:36::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-707",
+        "wgpubkey": "MnFc+hUAUSIID/PykPuUPoYlMbRBbFkGK1nIlHSeJEs=",
+        "ips": [
+          "23.234.107.2",
+          "2607:9000:b00:37::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Dallas TX",
+        "isp": "Tzulo",
+        "hostname": "us-dal-wg-708",
+        "wgpubkey": "I8b0Y+odQGMzuMQi+P2fbZF+FiR3rmyZsAc1SIGzNUo=",
+        "ips": [
+          "23.234.107.127",
+          "2607:9000:b00:38::f001"
         ]
       },
       {
