@@ -9,7 +9,7 @@ resources:
 helmCharts:
   - name: traefik-crds
     repo: https://helm.traefik.io/traefik
-    version: 1.13.1
+    version: 1.14.0
     releaseName: traefik-crds
     namespace: traefik
     valuesInline:
