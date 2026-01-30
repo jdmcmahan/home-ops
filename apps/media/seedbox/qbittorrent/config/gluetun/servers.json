@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1769146459,
+    "timestamp": 1769752404,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1165,6 +1165,45 @@
         "ips": [
           "193.138.7.197",
           "2a02:ed04:3581:4::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "fi-hel-wg-201",
+        "wgpubkey": "u+Ir9bnz8PtwXoJGQXvCxz6a+1NChEbBIox8KdWarxk=",
+        "ips": [
+          "185.65.133.5",
+          "2a03:1b20:d:f011:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "fi-hel-wg-202",
+        "wgpubkey": "hAbVKL5Q0285gJ28nMSfztw7/FXJb+cxiKD2NMgPpTM=",
+        "ips": [
+          "185.65.133.85",
+          "2a03:1b20:d:f011:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Finland",
+        "city": "Helsinki",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "fi-hel-wg-203",
+        "wgpubkey": "Ck25URxG+bxlgfJVZ0A6wm7xddltSu5t1yig3CgKBDM=",
+        "ips": [
+          "185.65.133.165",
+          "2a03:1b20:d:f011:3::f001"
         ]
       },
       {
@@ -3212,19 +3251,6 @@
         "ips": [
           "141.98.255.97",
           "2a03:1b20:1:f410::f201"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Malmö",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "se-mma-wg-101",
-        "wgpubkey": "7ncbaCb+9za3jnXlR95I6dJBkwL1ABB5i4ndFUesYxE=",
-        "ips": [
-          "45.83.220.68",
-          "2a03:1b20:1:e011::a21f"
         ]
       },
       {
