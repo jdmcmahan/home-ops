@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1769752404,
+    "timestamp": 1770357484,
     "servers": [
       {
         "vpn": "wireguard",
@@ -66,6 +66,18 @@
       {
         "vpn": "wireguard",
         "country": "Australia",
+        "city": "Adelaide",
+        "isp": "hostuniversal",
+        "hostname": "au-adl-wg-303",
+        "wgpubkey": "X9vdIZG69ZDU4Wf05T8F+C+NuWeYOgojmOVeASdiIWo=",
+        "ips": [
+          "103.214.20.162",
+          "2404:f780:0:def::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Australia",
         "city": "Brisbane",
         "isp": "hostuniversal",
         "hostname": "au-bne-wg-301",
@@ -90,6 +102,18 @@
       {
         "vpn": "wireguard",
         "country": "Australia",
+        "city": "Brisbane",
+        "isp": "hostuniversal",
+        "hostname": "au-bne-wg-303",
+        "wgpubkey": "AdUQ6vk1e1SMzlLpgwmg86A0SSj8YGrJE2UWlflGtCg=",
+        "ips": [
+          "103.216.220.66",
+          "2404:f780:4:def::f201"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Australia",
         "city": "Melbourne",
         "isp": "hostuniversal",
         "hostname": "au-mel-wg-302",
@@ -97,6 +121,18 @@
         "ips": [
           "103.108.229.66",
           "2406:d501:f:dec::a02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Australia",
+        "city": "Melbourne",
+        "isp": "hostuniversal",
+        "hostname": "au-mel-wg-401",
+        "wgpubkey": "ju0S2nDmiOrSm1H68SRTB4mtt2U8SKROprE83VCoF1Y=",
+        "ips": [
+          "163.47.16.146",
+          "2406:d501:f:dfa::f001"
         ]
       },
       {
@@ -1956,10 +1992,10 @@
         "city": "Dublin",
         "isp": "M247",
         "hostname": "ie-dub-wg-101",
-        "wgpubkey": "lHrukA9+vn7Jjzx2Nb/1NQ0WiaiKppEqVxrGT5X1RFQ=",
+        "wgpubkey": "2r0vPpM71ZXpseWXTXw3iwn2sjIHOTpw1V9sp03bLWw=",
         "ips": [
           "146.70.189.2",
-          "2001:ac8:88:84::a01f"
+          "2001:ac8:88:107::f001"
         ]
       },
       {
@@ -1968,10 +2004,22 @@
         "city": "Dublin",
         "isp": "M247",
         "hostname": "ie-dub-wg-102",
-        "wgpubkey": "8YhrVbViPmYFZ2KJF2pR7d10EaBz8PJbPtoEiAs1IXA=",
+        "wgpubkey": "2RSnfqTRb0BL/bPaKGj0OA/qopQaNG1qtzEH2Y8JyjE=",
         "ips": [
-          "146.70.189.66",
-          "2001:ac8:88:85::f001"
+          "146.70.189.130",
+          "2001:ac8:88:108::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Ireland",
+        "city": "Dublin",
+        "isp": "M247",
+        "hostname": "ie-dub-wg-103",
+        "wgpubkey": "/Q7cQuVZo0IYckUncGSzRnQssR1DC5veZWaAnf/yDTI=",
+        "ips": [
+          "130.195.213.130",
+          "2001:ac8:88:109::f001"
         ]
       },
       {
@@ -2472,6 +2520,18 @@
         "ips": [
           "103.75.11.66",
           "2404:f780:5:dec::c02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "New Zealand",
+        "city": "Auckland",
+        "isp": "hostuniversal",
+        "hostname": "nz-akl-wg-303",
+        "wgpubkey": "1G7/wskBBlY77PXMV3sSAv4eCm5IPjxx99Wlfs58QSI=",
+        "ips": [
+          "103.75.11.98",
+          "2404:f780:5:def::f201"
         ]
       },
       {
@@ -4174,18 +4234,6 @@
         "country": "USA",
         "city": "Ashburn VA",
         "isp": "Tzulo",
-        "hostname": "us-qas-wg-001",
-        "wgpubkey": "UKNLCimke54RqRdj6UFyIuBO6nv2VVpDT3vM9N25VyI=",
-        "ips": [
-          "198.54.135.34",
-          "2607:9000:9000:12::b46f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Ashburn VA",
-        "isp": "Tzulo",
         "hostname": "us-qas-wg-002",
         "wgpubkey": "UUCBSYnGq+zEDqA6Wyse3JXv8fZuqKEgavRZTnCXlBg=",
         "ips": [
@@ -5027,7 +5075,7 @@
         "city": "Dallas TX",
         "isp": "Tzulo",
         "hostname": "us-dal-wg-701",
-        "wgpubkey": "UnJqGcT6Hx/+yTenqCraq7cRSePHLYL3JmRoKAd1FmY=",
+        "wgpubkey": "pl4AW+ZGaOknJlgTbACqwihOe+A3GC5aALB74RLTFF8=",
         "ips": [
           "23.234.104.2",
           "2607:9000:b00:31::f001"
@@ -6423,6 +6471,30 @@
         "ips": [
           "23.234.112.127",
           "2607:9000:d00:3::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Salt Lake City UT",
+        "isp": "Tzulo",
+        "hostname": "us-slc-wg-303",
+        "wgpubkey": "Taa3TPPNUUcD3upveDHqpi9uaNHbeXzh6kX+sQUcM0s=",
+        "ips": [
+          "23.234.113.3",
+          "2607:9000:d00:4::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Salt Lake City UT",
+        "isp": "Tzulo",
+        "hostname": "us-slc-wg-304",
+        "wgpubkey": "+ru/ZmhgTYWNLyn3ZWuC57PMOU64yMfuWPZ5ow0XY3A=",
+        "ips": [
+          "23.234.113.127",
+          "2607:9000:d00:5::f001"
         ]
       },
       {
