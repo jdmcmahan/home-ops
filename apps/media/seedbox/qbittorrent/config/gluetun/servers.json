@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1770357484,
+    "timestamp": 1770962589,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1692,10 +1692,10 @@
         "city": "Frankfurt",
         "isp": "M247",
         "hostname": "de-fra-wg-101",
-        "wgpubkey": "Voioje9Gfb7aTiK2/H6VyHFK1AFap1glIX0Z1EX2mRQ=",
+        "wgpubkey": "wxbDlI3xb+Cc05XKb4usdKSzKe1byK7brmsHU2DJB14=",
         "ips": [
-          "146.70.117.162",
-          "2001:ac8:20:274::a99f"
+          "146.70.117.2",
+          "2001:ac8:20:270:1::f001"
         ]
       },
       {
@@ -1704,58 +1704,10 @@
         "city": "Frankfurt",
         "isp": "M247",
         "hostname": "de-fra-wg-102",
-        "wgpubkey": "ydXFN45/kROELJrF6id+uIrnS5DvTKSCkZDjfL9De2Q=",
+        "wgpubkey": "inG8qBhgEFhcs2EZsT9PezeWBI6+9p8tXeo0BojhpBQ=",
         "ips": [
-          "146.70.117.194",
-          "2001:ac8:20:275::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "M247",
-        "hostname": "de-fra-wg-103",
-        "wgpubkey": "KkShcqgwbkX2A9n1hhST6qu+m3ldxdJ2Lx8Eiw6mdXw=",
-        "ips": [
-          "146.70.117.226",
-          "2001:ac8:20:276::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "M247",
-        "hostname": "de-fra-wg-104",
-        "wgpubkey": "uKTC5oP/zfn6SSjayiXDDR9L82X0tGYJd5LVn5kzyCc=",
-        "ips": [
-          "146.70.107.194",
-          "2001:ac8:20:277::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "M247",
-        "hostname": "de-fra-wg-105",
-        "wgpubkey": "Sttn2cr14dvIcCrE8qdlRGHXriqvTyvQWC7dzujH/iM=",
-        "ips": [
-          "146.70.117.2",
-          "2001:ac8:20:269::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "M247",
-        "hostname": "de-fra-wg-106",
-        "wgpubkey": "9ldhvN7r4xGZkGehbsNfYb5tpyTJ5KBb5B3TbxCwklw=",
-        "ips": [
-          "146.70.117.34",
-          "2001:ac8:20:270::f001"
+          "146.70.117.130",
+          "2001:ac8:20:270:2::f001"
         ]
       },
       {
