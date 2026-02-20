@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1770962589,
+    "timestamp": 1771567114,
     "servers": [
       {
         "vpn": "wireguard",
@@ -49,6 +49,18 @@
         "ips": [
           "149.22.83.31",
           "2a02:6ea0:f002:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Australia",
+        "city": "Adelaide",
+        "isp": "hostuniversal",
+        "hostname": "au-adl-wg-301",
+        "wgpubkey": "rm2hpBiN91c7reV+cYKlw7QNkYtME/+js7IMyYBB2Aw=",
+        "ips": [
+          "103.214.20.50",
+          "2404:f780:0:deb::c1f"
         ]
       },
       {
@@ -133,6 +145,30 @@
         "ips": [
           "163.47.16.146",
           "2406:d501:f:dfa::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Australia",
+        "city": "Melbourne",
+        "isp": "hostuniversal",
+        "hostname": "au-mel-wg-402",
+        "wgpubkey": "j9xeIW+vE1DQAglbr00Vw1ePp6ueWklZ+Qx+KuyoBwQ=",
+        "ips": [
+          "163.47.16.150",
+          "2406:d501:f:dfb::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Australia",
+        "city": "Melbourne",
+        "isp": "hostuniversal",
+        "hostname": "au-mel-wg-403",
+        "wgpubkey": "OQzxEZxEnLI85WF81VFO4tg9+fEBZ1dL+vckw2VYPxk=",
+        "ips": [
+          "163.47.16.154",
+          "2406:d501:f:dfc::f001"
         ]
       },
       {
@@ -1714,6 +1750,30 @@
         "vpn": "wireguard",
         "country": "Germany",
         "city": "Frankfurt",
+        "isp": "M247",
+        "hostname": "de-fra-wg-103",
+        "wgpubkey": "V7g+GpphZny5CWgDdClejTQX3ImrYFRh+CVETeOWRBU=",
+        "ips": [
+          "135.136.19.2",
+          "2001:ac8:20:271::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
+        "isp": "M247",
+        "hostname": "de-fra-wg-104",
+        "wgpubkey": "WPaUZB1eO0W/F4GMDk8uVgqQfS5q4P9F53/pbLmlDjs=",
+        "ips": [
+          "135.136.19.130",
+          "2001:ac8:20:272::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Germany",
+        "city": "Frankfurt",
         "isp": "xtom",
         "hostname": "de-fra-wg-301",
         "wgpubkey": "dNKRyh2MkJGZdg9jyUJtf9w5GHjX3+/fYatg+xi9TUM=",
@@ -1744,18 +1804,6 @@
         "ips": [
           "194.36.25.33",
           "2a07:fe00:1::a25f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "xtom",
-        "hostname": "de-fra-wg-304",
-        "wgpubkey": "VgNcwWy8MRhfEZY+XSisDM1ykX+uXlHQScOLqqGMLkc=",
-        "ips": [
-          "194.36.25.48",
-          "2a07:fe00:1::a26f"
         ]
       },
       {
@@ -2547,6 +2595,45 @@
         "ips": [
           "176.125.235.73",
           "2a02:20c8:4124::a03f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Norway",
+        "city": "Oslo",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "no-osl-wg-101",
+        "wgpubkey": "QXR6DwdWn2urvyVNt5pFulLuhkyeuTp2STwGgEQ6Ehw=",
+        "ips": [
+          "141.98.253.5",
+          "2a03:1b20:c:f011:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Norway",
+        "city": "Oslo",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "no-osl-wg-102",
+        "wgpubkey": "MlS7Fep/Lx6d0j2c+ZWPWECAC+OpGVRq/NV4AWvw+C8=",
+        "ips": [
+          "141.98.253.85",
+          "2a03:1b20:c:f011:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Norway",
+        "city": "Oslo",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "no-osl-wg-103",
+        "wgpubkey": "7aoQqj/A9rVeZmuT6kCRPuQ4Pf0yy2T2RlTo7P8LYGE=",
+        "ips": [
+          "141.98.253.165",
+          "2a03:1b20:c:f011:3::f001"
         ]
       },
       {
@@ -4186,6 +4273,18 @@
         "country": "USA",
         "city": "Ashburn VA",
         "isp": "Tzulo",
+        "hostname": "us-qas-wg-001",
+        "wgpubkey": "PXkCto3mQMVFzrseQFhk/yzm+TvnCC1mYJTqoR2qk0s=",
+        "ips": [
+          "198.54.135.34",
+          "2607:9000:9000:12::b46f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Ashburn VA",
+        "isp": "Tzulo",
         "hostname": "us-qas-wg-002",
         "wgpubkey": "UUCBSYnGq+zEDqA6Wyse3JXv8fZuqKEgavRZTnCXlBg=",
         "ips": [
@@ -4587,6 +4686,18 @@
         "ips": [
           "43.225.189.131",
           "2a06:3040:12:610::a01f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Boston MA",
+        "isp": "HostRoyale",
+        "hostname": "us-bos-wg-002",
+        "wgpubkey": "LLkA2XSBvfUeXgLdMKP+OTQeKhtGB03kKskJEwlzAE8=",
+        "ips": [
+          "43.225.189.162",
+          "2a06:3040:12:610::a02f"
         ]
       },
       {
@@ -6351,6 +6462,18 @@
         "ips": [
           "23.234.79.2",
           "2607:9000:4000:37::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Raleigh NC",
+        "isp": "Tzulo",
+        "hostname": "us-rag-wg-208",
+        "wgpubkey": "lCyIXwxSGEBSpUah0kYSyuaZuDJJB0Cwia7gv4r7XTA=",
+        "ips": [
+          "23.234.79.127",
+          "2607:9000:4000:38::f001"
         ]
       },
       {
