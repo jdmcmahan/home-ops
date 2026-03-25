@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - volsync.yaml
+  - postgres.yaml
 
 helmCharts:
   - name: immich
