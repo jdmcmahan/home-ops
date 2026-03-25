@@ -1,0 +1,32 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: docker.io/altran1502/immich-server
+          tag: v2.6.2@sha256:cadd639c7c7a08fa42c3c93603f00c7525b53db7af70660353b7782a3d4eb2ea
+          pullPolicy: IfNotPresent
+
+immich:
+  metrics:
+    enabled: true
+  persistence:
+    library:
+      existingClaim: immich-library
+
+valkey:
+  enabled: true
+
+route:
+  immich:
+    hostnames: [ "immich.mcmahan.io" ]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: main
+            port: 80
