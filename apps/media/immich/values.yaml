@@ -43,12 +43,12 @@ valkey:
 
 route:
   immich:
-    hostnames: [ "immich.mcmahan.io" ]
+    hostnames: ["immich.mcmahan.io"]
     parentRefs:
       - name: local
         namespace: traefik
         sectionName: websecure
     rules:
       - backendRefs:
-          - identifier: main
-            port: 80
+          - name: immich-server
+            port: 2283
