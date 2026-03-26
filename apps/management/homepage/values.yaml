@@ -210,6 +210,10 @@ config:
                 - Grafana:
                     icon: grafana.svg
                     href: https://grafana.mcmahan.io
+            - IaC:
+                - Burrito:
+                    icon: terraform.svg
+                    href: https://burrito.mcmahan.io
         - Middle:
             - Networking:
                 - UniFi Controller:
