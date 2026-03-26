@@ -140,6 +140,11 @@ grafana:
         revision: 1
         datasource:
           - { name: DS_PROMETHEUS, value: Prometheus }
+      immich:
+        # renovate: depName="Immich Overview"
+        gnetId: 22555
+        revision: 1
+        datasource: Prometheus
       metallb:
         # renovate: depName="Metallb"
         gnetId: 20162
