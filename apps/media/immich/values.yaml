@@ -8,6 +8,28 @@ controllers:
           repository: docker.io/altran1502/immich-server
           tag: v2.6.2@sha256:cadd639c7c7a08fa42c3c93603f00c7525b53db7af70660353b7782a3d4eb2ea
           pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          DB_HOSTNAME:
+            valueFrom:
+              secretKeyRef:
+                name: immich-cluster-app
+                key: host
+          DB_DATABASE_NAME:
+            valueFrom:
+              secretKeyRef:
+                name: immich-cluster-app
+                key: dbname
+          DB_USERNAME:
+            valueFrom:
+              secretKeyRef:
+                name: immich-cluster-app
+                key: username
+          DB_PASSWORD:
+            valueFrom:
+              secretKeyRef:
+                name: immich-cluster-app
+                key: password
 
 immich:
   metrics:
