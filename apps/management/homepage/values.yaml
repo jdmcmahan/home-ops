@@ -80,9 +80,6 @@ config:
         - Kasm Workspaces:
             icon: kasm-workspaces.svg
             href: https://kasm.mcmahan.io
-        - Blinko:
-            icon: https://raw.githubusercontent.com/blinkospace/blinko/refs/heads/main/app/public/logo.svg
-            href: https://blinko.mcmahan.io
         - Homebox:
             icon: homebox.svg
             href: https://homebox.mcmahan.io
