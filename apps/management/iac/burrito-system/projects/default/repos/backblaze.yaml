@@ -95,3 +95,16 @@ spec:
     name: backblaze
     namespace: burrito-project-default
   path: "pvr"
+
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
+  name: backblaze-photos
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: backblaze
+    namespace: burrito-project-default
+  path: "photos"
