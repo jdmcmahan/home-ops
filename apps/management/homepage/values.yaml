@@ -107,7 +107,7 @@ config:
                 href: https://immich.mcmahan.io
                 widget:
                   type: immich
-                  url: http://immich-server.immich.svc
+                  url: http://immich-server.immich.svc:2283
                   key: {{HOMEPAGE_VAR_IMMICH_APIKEY}}
                   version: 2
             - Calibre Web:
