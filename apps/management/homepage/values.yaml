@@ -201,6 +201,9 @@ config:
                     icon: pikvm.svg
                     href: http://pikvm
             - Monitoring:
+                - Alertmanager:
+                    icon: alertmanager.svg
+                    href: https://alertmanager.mcmahan.io
                 - Prometheus:
                     icon: prometheus.svg
                     href: https://prometheus.mcmahan.io
