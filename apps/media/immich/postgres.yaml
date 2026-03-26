@@ -11,7 +11,7 @@ spec:
     storageClass: ceph-block
     size: 1Gi
 
-  imageName: ghcr.io/tensorchord/cloudnative-vectorchord:16.9-0.4.3
+  imageName: ghcr.io/tensorchord/cloudnative-vectorchord:18.3-1.1.1
 
   monitoring:
     enablePodMonitor: true
