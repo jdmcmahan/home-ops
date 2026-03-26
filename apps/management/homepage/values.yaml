@@ -222,6 +222,9 @@ config:
                       username: {{HOMEPAGE_VAR_UNIFI_USER}}
                       password: {{HOMEPAGE_VAR_UNIFI_PASS}}
             - Storage:
+                - Rook Ceph:
+                    icon: ceph.svg
+                    href: https://rook.mcmahan.io
                 - new-peepums:
                     icon: synology.svg
                     href: http://new-peepums.mcmahan.io:5000
