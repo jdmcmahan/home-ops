@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1772776272,
+    "timestamp": 1774592083,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1061,19 +1061,6 @@
         "ips": [
           "149.88.109.73",
           "2a02:6ea0:470b:0:2::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "isp": "DataPacket",
-        "owned": true,
-        "hostname": "dk-cph-wg-103",
-        "wgpubkey": "qwH+UVu3UKbsYiHsvuXmdbvDUs/5pMV6nSCV5eNk7Q8=",
-        "ips": [
-          "149.88.109.74",
-          "2a02:6ea0:470b:0:3::f001"
         ]
       },
       {
@@ -6255,18 +6242,6 @@
         "ips": [
           "23.234.79.2",
           "2607:9000:4000:37::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Raleigh NC",
-        "isp": "Tzulo",
-        "hostname": "us-rag-wg-208",
-        "wgpubkey": "lCyIXwxSGEBSpUah0kYSyuaZuDJJB0Cwia7gv4r7XTA=",
-        "ips": [
-          "23.234.79.127",
-          "2607:9000:4000:38::f001"
         ]
       },
       {
