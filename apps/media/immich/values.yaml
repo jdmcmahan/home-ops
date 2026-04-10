@@ -6,7 +6,7 @@ controllers:
       main:
         image:
           repository: docker.io/altran1502/immich-server
-          tag: v2.7.3
+          tag: v2.7.4
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
