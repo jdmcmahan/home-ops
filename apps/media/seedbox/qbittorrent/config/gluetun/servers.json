@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1775196848,
+    "timestamp": 1775804092,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2652,19 +2652,6 @@
       },
       {
         "vpn": "wireguard",
-        "country": "Norway",
-        "city": "Stavanger",
-        "isp": "Blix",
-        "owned": true,
-        "hostname": "no-svg-wg-004",
-        "wgpubkey": "Fu98PLCZw/FTcQqyTy0vzaepkfxuSLAah7wnafGVO1g=",
-        "ips": [
-          "194.127.199.93",
-          "2a02:20c8:4120::a04f"
-        ]
-      },
-      {
-        "vpn": "wireguard",
         "country": "Peru",
         "city": "Lima",
         "isp": "DataPacket",
@@ -3190,19 +3177,6 @@
         "city": "Gothenburg",
         "isp": "31173",
         "owned": true,
-        "hostname": "se-got-wg-006",
-        "wgpubkey": "dcSpHioI+TY37dbZcviFA/sxSUqmpECXRZIapwR8pVg=",
-        "ips": [
-          "185.209.199.7",
-          "2a03:1b20:5:f011:6::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Gothenburg",
-        "isp": "31173",
-        "owned": true,
         "hostname": "se-got-wg-007",
         "wgpubkey": "ywfkKYdoVAnjsSYW145ACtrw3DV8xTzFS1hlIO7QRD4=",
         "ips": [
@@ -3541,19 +3515,6 @@
         "city": "Stockholm",
         "isp": "DataPacket",
         "owned": true,
-        "hostname": "se-sto-wg-203",
-        "wgpubkey": "mkBf9JhtMPHS3w0FfJOwSS5kfmUQ0RGSLXBdxUNlzTs=",
-        "ips": [
-          "89.37.63.129",
-          "2a02:6ea0:1508:3::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "DataPacket",
-        "owned": true,
         "hostname": "se-sto-wg-204",
         "wgpubkey": "cPhM7ShRWQmKiJtD9Wd1vDh0GwIlaMvFb/WPrP58FH8=",
         "ips": [
@@ -3585,19 +3546,6 @@
         "ips": [
           "170.62.100.66",
           "2a02:6ea0:1508:6::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "DataPacket",
-        "owned": true,
-        "hostname": "se-sto-wg-207",
-        "wgpubkey": "OatHF/w6fOg8w2415s8zPSXw6LtcYOm+90pqyJ5ZsVY=",
-        "ips": [
-          "170.62.100.129",
-          "2a02:6ea0:1508:7::f001"
         ]
       },
       {
@@ -5942,18 +5890,6 @@
         "ips": [
           "23.234.101.3",
           "2607:9000:a000:33::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "Tzulo",
-        "hostname": "us-nyc-wg-804",
-        "wgpubkey": "uNKXjnTzZE0najF3fo5HiDBkg/fCF+anDkVuBNTCfhs=",
-        "ips": [
-          "23.234.101.127",
-          "2607:9000:a000:34::f001"
         ]
       },
       {
