@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1775804092,
+    "timestamp": 1776409123,
     "servers": [
       {
         "vpn": "wireguard",
@@ -3541,19 +3541,6 @@
         "city": "Stockholm",
         "isp": "DataPacket",
         "owned": true,
-        "hostname": "se-sto-wg-206",
-        "wgpubkey": "9KHMuwHqa1Mx2VrKX3cvqLN/ZPDjH5/z0q+IWbfrmW8=",
-        "ips": [
-          "170.62.100.66",
-          "2a02:6ea0:1508:6::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Sweden",
-        "city": "Stockholm",
-        "isp": "DataPacket",
-        "owned": true,
         "hostname": "se-sto-wg-208",
         "wgpubkey": "HozGhf1OfjFEASBzjmktB9AKkIgbC+OhSabZKwT6EHc=",
         "ips": [
@@ -4426,6 +4413,42 @@
         "ips": [
           "149.40.50.112",
           "2a02:6ea0:f901:1::a02f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "DataPacket",
+        "hostname": "us-chi-wg-201",
+        "wgpubkey": "+Xx2mJnoJ+JS11Z6g8mp6aUZV7p6DAN9ZTAzPaHakhM=",
+        "ips": [
+          "87.249.134.1",
+          "2a02:6ea0:c61f::b63f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "DataPacket",
+        "hostname": "us-chi-wg-202",
+        "wgpubkey": "rmN4IM0I0gF7V9503/xnQMOLsu9txl8GTqci9dgUO18=",
+        "ips": [
+          "87.249.134.14",
+          "2a02:6ea0:c61f:1::b64f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Chicago IL",
+        "isp": "DataPacket",
+        "hostname": "us-chi-wg-203",
+        "wgpubkey": "V0ilKm3bVqt0rmJ80sP0zSVK4m6O3nADi88IQAL5kjw=",
+        "ips": [
+          "87.249.134.27",
+          "2a02:6ea0:c61f:2::f001"
         ]
       },
       {
