@@ -39,9 +39,9 @@ controllers:
               - NET_ADMIN
         resources:
           requests:
-            squat.ai/tun: "1"
+            devic.es/tun: "1"
           limits:
-            squat.ai/tun: "1"
+            devic.es/tun: "1"
     containers:
       app:
         image:
