@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Run omnictl
-        uses: jdmcmahan/omnictl-action@v1.83.0
+        uses: jdmcmahan/omnictl-action@v1.84.0
         with:
           working-directory: ./infrastructure/sidero/omni/resources/cluster
           omni-endpoint: ${{ secrets.OMNI_ENDPOINT }}
