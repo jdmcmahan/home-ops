@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1776409123,
+    "timestamp": 1777620496,
     "servers": [
       {
         "vpn": "wireguard",
@@ -2648,6 +2648,19 @@
         "ips": [
           "194.127.199.62",
           "2a02:20c8:4120::a03f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Norway",
+        "city": "Stavanger",
+        "isp": "Blix",
+        "owned": true,
+        "hostname": "no-svg-wg-004",
+        "wgpubkey": "Fu98PLCZw/FTcQqyTy0vzaepkfxuSLAah7wnafGVO1g=",
+        "ips": [
+          "194.127.199.93",
+          "2a02:20c8:4120::a04f"
         ]
       },
       {
