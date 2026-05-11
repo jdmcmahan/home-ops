@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1777620496,
+    "timestamp": 1778223301,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1043,19 +1043,6 @@
         "city": "Copenhagen",
         "isp": "DataPacket",
         "owned": true,
-        "hostname": "dk-cph-wg-101",
-        "wgpubkey": "CrS2Bd2IEVpPlg4DzHwfSCoqpNjrM35oiVdoUVKoxiY=",
-        "ips": [
-          "149.88.109.72",
-          "2a02:6ea0:470b:0:1::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Denmark",
-        "city": "Copenhagen",
-        "isp": "DataPacket",
-        "owned": true,
         "hostname": "dk-cph-wg-102",
         "wgpubkey": "oFSh/6OxGDc8LY+kCj9SNebPphDGM9UIeln0cseILxs=",
         "ips": [
@@ -1351,19 +1338,6 @@
         "ips": [
           "193.32.126.69",
           "2a03:1b20:9:f011::f301"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "France",
-        "city": "Paris",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "fr-par-wg-005",
-        "wgpubkey": "cmqtSjWUa4/0bENQDKxdr0vQqf4nFVDodarHm0Pc0hY=",
-        "ips": [
-          "193.32.126.70",
-          "2a03:1b20:9:f011::f401"
         ]
       },
       {
@@ -3722,6 +3696,18 @@
         "ips": [
           "138.199.6.233",
           "2a02:6ea0:d406:4::a21f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Switzerland",
+        "city": "Zurich",
+        "isp": "M247",
+        "hostname": "ch-zrh-wg-502",
+        "wgpubkey": "6rXNS6RlZ9YLZQjaEbfzAmt/6izpuMg/8LYI9jBK+i0=",
+        "ips": [
+          "135.136.18.194",
+          "2001:ac8:28:ab::f001"
         ]
       },
       {
