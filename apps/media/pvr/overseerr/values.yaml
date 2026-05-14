@@ -52,4 +52,4 @@ persistence:
     advancedMounts:
       overseerr:
         app:
-          - path: /config
+          - path: /app/config
