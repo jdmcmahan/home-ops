@@ -1,0 +1,68 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
+controllers:
+  qui:
+    containers:
+      app:
+        image:
+          repository: ghcr.io/autobrr/qui
+          tag: v1.18.0@sha256:2e768c8509831afd1f606d27d9aa8e5f3fc722fac4ea88acfdc4fa3b0e9b13ae
+          pullPolicy: IfNotPresent
+        env:
+          TZ: "America/Chicago"
+          QUI__AUTH_DISABLED: true
+          QUI__I_ACKNOWLEDGE_THIS_IS_A_BAD_IDEA: true
+          QUI__AUTH_DISABLED_ALLOWED_CIDRS: 0.0.0.0/0
+          QUI__HOST: 0.0.0.0
+          QUI__PORT: &port 80
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+              - ALL
+
+defaultPodOptions:
+  securityContext:
+    runAsUser: 979
+    runAsGroup: 979
+    fsGroup: 979
+    fsGroupChangePolicy: "OnRootMismatch"
+    runAsNonRoot: true
+
+service:
+  web:
+    enabled: true
+    controller: qui
+    type: LoadBalancer
+    ports:
+      http:
+        port: *port
+
+route:
+  qui:
+    hostnames: ["qui.mcmahan.io"]
+    parentRefs:
+      - name: local
+        namespace: traefik
+        sectionName: websecure
+    rules:
+      - backendRefs:
+          - identifier: web
+            port: *port
+
+persistence:
+  config:
+    enabled: true
+    existingClaim: qui-config
+    advancedMounts:
+      qui:
+        app:
+          - path: /config
+  media:
+    enabled: true
+    type: nfs
+    server: new-peepums
+    path: /volume1/media/staging/torrents
+    globalMounts:
+      - path: /data/staging/torrents

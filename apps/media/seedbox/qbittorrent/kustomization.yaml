@@ -6,7 +6,8 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - mullvad.yaml
-  - volsync.yaml
+  - volsync-qbittorrent.yaml
+  - volsync-qui.yaml
 
 configMapGenerator:
   - name: gluetun-configmap
@@ -22,4 +23,10 @@ helmCharts:
     version: 5.0.0
     releaseName: qbittorrent
     namespace: qbittorrent
-    valuesFile: values.yaml
+    valuesFile: values-qbittorrent.yaml
+  - name: app-template
+    repo: https://bjw-s-labs.github.io/helm-charts
+    version: 5.0.0
+    releaseName: qui
+    namespace: qbittorrent
+    valuesFile: values-qui.yaml
