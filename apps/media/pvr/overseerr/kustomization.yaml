@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - volsync.yaml
+  - overseerr-redirect.yaml
 
 helmCharts:
   - name: seerr-chart
