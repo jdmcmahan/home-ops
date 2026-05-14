@@ -29,6 +29,18 @@ route:
         namespace: traefik
         sectionName: websecure
     rules:
+      - filters:
+          - type: RequestRedirect
+            requestRedirect:
+              hostname: seerr.mcmahan.io
+              statusCode: 301
+  seerr:
+    hostnames: ["seerr.mcmahan.io"]
+    parentRefs:
+      - name: remote
+        namespace: traefik
+        sectionName: websecure
+    rules:
       - backendRefs:
           - identifier: web
             port: 80
