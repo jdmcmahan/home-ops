@@ -126,7 +126,7 @@ config:
                 icon: seerr.svg
                 href: https://seerr.mcmahan.io
                 namespace: overseerr
-                app: seerr
+                app: seerr-chart
                 widget:
                   type: seerr
                   url: http://seerr-seerr-chart.overseerr.svc
