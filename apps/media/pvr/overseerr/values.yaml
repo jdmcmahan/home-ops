@@ -1,55 +1,28 @@
 ---
-# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
-controllers:
-  overseerr:
-    containers:
-      app:
-        image:
-          repository: ghcr.io/seerr-team/seerr
-          tag: v3.2.0@sha256:c4cbd5121236ac2f70a843a0b920b68a27976be57917555f1c45b08a1e6b2aad
-          pullPolicy: IfNotPresent
-        env:
-          TZ: "America/Chicago"
+extraEnv:
+  TZ: "America/Chicago"
 
-service:
-  web:
-    enabled: true
-    controller: overseerr
-    type: LoadBalancer
-    ports:
-      http:
-        port: 80
-        targetPort: 5055
+config:
+  persistence:
+    existingClaim: overseerr-config
 
 route:
-  overseerr:
-    hostnames: ["overseerr.mcmahan.io"]
-    parentRefs:
-      - name: remote
-        namespace: traefik
-        sectionName: websecure
-    rules:
-      - filters:
-          - type: RequestRedirect
-            requestRedirect:
-              hostname: seerr.mcmahan.io
-              statusCode: 301
-  seerr:
+  main:
+    enabled: true
     hostnames: ["seerr.mcmahan.io"]
     parentRefs:
       - name: remote
         namespace: traefik
         sectionName: websecure
-    rules:
-      - backendRefs:
-          - identifier: web
-            port: 80
-
-persistence:
-  config:
+  overseerr:
     enabled: true
-    existingClaim: overseerr-config
-    advancedMounts:
-      overseerr:
-        app:
-          - path: /app/config
+    hostnames: ["overseerr.mcmahan.io"]
+    parentRefs:
+      - name: remote
+        namespace: traefik
+        sectionName: websecure
+    filters:
+      - type: RequestRedirect
+        requestRedirect:
+          hostname: seerr.mcmahan.io
+          statusCode: 301
