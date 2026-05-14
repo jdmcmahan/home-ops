@@ -38,7 +38,7 @@ envFrom:
   - secretRef:
       name: openweather-apikey
   - secretRef:
-      name: overseerr-apikey
+      name: seerr-apikey
   - secretRef:
       name: plex-apikey
   - secretRef:
@@ -122,15 +122,15 @@ config:
                 icon: calibre.svg
                 href: https://calibre.mcmahan.io
         - Middle:
-            - Overseerr:
-                icon: overseerr.svg
-                href: https://overseerr.mcmahan.io
+            - Seerr:
+                icon: seerr.svg
+                href: https://seerr.mcmahan.io
                 namespace: overseerr
-                app: overseerr
+                app: seerr
                 widget:
-                  type: overseerr
-                  url: http://overseerr.overseerr.svc
-                  key: {{HOMEPAGE_VAR_OVERSEERR_APIKEY}}
+                  type: seerr
+                  url: http://seerr-seerr-chart.overseerr.svc
+                  key: {{HOMEPAGE_VAR_SEERR_APIKEY}}
             - Prowlarr:
                 icon: prowlarr.svg
                 href: https://prowlarr.mcmahan.io
