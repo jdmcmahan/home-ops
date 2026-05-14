@@ -10,6 +10,7 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+    replicas: 0
 
 service:
   web:
