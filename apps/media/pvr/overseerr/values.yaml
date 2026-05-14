@@ -1,6 +1,7 @@
 ---
 extraEnv:
-  TZ: "America/Chicago"
+  - name: TZ
+    value: "America/Chicago"
 
 config:
   persistence:
