@@ -14,15 +14,3 @@ route:
       - name: remote
         namespace: traefik
         sectionName: websecure
-  overseerr:
-    enabled: true
-    hostnames: ["overseerr.mcmahan.io"]
-    parentRefs:
-      - name: remote
-        namespace: traefik
-        sectionName: websecure
-    filters:
-      - type: RequestRedirect
-        requestRedirect:
-          hostname: seerr.mcmahan.io
-          statusCode: 301
