@@ -21,7 +21,7 @@ controllers:
           - gluetun-config-staging
         image:
           repository: docker.io/qmcgaw/gluetun
-          tag: v3.41.0
+          tag: v3.41.1
         restartPolicy: Always
         env:
           TZ: "America/Chicago"
