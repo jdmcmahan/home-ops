@@ -22,4 +22,4 @@ helmCharts:
     version: 5.0.0
     releaseName: qbittorrent
     namespace: qbittorrent
-    valuesFile: values-qbittorrent.yaml
+    valuesFile: values.yaml
