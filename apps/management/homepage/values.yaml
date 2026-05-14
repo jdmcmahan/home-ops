@@ -162,11 +162,18 @@ config:
             - qBittorrent:
                 icon: qbittorrent.svg
                 href: https://qbittorrent.mcmahan.io
+                namespace: qbittorrent
+                app: qbittorrent
                 widget:
                   type: qbittorrent
                   url: http://qbittorrent-web.qbittorrent.svc
                   username: {{HOMEPAGE_VAR_QBITTORRENT_USER}}
                   password: {{HOMEPAGE_VAR_QBITTORRENT_PASS}}
+            - qui:
+                icon: qui.svg
+                href: https://qui.mcmahan.io
+                namespace: qbittorrent
+                app: qui
             - Autobrr:
                 icon: autobrr.svg
                 href: https://autobrr.mcmahan.io
