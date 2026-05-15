@@ -159,10 +159,10 @@ grafana:
       pvr:
         url: https://raw.githubusercontent.com/Kariton/exportarr/master/examples/grafana/dashboard2.json
         datasource: Prometheus
-      qbittorrent:
-        # renovate: depName="qBittorrent Dashboard"
-        gnetId: 15116
-        revision: 4
+      qui:
+        # renovate: depName="qBittorrent / QUI Overview"
+        gnetId: 25156
+        revision: 1
         datasource: Prometheus
       smartctl-exporter:
         # renovate: depName="SMARTctl Exporter Dashboard"

@@ -61,11 +61,6 @@ controllers:
           capabilities:
             drop:
               - ALL
-      metrics:
-        image:
-          repository: caseyscarborough/qbittorrent-exporter
-          tag: v1.3.5
-          pullPolicy: IfNotPresent
 
 service:
   web:
@@ -76,17 +71,6 @@ service:
       http:
         port: 80
         targetPort: 8080
-  metrics:
-    controller: qbittorrent
-    ports:
-      metrics:
-        port: 17871
-
-serviceMonitor:
-  metrics:
-    serviceName: qbittorrent-metrics
-    endpoints:
-      - port: metrics
 
 route:
   qbittorrent:
