@@ -163,7 +163,8 @@ grafana:
         # renovate: depName="qBittorrent / QUI Overview"
         gnetId: 25156
         revision: 1
-        datasource: Prometheus
+        datasource:
+          - { name: DS_PROMETHEUS, value: Prometheus }
       smartctl-exporter:
         # renovate: depName="SMARTctl Exporter Dashboard"
         gnetId: 22604
