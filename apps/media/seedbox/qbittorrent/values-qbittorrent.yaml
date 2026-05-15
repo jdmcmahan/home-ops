@@ -65,6 +65,7 @@ controllers:
 service:
   web:
     enabled: true
+    suffix: web
     controller: qbittorrent
     type: LoadBalancer
     ports:
