@@ -50,12 +50,6 @@
     },
     {
       "matchPackageNames": [
-        "ghcr.io/linuxserver/overseerr"
-      ],
-      "allowedVersions": "!/^2021/"
-    },
-    {
-      "matchPackageNames": [
         "ghcr.io/linuxserver/calibre-web"
       ],
       "allowedVersions": "!/^2021|^5/"
