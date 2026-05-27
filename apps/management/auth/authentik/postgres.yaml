@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cloudnative-pg/charts/main/charts/cluster/values.schema.json
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: authentik-cluster
+spec:
+  instances: 1
+
+  storage:
+    storageClass: ceph-block
+    size: 10Gi
