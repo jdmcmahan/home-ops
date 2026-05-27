@@ -6,20 +6,6 @@ global:
         secretKeyRef:
           name: authentik-secret-key
           key: secretKey
-
-server:
-  route:
-    main:
-      enabled: true
-      hostnames:
-        - authentik.mcmahan.io
-      parentRefs:
-        - name: local
-          namespace: traefik
-          sectionName: websecure
-
-worker:
-  env:
     - name: AUTHENTIK_POSTGRESQL__HOST
       valueFrom:
         secretKeyRef:
@@ -40,6 +26,17 @@ worker:
         secretKeyRef:
           name: authentik-cluster-app
           key: password
+
+server:
+  route:
+    main:
+      enabled: true
+      hostnames:
+        - authentik.mcmahan.io
+      parentRefs:
+        - name: local
+          namespace: traefik
+          sectionName: websecure
 
   metrics:
     enabled: true
