@@ -3,10 +3,10 @@
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:
-  name: authelia-cluster
+  name: authentik-cluster
 spec:
   instances: 1
 
   storage:
     storageClass: ceph-block
-    size: 5Gi
+    size: 10Gi
