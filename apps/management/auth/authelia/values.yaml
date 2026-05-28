@@ -8,13 +8,6 @@ ingress:
         namespace: traefik
         sectionName: websecure
 
-  traefikCRD:
-    enabled: true
-    disableIngressRoute: true
-    middlewares:
-      auth:
-        enableMaxResponseBodySize: true
-
 secret:
   additionalSecrets:
     authelia-cluster:
