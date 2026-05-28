@@ -1,6 +1,8 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/authelia/chartrepo/master/charts/authelia/values.schema.json
 ingress:
+  enabled: true
+
   gatewayAPI:
     enabled: true
     parentRefs:
