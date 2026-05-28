@@ -10,7 +10,7 @@ ingress:
 
 secret:
   additionalSecrets:
-    authelia-cluster:
+    authelia-cluster-app:
       items:
         - key: password
           path: postgres-password
@@ -39,5 +39,5 @@ configMap:
       database: authelia
       username: authelia
       password:
-        secret_name: authelia-cluster
+        secret_name: authelia-cluster-app
         path: postgres-password
