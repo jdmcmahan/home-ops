@@ -36,8 +36,8 @@ configMap:
     postgres:
       enabled: true
       address: tcp://authelia-cluster-rw.authelia.svc.cluster.local:5432
-      database: authelia
-      username: authelia
+      database: app
+      username: app
       password:
         secret_name: authelia-cluster-app
         path: postgres-password
