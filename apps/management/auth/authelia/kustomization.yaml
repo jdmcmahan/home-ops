@@ -4,13 +4,12 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - secrets.yaml
   - postgres.yaml
 
 helmCharts:
-  - name: authentik
-    repo: https://charts.goauthentik.io
-    version: 2026.5.2
-    releaseName: authentik
-    namespace: authentik
+  - name: authelia
+    repo: https://charts.authelia.com
+    version: 0.11.6
+    releaseName: authelia
+    namespace: authelia
     valuesFile: values.yaml
