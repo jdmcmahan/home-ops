@@ -6,6 +6,8 @@ providers:
     labelSelector: "gateway-class=local"
   kubernetesIngress:
     enabled: false
+  kubernetesCRD:
+    allowCrossNamespace: true
 
 gatewayClass:
   enabled: true
