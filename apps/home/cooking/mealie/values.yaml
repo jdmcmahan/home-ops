@@ -30,13 +30,7 @@ route:
         namespace: traefik
         sectionName: websecure
     rules:
-      - filters:
-          - type: ExtensionRef
-            extensionRef:
-              group: traefik.io
-              kind: Middleware
-              name: authelia
-        backendRefs:
+      - backendRefs:
           - identifier: web
             port: 80
 
