@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - auth.yaml
+  - secrets.yaml
   - volsync.yaml
 
 helmCharts:
