@@ -15,8 +15,6 @@ controllers:
           OIDC_PROVIDER_NAME: "authentik"
           OIDC_CONFIGURATION_URL: "https://auth.mcmahan.io/application/o/mealie/.well-known/openid-configuration"
           OIDC_SIGNUP_ENABLED: "false"
-          OIDC_USER_GROUP: "mealie-users"
-          OIDC_ADMIN_GROUP: "mealie-admins"
           OIDC_AUTO_REDIRECT: "true"
           OIDC_REMEMBER_ME: "true"
         envFrom:
