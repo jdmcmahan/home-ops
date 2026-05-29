@@ -32,7 +32,7 @@ server:
     main:
       enabled: true
       hostnames:
-        - authentik.mcmahan.io
+        - auth.mcmahan.io
       parentRefs:
         - name: local
           namespace: traefik
