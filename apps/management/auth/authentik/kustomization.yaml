@@ -6,6 +6,7 @@ kind: Kustomization
 resources:
   - secrets.yaml
   - postgres.yaml
+  - middleware.yaml
 
 helmCharts:
   - name: authentik
