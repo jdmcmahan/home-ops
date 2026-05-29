@@ -21,7 +21,7 @@ controllers:
           OIDC_REMEMBER_ME: "true"
         envFrom:
           - secretRef:
-              identifier: mealie-oidc
+              name: mealie-oidc
 
 service:
   web:
