@@ -39,13 +39,7 @@ route:
         namespace: traefik
         sectionName: websecure
     rules:
-      - filters: # 4
-          - type: ExtensionRef
-            extensionRef:
-              group: traefik.io
-              kind: Middleware
-              name: "forward-auth"
-        backendRefs:
+      - backendRefs:
           - identifier: web
             port: 80
 
