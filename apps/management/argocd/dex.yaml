@@ -14,7 +14,7 @@ spec:
     creationPolicy: Merge
     template:
       data:
-        dex.authentik.clientSecret: "{{ .clientSecret | b64enc }}"
+        dex.authentik.clientSecret: "{{ .clientSecret }}"
   data:
     - secretKey: clientSecret
       remoteRef:
