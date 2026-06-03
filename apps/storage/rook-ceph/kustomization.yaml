@@ -28,6 +28,8 @@ helmCharts:
     namespace: rook-ceph
     valuesInline:
       drivers:
+        rbd:
+          name: rook-ceph.rbd.csi.ceph.com
         cephfs:
           enabled: false
         nvmeof:
