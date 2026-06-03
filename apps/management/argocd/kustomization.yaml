@@ -7,6 +7,7 @@ namespace: argocd
 
 resources:
   - namespace.yaml
+  - dex.yaml
   - applications.yaml
 
 helmCharts:
@@ -30,7 +31,19 @@ helmCharts:
               kinds:
                 - CiliumIdentity
               clusters:
-                - "*"
+                - "*"    # Dex configuration
+          dex.config: |
+            connectors:
+              - type: oidc
+                id: authentik
+                name: authentik
+                config:
+                  clientID: "0TYdqIuvc45QfgetNU4PLFg3FMgp2qEuYEvj9RDt"
+                  clientSecret: $argocd-dex:dex.authentik.clientSecret
+                  scopes:
+                    - openid
+                    - profile
+                    - email
         rbac:
           policy.csv: "g, readonly, role:readonly"
         params:
