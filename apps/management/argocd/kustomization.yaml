@@ -47,7 +47,10 @@ helmCharts:
                     - profile
                     - email
         rbac:
-          policy.csv: "g, readonly, role:readonly"
+          policy.csv: |
+            g, ArgoCD Admins, role:admin
+            g, ArgoCD Viewers, role:readonly
+            g, readonly, role:readonly
         params:
           server.insecure: true
           controller.diff.server.side: "true"
