@@ -42,10 +42,12 @@ helmCharts:
                   issuer: https://auth.mcmahan.io/application/o/argocd/
                   clientID: "0TYdqIuvc45QfgetNU4PLFg3FMgp2qEuYEvj9RDt"
                   clientSecret: $dex.authentik.clientSecret
+                  insecureEnableGroups: true
                   scopes:
                     - openid
                     - profile
                     - email
+                    - groups
         rbac:
           policy.csv: |
             g, ArgoCD Admins, role:admin
