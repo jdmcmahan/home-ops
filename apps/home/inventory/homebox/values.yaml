@@ -11,6 +11,12 @@ controllers:
         env:
           TZ: "America/Chicago"
           HBOX_OPTIONS_ALLOW_REGISTRATION: "false"
+          HBOX_OIDC_ENABLED: "true"
+          HBOX_OIDC_ISSUER_URL: "https://auth.mcmahan.io/application/o/homebox/.well-known/openid-configuration"
+          HBOX_OIDC_AUTO_REDIRECT: "true"
+        envFrom:
+          - secretRef:
+              name: homebox-oidc
 
 service:
   web:
