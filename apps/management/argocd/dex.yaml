@@ -10,7 +10,8 @@ spec:
     kind: ClusterSecretStore
     name: default
   target:
-    creationPolicy: Owner
+    name: argocd-secret
+    creationPolicy: Merge
     template:
       data:
         dex.authentik.clientSecret: "{{ .clientSecret | b64enc }}"

@@ -40,7 +40,7 @@ helmCharts:
                 config:
                   issuer: https://auth.mcmahan.io/application/o/argocd/
                   clientID: "0TYdqIuvc45QfgetNU4PLFg3FMgp2qEuYEvj9RDt"
-                  clientSecret: $argocd-dex:dex.authentik.clientSecret
+                  clientSecret: $dex.authentik.clientSecret
                   scopes:
                     - openid
                     - profile
