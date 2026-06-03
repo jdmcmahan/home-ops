@@ -38,6 +38,7 @@ helmCharts:
                 id: authentik
                 name: authentik
                 config:
+                  issuer: https://auth.mcmahan.io/application/o/argocd/
                   clientID: "0TYdqIuvc45QfgetNU4PLFg3FMgp2qEuYEvj9RDt"
                   clientSecret: $argocd-dex:dex.authentik.clientSecret
                   scopes:
