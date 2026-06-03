@@ -15,6 +15,7 @@ controllers:
           HBOX_OIDC_ENABLED: "true"
           HBOX_OIDC_ISSUER_URL: "https://auth.mcmahan.io/application/o/homebox/"
           HBOX_OIDC_AUTO_REDIRECT: "true"
+          HBOX_OPTIONS_TRUST_PROXY: "true"
         envFrom:
           - secretRef:
               name: homebox-oidc
