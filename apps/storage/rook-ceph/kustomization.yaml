@@ -19,10 +19,17 @@ helmCharts:
       monitoring:
         enabled: true
       csi:
-        enableCephfsDriver: false
-        enableCephfsSnapshotter: false
         serviceMonitor:
           enabled: true
+  - name: ceph-csi-drivers
+    repo: https://ceph.github.io/ceph-csi-operator
+    version: v1.0.1
+    releaseName: ceph-csi-operator
+    namespace: rook-ceph
+    valuesInline:
+      drivers:
+        cephfs:
+          enabled: false
   - name: rook-ceph-cluster
     repo: https://charts.rook.io/release
     version: v1.20.0
