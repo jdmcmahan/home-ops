@@ -23,6 +23,7 @@ helmCharts:
         enabled: true
       configs:
         cm:
+          url: https://argocd.mcmahan.io
           accounts.readonly: apiKey
           kustomize.buildOptions: "--enable-helm"
           resource.exclusions: |
