@@ -11,6 +11,7 @@ controllers:
         env:
           TZ: "America/Chicago"
           HBOX_OPTIONS_ALLOW_REGISTRATION: "false"
+          HBOX_OPTIONS_HOSTNAME: "homebox.mcmahan.io"
           HBOX_OIDC_ENABLED: "true"
           HBOX_OIDC_ISSUER_URL: "https://auth.mcmahan.io/application/o/homebox/"
           HBOX_OIDC_AUTO_REDIRECT: "true"
