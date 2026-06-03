@@ -46,17 +46,17 @@ helmCharts:
         autoscaling:
           enabled: true
           minReplicas: 2
-      httproute:
-        enabled: true
-        hostnames: ["argocd.mcmahan.io"]
-        parentRefs:
-          - name: remote
-            namespace: traefik
-            sectionName: websecure
-        rules:
-          - backendRefs:
-              - name: argocd-server
-                port: 80
+        httproute:
+          enabled: true
+          hostnames: ["argocd.mcmahan.io"]
+          parentRefs:
+            - name: remote
+              namespace: traefik
+              sectionName: websecure
+          rules:
+            - backendRefs:
+                - name: argocd-server
+                  port: 80
         metrics:
           enabled: true
           serviceMonitor:
