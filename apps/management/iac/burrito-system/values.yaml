@@ -1,12 +1,28 @@
 ---
 config:
   burrito:
+    server:
+      oidc:
+        enabled: true
+        issuerUrl: "https://auth.mcmahan.io/application/o/burrito/"
+        clientId: "avRRGeDyxDoJwZ8p3XMTiYYzMF6bvdIEB1d02WLn"
+        redirectUrl: "https://burrito.mcmahan.io/auth/callback"
+        scopes:
+          - "openid"
+          - "profile"
+          - "email"
     datastore:
       storage:
         mock: false
         s3:
           bucket: vriska-burrito-datastore
           usePathStyle: true
+
+server:
+  deployment:
+    envFrom:
+      - secretRef:
+          name: burrito-oidc
 
 datastore:
   deployment:
