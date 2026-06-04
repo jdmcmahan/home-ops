@@ -63,7 +63,7 @@ route:
               group: traefik.io
               kind: Middleware
               name: "forward-auth"
-      - backendRefs:
+        backendRefs:
           - identifier: web
             port: 80
 
