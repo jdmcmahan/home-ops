@@ -59,10 +59,10 @@ route:
     rules:
       - filters:
           - type: ExtensionRef
-          - extensionRef:
-              - group: traefik.io
-              - kind: Middleware
-              - name: "forward-auth"
+            extensionRef:
+              group: traefik.io
+              kind: Middleware
+              name: "forward-auth"
       - backendRefs:
           - identifier: web
             port: 80
