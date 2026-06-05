@@ -10,13 +10,17 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-          QUI__AUTH_DISABLED: true
-          QUI__I_ACKNOWLEDGE_THIS_IS_A_BAD_IDEA: true
-          QUI__AUTH_DISABLED_ALLOWED_CIDRS: 0.0.0.0/0
+          QUI__OIDC_ENABLED: true
+          QUI__OIDC_ISSUER: https://auth.mcmahan.io/application/o/qui/
+          QUI__OIDC_REDIRECT_URL: https://qui.mcmahan.io/api/auth/oidc/callback
+          QUI__OIDC_DISABLE_BUILT_IN_LOGIN: true
           QUI__HOST: 0.0.0.0
           QUI__PORT: &port 80
           QUI__METRICS_ENABLED: true
           QUI__METRICS_HOST: 0.0.0.0
+        envFrom:
+          - secretRef:
+              name: qui-oidc
         securityContext:
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true
