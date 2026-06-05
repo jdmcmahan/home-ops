@@ -57,6 +57,11 @@ route:
         namespace: traefik
         sectionName: websecure
     rules:
+      - matches:
+          - headers:
+              - name: X-Api-Key
+                type: RegularExpression
+                value: ".+"
       - filters:
           - type: ExtensionRef
             extensionRef:
