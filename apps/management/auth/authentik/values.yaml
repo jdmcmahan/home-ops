@@ -34,7 +34,7 @@ server:
       hostnames:
         - auth.mcmahan.io
       parentRefs:
-        - name: local
+        - name: remote
           namespace: traefik
           sectionName: websecure
 
