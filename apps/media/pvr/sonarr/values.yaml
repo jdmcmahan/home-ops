@@ -62,6 +62,9 @@ route:
               - name: X-Api-Key
                 type: RegularExpression
                 value: ".+"
+        backendRefs:
+          - identifier: web
+            port: 80
       - filters:
           - type: ExtensionRef
             extensionRef:
