@@ -5,7 +5,7 @@ config:
       oidc:
         enabled: true
         issuerUrl: "https://auth.mcmahan.io/application/o/burrito/"
-        clientId: "avRRGeDyxDoJwZ8p3XMTiYYzMF6bvdIEB1d02WLn"
+        clientId: "5r99i5J3jDhiBUj2UjCzVukc4Stu8t6uSILfXbJV"
         redirectUrl: "https://burrito.mcmahan.io/auth/callback"
         scopes:
           - "openid"
