@@ -26,6 +26,9 @@ global:
         secretKeyRef:
           name: authentik-cluster-app
           key: password
+  envFrom:
+    - secretRef:
+        name: authentik-smtp
 
 server:
   route:
