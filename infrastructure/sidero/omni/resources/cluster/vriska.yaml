@@ -15,7 +15,7 @@ patches:
       cluster:
         allowSchedulingOnControlPlanes: true
   - name: cilium-override
-    file: ../patches/cilium-override.yaml
+    file: patches/cilium-override.yaml
 ---
 kind: ControlPlane
 machines:
@@ -41,11 +41,11 @@ patches:
         network:
           hostname: vision-eightfold
   - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
+    file: patches/kexec-disable.yaml
   - name: gc-threshold
-    file: ../patches/gc-threshold.yaml
+    file: patches/gc-threshold.yaml
   - name: cloudflared-quic
-    file: ../patches/cloudflared-quic.yaml
+    file: patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -61,11 +61,11 @@ patches:
         network:
           hostname: psychic-manipulation
   - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
+    file: patches/kexec-disable.yaml
   - name: gc-threshold
-    file: ../patches/gc-threshold.yaml
+    file: patches/gc-threshold.yaml
   - name: cloudflared-quic
-    file: ../patches/cloudflared-quic.yaml
+    file: patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -81,11 +81,11 @@ patches:
         network:
           hostname: enviable-cerulean-swill
   - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
+    file: patches/kexec-disable.yaml
   - name: gc-threshold
-    file: ../patches/gc-threshold.yaml
+    file: patches/gc-threshold.yaml
   - name: cloudflared-quic
-    file: ../patches/cloudflared-quic.yaml
+    file: patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -101,11 +101,11 @@ patches:
         network:
           hostname: magic-8-balls
   - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
+    file: patches/kexec-disable.yaml
   - name: gc-threshold
-    file: ../patches/gc-threshold.yaml
+    file: patches/gc-threshold.yaml
   - name: cloudflared-quic
-    file: ../patches/cloudflared-quic.yaml
+    file: patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -121,11 +121,11 @@ patches:
         network:
           hostname: omniscient-cue-ball
   - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
+    file: patches/kexec-disable.yaml
   - name: gc-threshold
-    file: ../patches/gc-threshold.yaml
+    file: patches/gc-threshold.yaml
   - name: cloudflared-quic
-    file: ../patches/cloudflared-quic.yaml
+    file: patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
@@ -141,11 +141,11 @@ patches:
         network:
           hostname: flourite-octet
   - name: kexec-disable
-    file: ../patches/kexec-disable.yaml
+    file: patches/kexec-disable.yaml
   - name: gc-threshold
-    file: ../patches/gc-threshold.yaml
+    file: patches/gc-threshold.yaml
   - name: cloudflared-quic
-    file: ../patches/cloudflared-quic.yaml
+    file: patches/cloudflared-quic.yaml
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
