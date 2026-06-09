@@ -43,6 +43,12 @@ server:
   serviceMonitor:
     enabled: true
 
+authentik:
+  email:
+    port: 587
+    use_tls: true
+    use_ssl: false
+
 prometheus:
   rules:
     enabled: true
