@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: new-peepums
-  namespace: traefik
+  namespace: prod
 spec:
   type: ExternalName
   externalName: new-peepums.mcmahan.io
@@ -13,7 +13,6 @@ apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
   name: new-peepums
-  namespace: traefik
 spec:
   hostnames: [ "new-peepums.mcmahan.io" ]
   parentRefs:
