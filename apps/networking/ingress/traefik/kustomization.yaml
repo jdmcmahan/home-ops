@@ -5,7 +5,6 @@ kind: Kustomization
 
 resources:
   - certificate.yaml
-  - external.yaml
 
 helmCharts:
   - name: traefik-crds
