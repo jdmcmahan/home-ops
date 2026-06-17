@@ -33,7 +33,7 @@ service:
 
 route:
   immichframe:
-    hostnames: ["frame.immich.mcmahan.io"]
+    hostnames: ["immichframe.mcmahan.io"]
     parentRefs:
       - name: local
         namespace: traefik
