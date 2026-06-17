@@ -13,6 +13,9 @@ configMapGenerator:
     files:
       - Settings.yml=./config/immichframe/Settings.yml
 
+generatorOptions:
+  disableNameSuffixHash: true
+
 helmCharts:
   - name: immich
     repo: https://immich-app.github.io/immich-charts
