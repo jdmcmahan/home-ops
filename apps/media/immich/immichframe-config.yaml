@@ -10,7 +10,8 @@ spec:
     name: default
   target:
     creationPolicy: Owner
-  dataFrom:
-    - extract:
+  data:
+    - secretKey: Settings.yml
+      remoteRef:
         key: immichframe
         property: Settings.yml
