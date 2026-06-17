@@ -6,15 +6,7 @@ kind: Kustomization
 resources:
   - pvc.yaml
   - postgres.yaml
-  - secrets-immichframe.yaml
-
-configMapGenerator:
-  - name: immichframe-config
-    files:
-      - Settings.yml=./config/immichframe/Settings.yml
-
-generatorOptions:
-  disableNameSuffixHash: true
+  - immichframe-config.yaml
 
 helmCharts:
   - name: immich

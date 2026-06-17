@@ -10,9 +10,6 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
-        envFrom:
-          - secretRef:
-              name: secrets-immichframe
         securityContext:
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true
@@ -48,7 +45,7 @@ route:
 
 persistence:
   config:
-    type: configMap
+    type: secret
     name: immichframe-config
     globalMounts:
       - path: /app/Config/Settings.yml
