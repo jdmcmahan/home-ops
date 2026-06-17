@@ -6,6 +6,12 @@ kind: Kustomization
 resources:
   - pvc.yaml
   - postgres.yaml
+  - secrets-immichframe.yaml
+
+configMapGenerator:
+  - name: immichframe-config
+    files:
+      - Settings.yml=./config/immichframe/Settings.yml
 
 helmCharts:
   - name: immich
@@ -13,4 +19,10 @@ helmCharts:
     version: 0.12.0
     releaseName: immich
     namespace: immich
-    valuesFile: values.yaml
+    valuesFile: values-immich.yaml
+  - name: app-template
+    repo: https://bjw-s-labs.github.io/helm-charts
+    version: 5.0.1
+    releaseName: immichframe
+    namespace: immich
+    valuesFile: values-immichframe.yaml
