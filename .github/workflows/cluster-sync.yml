@@ -12,7 +12,7 @@ jobs:
     name: Sync cluster templates with Sidero Omni
     steps:
       - name: Checkout cluster templates
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Run omnictl
         uses: jdmcmahan/omnictl-action@v1.88.0
