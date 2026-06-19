@@ -57,3 +57,7 @@ metrics:
   prometheus:
     serviceMonitor:
       enabled: true
+
+logs:
+  access:
+    enabled: true
