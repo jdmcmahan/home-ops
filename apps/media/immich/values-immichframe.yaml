@@ -35,7 +35,7 @@ route:
   immichframe:
     hostnames: ["immichframe.mcmahan.io"]
     parentRefs:
-      - name: local
+      - name: remote
         namespace: traefik
         sectionName: websecure
     rules:
