@@ -52,6 +52,3 @@ ports:
         entryPoint:
           to: websecure
           scheme: https
-
-accessLog:
-  enabled: true
