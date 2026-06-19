@@ -59,5 +59,7 @@ metrics:
       enabled: true
 
 logs:
+  general:
+    level: "DEBUG"
   access:
     enabled: true
