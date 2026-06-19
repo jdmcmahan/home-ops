@@ -53,5 +53,6 @@ ports:
           to: websecure
           scheme: https
 
-accessLog:
-  enabled: true
+logs:
+  access:
+    enabled: true
