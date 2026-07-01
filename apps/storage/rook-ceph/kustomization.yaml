@@ -23,7 +23,7 @@ helmCharts:
           enabled: true
   - name: ceph-csi-drivers
     repo: https://ceph.github.io/ceph-csi-operator
-    version: v1.0.1
+    version: 1.0.3
     releaseName: ceph-csi-operator
     namespace: rook-ceph
     valuesInline:
