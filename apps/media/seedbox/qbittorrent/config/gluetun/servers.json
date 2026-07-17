@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1783672026,
+    "timestamp": 1784272898,
     "servers": [
       {
         "vpn": "wireguard",
@@ -528,7 +528,7 @@
         "wgpubkey": "L4RcVwk0cJJp2u8O9+86sdyUpxfYnr+ME57Ex0RY1Wo=",
         "ips": [
           "38.240.225.36",
-          "2606:9580:438:32::b01f"
+          "2606:9580:438:32::f001"
         ]
       },
       {
@@ -540,7 +540,7 @@
         "wgpubkey": "u9J/fzrSqM2aEFjTs91KEKgBsaQ/I/4XkIP1Z/zYkXA=",
         "ips": [
           "38.240.225.68",
-          "2606:9580:438:64::b02f"
+          "2606:9580:438:64::f001"
         ]
       },
       {
@@ -2129,6 +2129,45 @@
       {
         "vpn": "wireguard",
         "country": "Japan",
+        "city": "Osaka",
+        "isp": "xtom",
+        "owned": true,
+        "hostname": "jp-osa-wg-101",
+        "wgpubkey": "qdFG9butVjZdtGFeQHuNftvf6ZmISf2J+v167rcPDU4=",
+        "ips": [
+          "194.127.166.2",
+          "2a07:d883:600:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Japan",
+        "city": "Osaka",
+        "isp": "xtom",
+        "owned": true,
+        "hostname": "jp-osa-wg-102",
+        "wgpubkey": "4Gl6OMUtsLEDIrg23j/COdpKsCi7W9tzM4zvBPXOy18=",
+        "ips": [
+          "194.127.166.81",
+          "2a07:d883:600:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Japan",
+        "city": "Osaka",
+        "isp": "xtom",
+        "owned": true,
+        "hostname": "jp-osa-wg-103",
+        "wgpubkey": "B4LgHDQA8GQtqer7jAEjVDiTBLTBYk6vdOY/sM8DbGI=",
+        "ips": [
+          "194.127.166.161",
+          "2a07:d883:600:3::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Japan",
         "city": "Tokyo",
         "isp": "DataPacket",
         "hostname": "jp-tyo-wg-001",
@@ -2432,6 +2471,45 @@
         "ips": [
           "169.150.196.28",
           "2a02:6ea0:c034:3::a32f"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "xtom",
+        "owned": true,
+        "hostname": "nl-ams-wg-301",
+        "wgpubkey": "bcCnX0Rtwat5a02t80k0aVJU5Q3z48dwuePiSXQ1kEY=",
+        "ips": [
+          "185.184.222.3",
+          "2a07:d883:700:1::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "xtom",
+        "owned": true,
+        "hostname": "nl-ams-wg-302",
+        "wgpubkey": "P40jSYOl1qrMXtRBszMp5W7bHZMDM7zyxysqJcUGxWw=",
+        "ips": [
+          "185.184.222.166",
+          "2a07:d883:700:2::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "xtom",
+        "owned": true,
+        "hostname": "nl-ams-wg-303",
+        "wgpubkey": "Ax99pLRK5ixjeBz50E2qB8aWRrj5mw0QEdS6ZThiA3o=",
+        "ips": [
+          "185.184.222.209",
+          "2a07:d883:700:3::f001"
         ]
       },
       {
@@ -3151,6 +3229,19 @@
         "city": "Gothenburg",
         "isp": "31173",
         "owned": true,
+        "hostname": "se-got-wg-006",
+        "wgpubkey": "dcSpHioI+TY37dbZcviFA/sxSUqmpECXRZIapwR8pVg=",
+        "ips": [
+          "185.209.199.7",
+          "2a03:1b20:5:f011:6::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Sweden",
+        "city": "Gothenburg",
+        "isp": "31173",
+        "owned": true,
         "hostname": "se-got-wg-007",
         "wgpubkey": "ywfkKYdoVAnjsSYW145ACtrw3DV8xTzFS1hlIO7QRD4=",
         "ips": [
@@ -3390,6 +3481,19 @@
         "ips": [
           "185.65.135.71",
           "2a03:1b20:4:f011::f701"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "Sweden",
+        "city": "Stockholm",
+        "isp": "31173",
+        "owned": true,
+        "hostname": "se-sto-wg-009",
+        "wgpubkey": "t1XlQD7rER0JUPrmh3R5IpxjUP9YOqodJAwfRorNxl4=",
+        "ips": [
+          "185.195.233.69",
+          "2a03:1b20:4:f011::a09f"
         ]
       },
       {
@@ -6208,6 +6312,7 @@
         "country": "USA",
         "city": "San Jose CA",
         "isp": "xtom",
+        "owned": true,
         "hostname": "us-sjc-wg-001",
         "wgpubkey": "FGcXuLkvErFPiTPAjtJusTtbCoFkJOK8SXHwWOeNYUM=",
         "ips": [
@@ -6220,6 +6325,7 @@
         "country": "USA",
         "city": "San Jose CA",
         "isp": "xtom",
+        "owned": true,
         "hostname": "us-sjc-wg-002",
         "wgpubkey": "A/FGRjSdq2is0cFCBixLy5Htx5SYFXsVVs28Lv1wsCs=",
         "ips": [
@@ -6232,6 +6338,7 @@
         "country": "USA",
         "city": "San Jose CA",
         "isp": "xtom",
+        "owned": true,
         "hostname": "us-sjc-wg-003",
         "wgpubkey": "PHvr2i7PvHljrPvbMpSQikfksXJNA/tseNeplNv1Wn8=",
         "ips": [
