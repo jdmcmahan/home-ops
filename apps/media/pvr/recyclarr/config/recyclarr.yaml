@@ -275,13 +275,7 @@ radarr:
 
     quality_profiles:
       - name: UHD 2160p
-        reset_unmatched_scores:
-          enabled: true
-        upgrade:
-          allowed: true
-          until_quality: Remux-2160p
-          until_score: 10000
-        min_format_score: 0
+        trash_id: 92e9a65a52ae48478fb8e9f34238d823 # Base Profile
         quality_sort: top
         qualities:
           - name: Remux-2160p
@@ -377,6 +371,17 @@ radarr:
           - name: DVD
           - name: SDTV
 
+    custom_format_groups:
+      add:
+        - trash_id: 7fc2751eef7e6bdc70b74136e5e35c76 # [HDR Formats] DV (w/o HDR fallback)
+
+        - trash_id: 47f0d69750de9e16855915fa73bb7b08 # [HDR Formats] SDR
+          select:
+            - 9c38ebb7384dada637be8899efa68e6f # SDR
+
+        - trash_id: b2f2af430f73f3ad1f9948f33e0f0cf8 # [Release Groups] HQ
+          select_all: true
+
     custom_formats:
       - trash_ids:
           # Movie Versions
@@ -441,44 +446,6 @@ radarr:
           - 279bda7434fd9075786de274e6c3c202 # U-NEXT
         assign_scores_to:
           - name: HD 1080p
-          - name: UHD 2160p
-
-      - trash_ids:
-          # Audio
-          - 496f355514737f7d83bf7aa4d24f8169 # TrueHD Atmos
-          - 2f22d89048b01681dde8afe203bf2e95 # DTS X
-          - 417804f7f2c4308c1f4c5d380d4c4475 # ATMOS (undefined)
-          - 1af239278386be2919e1bcee0bde047e # DD+ ATMOS
-          - 3cafb66171b47f226146a0770576870f # TrueHD
-          - dcf3ec6938fa32445f590a4da84256cd # DTS-HD MA
-          - a570d4a0e56a2874b64e5bfa55202a1b # FLAC
-          - e7c2fcae07cbada050a0af3357491d7b # PCM
-          - 8e109e50e0a0b83a5098b056e13bf6db # DTS-HD HRA
-          - 185f1dd7264c4562b9022d963ac37424 # DD+
-          - f9f847ac70a0af62ea4a08280b859636 # DTS-ES
-          - 1c1a4c5e823891c75bc50380a6866f73 # DTS
-          - 240770601cc226190c367ef59aba7463 # AAC
-          - c2998bd0d90ed5621d8df281e839436e # DD
-
-          # HDR Formats
-          - 493b6d1dbec3c3364c59d7607f7e3405 # HDR
-
-          # HDR Optional
-          - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
-          - 9c38ebb7384dada637be8899efa68e6f # SDR
-
-          # HQ Release Groups
-          - 3a3ff47579026e76d6504ebea39390de # Remux Tier 01
-          - 9f98181fe5a3fbeb0cc29340da2a468a # Remux Tier 02
-          - 8baaf0b3142bf4d94c42a724f034e27a # Remux Tier 03
-
-          # Unwanted
-          - bfd8eb01832d646a0a89c4deb46f8564 # Upscaled
-
-          # Optional UHD
-          - 9c38ebb7384dada637be8899efa68e6f # SDR
-        assign_scores_to:
-          - name: UHD 2160p
 
       - trash_ids:
           # Anime CF/Scoring
