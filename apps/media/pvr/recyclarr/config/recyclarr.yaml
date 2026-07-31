@@ -276,6 +276,8 @@ radarr:
     quality_profiles:
       - name: UHD 2160p
         trash_id: 92e9a65a52ae48478fb8e9f34238d823 # Base Profile
+        reset_unmatched_scores:
+          enabled: true
         quality_sort: top
         qualities:
           - name: Remux-2160p
