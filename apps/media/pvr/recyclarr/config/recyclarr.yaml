@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/recyclarr/recyclarr/master/schemas/config-schema.json
 sonarr:
   sonarr:
-    base_url: https://sonarr.mcmahan.io
+    base_url: http://sonarr-web.sonarr.svc
     api_key: !env_var SONARR_API_KEY
 
     media_naming:
@@ -259,7 +259,7 @@ sonarr:
 
 radarr:
   radarr:
-    base_url: https://radarr.mcmahan.io
+    base_url: http://radarr-web.radarr.svc
     api_key: !env_var RADARR_API_KEY
 
     media_naming:
