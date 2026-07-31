@@ -1,3 +1,4 @@
+#file: noinspection KubernetesMissingKeys
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/recyclarr/recyclarr/master/schemas/config-schema.json
 sonarr:
@@ -15,7 +16,6 @@ sonarr:
         anime: default
 
     delete_old_custom_formats: true
-    replace_existing_custom_formats: true
 
     quality_definition:
       type: series
@@ -280,7 +280,6 @@ radarr:
         standard: default
 
     delete_old_custom_formats: true
-    replace_existing_custom_formats: true
 
     quality_definition:
       type: movie
