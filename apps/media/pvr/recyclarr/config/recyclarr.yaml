@@ -277,7 +277,7 @@ radarr:
       folder: default
       movie:
         rename: true
-        standard: default
+        standard: plex-imdb
 
     delete_old_custom_formats: true
 
