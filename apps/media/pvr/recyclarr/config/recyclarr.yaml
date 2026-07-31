@@ -1,9 +1,8 @@
-#file: noinspection KubernetesMissingKeys
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/recyclarr/recyclarr/master/schemas/config-schema.json
 sonarr:
   sonarr:
-    base_url: http://sonarr-web.sonarr.svc
+    base_url: https://sonarr.mcmahan.io
     api_key: !env_var SONARR_API_KEY
 
     media_naming:
@@ -186,20 +185,11 @@ sonarr:
           - name: UHD 2160p
 
       - trash_ids:
-          # All HDR Formats
-          - 2b239ed870daba8126a53bd5dc8dc1c8 # DV HDR10+
-          - 7878c33f1963fefb3d6c8657d46c2f0a # DV HDR10
-          - 6d0d8de7b57e35518ac0308b0ddf404e # DV
-          - 1f733af03141f068a540eec352589a89 # DV HLG
-          - 27954b0a80aab882522a88a4d9eae1cd # DV SDR
-          - a3d82cbef5039f8d295478d28a887159 # HDR10+
-          - 3497799d29a085e2ac2df9d468413c94 # HDR10
-          - 3e2c4e748b64a1a1118e0ea3f4cf6875 # HDR
-          - bb019e1cd00f304f80971c965de064dc # HDR (undefined)
-          - 2a7e3be05d3861d6df7171ec74cad727 # PQ
-          - 17e889ce13117940092308f48b48b45b # HLG
+          # HDR Formats
+          - 505d871304820ba7106b693be6fe4a9e # HDR
 
-          - 9b27ab6498ec0f31a3353992e19434ca # DV (WEBDL)
+          # HDR Optional
+          - 9b27ab6498ec0f31a3353992e19434ca # DV (w/o HDR fallback)
 
           # HQ Source Groups
           - 9965a052eb87b0d10313b1cea89eb451 # Remux Tier 01
@@ -210,7 +200,6 @@ sonarr:
 
           # Streaming Services
           - 43b3cf48cb385cd3eac608ee6bca7f09 # UHD Streaming Boost
-          - d2d299244a92b8a52d4921ce3897a256 # UHD Streaming Cut
         assign_scores_to:
           - name: UHD 2160p
 
@@ -270,14 +259,14 @@ sonarr:
 
 radarr:
   radarr:
-    base_url: http://radarr-web.radarr.svc
+    base_url: https://radarr.mcmahan.io
     api_key: !env_var RADARR_API_KEY
 
     media_naming:
       folder: default
       movie:
         rename: true
-        standard: default
+        standard: plex-imdb
 
     delete_old_custom_formats: true
 
@@ -424,7 +413,6 @@ radarr:
 
           # Optional
           - b6832f586342ef70d9c128d40c07b872 # Bad Dual Groups
-          - 90cedc1fea7ea5d11298bebd3d1d3223 # EVO (no WEBDL)
           - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5 # No-RlsGroup
           - 7357cf5161efbf8c4d5d0c30b4815ee2 # Obfuscated
           - 5c44f52a8714fdd79bb4d98e2673be1f # Retags
@@ -472,20 +460,12 @@ radarr:
           - 240770601cc226190c367ef59aba7463 # AAC
           - c2998bd0d90ed5621d8df281e839436e # DD
 
-          # All HDR Formats
-          - c53085ddbd027d9624b320627748612f # DV HDR10+
-          - e23edd2482476e595fb990b12e7c609c # DV HDR10
-          - 58d6a88f13e2db7f5059c41047876f00 # DV
-          - 55d53828b9d81cbe20b02efd00aa0efd # DV HLG
-          - a3e19f8f627608af0211acd02bf89735 # DV SDR
-          - b974a6cd08c1066250f1f177d7aa1225 # HDR10+
-          - dfb86d5941bc9075d6af23b09c2aeecd # HDR10
-          - e61e28db95d22bedcadf030b8f156d96 # HDR
-          - 2a4d9069cc1fe3242ff9bdaebed239bb # HDR (undefined)
-          - 08d6d8834ad9ec87b1dc7ec8148e7a1f # PQ
-          - 9364dd386c9b4a1100dde8264690add7 # HLG
+          # HDR Formats
+          - 493b6d1dbec3c3364c59d7607f7e3405 # HDR
 
-          - 923b6abef9b17f937fab56cfcf89e1f1 # DV (WEBDL)
+          # HDR Optional
+          - 923b6abef9b17f937fab56cfcf89e1f1 # DV (w/o HDR fallback)
+          - 9c38ebb7384dada637be8899efa68e6f # SDR
 
           # HQ Release Groups
           - 3a3ff47579026e76d6504ebea39390de # Remux Tier 01
@@ -530,9 +510,8 @@ radarr:
           - db92c27ba606996b146b57fbe6d09186 # v3
           - d4e5e842fad129a3c097bdb2d20d31a0 # v4
           - 60f6d50cbd3cfc3e9a8c00e3a30c3114 # VRV
-          - b2550eb333d27b75833e25b8c2557b38 # 10bit
-          - 9c14d194486c4014d422adc64092d794 # Dubs Only
-          - 07a32f77690263bb9fda1842db7e273f # VOSTFR
+          - a5d148168c4506b55cf53984107c396e # 10bit
+          - b23eae459cc960816f2d6ba84af45055 # Dubs Only
         assign_scores_to:
           - name: HD 1080p - Anime
 
