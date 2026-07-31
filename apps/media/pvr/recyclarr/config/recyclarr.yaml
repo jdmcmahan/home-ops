@@ -3,7 +3,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/recyclarr/recyclarr/master/schemas/config-schema.json
 sonarr:
   sonarr:
-    base_url: http://sonarr-web.sonarr.svc
+    base_url: https://sonarr.mcmahan.io
     api_key: !env_var SONARR_API_KEY
 
     media_naming:
@@ -186,20 +186,11 @@ sonarr:
           - name: UHD 2160p
 
       - trash_ids:
-          # All HDR Formats
-          - 2b239ed870daba8126a53bd5dc8dc1c8 # DV HDR10+
-          - 7878c33f1963fefb3d6c8657d46c2f0a # DV HDR10
-          - 6d0d8de7b57e35518ac0308b0ddf404e # DV
-          - 1f733af03141f068a540eec352589a89 # DV HLG
-          - 27954b0a80aab882522a88a4d9eae1cd # DV SDR
-          - a3d82cbef5039f8d295478d28a887159 # HDR10+
-          - 3497799d29a085e2ac2df9d468413c94 # HDR10
-          - 3e2c4e748b64a1a1118e0ea3f4cf6875 # HDR
-          - bb019e1cd00f304f80971c965de064dc # HDR (undefined)
-          - 2a7e3be05d3861d6df7171ec74cad727 # PQ
-          - 17e889ce13117940092308f48b48b45b # HLG
+          # HDR Formats
+          - 505d871304820ba7106b693be6fe4a9e # HDR
 
-          - 9b27ab6498ec0f31a3353992e19434ca # DV (WEBDL)
+          # HDR Optional
+          - 9b27ab6498ec0f31a3353992e19434ca # DV (w/o HDR fallback)
 
           # HQ Source Groups
           - 9965a052eb87b0d10313b1cea89eb451 # Remux Tier 01
@@ -210,7 +201,6 @@ sonarr:
 
           # Streaming Services
           - 43b3cf48cb385cd3eac608ee6bca7f09 # UHD Streaming Boost
-          - d2d299244a92b8a52d4921ce3897a256 # UHD Streaming Cut
         assign_scores_to:
           - name: UHD 2160p
 
