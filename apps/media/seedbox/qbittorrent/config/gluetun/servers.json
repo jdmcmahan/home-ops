@@ -1,7 +1,7 @@
 {
   "mullvad": {
     "version": 4,
-    "timestamp": 1784272898,
+    "timestamp": 1785484467,
     "servers": [
       {
         "vpn": "wireguard",
@@ -1370,6 +1370,18 @@
         "country": "France",
         "city": "Paris",
         "isp": "M247",
+        "hostname": "fr-par-wg-102",
+        "wgpubkey": "gx9/WJPB3eu9nbbDA+gku9BPKhpAnJ0heaE2BZEr6Go=",
+        "ips": [
+          "146.70.184.130",
+          "2001:ac8:25:3b::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "France",
+        "city": "Paris",
+        "isp": "M247",
         "hostname": "fr-par-wg-103",
         "wgpubkey": "BKxcFQnXCpgpGk38nDIWKgl6oeABN3GyyreMrOY7qh4=",
         "ips": [
@@ -1434,10 +1446,10 @@
         "isp": "31173",
         "owned": true,
         "hostname": "de-ber-wg-003",
-        "wgpubkey": "USrMatdHiCL5AKdVMpHuYgWuMiK/GHPwRB3Xx00FhU0=",
+        "wgpubkey": "FojZmpH6DjNRwkDDPeSeFPOV9xKPJ1HmgTMkowZ1Lwg=",
         "ips": [
           "193.32.248.68",
-          "2a03:1b20:b:f011::a03f"
+          "2a03:1b20:b:f011::f201"
         ]
       },
       {
@@ -1447,7 +1459,7 @@
         "isp": "31173",
         "owned": true,
         "hostname": "de-ber-wg-004",
-        "wgpubkey": "6PchzRRxzeeHdNLyn3Nz0gmN7pUyjoZMpKmKzJRL4GM=",
+        "wgpubkey": "34m7HVsChYI4i43ni8u2jUoIy0oqNGmKjbtqVhH9OVU=",
         "ips": [
           "193.32.248.69",
           "2a03:1b20:b:f011::f301"
@@ -1457,52 +1469,36 @@
         "vpn": "wireguard",
         "country": "Germany",
         "city": "Berlin",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-ber-wg-005",
-        "wgpubkey": "I4Y7e8LrtBC/7DLpUgRd5k+IZk+whOFVAZgbSivoiBI=",
+        "isp": "DataPacket",
+        "hostname": "de-ber-wg-101",
+        "wgpubkey": "lUVTBgHSiV0p+c+fN+mbUHu6mDgbcGRB3xIgiVsP/HY=",
         "ips": [
-          "193.32.248.70",
-          "2a03:1b20:b:f011::f401"
+          "152.233.51.3",
+          "2a02:6ea0:5e03:3::f001"
         ]
       },
       {
         "vpn": "wireguard",
         "country": "Germany",
         "city": "Berlin",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-ber-wg-006",
-        "wgpubkey": "eprzkkkSbXCANngQDo305DIAvkKAnZaN71IpTNaOoTk=",
+        "isp": "DataPacket",
+        "hostname": "de-ber-wg-102",
+        "wgpubkey": "MtogyH8/s2OsJls9gmCi+HpJE+lqsA7Mj58f7pDihTA=",
         "ips": [
-          "193.32.248.71",
-          "2a03:1b20:b:f011::a06f"
+          "152.233.51.33",
+          "2a02:6ea0:5e03:4::f001"
         ]
       },
       {
         "vpn": "wireguard",
         "country": "Germany",
         "city": "Berlin",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-ber-wg-007",
-        "wgpubkey": "/ejdxiEsmYbeXXCN6UzvzJ0U/mLuB6baIfQRYKYHWzU=",
+        "isp": "DataPacket",
+        "hostname": "de-ber-wg-103",
+        "wgpubkey": "3yls39oKxbK8/siowvAdUmIepBEqjUwuLOAVlcwuDxw=",
         "ips": [
-          "193.32.248.75",
-          "2a03:1b20:b:f011::f701"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Berlin",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-ber-wg-008",
-        "wgpubkey": "qwXs9gwhwqWgRtLjPiZ+zMphZJA3OStsn/aXcCAd5m0=",
-        "ips": [
-          "193.32.248.74",
-          "2a03:1b20:b:f011::f801"
+          "152.233.51.63",
+          "2a02:6ea0:5e03:5::f001"
         ]
       },
       {
@@ -1604,58 +1600,6 @@
         "ips": [
           "185.209.196.75",
           "2a03:1b20:6:f011::f401"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-wg-006",
-        "wgpubkey": "nAF0wrLG2+avwQfqxnXhBGPUBCvc3QCqWKH4nK5PfEU=",
-        "ips": [
-          "185.209.196.76",
-          "2a03:1b20:6:f011::f501"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-wg-007",
-        "wgpubkey": "mTmrSuXmTnIC9l2Ur3/QgodGrVEhhIE3pRwOHZpiYys=",
-        "ips": [
-          "185.209.196.77",
-          "2a03:1b20:6:f011::f601"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-wg-008",
-        "wgpubkey": "+DuVLLPwGNlfZFoI24PRPdaTrO4i+WPDlYaOVcavHDo=",
-        "ips": [
-          "185.209.196.78",
-          "2a03:1b20:6:f011::f701"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "Germany",
-        "city": "Frankfurt",
-        "isp": "31173",
-        "owned": true,
-        "hostname": "de-fra-wg-009",
-        "wgpubkey": "flq7zR8W5FxouHBuZoTRHY0A0qFEMQZF5uAgV4+sHVw=",
-        "ips": [
-          "185.213.155.72",
-          "2a03:1b20:6:f011::f901"
         ]
       },
       {
@@ -3115,11 +3059,11 @@
         "country": "Spain",
         "city": "Madrid",
         "isp": "M247",
-        "hostname": "es-mad-wg-201",
-        "wgpubkey": "LyO4Xs1eV8JwFr63a1FRnKboQn2Tu/oeMzHhbr7Y6GU=",
+        "hostname": "es-mad-wg-204",
+        "wgpubkey": "wm5CMcNkMDUZUwkOTxu77GWuAIW+2MgLkX5crELsfj0=",
         "ips": [
-          "146.70.128.194",
-          "2001:ac8:23:85::a01f"
+          "135.136.16.130",
+          "2001:ac8:23:85::f001"
         ]
       },
       {
@@ -3127,11 +3071,11 @@
         "country": "Spain",
         "city": "Madrid",
         "isp": "M247",
-        "hostname": "es-mad-wg-202",
-        "wgpubkey": "iehXacO91FbBqni2IFxedEYPlW2Wvvt9GtRPPPMo9zc=",
+        "hostname": "es-mad-wg-205",
+        "wgpubkey": "iU/iHnlIwcV3J06NokgORdvooCjn2DpwtmN6xkgAA1Y=",
         "ips": [
-          "146.70.128.226",
-          "2001:ac8:23:86::a02f"
+          "135.136.4.130",
+          "2001:ac8:23:86::f001"
         ]
       },
       {
@@ -5400,11 +5344,23 @@
         "country": "USA",
         "city": "Los Angeles CA",
         "isp": "M247",
-        "hostname": "us-lax-wg-402",
-        "wgpubkey": "EKZXvHlSDeqAjfC/m9aQR0oXfQ6Idgffa9L0DH5yaCo=",
+        "hostname": "us-lax-wg-401",
+        "wgpubkey": "an2dbqsj064QX7C42HWZ5bz2ZxJZJh82HxmtB1y8HWY=",
         "ips": [
-          "146.70.173.66",
-          "2a0d:5600:8:6::d2f"
+          "146.70.173.2",
+          "2a0d:5600:8:4::f001"
+        ]
+      },
+      {
+        "vpn": "wireguard",
+        "country": "USA",
+        "city": "Los Angeles CA",
+        "isp": "M247",
+        "hostname": "us-lax-wg-402",
+        "wgpubkey": "AGk8UoZF+3wlkj/Tk+1V0kNri8wgTLKp4mfBk+YLkyA=",
+        "ips": [
+          "146.70.173.130",
+          "2a0d:5600:8:6::f001"
         ]
       },
       {
@@ -5413,10 +5369,10 @@
         "city": "Los Angeles CA",
         "isp": "M247",
         "hostname": "us-lax-wg-403",
-        "wgpubkey": "mBqaWs6pti93U+1feyj6LRzzveNmeklancn3XuKoPWI=",
+        "wgpubkey": "4I8IzcTynn1of+k3EIoGtp6+pgfc/i0NiGWpOTqrcUs=",
         "ips": [
-          "146.70.173.130",
-          "2a0d:5600:8:d::d3f"
+          "146.70.172.2",
+          "2a0d:5600:8:d::f001"
         ]
       },
       {
@@ -5425,9 +5381,9 @@
         "city": "Los Angeles CA",
         "isp": "M247",
         "hostname": "us-lax-wg-404",
-        "wgpubkey": "YGl+lj1tk08U9x9Z73zowUW3rk8i0nPmYkxGzNdE4VM=",
+        "wgpubkey": "T3kE4PN6VEKT8d0BcFNtEVBpk6RbnewduAOOv6CU/S8=",
         "ips": [
-          "146.70.173.194",
+          "146.70.172.130",
           "2a0d:5600:8:2f::f001"
         ]
       },
@@ -5437,9 +5393,9 @@
         "city": "Los Angeles CA",
         "isp": "M247",
         "hostname": "us-lax-wg-405",
-        "wgpubkey": "Pe86fNGUd+AIeaabsn7Hk4clQf1kJvxOXPykfVGjeho=",
+        "wgpubkey": "/UoBLN1GsLrZVbA+fCKadPE73nVdQB5VFV9YBqRuuk8=",
         "ips": [
-          "146.70.172.2",
+          "89.45.4.130",
           "2a0d:5600:8:37::f001"
         ]
       },
@@ -5449,46 +5405,10 @@
         "city": "Los Angeles CA",
         "isp": "M247",
         "hostname": "us-lax-wg-406",
-        "wgpubkey": "K3KF3TCWbYcHF5XHL2zaifvQGHrPWoCjFYxDaJO71GA=",
+        "wgpubkey": "mhydb+/9ryFX1UUsg9O20Bo8CmGSx0S6ntwgPJwWlhU=",
         "ips": [
           "146.70.174.2",
-          "2a0d:5600:8:3b::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "M247",
-        "hostname": "us-lax-wg-407",
-        "wgpubkey": "1nGkBr+oLwK5lQcVt9vF6rGM5R3ra5bmYTGJfGIh0lk=",
-        "ips": [
-          "146.70.172.66",
           "2a0d:5600:8:38::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "M247",
-        "hostname": "us-lax-wg-408",
-        "wgpubkey": "9L5cW9VuUJUS2gH6H7ln2JeCI66fMnnjLiD5UymAtlo=",
-        "ips": [
-          "146.70.172.130",
-          "2a0d:5600:8:39::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "Los Angeles CA",
-        "isp": "M247",
-        "hostname": "us-lax-wg-409",
-        "wgpubkey": "V+LTWA5DxEVITAXqHexqBzeZo95b8r+3WR8g1FsbPQ4=",
-        "ips": [
-          "146.70.172.194",
-          "2a0d:5600:8:3a::f001"
         ]
       },
       {
@@ -5897,18 +5817,6 @@
         "ips": [
           "146.70.168.194",
           "2a0d:5600:24:1379::f001"
-        ]
-      },
-      {
-        "vpn": "wireguard",
-        "country": "USA",
-        "city": "New York NY",
-        "isp": "xtom",
-        "hostname": "us-nyc-wg-702",
-        "wgpubkey": "O81+YN0WHF4wuWRejhPG62PGK9bv/8BQTa6Ni3fomWM=",
-        "ips": [
-          "23.162.8.67",
-          "2602:fa1f:1::f033"
         ]
       },
       {
