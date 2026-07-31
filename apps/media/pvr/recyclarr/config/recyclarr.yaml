@@ -309,13 +309,9 @@ radarr:
           - name: DVD
           - name: SDTV
       - name: HD 1080p
+        trash_id: 92e9a65a52ae48478fb8e9f34238d823 # Base Profile
         reset_unmatched_scores:
           enabled: true
-        upgrade:
-          allowed: true
-          until_quality: Bluray-1080p
-          until_score: 10000
-        min_format_score: 0
         quality_sort: top
         qualities:
           - name: Bluray-1080p
@@ -384,71 +380,25 @@ radarr:
         - trash_id: b2f2af430f73f3ad1f9948f33e0f0cf8 # [Release Groups] HQ
           select_all: true
 
+        - trash_id: f4f1474b963b24cf983455743aa9906c # [Optional] Movie Versions
+          select_all: true
+
+        - trash_id: f8bf8eab4617f12dfdbd16303d8da245 # [Optional] Golden Rule HD
+          assign_scores_to:
+            - name: HD 1080p
+
+        - trash_id: ff204bbcecdd487d1cefcefdbf0c278d # [Optional] Golden Rule UHD
+          assign_scores_to:
+            - name: UHD 2160p
+
+        - trash_id: 9337080378236ce4c0b183e35790d2a7 # [Optional] Miscellaneous
+          select:
+            - 0d91270a7255a1e388fa85e959f359d8 # FreeLeech
+
+        - trash_id: a3ac6af01d78e4f21fcb75f601ac96df # [Unwanted] Unwanted Formats
+          select_all: true
+
     custom_formats:
-      - trash_ids:
-          # Movie Versions
-          - 0f12c086e289cf966fa5948eac571f44 # Hybrid
-          - 570bc9ebecd92723d2d21500f4be314c # Remaster
-          - eca37840c13c6ef2dd0262b141a5482f # 4K Remaster
-          - e0c07d59beb37348e975a930d5e50319 # Criterion Collection
-          - 9d27d9d2181838f76dee150882bdc58c # Masters of Cinema
-          - db9b4c4b53d312a3ca5f1378f6440fc9 # Vinegar Syndrome
-          - 957d0f44b592285f26449575e8b1167e # Special Edition
-          - eecf3a857724171f968a66cb5719e152 # IMAX
-          - 9f6cbff8cfe4ebbc1bde14c7b7bec0de # IMAX Enhanced
-
-          # HQ Release Groups
-          - ed27ebfef2f323e964fb1f61391bcb35 # HD Bluray Tier 01
-          - c20c8647f2746a1f4c4262b0fbbeeeae # HD Bluray Tier 02
-          - 5608c71bcebba0a5e666223bae8c9227 # HD Bluray Tier 03
-          - c20f169ef63c5f40c2def54abaf4438e # WEB Tier 01
-          - 403816d65392c79236dcb6dd591aeda4 # WEB Tier 02
-          - af94e0fe497124d1f9ce732069ec8c3b # WEB Tier 03
-
-          # Misc
-          - e7718d7a3ce595f289bfee26adc178f5 # Repack/Proper
-          - ae43b294509409a6a13919dedd4764c4 # Repack2
-          - 0d91270a7255a1e388fa85e959f359d8 # Freeleech
-
-          # Unwanted
-          - ed38b889b31be83fda192888e2286d83 # BR-DISK
-          - 90a6f9a284dff5103f6346090e6280c8 # LQ
-          - e204b80c87be9497a8a6eaff48f72905 # LQ (Release Title)
-          - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
-          - b8cd450cbfa689c0259a01d9e29ba3d6 # 3D
-          - 0a3f082873eb454bde444150b70253cc # Extras
-
-          # Optional
-          - b6832f586342ef70d9c128d40c07b872 # Bad Dual Groups
-          - ae9b7c9ebde1f3bd336a8cbd1ec4c5e5 # No-RlsGroup
-          - 7357cf5161efbf8c4d5d0c30b4815ee2 # Obfuscated
-          - 5c44f52a8714fdd79bb4d98e2673be1f # Retags
-
-          # Streaming Services
-          - b3b3a6ac74ecbd56bcdbefa4799fb9df # AMZN
-          - 40e9380490e748672c2522eaaeb692f7 # ATVP
-          - cc5e51a9e85a6296ceefe097a77f12f4 # BCORE
-          - f6ff65b3f4b464a79dcc75950fe20382 # CRAV
-          - 16622a6911d1ab5d5b8b713d5b0036d4 # CRiT
-          - 84272245b2988854bfb76a16e60baea5 # DSNP
-          - 917d1f2c845b2b466036b0cc2d7c72a3 # FOD
-          - 509e5f41146e278f9eab1ddaceb34515 # HBO
-          - 5763d1b0ce84aff3b21038eea8e9b8ad # HMAX
-          - 526d445d4c16214309f0fd2b3be18a89 # Hulu
-          - 6185878161f1e2eef9cd0641a0d09eae # IP
-          - 2a6039655313bf5dab1e43523b62c374 # MA
-          - 6a061313d22e51e0f25b7cd4dc065233 # MAX
-          - 170b1d363bd8516fbf3a3eb05d4faff6 # NF
-          - fbca986396c5e695ef7b2def3c755d01 # OViD
-          - bf7e73dd1d85b12cc527dc619761c840 # Pathe
-          - c9fd353f8f5f1baf56dc601c4cb29920 # PCOK
-          - e36a0ba1bc902b26ee40818a1d59b8bd # PMTP
-          - c2863d2a50c9acad1fb50e53ece60817 # STAN
-          - f1b0bae9bc222dab32c1b38b5a7a1088 # TVer
-          - 279bda7434fd9075786de274e6c3c202 # U-NEXT
-        assign_scores_to:
-          - name: HD 1080p
-
       - trash_ids:
           # Anime CF/Scoring
           - fb3ccc5d5cc8f77c9055d4cb4561dded # Anime BD Tier 01 (Top SeaDex Muxers)
