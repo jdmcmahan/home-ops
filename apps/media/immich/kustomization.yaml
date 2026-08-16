@@ -17,7 +17,7 @@ helmCharts:
     valuesFile: values-immich.yaml
   - name: app-template
     repo: https://bjw-s-labs.github.io/helm-charts
-    version: 5.0.1
+    version: 5.1.0
     releaseName: immichframe
     namespace: immich
     valuesFile: values-immichframe.yaml
