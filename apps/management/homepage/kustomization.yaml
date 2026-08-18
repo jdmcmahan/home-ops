@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - secrets.yaml
+  - oidc.yaml
   - route.yaml
 
 helmCharts:

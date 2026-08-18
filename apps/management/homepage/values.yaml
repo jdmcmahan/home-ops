@@ -21,8 +21,16 @@ env:
     value: "America/Chicago"
   - name: HOMEPAGE_ALLOWED_HOSTS
     value: homepage.mcmahan.io
+  - name: HOMEPAGE_AUTH_ENABLED
+    value: "true"
+  - name: HOMEPAGE_EXTERNAL_URL
+    value: https://homepage.mcmahan.io
+  - name: HOMEPAGE_OIDC_ISSUER
+    value: https://auth.mcmahan.io/application/o/homepage/
 
 envFrom:
+  - secretRef:
+      name: homepage-oidc
   - secretRef:
       name: argocd-apikey
   - secretRef:
