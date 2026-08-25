@@ -60,6 +60,16 @@ helmCharts:
           modules:
             - name: rook
               enabled: true
+        healthCheck:
+          muteHealthWarning: # https://github.com/siderolabs/talos/issues/14109
+            AUTH_INSECURE_ROTATING_SERVICE_KEY_TYPE:
+              policy: mute
+            AUTH_INSECURE_CLIENT_KEY_TYPE:
+              policy: mute
+            AUTH_INSECURE_KEYS_ALLOWED:
+              policy: mute
+            AUTH_INSECURE_KEYS_CREATABLE:
+              policy: mute
       cephBlockPoolsVolumeSnapshotClass:
         enabled: true
         isDefault: true
