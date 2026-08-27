@@ -1,8 +1,6 @@
 ---
 driver:
   enabled: false
-  nvidiaDriverCRD:
-    enabled: true
 
 toolkit:
   enabled: false
