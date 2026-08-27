@@ -30,6 +30,11 @@ machines:
   - 4c4c4544-0052-4e10-8054-b3c04f4e5932
   - 4c4c4544-0052-4810-8054-b3c04f4e5932
 ---
+kind: Workers
+name: ai
+machines:
+  - 3250d607-11d3-49f3-a350-2f9f0bc41ce7
+---
 kind: Machine
 name: 4c4c4544-004a-4310-8042-b4c04f365132
 install:
@@ -149,3 +154,17 @@ patches:
 systemExtensions:
   - siderolabs/intel-ucode
   - siderolabs/i915
+---
+kind: Machine
+name: 3250d607-11d3-49f3-a350-2f9f0bc41ce7
+install:
+  disk: /dev/sda
+patches:
+  - name: hostname
+    inline:
+      machine:
+        network:
+          hostname: spidermom
+systemExtensions:
+  - siderolabs/qemu-guest-agent
+  - siderolabs/nvidia-open-gpu-kernel-modules-production
