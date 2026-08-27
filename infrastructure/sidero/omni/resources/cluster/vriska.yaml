@@ -168,6 +168,5 @@ patches:
   - name: nvidia
     file: patches/nvidia.yaml
 systemExtensions:
-  - siderolabs/nvidia-open-gpu-kernel-modules-production
+  - siderolabs/nonfree-kmod-nvidia-production
   - siderolabs/nvidia-container-toolkit-production
-  - siderolabs/nvidia-gdrdrv-device
