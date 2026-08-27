@@ -5,9 +5,9 @@ kind: Kustomization
 
 resources:
   - "namespace.yaml"
-  - "https://raw.githubusercontent.com/NVIDIA/gpu-operator/main/deployments/gpu-operator/crds/nvidia.com_clusterpolicies.yaml?ref=v26.7.0"
-  - "https://raw.githubusercontent.com/NVIDIA/gpu-operator/main/deployments/gpu-operator/crds/nvidia.com_nvidiadrivers.yaml?ref=v26.7.0"
-  - "https://raw.githubusercontent.com/NVIDIA/gpu-operator/main/deployments/gpu-operator/crds/nvidia.com_gpuclusters.yaml?ref=v26.7.0"
+  - "https://github.com/NVIDIA/gpu-operator//deployments/gpu-operator/crds/nvidia.com_clusterpolicies.yaml?ref=v26.7.0"
+  - "https://github.com/NVIDIA/gpu-operator//deployments/gpu-operator/crds/nvidia.com_nvidiadrivers.yaml?ref=v26.7.0"
+  - "https://github.com/NVIDIA/gpu-operator//deployments/gpu-operator/crds/nvidia.com_gpuclusters.yaml?ref=v26.7.0"
 
 helmCharts:
   - name: gpu-operator
