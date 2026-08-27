@@ -171,3 +171,4 @@ systemExtensions:
   - siderolabs/qemu-guest-agent
   - siderolabs/nvidia-open-gpu-kernel-modules-production
   - siderolabs/nvidia-container-toolkit-production
+  - siderolabs/nvidia-gdrdrv-device
