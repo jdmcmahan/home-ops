@@ -1,5 +1,6 @@
 ---
 driver:
+  enabled: false
   nvidiaDriverCRD:
     enabled: true
 
