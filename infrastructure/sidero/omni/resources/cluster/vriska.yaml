@@ -33,7 +33,7 @@ machines:
 kind: Workers
 name: ai
 machines:
-  - 3250d607-11d3-49f3-a350-2f9f0bc41ce7
+  - ad064900-a236-11f1-926b-11bbce7a6b00
 ---
 kind: Machine
 name: 4c4c4544-004a-4310-8042-b4c04f365132
@@ -156,9 +156,9 @@ systemExtensions:
   - siderolabs/i915
 ---
 kind: Machine
-name: 3250d607-11d3-49f3-a350-2f9f0bc41ce7
+name: ad064900-a236-11f1-926b-11bbce7a6b00
 install:
-  disk: /dev/sda
+  disk: /dev/nvme0n1
 patches:
   - name: hostname
     inline:
