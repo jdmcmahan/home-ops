@@ -168,5 +168,5 @@ patches:
   - name: nvidia
     file: patches/nvidia.yaml
 systemExtensions:
-  - siderolabs/nonfree-kmod-nvidia-production
-  - siderolabs/nvidia-container-toolkit-production
+  - siderolabs/nonfree-kmod-nvidia-lts
+  - siderolabs/nvidia-container-toolkit-lts
