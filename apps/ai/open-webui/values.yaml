@@ -2,7 +2,23 @@
 ollama:
   enabled: false
 
-enableOpenaiApi: false
+extraEnvVars:
+  # features
+  - name: ENABLE_OLLAMA_API
+    value: "true"
+  - name: OLLAMA_BASE_URL
+    value: "http://ollama.ollama.svc.cluster.local:11434"
+  - name: ENABLE_OPENAI_API
+    value: "false"
+  # search
+  - name: ENABLE_RAG_WEB_SEARCH
+    value: "true"
+  - name: ENABLE_SEARCH_QUERY
+    value: "true"
+  - name: RAG_WEB_SEARCH_ENGINE
+    value: "searxng"
+  - name: SEARXNG_QUERY_URL
+    value: "http://searxng.searxng.svc.cluster.local:8080/search?q=<query>"
 
 route:
   enabled: true
