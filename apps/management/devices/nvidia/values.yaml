@@ -1,6 +1,14 @@
 ---
 driver:
-  enabled: true
-  version: "580.178.04"
+  enabled: false
   upgradePolicy:
     autoUpgrade: false
+
+toolkit:
+  enabled: false
+
+cdi:
+  enabled: false
+
+hostPaths:
+  driverInstallDir: /usr/local
