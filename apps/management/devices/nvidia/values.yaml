@@ -7,8 +7,5 @@ driver:
 toolkit:
   enabled: false
 
-cdi:
-  enabled: false
-
 hostPaths:
   driverInstallDir: /usr/local
