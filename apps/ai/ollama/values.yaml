@@ -4,9 +4,7 @@ ollama:
     enabled: true
   models:
     pull:
-      - gemma3
-      - mistral
-      - qwen3-coder
+      - qwen2.5-coder
 
 httpRoute:
   enabled: true
