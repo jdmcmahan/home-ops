@@ -1,0 +1,12 @@
+---
+ollama:
+  gpu:
+    enabled: true
+
+httpRoute:
+  enabled: true
+  hostnames: ["ollama.mcmahan.io"]
+  parentRefs:
+    - name: local
+      namespace: traefik
+      sectionName: websecure

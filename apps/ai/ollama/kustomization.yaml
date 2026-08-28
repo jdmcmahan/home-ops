@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://json.schemastore.org/kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: ollama
+    repo: https://helm.otwld.com
+    version: 1.78.0
+    releaseName: ollama
+    namespace: ollama
+    valuesFile: values.yaml
