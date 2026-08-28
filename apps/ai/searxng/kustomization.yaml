@@ -1,0 +1,12 @@
+---
+# yaml-language-server: $schema=https://json.schemastore.org/kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: searxng
+    repo: https://techpipe-io.github.io/searxng-helm-chart
+    version: 0.1.11
+    releaseName: searxng
+    namespace: searxng
+    valuesFile: values.yaml

@@ -1,0 +1,8 @@
+---
+gateway:
+  enabled: true
+  hostnames: ["searxng.mcmahan.io"]
+  parentRefs:
+    - name: local
+      namespace: traefik
+      sectionName: websecure
