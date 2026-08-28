@@ -9,7 +9,4 @@ hostPaths:
   driverInstallDir: /usr/local
 
 validator:
-  plugin:
-    env:
-      - name: WITH_WORKLOAD
-        value: "false"
+  version: v26.3.0
