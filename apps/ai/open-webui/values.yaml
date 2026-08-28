@@ -3,6 +3,8 @@ ollama:
   enabled: false
   ollamaUrlsFromExtraEnv: true
 
+ollamaUrlsFromExtraEnv: true
+
 extraEnvVars:
   # features
   - name: ENABLE_OLLAMA_API
