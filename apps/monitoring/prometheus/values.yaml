@@ -171,6 +171,10 @@ grafana:
         revision: 3
         datasource:
           - { name: DS_PROMETHEUS, value: Prometheus }
+      nvidia:
+        # renovate: depName="NVIDIA GPU Operator & DCGM Observability"
+        gnetId: 25617
+        revision: 1
       traefik:
         # renovate: depName="Traefik Official Kubernetes Dashboard"
         gnetId: 17347
