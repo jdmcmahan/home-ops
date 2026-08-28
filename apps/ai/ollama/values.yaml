@@ -2,6 +2,9 @@
 ollama:
   gpu:
     enabled: true
+  models:
+    pull:
+      - gemma3
 
 httpRoute:
   enabled: true
