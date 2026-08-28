@@ -2,6 +2,8 @@
 ollama:
   enabled: false
 
+enableOpenaiApi: false
+
 route:
   enabled: true
   hostnames: ["ai.mcmahan.io"]
