@@ -1,7 +1,22 @@
 ---
+config:
+  settings:
+    server:
+      base_url: "https://search.mcmahan.io"
+    search:
+      autocomplete: duckduckgo
+      favicon_resolver: duckduckgo
+      languages:
+        - all
+        - en
+        - en-US
+      formats:
+        - html
+        - json
+
 gateway:
   enabled: true
-  hostnames: ["searxng.mcmahan.io"]
+  hostnames: [ "search.mcmahan.io" ]
   parentRefs:
     - name: local
       namespace: traefik
