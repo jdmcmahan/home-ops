@@ -1,6 +1,8 @@
 ---
 driver:
   enabled: false
+  upgradePolicy:
+    autoUpgrade: false
 
 toolkit:
   enabled: false
