@@ -9,7 +9,7 @@ extraEnvVars:
   # features
   - name: ENABLE_OLLAMA_API
     value: "true"
-  - name: OLLAMA_BASE_URL
+  - name: OLLAMA_BASE_URLS
     value: "http://ollama.ollama.svc.cluster.local:11434"
   - name: ENABLE_OPENAI_API
     value: "false"
