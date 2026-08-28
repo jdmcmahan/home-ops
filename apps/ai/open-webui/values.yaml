@@ -1,6 +1,7 @@
 ---
 ollama:
   enabled: false
+  ollamaUrlsFromExtraEnv: true
 
 extraEnvVars:
   # features
