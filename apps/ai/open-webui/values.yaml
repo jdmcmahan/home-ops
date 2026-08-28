@@ -5,6 +5,8 @@ ollama:
 ollamaUrlsFromExtraEnv: true
 
 extraEnvVars:
+  - name: ENABLE_PERSISTENT_CONFIG
+    value: "false"
   # features
   - name: ENABLE_OLLAMA_API
     value: "true"
