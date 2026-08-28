@@ -6,7 +6,7 @@ ollama:
     pull:
       - gemma3
       - mistral
-      - qwen3
+      - qwen3.5
 
 httpRoute:
   enabled: true
