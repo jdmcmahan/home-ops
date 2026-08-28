@@ -1,4 +1,7 @@
 ---
+ollama:
+  enabled: false
+
 extraEnvVars:
   # features
   - name: ENABLE_OLLAMA_API
