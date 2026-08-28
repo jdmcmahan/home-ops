@@ -1,7 +1,6 @@
 ---
 ollama:
   enabled: false
-  ollamaUrlsFromExtraEnv: true
 
 ollamaUrlsFromExtraEnv: true
 
