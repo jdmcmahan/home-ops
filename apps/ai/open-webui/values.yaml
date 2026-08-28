@@ -1,0 +1,11 @@
+---
+ollama:
+  enabled: false
+
+route:
+  enabled: true
+  hostnames: ["ai.mcmahan.io"]
+  parentRefs:
+    - name: local
+      namespace: traefik
+      sectionName: websecure
