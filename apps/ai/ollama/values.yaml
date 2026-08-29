@@ -8,6 +8,9 @@ ollama:
       - qwen3.5:35b
   clean: true
 
+service:
+  type: LoadBalancer
+
 httpRoute:
   enabled: true
   hostnames: ["ollama.mcmahan.io"]
