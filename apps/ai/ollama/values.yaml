@@ -6,6 +6,7 @@ ollama:
     pull:
       - qwen2.5-coder
       - qwen3.5:35b
+  clean: true
 
 httpRoute:
   enabled: true
@@ -14,3 +15,8 @@ httpRoute:
     - name: local
       namespace: traefik
       sectionName: websecure
+
+persistentVolume:
+  enabled: true
+  size: 120Gi
+  storageClass: ceph-block
