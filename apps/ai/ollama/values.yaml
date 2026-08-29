@@ -4,7 +4,7 @@ ollama:
     enabled: true
   models:
     pull:
-      - qwen2.5-coder
+      - qwen3.5:9b
       - qwen3.5:35b
   clean: true
 
