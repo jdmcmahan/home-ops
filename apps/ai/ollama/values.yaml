@@ -5,6 +5,7 @@ ollama:
   models:
     pull:
       - qwen2.5-coder
+      - qwen3.5:35b
 
 httpRoute:
   enabled: true
