@@ -11,6 +11,8 @@ ollama:
 extraEnv:
   - name: OLLAMA_CONTEXT_LENGTH
     value: "64000"
+  - name: OLLAMA_KEEP_ALIVE
+    value: "30m"
 
 httpRoute:
   enabled: true
