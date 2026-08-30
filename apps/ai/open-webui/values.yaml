@@ -29,3 +29,13 @@ route:
     - name: local
       namespace: traefik
       sectionName: websecure
+
+sso:
+  enabled: true
+  oidc:
+    enabled: true
+    providerName: "authentik"
+    providerUrl: "https://auth.mcmahan.io/application/o/open-webui/.well-known/openid-configuration"
+    clientExistingSecret: open-webui-oidc
+    clientIdExistingSecretKey: OAUTH_CLIENT_ID
+    clientExistingSecretKey: OAUTH_CLIENT_SECRET
