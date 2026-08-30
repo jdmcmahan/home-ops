@@ -26,6 +26,8 @@ extraEnvVars:
     value: "searxng"
   - name: SEARXNG_QUERY_URL
     value: "http://searxng.searxng.svc.cluster.local:8080/search?q=<query>"
+  - name: USER_AGENT
+    value: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 route:
   enabled: true
