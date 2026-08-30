@@ -8,6 +8,10 @@ ollama:
       - qwen3.5:35b
   clean: true
 
+extraEnv:
+  - name: OLLAMA_CONTEXT_LENGTH
+    value: "64000"
+
 service:
   type: LoadBalancer
 
