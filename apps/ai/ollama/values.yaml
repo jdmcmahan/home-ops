@@ -12,9 +12,6 @@ extraEnv:
   - name: OLLAMA_CONTEXT_LENGTH
     value: "64000"
 
-service:
-  type: LoadBalancer
-
 httpRoute:
   enabled: true
   hostnames: ["ollama.mcmahan.io"]
