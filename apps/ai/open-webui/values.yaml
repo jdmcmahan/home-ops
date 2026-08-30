@@ -1,4 +1,7 @@
 ---
+pipelines:
+  enabled: false
+
 ollama:
   enabled: false
 
