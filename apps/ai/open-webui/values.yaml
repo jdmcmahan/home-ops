@@ -12,6 +12,10 @@ extraEnvVars:
     value: "https://ai.mcmahan.io"
   - name: ENABLE_PERSISTENT_CONFIG
     value: "false"
+  - name: CORS_ENABLE
+    value: "true"
+  - name: CORS_ALLOW_ORIGIN
+    value: "https://ai.mcmahan.io;http://open-webui.open-webui.svc.cluster.local"
   # features
   - name: ENABLE_OLLAMA_API
     value: "true"
