@@ -39,6 +39,7 @@ route:
 
 sso:
   enabled: true
+  mergeAccountsByEmail: true
   oidc:
     enabled: true
     providerName: "authentik"
@@ -46,4 +47,3 @@ sso:
     clientExistingSecret: open-webui-oidc
     clientIdExistingSecretKey: OAUTH_CLIENT_ID
     clientExistingSecretKey: OAUTH_CLIENT_SECRET
-    mergeAccountsByEmail: true
