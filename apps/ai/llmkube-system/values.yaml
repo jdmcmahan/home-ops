@@ -10,9 +10,9 @@ prometheus:
 
 grafana:
   dashboards:
-    enabled: true
+    enabled: false
     operator:
-      enabled: true
+      enabled: false
 
 modelCache:
   enabled: true
