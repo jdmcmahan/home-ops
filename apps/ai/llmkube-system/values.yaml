@@ -1,0 +1,20 @@
+---
+metrics:
+  enabled: true
+
+prometheus:
+  serviceMonitor:
+    enabled: true
+  inferencePodMonitor:
+    enabled: true
+
+grafana:
+  dashboards:
+    enabled: true
+    operator:
+      enabled: true
+
+modelCache:
+  enabled: true
+  size: 120Gi
+  storageClass: ceph-block
