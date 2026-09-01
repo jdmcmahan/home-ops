@@ -13,3 +13,8 @@ grafana:
     enabled: false
     operator:
       enabled: false
+
+modelCache:
+  enabled: true
+  size: 120Gi
+  storageClass: ceph-block
