@@ -14,7 +14,7 @@ spec:
       enabled: true
       count: 1
 ---
-apiVersion: serving.llmkube.dev/v1alpha1
+apiVersion: inference.llmkube.dev/v1alpha1
 kind: InferenceService
 metadata:
   name: qwen3.5
