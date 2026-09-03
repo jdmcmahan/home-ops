@@ -23,4 +23,4 @@ spec:
   runtime: llamacpp
   endpoint:
     port: 8080
-    type: ClusterIP
+    type: LoadBalancer
