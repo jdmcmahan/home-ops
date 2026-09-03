@@ -165,6 +165,16 @@ patches:
       machine:
         network:
           hostname: spidermom
+  - name: ai-models-volume
+    inline: |
+      apiVersion: v1alpha1
+      kind: UserVolumeConfig
+      name: ai-models
+      provisioning:
+        diskSelector:
+          match: disk.transport == 'nvme'
+        minSize: 240GB
+        maxSize: 500GB
   - name: nvidia
     file: patches/nvidia.yaml
 systemExtensions:
