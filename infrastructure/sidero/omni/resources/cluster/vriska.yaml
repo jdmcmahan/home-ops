@@ -11,9 +11,7 @@ features:
     interval: 24h
 patches:
   - name: control-plane-workers
-    inline:
-      cluster:
-        allowSchedulingOnControlPlanes: true
+    file: patches/control-plane-workers.yaml
   - name: cilium-override
     file: patches/cilium-override.yaml
 ---
@@ -41,10 +39,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: vision-eightfold
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: vision-eightfold
   - name: kexec-disable
     file: patches/kexec-disable.yaml
   - name: gc-threshold
@@ -61,10 +59,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: psychic-manipulation
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: psychic-manipulation
   - name: kexec-disable
     file: patches/kexec-disable.yaml
   - name: gc-threshold
@@ -81,10 +79,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: enviable-cerulean-swill
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: enviable-cerulean-swill
   - name: kexec-disable
     file: patches/kexec-disable.yaml
   - name: gc-threshold
@@ -101,10 +99,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: magic-8-balls
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: magic-8-balls
   - name: kexec-disable
     file: patches/kexec-disable.yaml
   - name: gc-threshold
@@ -121,10 +119,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: omniscient-cue-ball
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: omniscient-cue-ball
   - name: kexec-disable
     file: patches/kexec-disable.yaml
   - name: gc-threshold
@@ -141,10 +139,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: flourite-octet
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: flourite-octet
   - name: kexec-disable
     file: patches/kexec-disable.yaml
   - name: gc-threshold
@@ -161,10 +159,10 @@ install:
   disk: /dev/nvme0n1
 patches:
   - name: hostname
-    inline:
-      machine:
-        network:
-          hostname: spidermom
+    inline: |
+      apiVersion: v1alpha1
+      kind: HostnameConfig
+      hostname: spidermom
   - name: limit-ephemeral-volume
     inline: |
       apiVersion: v1alpha1
