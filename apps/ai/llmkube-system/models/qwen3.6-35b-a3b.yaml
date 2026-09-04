@@ -24,6 +24,9 @@ spec:
   moeCPUOffload: true
   resources:
     hostMemory: "24Gi"
+  extraArgs:
+    - --no-mmap
+    - --reasoning-preserve
   endpoint:
     port: 8080
     type: LoadBalancer
