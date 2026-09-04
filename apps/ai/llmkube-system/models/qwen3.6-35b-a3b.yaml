@@ -2,11 +2,11 @@
 apiVersion: inference.llmkube.dev/v1alpha1
 kind: Model
 metadata:
-  name: qwen3.5-9b
+  name: qwen3.6-35b-a3b
 spec:
-  source: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/resolve/main/Qwen3.5-9B-Q4_K_M.gguf
+  source: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF/resolve/main/Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf
   format: gguf
-  quantization: Q4_K_M
+  quantization: Q4_K_XL
   hardware:
     accelerator: cuda
     gpu:
@@ -16,11 +16,14 @@ spec:
 apiVersion: inference.llmkube.dev/v1alpha1
 kind: InferenceService
 metadata:
-  name: qwen3.5
+  name: qwen3.6-35b-a3b
 spec:
   replicas: 1
-  modelRef: qwen3.5-9b
+  modelRef: qwen3.6-35b-a3b
   runtime: llamacpp
+  accelerator:
+    hostMemory: "24Gi"
+    moeCPUOffload: true
   endpoint:
     port: 8080
     type: LoadBalancer
