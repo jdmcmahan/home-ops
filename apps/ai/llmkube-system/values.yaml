@@ -11,6 +11,8 @@ prometheus:
 grafana:
   dashboards:
     enabled: true
+    additionalLabels:
+      grafana_dashboard: "1"
     operator:
       enabled: false
 
