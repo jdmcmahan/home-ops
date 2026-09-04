@@ -5,6 +5,8 @@ kind: Kustomization
 
 resources:
   - models/qwen3.6-35b-a3b.yaml
+  - models/router.yaml
+  - route.yaml
 
 helmCharts:
   - name: llmkube

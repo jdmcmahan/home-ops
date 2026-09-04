@@ -8,6 +8,8 @@ prometheus:
     enabled: true
   inferencePodMonitor:
     enabled: true
+  routerPodMonitor:
+    enabled: true
 
 grafana:
   dashboards:

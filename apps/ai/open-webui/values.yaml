@@ -9,13 +9,13 @@ ollamaUrlsFromExtraEnv: true
 
 extraEnvVars:
   - name: WEBUI_URL
-    value: "https://ai.mcmahan.io"
+    value: "https://chat.mcmahan.io"
   - name: ENABLE_PERSISTENT_CONFIG
     value: "false"
   - name: CORS_ENABLE
     value: "true"
   - name: CORS_ALLOW_ORIGIN
-    value: "https://ai.mcmahan.io;http://open-webui.open-webui.svc.cluster.local"
+    value: "https://chat.mcmahan.io;http://open-webui.open-webui.svc.cluster.local"
   # features
   - name: ENABLE_OLLAMA_API
     value: "true"
@@ -35,7 +35,7 @@ extraEnvVars:
 
 route:
   enabled: true
-  hostnames: ["ai.mcmahan.io"]
+  hostnames: ["chat.mcmahan.io"]
   parentRefs:
     - name: local
       namespace: traefik
