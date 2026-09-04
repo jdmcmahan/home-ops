@@ -10,7 +10,7 @@ prometheus:
 
 grafana:
   dashboards:
-    enabled: false
+    enabled: true
     operator:
       enabled: false
 
