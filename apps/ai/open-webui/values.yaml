@@ -6,7 +6,7 @@ ollama:
   enabled: false
 
 openaiBaseApiUrls:
-  "http://model-router-router-proxy.llmkube-system.svc.cluster.local:8080"
+  "http://model-router-router-proxy.llmkube-system.svc.cluster.local:8080/v1"
 
 extraEnvVars:
   - name: WEBUI_URL
