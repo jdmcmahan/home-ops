@@ -2,10 +2,8 @@
 pipelines:
   enabled: false
 
-ollama:
-  enabled: false
-
-ollamaUrlsFromExtraEnv: true
+openaiBaseApiUrls:
+  "http://model-router-router-proxy.llmkube-system.svc.cluster.local:8080"
 
 extraEnvVars:
   - name: WEBUI_URL
@@ -16,13 +14,6 @@ extraEnvVars:
     value: "true"
   - name: CORS_ALLOW_ORIGIN
     value: "https://chat.mcmahan.io;http://open-webui.open-webui.svc.cluster.local"
-  # features
-  - name: ENABLE_OLLAMA_API
-    value: "true"
-  - name: OLLAMA_BASE_URLS
-    value: "http://ollama.ollama.svc.cluster.local:11434"
-  - name: ENABLE_OPENAI_API
-    value: "false"
   # search
   - name: ENABLE_WEB_SEARCH
     value: "true"
