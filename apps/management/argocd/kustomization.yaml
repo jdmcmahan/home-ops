@@ -72,7 +72,7 @@ helmCharts:
           minReplicas: 2
         httproute:
           enabled: true
-          hostnames: [ "argocd.mcmahan.io" ]
+          hostnames: ["argocd.mcmahan.io"]
           parentRefs:
             - name: remote
               namespace: traefik

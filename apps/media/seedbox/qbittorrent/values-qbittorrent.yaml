@@ -13,9 +13,9 @@ controllers:
           repository: docker.io/busybox
           tag: 1.37.0
         command:
-            - /bin/sh
-            - -c
-            - cp /staging/servers.json /gluetun/servers.json
+          - /bin/sh
+          - -c
+          - cp /staging/servers.json /gluetun/servers.json
       gluetun:
         dependsOn:
           - gluetun-config-staging

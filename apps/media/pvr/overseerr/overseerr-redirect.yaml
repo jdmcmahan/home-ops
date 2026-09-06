@@ -7,9 +7,9 @@ metadata:
 spec:
   hostnames: ["overseerr.mcmahan.io"]
   parentRefs:
-      - name: remote
-        namespace: traefik
-        sectionName: websecure
+    - name: remote
+      namespace: traefik
+      sectionName: websecure
   rules:
     - filters:
         - type: RequestRedirect

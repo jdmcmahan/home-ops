@@ -139,7 +139,7 @@ grafana:
         gnetId: 19363
         revision: 1
         datasource:
-          - { name: DS_PROMETHEUS, value: Prometheus }
+          - {name: DS_PROMETHEUS, value: Prometheus}
       immich:
         # renovate: depName="Immich Overview"
         gnetId: 22555
@@ -150,7 +150,7 @@ grafana:
         gnetId: 20162
         revision: 6
         datasource:
-          - { name: DS_PROMETHEUS, value: Prometheus }
+          - {name: DS_PROMETHEUS, value: Prometheus}
       cloudnative-pg:
         # renovate: depName="CloudNativePG"
         gnetId: 20417
@@ -164,13 +164,13 @@ grafana:
         gnetId: 25156
         revision: 1
         datasource:
-          - { name: DS_PROMETHEUS, value: Prometheus }
+          - {name: DS_PROMETHEUS, value: Prometheus}
       smartctl-exporter:
         # renovate: depName="SMARTctl Exporter Dashboard"
         gnetId: 22604
         revision: 3
         datasource:
-          - { name: DS_PROMETHEUS, value: Prometheus }
+          - {name: DS_PROMETHEUS, value: Prometheus}
       nvidia:
         # renovate: depName="NVIDIA GPU Operator & DCGM Observability"
         gnetId: 25617
@@ -185,10 +185,10 @@ grafana:
         gnetId: 18817
         revision: 1
         datasource:
-          - { name: DS_PROMETHEUS, value: Prometheus }
+          - {name: DS_PROMETHEUS, value: Prometheus}
       volsync:
         # renovate: depName="VolSync Dashboard"
         gnetId: 21356
         revision: 3
         datasource:
-          - { name: DS_PROMETHEUS, value: Prometheus }
+          - {name: DS_PROMETHEUS, value: Prometheus}

@@ -1,3 +1,4 @@
+---
 kvmd:
   gpio:
     drivers:
@@ -80,13 +81,13 @@ kvmd:
         switch: false
     view:
       table:
-      - ["TESMART Switch"]
-      - []
-      - ["#vision-eightfold", server0_led, server0_switch|Switch]
-      - ["#enviable-cerulean-swill", server1_led, server1_switch|Switch]
-      - ["#psychic-manipulation", server2_led, server2_switch|Switch]
-      - ["#omniscient-cue-ball", server3_led, server3_switch|Switch]
-      - ["#flourite-octet", server4_led, server4_switch|Switch]
-      - ["#magic-8-balls", server5_led, server5_switch|Switch]
-      - ["#empty", server6_led, server6_switch|Switch]
-      - ["#empty", server7_led, server7_switch|Switch]
+        - ["TESMART Switch"]
+        - []
+        - ["#vision-eightfold", server0_led, server0_switch|Switch]
+        - ["#enviable-cerulean-swill", server1_led, server1_switch|Switch]
+        - ["#psychic-manipulation", server2_led, server2_switch|Switch]
+        - ["#omniscient-cue-ball", server3_led, server3_switch|Switch]
+        - ["#flourite-octet", server4_led, server4_switch|Switch]
+        - ["#magic-8-balls", server5_led, server5_switch|Switch]
+        - ["#empty", server6_led, server6_switch|Switch]
+        - ["#empty", server7_led, server7_switch|Switch]
