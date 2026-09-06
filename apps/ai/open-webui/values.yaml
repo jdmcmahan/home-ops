@@ -2,6 +2,9 @@
 pipelines:
   enabled: false
 
+ollama:
+  enabled: false
+
 openaiBaseApiUrls:
   "http://model-router-router-proxy.llmkube-system.svc.cluster.local:8080"
 
