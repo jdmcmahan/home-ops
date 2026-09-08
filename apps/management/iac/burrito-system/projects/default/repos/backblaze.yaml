@@ -75,6 +75,20 @@ spec:
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
 metadata:
+  name: backblaze-authentik
+  namespace: burrito-project-default
+spec:
+  branch: "main"
+  repository:
+    name: backblaze
+    namespace: burrito-project-default
+  path: "authentik"
+  runHistoryPolicy:
+    runs: 1
+---
+apiVersion: config.terraform.padok.cloud/v1alpha1
+kind: TerraformLayer
+metadata:
   name: backblaze-omni
   namespace: burrito-project-default
 spec:
