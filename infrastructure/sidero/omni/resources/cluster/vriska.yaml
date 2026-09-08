@@ -179,7 +179,7 @@ patches:
       name: miroir
       provisioning:
         diskSelector:
-          match: disk.name == 'nvme0n1'
+          match: disk.dev_path == '/dev/nvme0n1'
         minSize: 240GiB
         maxSize: 480GiB
   - name: nvidia
