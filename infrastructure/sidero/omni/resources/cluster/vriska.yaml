@@ -182,6 +182,12 @@ patches:
           match: disk.dev_path == '/dev/nvme0n1'
         minSize: 240GiB
         maxSize: 480GiB
+  - name: miroir-lvm
+    inline:
+      machine:
+        kernel:
+          modules:
+            - name: dm_thin_pool
   - name: nvidia
     file: patches/nvidia.yaml
 systemExtensions:
