@@ -64,3 +64,5 @@ spec:
   repository:
     name: cloudflare
     namespace: burrito-project-default
+  runHistoryPolicy:
+    runs: 1
