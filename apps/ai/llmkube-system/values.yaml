@@ -2,11 +2,14 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/defilantech/LLMKube/main/charts/llmkube/values.schema.json
 metrics:
   enabled: true
+  secure: false
 
 prometheus:
   serviceMonitor:
     enabled: true
   inferencePodMonitor:
+    enabled: true
+  routerPodMonitor:
     enabled: true
 
 grafana:
@@ -19,6 +22,5 @@ grafana:
 
 modelCache:
   enabled: true
-  mode: perService
   size: 120Gi
-  storageClass: ceph-block
+  storageClass: miroir-local

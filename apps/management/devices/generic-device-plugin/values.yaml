@@ -13,13 +13,13 @@ controllers:
           repository: ghcr.io/squat/generic-device-plugin
           tag: latest@sha256:dc192e164c69b03f156765793a1be62ca437709ae477b27ca7d8f3dcf5021576
         args:
-        - --device
-        - |
-          name: tun
-          groups:
-            - count: 1000
-              paths:
-                - path: /dev/net/tun
+          - --device
+          - |
+            name: tun
+            groups:
+              - count: 1000
+                paths:
+                  - path: /dev/net/tun
         resources:
           requests:
             cpu: 50m

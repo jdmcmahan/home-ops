@@ -21,7 +21,7 @@ sonarr:
 
     quality_profiles:
       - name: UHD 2160p
-        trash_id: e58cf4e090184db3b3d7c79c1a9e9b4a # Base Profile
+        trash_id: e58cf4e090184db3b3d7c79c1a9e9b4a  # Base Profile
         reset_unmatched_scores:
           enabled: true
         quality_sort: top
@@ -54,7 +54,7 @@ sonarr:
           - name: DVD
           - name: SDTV
       - name: HD 1080p
-        trash_id: e58cf4e090184db3b3d7c79c1a9e9b4a # Base Profile
+        trash_id: e58cf4e090184db3b3d7c79c1a9e9b4a  # Base Profile
         reset_unmatched_scores:
           enabled: true
         upgrade:
@@ -84,7 +84,7 @@ sonarr:
           - name: DVD
           - name: SDTV
       - name: HD 1080p - Anime
-        trash_id: 20e0fc959f1f1704bed501f23bdae76f # [Anime] Remux-1080p
+        trash_id: 20e0fc959f1f1704bed501f23bdae76f  # [Anime] Remux-1080p
         reset_unmatched_scores:
           enabled: true
         min_format_score: 0
@@ -116,45 +116,45 @@ sonarr:
 
     custom_format_groups:
       add:
-        - trash_id: d776a1ea912a117d66d83b880ff2055d # [HDR Formats] DV (w/o HDR fallback)
+        - trash_id: d776a1ea912a117d66d83b880ff2055d  # [HDR Formats] DV (w/o HDR fallback)
 
-        - trash_id: e1053c0ef622df3749fa43c22865663a # [HDR Formats] SDR
+        - trash_id: e1053c0ef622df3749fa43c22865663a  # [HDR Formats] SDR
           select:
-            - 2016d1676f5ee13a5b7257ff86ac9a93 # SDR
+            - 2016d1676f5ee13a5b7257ff86ac9a93  # SDR
 
-        - trash_id: b4a4353e3b3e6789dbef07677ff23686 # [Release Groups] HQ
+        - trash_id: b4a4353e3b3e6789dbef07677ff23686  # [Release Groups] HQ
           select_all: true
 
-        - trash_id: 35fb4585dcd9e2a5ac732e4309f5a45a # [Streaming Services] Asian
+        - trash_id: 35fb4585dcd9e2a5ac732e4309f5a45a  # [Streaming Services] Asian
 
-        - trash_id: f60f4401ce880aad62e9d21c8bb6b91a # [Streaming Services] Dutch
+        - trash_id: f60f4401ce880aad62e9d21c8bb6b91a  # [Streaming Services] Dutch
 
-        - trash_id: ddab3095a5d2f436f369263840af34f9 # [Streaming Services] UK
+        - trash_id: ddab3095a5d2f436f369263840af34f9  # [Streaming Services] UK
 
-        - trash_id: 7832db22b71ab669458c17a2850d6913 # [Streaming Services] Miscellaneous
+        - trash_id: 7832db22b71ab669458c17a2850d6913  # [Streaming Services] Miscellaneous
           select_all: true
 
-        - trash_id: a4a95b9f7bdf10dcb005e765155e4d24 # [Optional] Series Versions
+        - trash_id: a4a95b9f7bdf10dcb005e765155e4d24  # [Optional] Series Versions
           select_all: true
 
-        - trash_id: 158188097a58d7687dee647e04af0da3 # [Optional] Golden Rule HD
+        - trash_id: 158188097a58d7687dee647e04af0da3  # [Optional] Golden Rule HD
           assign_scores_to:
             - name: HD 1080p
 
-        - trash_id: e3f37512790f00d0e89e54fe5e790d1c # [Optional] Golden Rule UHD
+        - trash_id: e3f37512790f00d0e89e54fe5e790d1c  # [Optional] Golden Rule UHD
           assign_scores_to:
             - name: UHD 2160p
 
-        - trash_id: f4a0410a1df109a66d6e47dcadcce014 # [Optional] Miscellaneous
+        - trash_id: f4a0410a1df109a66d6e47dcadcce014  # [Optional] Miscellaneous
           select:
-            - d7c747094a7c65f4c2de083c24899e8b # FreeLeech
+            - d7c747094a7c65f4c2de083c24899e8b  # FreeLeech
 
-        - trash_id: 59c3af66780d08332fdc64e68297098f # [Unwanted] Unwanted Formats
+        - trash_id: 59c3af66780d08332fdc64e68297098f  # [Unwanted] Unwanted Formats
           select_all: true
 
     custom_formats:
       - trash_ids:
-          - 418f50b10f1907201b6cfdf881f467b7 # Anime Dual Audio
+          - 418f50b10f1907201b6cfdf881f467b7  # Anime Dual Audio
         assign_scores_to:
           - name: HD 1080p - Anime
             score: 10
@@ -177,7 +177,7 @@ radarr:
 
     quality_profiles:
       - name: UHD 2160p
-        trash_id: 92e9a65a52ae48478fb8e9f34238d823 # Base Profile
+        trash_id: 92e9a65a52ae48478fb8e9f34238d823  # Base Profile
         reset_unmatched_scores:
           enabled: true
         quality_sort: top
@@ -211,7 +211,7 @@ radarr:
           - name: DVD
           - name: SDTV
       - name: HD 1080p
-        trash_id: 92e9a65a52ae48478fb8e9f34238d823 # Base Profile
+        trash_id: 92e9a65a52ae48478fb8e9f34238d823  # Base Profile
         reset_unmatched_scores:
           enabled: true
         quality_sort: top
@@ -237,7 +237,7 @@ radarr:
           - name: DVD
           - name: SDTV
       - name: HD 1080p - Anime
-        trash_id: 722b624f9af1e492284c4bc842153a38 # [Anime] Remux-1080p
+        trash_id: 722b624f9af1e492284c4bc842153a38  # [Anime] Remux-1080p
         reset_unmatched_scores:
           enabled: true
         min_format_score: 0
@@ -270,36 +270,36 @@ radarr:
 
     custom_format_groups:
       add:
-        - trash_id: 7fc2751eef7e6bdc70b74136e5e35c76 # [HDR Formats] DV (w/o HDR fallback)
+        - trash_id: 7fc2751eef7e6bdc70b74136e5e35c76  # [HDR Formats] DV (w/o HDR fallback)
 
-        - trash_id: 47f0d69750de9e16855915fa73bb7b08 # [HDR Formats] SDR
+        - trash_id: 47f0d69750de9e16855915fa73bb7b08  # [HDR Formats] SDR
           select:
-            - 9c38ebb7384dada637be8899efa68e6f # SDR
+            - 9c38ebb7384dada637be8899efa68e6f  # SDR
 
-        - trash_id: b2f2af430f73f3ad1f9948f33e0f0cf8 # [Release Groups] HQ
+        - trash_id: b2f2af430f73f3ad1f9948f33e0f0cf8  # [Release Groups] HQ
           select_all: true
 
-        - trash_id: f4f1474b963b24cf983455743aa9906c # [Optional] Movie Versions
+        - trash_id: f4f1474b963b24cf983455743aa9906c  # [Optional] Movie Versions
           select_all: true
 
-        - trash_id: f8bf8eab4617f12dfdbd16303d8da245 # [Optional] Golden Rule HD
+        - trash_id: f8bf8eab4617f12dfdbd16303d8da245  # [Optional] Golden Rule HD
           assign_scores_to:
             - name: HD 1080p
 
-        - trash_id: ff204bbcecdd487d1cefcefdbf0c278d # [Optional] Golden Rule UHD
+        - trash_id: ff204bbcecdd487d1cefcefdbf0c278d  # [Optional] Golden Rule UHD
           assign_scores_to:
             - name: UHD 2160p
 
-        - trash_id: 9337080378236ce4c0b183e35790d2a7 # [Optional] Miscellaneous
+        - trash_id: 9337080378236ce4c0b183e35790d2a7  # [Optional] Miscellaneous
           select:
-            - 0d91270a7255a1e388fa85e959f359d8 # FreeLeech
+            - 0d91270a7255a1e388fa85e959f359d8  # FreeLeech
 
-        - trash_id: a3ac6af01d78e4f21fcb75f601ac96df # [Unwanted] Unwanted Formats
+        - trash_id: a3ac6af01d78e4f21fcb75f601ac96df  # [Unwanted] Unwanted Formats
           select_all: true
 
     custom_formats:
       - trash_ids:
-          - 4a3b087eea2ce012fcc1ce319259a3be # Anime Dual Audio
+          - 4a3b087eea2ce012fcc1ce319259a3be  # Anime Dual Audio
         assign_scores_to:
           - name: HD 1080p - Anime
             score: 10

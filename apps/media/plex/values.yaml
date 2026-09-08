@@ -29,7 +29,7 @@ defaultPodOptions:
     fsGroup: 979
     fsGroupChangePolicy: "OnRootMismatch"
     supplementalGroups:
-      - 44 # video
+      - 44  # video
 
 service:
   web:

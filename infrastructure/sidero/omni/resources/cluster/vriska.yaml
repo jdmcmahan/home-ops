@@ -2,7 +2,7 @@
 kind: Cluster
 name: vriska
 kubernetes:
-  version: v1.36.4
+  version: v1.37.0
 talos:
   version: v1.14.0
 features:
@@ -205,16 +205,22 @@ patches:
       name: EPHEMERAL
       provisioning:
         maxSize: 240GiB
-  - name: ai-models-volume
+  - name: miroir
     inline: |
       apiVersion: v1alpha1
-      kind: UserVolumeConfig
-      name: ai-models
+      kind: RawVolumeConfig
+      name: miroir
       provisioning:
         diskSelector:
-          match: disk.transport == 'nvme'
+          match: disk.dev_path == '/dev/nvme0n1'
         minSize: 240GiB
-        maxSize: 500GiB
+        maxSize: 480GiB
+  - name: miroir-lvm
+    inline:
+      machine:
+        kernel:
+          modules:
+            - name: dm_thin_pool
   - name: nvidia
     file: patches/nvidia.yaml
 systemExtensions:

@@ -1,0 +1,9 @@
+---
+monitoring:
+  dashboards:
+    enabled: true
+
+  podMonitor:
+    enabled: true
+  prometheusRule:
+    enabled: true

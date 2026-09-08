@@ -14,9 +14,13 @@ config:
         - html
         - json
 
+secret:
+  create: false
+  existingSecret: searxng
+
 gateway:
   enabled: true
-  hostnames: [ "search.mcmahan.io" ]
+  hostnames: ["search.mcmahan.io"]
   parentRefs:
     - name: local
       namespace: traefik

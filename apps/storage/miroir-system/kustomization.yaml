@@ -1,0 +1,22 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - "https://raw.githubusercontent.com/home-operations/miroir/main/config/crd/bases/miroir.home-operations.com_miroirnodegroups.yaml?ref=0.12.2"
+  - "https://raw.githubusercontent.com/home-operations/miroir/main/config/crd/bases/miroir.home-operations.com_miroirnodes.yaml?ref=0.12.2"
+  - "https://raw.githubusercontent.com/home-operations/miroir/main/config/crd/bases/miroir.home-operations.com_miroirsnapshotgroups.yaml?ref=0.12.2"
+  - "https://raw.githubusercontent.com/home-operations/miroir/main/config/crd/bases/miroir.home-operations.com_miroirsnapshots.yaml?ref=0.12.2"
+  - "https://raw.githubusercontent.com/home-operations/miroir/main/config/crd/bases/miroir.home-operations.com_miroirvolumes.yaml?ref=0.12.2"
+  - namespace.yaml
+  - spidermom.yaml
+  - storageclass.yaml
+  - volumesnapshotclass.yaml
+
+helmCharts:
+  - name: miroir
+    repo: oci://ghcr.io/home-operations/charts
+    version: 0.12.2
+    releaseName: miroir
+    namespace: miroir-system
+    valuesFile: values.yaml

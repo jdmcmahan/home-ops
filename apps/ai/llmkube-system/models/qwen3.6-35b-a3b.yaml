@@ -29,4 +29,3 @@ spec:
     - --reasoning-preserve
   endpoint:
     port: 8080
-    type: LoadBalancer

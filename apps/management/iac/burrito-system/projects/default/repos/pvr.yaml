@@ -66,6 +66,8 @@ spec:
     name: pvr
     namespace: burrito-project-default
   path: "apps/prowlarr"
+  runHistoryPolicy:
+    runs: 1
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
@@ -78,6 +80,8 @@ spec:
     name: pvr
     namespace: burrito-project-default
   path: "apps/sonarr"
+  runHistoryPolicy:
+    runs: 1
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
@@ -90,6 +94,8 @@ spec:
     name: pvr
     namespace: burrito-project-default
   path: "apps/radarr"
+  runHistoryPolicy:
+    runs: 1
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
@@ -102,6 +108,8 @@ spec:
     name: pvr
     namespace: burrito-project-default
   path: "apps/readarr"
+  runHistoryPolicy:
+    runs: 1
 ---
 apiVersion: config.terraform.padok.cloud/v1alpha1
 kind: TerraformLayer
@@ -114,3 +122,5 @@ spec:
     name: pvr
     namespace: burrito-project-default
   path: "apps/lidarr"
+  runHistoryPolicy:
+    runs: 1

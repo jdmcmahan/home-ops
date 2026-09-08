@@ -5,24 +5,18 @@ pipelines:
 ollama:
   enabled: false
 
-ollamaUrlsFromExtraEnv: true
+openaiBaseApiUrls:
+  "http://model-router-router-proxy.llmkube-system.svc.cluster.local:8080/v1"
 
 extraEnvVars:
   - name: WEBUI_URL
-    value: "https://ai.mcmahan.io"
+    value: "https://chat.mcmahan.io"
   - name: ENABLE_PERSISTENT_CONFIG
     value: "false"
   - name: CORS_ENABLE
     value: "true"
   - name: CORS_ALLOW_ORIGIN
-    value: "https://ai.mcmahan.io;http://open-webui.open-webui.svc.cluster.local"
-  # features
-  - name: ENABLE_OLLAMA_API
-    value: "true"
-  - name: OLLAMA_BASE_URLS
-    value: "http://ollama.ollama.svc.cluster.local:11434"
-  - name: ENABLE_OPENAI_API
-    value: "false"
+    value: "https://chat.mcmahan.io;http://open-webui.open-webui.svc.cluster.local"
   # search
   - name: ENABLE_WEB_SEARCH
     value: "true"
@@ -35,7 +29,7 @@ extraEnvVars:
 
 route:
   enabled: true
-  hostnames: ["ai.mcmahan.io"]
+  hostnames: ["chat.mcmahan.io"]
   parentRefs:
     - name: local
       namespace: traefik
