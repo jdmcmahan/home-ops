@@ -14,6 +14,10 @@ config:
         - html
         - json
 
+secret:
+  create: false
+  existingSecret: searxng
+
 gateway:
   enabled: true
   hostnames: ["search.mcmahan.io"]
