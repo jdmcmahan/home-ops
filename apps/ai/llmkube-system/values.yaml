@@ -21,6 +21,5 @@ grafana:
 
 modelCache:
   enabled: true
-  mode: perService
   size: 120Gi
-  storageClass: ceph-block
+  storageClass: miroir-local
