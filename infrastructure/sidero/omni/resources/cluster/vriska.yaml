@@ -172,16 +172,16 @@ patches:
       name: EPHEMERAL
       provisioning:
         maxSize: 240GiB
-  - name: ai-models-volume
+  - name: miroir
     inline: |
       apiVersion: v1alpha1
-      kind: UserVolumeConfig
-      name: ai-models
+      kind: RawVolumeConfig
+      name: miroir
       provisioning:
         diskSelector:
-          match: disk.transport == 'nvme'
+          match: disk.name == 'nvme0n1'
         minSize: 240GiB
-        maxSize: 500GiB
+        maxSize: 480GiB
   - name: nvidia
     file: patches/nvidia.yaml
 systemExtensions:
