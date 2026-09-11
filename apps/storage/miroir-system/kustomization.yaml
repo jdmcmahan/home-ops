@@ -16,7 +16,7 @@ resources:
 helmCharts:
   - name: miroir
     repo: oci://ghcr.io/home-operations/charts
-    version: 0.12.2
+    version: 0.12.3
     releaseName: miroir
     namespace: miroir-system
     valuesFile: values.yaml
