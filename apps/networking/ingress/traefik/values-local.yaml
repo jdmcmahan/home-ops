@@ -19,7 +19,7 @@ gateway:
   enabled: true
   name: local
   annotations:
-    external-dns.alpha.kubernetes.io/target: local.mcmahan.io
+    external-dns.kubernetes.io/target: local.mcmahan.io
   listeners:
     web:
       hostname: "*.mcmahan.io"
@@ -40,7 +40,7 @@ ingressClass:
 
 service:
   annotations:
-    external-dns.alpha.kubernetes.io/hostname: local.mcmahan.io
+    external-dns.kubernetes.io/hostname: local.mcmahan.io
   type: LoadBalancer
   spec:
     loadBalancerIP: "192.168.8.81"
