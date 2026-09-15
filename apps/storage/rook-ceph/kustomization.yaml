@@ -70,7 +70,7 @@ helmCharts:
               keyRotationPolicy: KeyGeneration
               keyGeneration: 1
               keyType: aes256k
-              keepPriorKeyCountMax: 1
+              keepPriorKeyCountMax: 0
       cephBlockPoolsVolumeSnapshotClass:
         enabled: true
         isDefault: true
