@@ -71,6 +71,10 @@ helmCharts:
               keyGeneration: 1
               keyType: aes256k
               keepPriorKeyCountMax: 0
+            rbdMirrorPeer:
+              keyRotationPolicy: KeyGeneration
+              keyGeneration: 1
+              keyType: aes256k
       cephBlockPoolsVolumeSnapshotClass:
         enabled: true
         isDefault: true
