@@ -6,6 +6,7 @@ prometheus:
   service:
     type: LoadBalancer
   prometheusSpec:
+    externalUrl: "https://prometheus.mcmahan.io"
     podMonitorSelectorNilUsesHelmValues: false
     probeSelectorNilUsesHelmValues: false
     ruleSelectorNilUsesHelmValues: false
