@@ -74,6 +74,8 @@ helmCharts:
               policy: unmute
         security:
           cephx:
+            allowedCiphers:
+              - aes256k
             daemon:
               keyRotationPolicy: KeyGeneration
               keyGeneration: 1
