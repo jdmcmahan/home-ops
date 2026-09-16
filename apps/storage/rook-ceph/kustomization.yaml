@@ -80,7 +80,6 @@ helmCharts:
             daemon:
               keyRotationPolicy: KeyGeneration
               keyGeneration: 1
-              keyType: aes256k
             csi:
               keyRotationPolicy: KeyGeneration
               keyGeneration: 1
