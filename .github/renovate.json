@@ -9,6 +9,11 @@
       "/deployment\\.ya?ml$/"
     ]
   },
+  "helm-values": {
+    "managerFilePatterns": [
+      "/values-\\w+\\.ya?ml/"
+    ]
+  },
   "packageRules": [
     {
       "matchUpdateTypes": [
