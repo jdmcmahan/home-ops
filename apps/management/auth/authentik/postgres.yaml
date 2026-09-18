@@ -10,3 +10,6 @@ spec:
   storage:
     storageClass: ceph-block
     size: 10Gi
+
+  monitoring:
+    enablePodMonitor: true
