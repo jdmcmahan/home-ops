@@ -98,18 +98,6 @@
       "datasourceTemplate": "github-releases"
     },
     {
-      "description": "CRDs from raw GitHub URLs in kustomization.yaml",
-      "customType": "regex",
-      "managerFilePatterns": [
-        "/kustomization\\.ya?ml$/"
-      ],
-      "matchStringsStrategy": "recursive",
-      "matchStrings": [
-        "raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+)/.+\\?ref=(?<currentValue>.+?)\""
-      ],
-      "datasourceTemplate": "github-releases"
-    },
-    {
       "description": "Grafana dashboard revisions",
       "customType": "regex",
       "managerFilePatterns": [
