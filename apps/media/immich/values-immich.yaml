@@ -1,11 +1,11 @@
 ---
-# yaml-language-server: $schema=https://raw.githubusercontent.com/bjw-s-labs/helm-charts/main/charts/library/common/values.schema.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/immich-app/immich-charts/main/charts/immich/values.schema.json
 controllers:
   main:
     containers:
       main:
         image:
-          repository: docker.io/altran1502/immich-server
+          repository: ghcr.io/immich-app/immich-server
           tag: v2.7.5
           pullPolicy: IfNotPresent
         env:
