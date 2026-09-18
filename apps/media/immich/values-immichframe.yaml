@@ -45,6 +45,13 @@ route:
 
 persistence:
   config:
+    enabled: true
+    existingClaim: immichframe-config
+    advancedMounts:
+      immichframe:
+        app:
+          - path: /config
+  config-file:
     type: secret
     name: immichframe-config
     globalMounts:
