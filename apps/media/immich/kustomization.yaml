@@ -7,7 +7,6 @@ resources:
   - pvc.yaml
   - postgres.yaml
   - volsync-immichframe.yaml
-  - immichframe-config.yaml
 
 helmCharts:
   - name: immich

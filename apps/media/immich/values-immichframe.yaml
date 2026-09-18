@@ -47,10 +47,3 @@ persistence:
       immichframe:
         app:
           - path: /config
-  config-file:
-    type: secret
-    name: immichframe-config
-    globalMounts:
-      - path: /app/Config/Settings.yml
-        subPath: Settings.yml
-        readOnly: true
