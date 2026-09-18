@@ -15,4 +15,5 @@ helmCharts:
     version: v26.7.0
     releaseName: gpu-operator
     namespace: nvidia
+    includeCRDs: true
     valuesFile: values.yaml
