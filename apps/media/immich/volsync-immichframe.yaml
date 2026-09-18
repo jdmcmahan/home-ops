@@ -50,7 +50,7 @@ spec:
 apiVersion: volsync.backube/v1alpha1
 kind: ReplicationDestination
 metadata:
-  namespace: immichframe
+  namespace: immich
   name: immichframe-config-dest
 spec:
   trigger:
