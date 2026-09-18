@@ -6,7 +6,7 @@ controllers:
       app:
         image:
           repository: ghcr.io/autobrr/qui
-          tag: v1.18.0@sha256:2e768c8509831afd1f606d27d9aa8e5f3fc722fac4ea88acfdc4fa3b0e9b13ae
+          tag: v1.29.0@sha256:263c131adb007be98469959d5d3625e88476417c900519a1abad0bd609f0f103
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
