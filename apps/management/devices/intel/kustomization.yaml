@@ -19,6 +19,10 @@ helmCharts:
     version: 0.37.0
     releaseName: intel-device-plugins-operator
     namespace: intel
+    valuesInline:
+      manager:
+        devices:
+          gpu: true
   - name: intel-device-plugins-gpu
     repo: https://intel.github.io/helm-charts
     version: 0.37.0
