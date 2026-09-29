@@ -35,14 +35,9 @@ machines:
 ---
 kind: Machine
 name: 4c4c4544-004a-4310-8042-b4c04f365132
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
@@ -60,14 +55,9 @@ systemExtensions:
 ---
 kind: Machine
 name: 4c4c4544-0043-4210-8035-b4c04f365132
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
@@ -85,14 +75,9 @@ systemExtensions:
 ---
 kind: Machine
 name: 4c4c4544-0039-4a10-8048-b9c04f305432
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
@@ -110,14 +95,9 @@ systemExtensions:
 ---
 kind: Machine
 name: 4c4c4544-0052-4610-8054-b3c04f4e5932
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
@@ -135,14 +115,9 @@ systemExtensions:
 ---
 kind: Machine
 name: 4c4c4544-0052-4e10-8054-b3c04f4e5932
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
@@ -160,14 +135,9 @@ systemExtensions:
 ---
 kind: Machine
 name: 4c4c4544-0052-4810-8054-b3c04f4e5932
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
@@ -185,14 +155,9 @@ systemExtensions:
 ---
 kind: Machine
 name: ad064900-a236-11f1-926b-11bbce7a6b00
+install:
+  disk: /dev/nvme0n1
 patches:
-  - name: install-disk
-    inline: |
-      apiVersion: v1alpha1
-      kind: UnattendedInstallConfig
-      provisioning:
-        diskSelector:
-          match: disk.dev_path == "/dev/nvme0n1"
   - name: hostname
     inline: |
       apiVersion: v1alpha1
