@@ -4,7 +4,7 @@ name: vriska
 kubernetes:
   version: v1.37.1
 talos:
-  version: v1.14.1
+  version: v1.14.2
 features:
   enableWorkloadProxy: true
   backupConfiguration:
