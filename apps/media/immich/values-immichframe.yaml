@@ -46,4 +46,4 @@ persistence:
     advancedMounts:
       immichframe:
         app:
-          - path: /config
+          - path: /app/Config
