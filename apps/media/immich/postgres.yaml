@@ -6,6 +6,7 @@ metadata:
   name: immich-cluster
 spec:
   instances: 1
+  enablePDB: false
 
   storage:
     storageClass: ceph-block
