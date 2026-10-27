@@ -25,7 +25,8 @@ spec:
   resources:
     hostMemory: "24Gi"
   extraArgs:
-    - --no-mmap
+    - --load-mode
+    - none
     - --reasoning-preserve
   endpoint:
     port: 8080
