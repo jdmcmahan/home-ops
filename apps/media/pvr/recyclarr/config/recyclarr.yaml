@@ -145,6 +145,8 @@ sonarr:
           assign_scores_to:
             - name: UHD 2160p
 
+        - trash_id: d920fd959d220306888f40b6f38e1578  # [Optional] Season Packs
+
         - trash_id: f4a0410a1df109a66d6e47dcadcce014  # [Optional] Miscellaneous
           select:
             - d7c747094a7c65f4c2de083c24899e8b  # FreeLeech
