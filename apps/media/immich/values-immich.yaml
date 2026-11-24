@@ -10,6 +10,7 @@ controllers:
           pullPolicy: IfNotPresent
         env:
           TZ: "America/Chicago"
+          IMMICH_HOST: "0.0.0.0"
           DB_HOSTNAME:
             valueFrom:
               secretKeyRef:
