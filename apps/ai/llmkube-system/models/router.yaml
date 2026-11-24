@@ -21,4 +21,5 @@ spec:
         credentialsSecretRef:
           name: elsa-credentials
       timeout: 180s
+  defaultRouteStrategy: BackendNameMatch
   defaultRoute: local-qwen3-6-35b-a3b
