@@ -5,6 +5,7 @@ kind: Kustomization
 
 resources:
   - certificate.yaml
+  - "https://github.com/kubernetes-sigs/gateway-api/config/crd?ref=v1.7.0"
 
 helmCharts:
   - name: traefik-crds
